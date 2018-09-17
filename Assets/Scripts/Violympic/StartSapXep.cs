@@ -10,6 +10,8 @@ public class StartSapXep : MonoBehaviour {
 
     void btnPlay_OnClick()
     {
+		try
+		{
         SoundManager.Instance.PauseBGMusic();
         PopUpController.instance.HideStartSapXep();
         if (GameController.instance.mGrade == 1)
@@ -21,17 +23,30 @@ public class StartSapXep : MonoBehaviour {
             PopUpController.instance.ShowQuestionSapXep();
         }
         SoundManager.Instance.PlayAudioClick();
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
     }
 
 	// Use this for initialization
 	void Start () {
 
-
+		try
+		{
         btnPlay.OnClick += btnPlay_OnClick;
 
         txtTitle.text = ClsLanguage.doTileSapXep();
         txtContent.text = ClsLanguage.doSapXep();
         btnPlay.gameObject.transform.GetChild(0).GetComponent<tk2dTextMesh>().text = ClsLanguage.doVaoThi();
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
 
 	}
 	

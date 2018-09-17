@@ -9,14 +9,24 @@ public class StartThongThai : MonoBehaviour {
 
     void onClick_btnPlay()
     {
+		try
+		{
         PopUpController.instance.HideStartThongThai();
         PopUpController.instance.ShowQuestionMonkey();
         SoundManager.Instance.PauseBGMusic();
         SoundManager.Instance.PlayAudioClick();
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
     }
 
 	// Use this for initialization
 	void Start () {
+		try
+		{
         btnPlay.OnClick += onClick_btnPlay;
         if (GameController.instance.tienganh != 1)
         {
@@ -28,6 +38,12 @@ public class StartThongThai : MonoBehaviour {
         }
         btnPlay.gameObject.transform.GetChild(0).GetComponent<tk2dTextMesh>().text = ClsLanguage.doVaoThi();
         txtContent.text = ClsLanguage.doContentMoney();
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
 	}
 	
 	// Update is called once per frame

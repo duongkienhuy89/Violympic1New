@@ -22,16 +22,26 @@ public class MainController : MonoBehaviour {
 
     void btnBuyVip_OnClick()
     {
+		try
+		{
         if (GameController.instance.ckClickPlay)
         {
             PopUpController.instance.ShowBuyItem();
             PopUpController.instance.HideMainGame();
             SoundManager.Instance.PlayAudioClickUI();
         }
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
     }
 
     void btnRank_OnClick()
     {
+		try
+		{
         if (GameController.instance.ckClickPlay)
         {
             //int chon = UnityEngine.Random.Range(0, 10);
@@ -51,11 +61,19 @@ public class MainController : MonoBehaviour {
 
             SoundManager.Instance.PlayAudioClickUI();
         }
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
     }
 
 
     void btnPlay_OnClick()
     {
+		try
+		{
         if (GameController.instance.ckClickPlay)
         {
            // PopUpController.instance.ShowLevel();
@@ -64,6 +82,12 @@ public class MainController : MonoBehaviour {
             SoundManager.Instance.PlayAudioClickUI();
             
         }
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
 
     }
 
@@ -71,6 +95,8 @@ public class MainController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		try
+		{
         btnRank.OnClick += btnRank_OnClick;
         btnPlay.OnClick += btnPlay_OnClick;
         btnBuyVip.OnClick += btnBuyVip_OnClick;
@@ -80,6 +106,12 @@ public class MainController : MonoBehaviour {
         btnBuyVip.gameObject.transform.GetChild(0).GetComponent<tk2dTextMesh>().text = ClsLanguage.doMuaVip();
 
         setData();
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
      
 	}
 	

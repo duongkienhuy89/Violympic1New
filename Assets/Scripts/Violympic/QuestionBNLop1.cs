@@ -79,7 +79,8 @@ public class QuestionBNLop1 : MonoBehaviour {
 
     void doXuLy(SpItem bt)
     {
-
+		try
+		{
         if (currentState == State.InGame1)
         {
             sp1 = bt;
@@ -111,6 +112,12 @@ public class QuestionBNLop1 : MonoBehaviour {
                 StartCoroutine(WaitTimeXuLyBN(1f, bt));
             }
         }
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
 
     }
 

@@ -40,7 +40,8 @@ public class StopDinhNui : MonoBehaviour {
 
     void onClick_btnContinute()
     {
-
+		try
+		{
         PopUpController.instance.HideStopDinhNui();
      
             GameController.instance.ShowLevel3();
@@ -49,15 +50,29 @@ public class StopDinhNui : MonoBehaviour {
                 bannerView.Hide();
             }
             SoundManager.Instance.PlayAudioClick();
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
     }
 
 	// Use this for initialization
 	void Start () {
+		try
+		{
         btnContinute.OnClick += onClick_btnContinute;
 
         txtHoanThanh.text = ClsLanguage.doHoanThanhBaiThi();
         txtDinhNui.text = ClsLanguage.doTitleDinhNui();
         btnContinute.gameObject.transform.GetChild(0).GetComponent<tk2dTextMesh>().text = ClsLanguage.doContinute();
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
        // RequestBanner();
         
 	}

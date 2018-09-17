@@ -18,18 +18,34 @@ public class StopSapXep : MonoBehaviour {
 
     void btnContinute_OnClick()
     {
+		try
+		{
         PopUpController.instance.HideStopSapXep();
         GameController.instance.ShowLevel2();
         SoundManager.Instance.PlayAudioClick();
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
     }
 
     // Use this for initialization
     void Start()
     {
+		try
+		{
         btnContinute.OnClick += btnContinute_OnClick;
         txtTitle.text = ClsLanguage.doTileSapXep();
         txtHoanThanh.text = ClsLanguage.doHoanThanhBaiThi();
         btnContinute.gameObject.transform.GetChild(0).GetComponent<tk2dTextMesh>().text = ClsLanguage.doContinute();
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
     }
 	
 	// Update is called once per frame

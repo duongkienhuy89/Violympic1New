@@ -157,7 +157,8 @@ public class QuestionSapXepL1 : MonoBehaviour {
     }
     void doXuLy(SpItem bt)
     {
-
+		try
+		{
         if (currentState == State.InGame1)
         {
             if (bt.Trangthai == true)
@@ -172,6 +173,12 @@ public class QuestionSapXepL1 : MonoBehaviour {
                 StartCoroutine(WaitTimeXuLySX(1f, bt));
             }
         }
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
     }
 
     IEnumerator WaitTimeXuLySX(float time, SpItem bt)

@@ -79,6 +79,8 @@ public class Grade : MonoBehaviour {
 
     void xuLy(int lv)
     {
+		try
+		{
         GameController.instance.setGrade(lv);
         PopUpController.instance.ShowLevel();
         PopUpController.instance.HideGrade();
@@ -88,11 +90,19 @@ public class Grade : MonoBehaviour {
         {
             bannerView.Hide();
         }
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
     }
 
 	// Use this for initialization
 	void Start () {
 
+		try
+		{
         btnLop1.OnClick += btnLop1_onClick;
         btnLop2.OnClick += btnLop2_onClick;
         btnLop3.OnClick += btnLop3_onClick;
@@ -105,6 +115,12 @@ public class Grade : MonoBehaviour {
         btnLop4.gameObject.transform.GetChild(0).GetComponent<tk2dTextMesh>().text = ClsLanguage.doLop4();
         btnLop5.gameObject.transform.GetChild(0).GetComponent<tk2dTextMesh>().text = ClsLanguage.doLop5();
         txtLoading.text = ClsLanguage.doLoading();
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
 	
 	}
 	

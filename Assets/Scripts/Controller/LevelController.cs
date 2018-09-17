@@ -27,9 +27,17 @@ public class LevelController : MonoBehaviour {
     public tk2dUIItem btnBack;
     void onClick_Back()
     {
+		try
+		{
         PopUpController.instance.HideLevel();
         PopUpController.instance.ShowGrade();
         SoundManager.Instance.PlayAudioClick();
+		}
+		catch (System.Exception)
+		{
+
+			throw;
+		}
     }
 
     public void resetData()
