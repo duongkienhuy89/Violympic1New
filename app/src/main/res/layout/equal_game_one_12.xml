@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/rl_bg_equal_one_12"
+        android:background="@drawable/bg_fores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/gv_equal_one_12"
+            android:background="@drawable/border_equal"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+
+            android:columnWidth="155dp"
+            android:gravity="center"
+            android:numColumns="4"
+            android:stretchMode="none"
+            android:verticalSpacing="3dp"
+            android:horizontalSpacing="3dp"
+
+
+            android:padding="10dp"
+
+            android:layout_width="649dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_score_equal_one_12"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="@string/scrore"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/iv_false_equal_one_12"
+            android:layout_toLeftOf="@+id/tv_score_equal_one_12"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bamau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_time_ingame_equal_one_12"
+            android:text="@string/scrore"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/iv_avata_equal_one_12"
+            android:src="@drawable/monkey_question"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/la_firework_equal_one12"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_fileName="17297-fireworks.json"
+            app:lottie_loop="false"
+            app:lottie_autoPlay="false" />
+    </RelativeLayout>
+</RelativeLayout>

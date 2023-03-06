@@ -1,0 +1,629 @@
+1^Cho dãy số 6; 16; 26; 36; …; 2016. Hỏi dãy số trên có bao nhiêu chữ số? ^697^Số số hạng có 1 chữ số: 1. Số số hạng có 2 chữ số: (96-16):10+1=9. Suy ra số chữ số là: 9x2=18. Số số hạng có 1 chữ số: (996-106):10+1=90. Suy ra số chữ số là: 90x3=270. Số số hạng có 2 chữ số: (2016-1606):10+1=102. Suy ra số chữ số là: 102x4=408. Số chữ số của dãy số trên: 1+18+270+408=697^1}2^Tìm một số biết số đó chia 8 dư 5,chia 12 dư 1, hai thương hơn kém nhau 13 đơn vị.^325^giaithich^1}3^Trên cây có 32 con chim đang đậu ở hai cành cây. Có 4 con từ cành dưới bay lên cành trên và có 6 con bay từ cành trên xuống cành dưới, lúc đó số chim ở cành trên bằng 3/5 số chim ở cành dưới. Hỏi lúc đầu cành dưới có bao nhiêu con chim?^18^Dạng toán tổng - tỉ với tổng là 32 và tỉ là 3/5
+Số con chim đậu ở cành dưới sau khi có 4 con từ cành dưới bay lên cành trên và có 6 con bay từ cành trên xuống cành dưới là: 32:(3+5)x5=20 (con chim)
+Số con chim đậu ở cành dưới lúc đầu là: 20-(6-4)=18 (con chim)^1}4^Khi chia một số tự nhiên có 4 chữ số cho tổng các chữ số của số đó thì được thương lớn nhất là bao nhiêu?^1000^gta^1}5^Tìm x biết x là số lẻ chia hết cho 5 và 438 < x < 449.^445^gta^1}6^Mỗi buổi sáng, bác Mai tập thể dục bằng cách cứ đi tiến 9 bước rồi lại lùi 1 bước. Hỏi sau khi đi được tất cả 2016 bước thì bác Mai đã cách xa điểm xuất phát bao nhiêu bước?^1614^Số bước đi trong một lượt đi là:9+1=10(bước). Số bước thực tế đi được sau một lượt đi là:9-1=8(bước). Ta có:2016:10=201(dư 6). Như vậy bác Mai đã đi được 202 lượt đi, trong đó 201 lượt đầu, mỗi lượt đi 10 bước và thực đi được 8 bước, lượt cuối đi 6 bước chưa lùi 1 bước nên thực đi được 6 bước. Đáp số là:8x201+6 = 1614 (bước)^1}7^Một hộp có 100 viên bi trong đó có 25 viên màu xanh, 25 viên màu đỏ, 25 viên màu vàng và 25 viên màu trắng. Không nhìn vào hộp, cần phải lấy ra ít nhất bao nhiêu viên bi để số bi lấy ra chắc chắn có không ít hơn 8 viên bi cùng màu?^29^Trường hợp xấu nhất lấy được 7 viên màu xanh, 7 viên màu đỏ, 7 viên màu vàng và 7 viên màu trắng. Vậy đã lấy: 7 + 7 + 7 + 7= 28 (viên bi). Chưa được 8 viên bi cùng màu, do đó phải lấy thêm 1 viên bi nữa. Để số bi lấy ra chắc chắn có không ít hơn 8 viên bi cùng màu thì số viên bi phải lấy là: 28 + 1 = 29 (viên bi)^1}8^Tổng của hai số lẻ là 98.Tìm số lớn biết giữa chúng có 6 số chẵn.^55^Vì giữa chúng có 6 số chẵn nên hiệu của hai số đó là 6x2=12.
+Số lớn là: (98 +12) : 2 = 55^1}9^Tổng hai số tự nhiên là 1644. Nếu xóa chữ số hàng đơn vị của số lớn ta được số bé. Tìm số lớn.^1495^gta^1}10^Tìm số có năm chữ số 3a39b biết số đó chia hết cho cả 2; 5 và 9.^33390^gta^1}11^Khi tuổi anh bằng tuổi em hiện nay thì tuổi anh gấp rưỡi tuổi em. Khi tuổi em bằng tuổi anh hiện nay thì tổng số tuổi của hai anh em là 45 tuổi. Tính tuổi anh hiện nay.^20^Ta có: Tổng số phần bằng nhau: 4 + 5 = 9 (phần)
+Tuổi em hiện nay: 45 : 9 × 3= 15 (tuổi)
+Tuổi anh hiện nay: 45 : 9 × 4 = 20 (tuổi)^1}12^Năm 2016, 1/7 tuổi mẹ bằng 1/2 tuổi con. Mẹ sinh con năm mẹ 30 tuổi. Hãy tính năm sinh của mẹ. Trả lời: Năm sinh của mẹ là ?^1974^Mẹ sinh con năm mẹ 30 tuổi. Suy ra: Mẹ hơn con 30 tuổi
+Theo bài ra ta có tỉ số giữa tuổi mẹ và tuổi con là 7/2. Suy ra hiệu số phần tuổi bằng nhau là: 5 (phần)
+Năm 2016, tuổi của mẹ là: 30:5x7=42 (tuổi)
+Năm sinh của mẹ là: 2016-42=1974^1}13^Trong một phép chia, số chia là 68, thương là 92 và số dư là số dư lớn nhất có thể được của phép chia đó. Tìm số bị chia.^6323^giaithich^1}14^Tổng của ba số là 410. Tìm số thứ ba biết 2/5 số thứ nhất bằng 1/4 số thứ hai và bằng 4/15 số thứ ba.^191^gta^1}15^Tìm số liền trước của số tự nhiên chẵn lớn nhất có 5 chữ số khác nhau ?^98763^gta^1}16^Khi nhân một số với 374, một học sinh đã đặt các tích riêng thẳng cột như trong phép cộng nên tìm ra kết quả là 4172. Tìm tích đúng của phép nhân đó.^111452^Khi nhân một số với 374, học sinh đó đã đặt các tích riêng thẳng cột như trong phép cộng nên thực chất học sinh đó đã nhân số này với 3, với 7, với 4 rồi cộng các kết quả lại tức là học sinh đó đã nhân số này với: 3 + 7 + 4 = 14. Vậy số đem nhân với 374 là: 4172 : 14 = 298. Tích đúng là: 298 x 374 = 111452^1}17^Một lớp học có 45 học sinh, trong đó có 28 học sinh thích học môn Toán, 20 học sinh thích học môn Tiếng Việt và 3 học sinh không thích cả hai môn Toán và Tiếng Việt. Hỏi có bao nhiêu học sinh thích cả Toán và Tiếng Việt?^6^Có 3 học sinh không thích cả hai môn Toán và Tiếng Việt, nếu loại số học sinh này ra, lớp còn:45-3=42(hs). Những học sinh chỉ thích Tiếng Việt là: 42-28=14 (hs). Có Những học sinh chỉ thích môn Toán là: 42-20=22 (hs). Số học sinh thích cả Toán và Tiếng Việt là: 42-14-22=6(hs)^1}18^Tính tổng của các số có 3 chữ số, các số đều chia 5 dư 3 ?^99090^Số số hạng của các số có 3 chữ số, các số đều chia 5 dư 3 là: (998 - 103) : 5 + 1 = 180.
+Tổng của số hạng đầu và số hạng cuối là: 998 + 103 = 1101.
+Tổng của các số đó là: 1101 x 90 = 99090^1}19^Trong vườn có chưa đến 50 cây ăn quả, trong đó có 1/12 số cây chanh, 1/6 số cây xoài, 1/16 số cây táo, còn lại là cây na. Hỏi trong vườn có bao nhiêu cây na?^33^Số cây chanh, xoài và táo trong vườn là: 1/12+1/6+1/16=15/48=5/16 (số cây trong vườn). Mà số cây trong vườn có chưa đến 50 cây và 16 cũng như 32 không chia hết cho 6, suy ra số cây trong vườn chỉ có thể là 48 cây. Vậy số cây chanh, xoài và táo là: 15 (cây). Số cây na là: 48-15 = 33 (cây).^1}20^Tìm số liền sau của số tự nhiên chẵn lớn nhất có 5 chữ số khác nhau.^98765^gta^1}21^Tính: 1+4+9+16+…+100=… ^385^Ta nhận thấy: 1=0+1; 4=1+3.... Vậy quy luật của dãy số là số hạng tiếp theo bằng số hạng trước nó cộng với một số hạng tương ứng của dãy số lẻ, bắt đầu từ chữ số 1. Suy ra: Các số hạng tiếp theo sẽ là: 16+9=25; 25+11=36; 36+13=49; 49+15=64; 64+17=81 và 81+19=100. Tổng của dãy số trên là: 1+4+9+16+25+36+49+64+81+100=385^2}22^Một người thợ mất 285 phút để cưa một cây gỗ dài 18m thành từng khúc, mỗi khúc dài 9dm. Hãy tình thời gian mỗi lần cưa cây gỗ đó.^15^Đổi 18m = 180dm.
+Ta nhận thấy chỉ cần cưa 1 lần thì được 2 khúc cuối cùng. Do đó ta có tổng số lần cần thiết để cưa cây gỗ thành từng khúc là: 180 : 9 - 1 = 19 (lần).
+Thời gian mỗi lần cưa cây gỗ đó là: 285 : 19 = 15 (phút).^2}23^Tổng hai số là 362. Nếu lấy số lớn chia cho số bé được thương là 4 dư 2. Khi đó số lớn nhất trong hai số đó là…^290^Số lớn là: (362-2):(1+4)x4+2=290^2}24^Một hình chữ nhật có hai lần chu vi bằng 7 lần chiều dài của nó. Biết chiều dài hơn chiều rộng là 10m. Tính chiều dài hình chữ nhật đó^40^1 lần chu vi gấp số lần chiều dài là: 7/2:2=7/4. 
+Vậy chiều dài chiếm 3 phần bằng nhau như thế.
+Chiều dài HCN là: 10:(4-3)x4=40 (m).^2}25^Số lớn nhất có 7 chữ số hơn số lớn nhất có 6 chữ số khác nhau là… ^9012345^gta^2}26^Tìm số thứ 100 của dãy số sau: 4; 8; 12; 16;...?^400^Số hạng đầu là 4.
+Khoảng cách giữa các số hạng là 4.
+Số hạng thứ 100 là: (100 - 1) x 4 + 4 = 400.^2}27^Một khu đất hình chữ nhật có chiều dài bằng 36m, chiều rộng bằng 2/3 chiều dài. Tính diện tích một mảnh vườn hình vuông có chu vi bằng chu vi khu đất đó là bao nhiêu m2 ?^900^Chiều rộng HCN là: 36 : 3 x 2=24 (m). 
+Chu vi HCN là: (24+36)x2=120 (m).
+Số đo 1 cạnh hình vuông là: 120:4=30 (m). 
+Diện tích hình vuông là 30 x 30 = 900 (mét vuông)^2}28^Tìm x thỏa mãn: (5+x)/8 = 14/16. ^2^gta^2}29^Tổng hai số bằng 189. Nếu chuyển từ số thứ nhất sang số thứ hai 15 đơn vị thì số thứ nhất bằng 2/5 số thứ hai. Tìm số thứ hai. ^120^Số thứ hai là: 189 : (5 + 2) x 5 - 15 = 120^2}30^Tổng của hai số là số nhỏ nhất có 4 chữ số. Nếu lấy số lớn chia cho số nhỏ được thương là số lớn nhất có một chữ số. Tìm số lớn. ^900^Số nhỏ nhất có bốn chữ số là 1000. 
+Số lớn nhất có 1 chữ số là 9.
+Số lớn là: 1000 : (9 + 1) x 9=900^2}31^Số hạng tiếp theo của dãy số sau: 1; 2; 3; 5; 8;… là…^13^gta^2}32^Số lớn bằng 5/7 tổng hai số. Hiệu hai số bằng 48. Tìm số bé.^32^gta^2}33^Trên bản đồ tỉ lệ 1 : 5000, chiều dài sân trường đo được 3cm. Hỏi chiều dài thực của sân trường đo được bao nhiêu mét?^150^Chiều dài thực tế là: 5000 x 3 =15000(cm)=150 mét^2}34^Tổng số tuổi hiện nay của 2 anh em là 36 tuổi. Tuổi em bằng 4/5 tuổi anh. Tính tuổi anh hiện nay.^20^Tổng số phần bằng nhau là 4+5=9(phần). 
+Số tuổi của em là: 36 : 9 x 4=16 (tuổi).
+Số tuổi của anh là: 36-16=20 (tuổi).^2}35^Tìm một số có ba chữ số, biết tổng 3 chữ số là 20. Tổng 3 chữ số gấp 4 lần chữ số hàng trăm, chữ số hàng chục gấp rưỡi chữ số hàng đơn vị^596^Chữ số hàng trăm là: 20/4=5. 
+Coi chữ số hàng chục là 3 phần thì chữ số hàng đơn vị là 2 phần.
+Chữ số hàng chục là: (20-5):(3+2) x 3 = 9. 
+Chữ số hàn đơn vị là : 20-9-5=6. Vậy số đó là: 596.^2}36^Số lớn nhất có 5 chữ số chia hết cho 2; 3 và 5 là… ^99990^gta^2}37^Tìm x thỏa mãn: (73-x)/(98-x) = 1/6.^68^gta^2}38^Một lớp học có 24 học sinh nữ. Số học sinh nam ít hơn số học sinh nữ là 8 bạn. Hỏi : Lớp đó có bao nhiêu phần trăm học sinh là nam ? ^40^Số học sinh nam của lớp là: 24 - 8 = 16 (học sinh) Tổng số học sinh cả lớp là: 24 + 16 = 40 (học sinh) Học sinh nam chiếm số phần trăm là: 16 : 40 = 0,4 = 40%^2}39^Từ một bao đường, người ta lấy ra 27kg, chiếm 45% lượng đường trong bao. Hỏi lúc đầu bao đường đó có bao nhiêu ki-lô-gam đường ? ^60^Lúc đầu bao đường đó có số ki-lô-gam đường là: 27 : 45 x 100 = 60 (kg) . ^2}40^0,45 giờ + 15 phút = … phút?^42^Ta có: 0,45 giờ = 60 phút x 0,45 = 27 phút. Do đó: 0,45 giờ + 15 phút = 27 phút + 15 phút = 42 phút.^2}41^Trong ba ngày một cửa hàng bán được 7200kg gạo. Ngày thứ nhất bán được 35% số gạo đó. Ngày thứ hai bán được 40% số gạo đó. Hỏi ngày thứ ba cửa hàng đó bán được bao nhiêu ki-lô-gam gạo ?^1800^Ngày thứ nhất cửa hàng đó bán được số ki-lô-gam gạo là: 7200 : 100 x 35 = 2520 (kg) Ngày thứ hai cửa hàng đó bán được số ki-lô-gam gạo là: 7200 : 100 x 40 = 2880 (kg) Ngày thứ ba cửa hàng đó bán được số ki-lô-gam gạo là: 7200 - (2520 + 2880) = 1800 (kg) Đáp số : 1800 kg ^2}42^Diện tích một hình chữ nhật bằng 45m2, chiều rộng bằng 15dm. Tính chiều dài hình chữ nhật đó.^300^45m2 = 4500dm2.
+Chiều dài hình chữ nhật đó là: 4500 : 15 = 300dm.^3}43^Khi nhân một số tự nhiên với 207, một học sinh sơ suất đã bỏ quên chữ số 0 của thừa số thứ hai nên tích tìm được kém tích đúng là 24120. Tìm số tự nhiên đó.^134^Số tự nhiên đó là: 24120 : (207 - 27) = 134^3}44^Một đơn vị bộ đội chuẩn bị đủ gạo cho 70 người ăn trong 30 ngày. Sau khi ăn được 6 ngày thì 10 người chuyển đi nơi khác. Hỏi số gạo còn lại đó đơn vị ăn thêm được bao nhiêu ngày nữa so với dự kiến ban đầu?^4^Số suất ăn dành cho 70 ăn trong 30 ngày là: 70x30=2100 (suất ăn). Số suất ăn dành cho 70 ăn trong 6 ngày là: 70x6=420 (suất ăn). Số suất ăn còn lại khi 10 người chuyển đi nơi khác là: 2100-420=1680 (suất ăn). Số gạo còn lại đó đủ ăn trong thời gian là: 1680:(70-10)=28 (ngày). Đáp số: 28-(30-6)=4 (ngày)^3}45^Một phần năm của số có năm chữ số cần tìm gấp ba lần số 1034. Tìm số đó.^15510^1034 x 3 x 5 = 15510^3}46^Xây 16 (mét vuông) tường nhà hết 1000 viên gạch. Hỏi xây 224 (mét vuông)  tường nhà thì cần bao nhiêu viên gạch cùng loại?^14000^Số gạch cần để xây 1m2 tường nhà là: 1000 : 16 = 62,5 (viên).
+Số gạch cần để xây 224m2 tường nhà là: 62,5 x 224 = 14000 (viên)^3}47^Tìm hiệu hai số biết tổng hai số là số lớn nhất có 3 chữ số khác nhau và số bé bằng 1/2 số lớn.^329^Ta có tổng của hai số là: 987.
+Tỉ số của hai số là: 1/2.
+Suy ra: Số bé là: 987 : 3 = 329.
+Số lớn là: 987 - 329 = 658.
+Hiệu của hai số là: 658 - 329 = 329.^3}48^Tìm số tự nhiên nhỏ nhất có 3 chữ số khác nhau mà tổng các chữ số của nó bằng 14.^149^gta^3}49^Hai năm nữa, con 9 tuổi, kém mẹ 32 tuổi. Hỏi cách đây mấy năm tuổi con bằng 1/9 tuổi mẹ?^3^Tuổi của con hiện nay là: 9 - 2 = 7 (tuổi). Hiệu số tuổi của hai mẹ con là: 32 (tuổi). Tỉ số tuổi của con và mẹ khi tuổi con bằng 1/9 tuổi mẹ là: 1/9. Hiệu số phần bằng nhau khi tuổi con bằng 1/9 tuổi mẹ là: 9 - 1 = 8 (phần). Tuổi của con khi tuổi con bằng 1/9 tuổi mẹ là: 32 : 8 = 4 (tuổi). Vậy tuổi con bằng 1/9 tuổi mẹ cách đây số năm là: 7 - 4 = 3 (năm)^3}50^Một đơn vị chuyển hàng lên vùng cao. Nếu huy động xe chở 5 tấn một chuyến thì cần 40 xe. Hỏi nếu huy động loại xe chở 8 tấn một chuyến thì cần bao nhiêu xe để chở hết số hàng đó?^25^Khối lượng hàng cần chuyển là: 5 x 40 = 200 (tấn).
+Số xe 8 tấn cần là: 200 : 8 = 25 (xe).^3}51^Một miếng bìa hình thoi có độ dài đường chéo là 10cm và 84cm. Người ta cắt miếng bìa đó thành hai hình tam giác giống hệt nhau. Vậy diện tích mỗi hình tam giác là… xăng ti mét vuông^210^84 x 10 : 2 : 2 = 210 (cm2)^3}52^Tìm một số biết số đó chia 4 và 9 đều dư 2 và thương hơn kém nhau 340 đơn vị.^2450^Gọi a là số phải tìm, theo bài ra ta có: a:4=b (dư 2). a:9=c (dư 2). b-c=340
+Hiệu số phần bằng nhau của b và c là: 9-4=5 (phần)
+Số b là: 340 : 5 x 9 = 612.
+Số phải tìm là: 612 x 4 + 2 = 2450^3}53^Mẹ sinh con năm mẹ 32 tuổi. Hỏi khi mẹ bao nhiêu tuổi thì 3 lần tuổi mẹ bằng 7 lần tuổi con?^56^Mẹ sinh con năm mẹ 32 tuổi có nghĩa là hiệu số tuổi của hai mẹ con là 32. Nếu 3 lần tuổi mẹ bằng 7 lần tuổi con thì tỉ số tuổi giữa mẹ và con là 7/3. Suy ra số phần bằng nhau là 4. Vậy tuổi của mẹ khi đó là: 32 : 4 x 7 = 56 (tuổi)^3}54^May 20 cái áo như nhau hết 30m vải. Hỏi có 600m vải cùng loại thì may được bao nhiêu cái áo như thế?^400^Số vải cần để may 1 cái áo là: 30 : 20 = 1,5 (m).
+Số áo may được khi có 600m vải cùng loại là: 600 : 1,5 = 400 (cái áo).^3}55^Một đơn vị vận tải được giao chuyển một khối lượng hàng. Nếu huy động 24 xe thì mỗi xe chở 12 chuyến sẽ hết hàng. Hỏi nếu huy động 18 xe cùng loại thì mỗi xe phải chở tăng thêm bao nhiêu chuyến?^4^Khối lượng hàng cần chuyển là: 24 x 12 = 288 (chuyến).
+Nếu huy động 18 xe cùng loại thì mỗi xe phải chở số chuyến là: 288:18=16 (chuyến).
+Nếu huy động 18 xe cùng loại thì mỗi xe phải chở tăng thêm số chuyến là: 16:12= 4 (chuyến).^3}56^Tìm số có bốn chữ số khác nhau có dạng a35b biết số đó chia hết cho 45.^1350^Ta có: 45 = 5 x 9.
+Số đó chia hết cho 45 có nghĩa là số đó chia hết cho cả 5 và 9.
+Suy ra chữ số hàng đơn vị chỉ có thể là số 0.
+Để số a350 chia hết cho 9 thì a phải là chữ số 1.
+Số cần tìm là 1350.^3}57^An mua 9 quyển vở hết 72000 đồng. Hỏi bạn Cường mua 11 quyển vở cùng loại sẽ phải trả nhiều hơn bao nhiêu tiền? ^16000^Giá tiền 1 quyển vở là: 72000 : 9 = 8000 (đồng).
+Giá tiền 11 quyển vở là: 8000 x 1 = 88000 (đồng).
+Số tiền bạn Cường phải trả nhiều hơn bạn An là: 88000 - 72000 = 16000 (đồng).^3}58^Một miếng bìa hình thoi có độ dài đường chéo là 30cm và 40cm, có chu vi bằng chu vi hình vuông có cạnh 25cm. Hãy tính chiều cao miếng bìa hình thoi đó...cm.^24^Diện tích miếng bìa hình thoi là: 30 x 40 : 2 = 600 (cm2)
+Chiều cao miếng bìa hình thoi đó là: 600 : 25 = 24 (cm)^3}59^Số các số có 5 chữ số khác nhau chia hết cho cả 2 và 5 là... ^3024^Những số này có dạng abcd0.
+a có 9 cách chọn.
+b có 8 cách chọn.
+c có 7 cách chọn.
+d có 6 cách chọn.
+Theo quy tắc nhân, ta có: 9 x 8 x 7 x 6 x 1 = 3024^3}60^Trung bình cộng của 3 số bằng 180 trong đó số thứ ba gấp rưỡi số thứ nhất và bằng 3/5 số thứ hai. Tìm số thứ hai.^270^Tổng của ba số là: 180 x 3 = 540 .
+Tổng số phần bằng nhau là: 2+5+3=10 (phần).
+Số thứ hai là: 540 : 10 x 5 = 270.^3}61^Tìm số tự nhiên lớn nhất có 3 chữ số khác nhau và có tổng các chữ số bằng 14.^950^gta^3}62^Cho dãy số 16, 26, 36, 46, …, 2016. Dãy số trên có bao nhiêu số hạng?^201^Ta nhận thấy khoảng cách giữa các số hạng là 10.
+Số số hạng của dãy trên là: (2016 - 16) : 10 + 1 = 201 (số hạng).^4}63^Một khu vườn hình chữ nhật có chiều dài hơn chiều rộng 72m. Nếu giảm mỗi chiều đi 12m thì lúc đó chiều rộng bằng ¼ chiều dài. Tính diện tích khu vườn đó ?^3888^Nếu giảm mỗi chiều đi 12m thì hiệu của chúng vẫn là 72m. Tỉ số giữa chúng lúc này là: 1/4. Chiều rộng hình chữ nhật sau khi giảm đi 12m là: 72:3=24 (m). Chiều dài hình chữ nhật sau khi giảm đi 12m là: 24x4=96 (m). Diện tích khu vườn đó là: 24+12)x(96+12)=3888 (m2)^4}64^Tích sau tận cùng là chữ số nào? 1 x 2 x 3 x 4 x 5 x 6 x 7 x 8 x … x 1000.^0^Ta nhận thấy: 4 x 5 = 20
+Suy ra tích trên có tận cùng là chữ số 0^4}65^Cho một số có hai chữ số. Nếu ta viết chữ số 2 vào bên trái số đó ta được số mới gấp 5 lần số đã cho. Tìm số đã cho.^50^Gọi số cần tìm là ab
+Theo bài ra ta có: 2ab = 5 x ab
+Phân tích theo cấu tạo số ta được: 200+ab=5xab
+Suy ra: ab = 200 : 4 = 50^4}66^Cho dãy số 1; 3; 5; 7; …; 1017. Dãy trên có bao nhiêu chữ số?^1481^gta^4}67^Đội tuyển thi đấu thể thao của một trường tiểu học gồm 25 em thi đấu hai môn cờ vua và cờ tướng. Trong đó, 17 em thi đấu cờ vua và 15 em thi cờ tướng. Hỏi có bao nhiêu em thi đấu cả hai môn?^7^Số em không thi đấu cờ tướng là: 25 - 17 = 8 (em).
+Số em không thi đấu cờ vua là: 25 - 15 = 10 (em).
+Số em thi đấu cả hai môn là: 25 - 8 - 10 = 7 (em).^4}68^Mẹ sinh con năm 28 tuổi. Khi tuổi mẹ bằng bao nhiêu thì tuổi mẹ gấp 3 lần tuổi con?^42^Hiệu số tuổi của hai mẹ con là: 28 (tuổi).
+Hiệu số phần bằng nhau là: 3 - 1 = 2 (phần).
+Tuổi mẹ gấp 3 lần tuổi con khi: 28 : 2 x 3 = 42 (tuổi).^4}69^Một hình chữ nhật có chu vi 70cm. chiều dài gấp rưỡi chiều rộng. Tính chiều dài hình chữ nhật đó....cm^21^Tổng của chiều dài và chiều rộng là: 70:2=35 (cm).
+Tỉ số giữa chiều dài và chiều rộng là: 1,5=3:2.
+Tổng số phần bằng nhau là: 3+2=5 (phần).
+Chiều dài hình chữ nhật đó là: 35:5x3=21 (cm).^4}70^Một trường tiểu học đã mua đủ gạo cho 500 học sinh bán trú ăn trong 30 ngày. Nếu có thêm 100 học sinh nữa xin học bán trú thì số gạo đã mua đủ ăn trong bao nhiêu ngày? ^25^Tổng số suất ăn trường đã chuẩn bị là: 500 x 30 = 15000 (suất)
+Nếu có thêm 100 học sinh nữa xin học bán trú thì số gạo đã mua đủ ăn trong thời gian là: 15000:(500+100)=25 (ngày)^4}71^Người ta xếp một số sách vào ngăn. Số sách ngăn trên bằng   số sách ngăn dưới. Nếu chuyển 36 quyển sách từ ngăn dưới lên ngăn trên thì số sách 2 ngăn bằng nhau. Tính số sách ngăn trên có.^96^Hiệu số sách giữa ngăn trên và ngăn dưới là: 36x2=72.
+Tỉ số giữa số sách giữa ngăn trên và ngăn dưới là: 4:7
+Hiệu số phần bằng nhau là: 7-4=3 (phần).
+Số sách ngăn trên có là: 72:3x4=96 (quyển).^4}72^Tìm số thứ nhất biết số thứ nhất bằng 5/8 số thứ hai và nếu bớt số thứ hai đi 69 đơn vị thì ta được số thứ nhất.^115^Tỉ số của chúng là: 5/8
+Hiệu của chúng là: 69
+Hiệu số phần bằng nhau là: 8 - 5 = 3 (phần)
+Số thứ nhất là: 69 : 3 x 5 = 115^4}73^Tổng 2 số là 166. Nếu lấy số thứ nhất chia cho số thứ hai thì được thương là 3 dư 2. Tìm số thứ nhất.^125^Tổng của 2 số là 166
+Nếu chia hết thì tổng sẽ là: 166 - 2 = 164 
+Tỉ số giữa chúng là: 3/1
+Tổng số phần bằng nhau là: 3 + 1 = 4 (phần)
+Số thứ nhất là: 164 : 4 x 3 + 2 = 125^4}74^Tìm y là số tự nhiên, biết y chia hết cho 9 và 127 < y < 136.^135^gta^4}75^Có bao nhiêu số tự nhiên có hai chữ số mà chữ số hàng chục lớn hơn chữ số hàng đơn vị.^45^gta^4}76^Một cửa hàng chuẩn bị một số bánh nướng, bánh dẻo để bán nhân dịp Trung Thu. Nếu mỗi ngày bán 120 cái thì sau 1 tuần 2 ngày hết hàng. Hỏi nếu mỗi ngày bán 180 cái thì sau bao lâu hết hàng?^6^Tổng số bánh cửa hàng có là: 120x9=1080 (cái bánh).
+Nếu mỗi ngày bán 180 cái thì cửa hàng sẽ hết hàng sau: 1080:180=6 (ngày).^4}77^Một đơn vị bộ đội chuẩn bị gạo cho 30 người ăn trong 15 ngày, mức ăn mỗi người trong một ngày là như nhau. Sau khi ăn được 3 ngày thì có 10 người chuyển đi nơi khác. Hỏi đơn vị đó ăn số gạo còn lại trong bao nhiêu ngày?^18^Tổng số suất ăn đơn vị bộ đội đã chuẩn bị là: 30x15=450 (suất).
+Số suất ăn đã dùng trong 3 ngày là: 30x3=90 (suất).
+Số suất ăn còn lại là: 450 - 90 = 360 (suất).
+Số người ăn còn lại là: 30 - 10 = 20 (người).
+Số ngày ăn còn lại là: 360 : 20  = 18 (ngày).^4}78^Một tấm biển quảng cáo hình chữ nhật có chiều dài 2m, chiều rộng 15dm. Tính số mét nhôm cần để viền xung quanh tấm biển đó ?^7^Đổi 15dm = 1,5m.
+Số mét nhôm cần để viền xung quanh tấm biển đó là: (2 + 1,5) x 2 = 7 (m)^4}79^Người ta phải cắt 12 đoạn dây thép mỗi đoạn 6m thành những đoạn dài 2m. Hỏi phải cắt mấy lần?^24^Số lần cắt của một đoạn 6m là: 6 : 2 - 1 = 2 (lần)
+Tổng số lần cắt của 12 đoạn là: 12 x 2 = 24 (lần)^4}80^Trung bình cộng hai số là 180. Số thứ nhất là số chẵn lớn nhất có 2 chữ số. Tìm số thứ hai.^262^Tổng của hai số là: 180 x 2 = 360.
+Số thứ hai là: 360 - 98 = 262.^4}81^Chiều rộng của khu đất hình chữ nhật A là 105m, bằng 7/12 chiều dài của nó. Hỏi chu vi của mảnh vườn B là bao nhiêu, biết chu vi của mảnh vườn B bằng 5/6 chu vi khu đất A.^475^Chiều dài của khu đất hình chữ nhật A là: 105x12:7=180
+Chu vi của khu đất hình chữ nhật A là: (180 + 105) x 2 = 570
+Chu vi của mảnh vườn hình chữ nhật B là: 570 : 6 x 5 = 475^4}82^Hiệu hai số là 205. Số bé bằng 2/7 số lớn. Tìm số lớn. ^287^Hiệu của hai số là: 205
+Tỉ số của chúng là: 2/7 
+Hiệu số phần bằng nhau là: 7 - 2 = 5 (phần) 
+Số lớn là: 205 : 5 x 7 = 287^4}83^Trung bình cộng ba số bằng 150. Trong đó số thứ nhất hơn số thứ hai 15 đơn vị và kém số thứ ba 12 đơn vị. Tìm số thứ ba.^163^Tổng của ba số là: 150 x 3 = 450
+Số thứ nhất là: (450 + 15 - 12) : 3 = 151
+Số thứ ba là: 151 + 12 = 163^4}84^Khi chia A cho 124 ta được số dư là 10. Hỏi phải giảm A đi bao nhiêu đơn vị để phép chia trên trở thành phép chia hết và thương giảm đi 2 đơn vị? ^258^Để phép chia trên trở thành phép chia hết thì A phải giảm đi 10 đơn vị.
+Để thương giảm đi 2 đơn vị thì A phải giảm đi: 124 x 2 = 248 (đơn vị).
+Vậy đáp số: 10 + 248 = 258 (đơn vị).^4}85^Từ các chữ số 0; 3; 2 lập được bao nhiêu số có 3 chữ số khác nhau? ^4^Có 2 cách chọn chữ số hàng trăm (loại chữ số 0)
+Có 2 cách chọn chữ số hàng chục (trừ chữ số hàng trăm)
+Có 1 cách chọn chữ số hàng đơn vị (trừ chữ số hàng trăm và chữ số hàng chục)
+Theo quy tắc nhân, ta có: 2 x 2 x 1 = 4 (số)^4}86^Chu vi một hình chữ nhật bằng chu vi một hình vuông có cạnh là 15cm. Tính chiều dài hình chữ nhật đó biết số đo chiều rộng là số lẻ bé nhất có hai chữ số khác nhau.^17^Chu vi hình chữ nhật là: 15 x 4 = 60 (cm).
+Nửa chu vi hình chữ nhật là: 60 : 2 = 30 (cm).
+Chiều dài hình chữ nhật là: 30 - 13 = 17 (cm).^5}87^Tổng hai số là 406. Nếu gấp số thứ nhất lên 5 lần và giữ nguyên số thứ hai thì được tổng mới là 1062. Tìm số thứ nhất.^164^Tổng hai số là 406.
+Giả sử gấp cả hai số lên 5 lần thì tổng mới sẽ là: 406 x 5 = 2030.
+Số thứ hai là: (2030 - 1062) : (5 - 1) = 242.
+Số thứ nhất là: 406 - 242 = 164.^5}88^Trung bình cộng hai số là 189. Số thứ nhất là số chẵn lớn nhất có 2 chữ số. Tìm số thứ hai.^280^Trung bình cộng hai số là 189. Suy ra: Tổng của hai số là: 189 x 2 = 378
+Số thứ hai là: 378 - 98 = 280^5}89^Một khu đất hình chữ nhật có chiều rộng là 150m và bằng 3/4 chiều dài. Hỏi khu đất đó có diện tích bao nhiêu héc-ta?^3^Chiều dài là: 150 : 3 x 4 = 200 (m)
+Diện tích hình chữ nhật là: 200 x 150 = 30000 (m2)
+Đổi 30000m2 = 3ha^5}90^Năm nay chị hơn em 8 tuổi. Hỏi khi tuổi chị là bao nhiêu thì tuổi chị gấp 5 lần tuổi em?^10^Hiệu số tuổi của hai chị em là: 8 tuổi
+Khi tuổi chị gấp 5 lần tuổi em thì tỉ số giữa tuổi chị và tuổi em là: 5 : 1
+Hiệu số phần bằng nhau là: 5 - 1 = 4 (phần)
+Tuổi của chị khi tuổi chị gấp 5 lần tuổi em là: 8 : 4 x 5 = 10 (tuổi)^5}91^Tính: 1919/1212 + 51515151/36363636 = ... ^3^1919/1212 + 51515151/36363636
+= 19/12 + 51/36
+= 57/36 + 51/36
+= 108/36
+= 3^5}92^Tổng ba số bằng 336. Số thứ hai bằng 3/5 số thứ nhất và bằng 3/8 số thứ ba. Tìm số thứ ba.^168^gta^5}93^Hiệu của hai số bằng 128. Số lớn hơn 7 lần số bé là 2 đơn vị. Tìm số lớn. ^149^gta^5}94^18 người làm xong một đoạn đường trong 5 ngày. Hỏi 30 người làm xong đoạn đường đó nhanh hơn mấy ngày? (Biết sức làm việc của mỗi người là như nhau)^2^Số ngày công 18 người làm trong 5 ngày là: 18x5=90 (ngày công).
+Thời gian 30 người làm xong đoạn đường đó là: 90:30=3 (ngày).
+Thời gian 30 người làm xong đoạn đường đó nhanh hơn 18 người làm là: 5-3=2 (ngày).^5}95^An với Cường có trung bình cộng mỗi bạn 96 viên bi. Số bi của Cường gấp ba lần số bi của An. Hỏi An có bao nhiêu viên bi?^48^Tổng số bi hai bạn có là: 96 x 2 = 192 (viên).
+Tỉ số giữa số bi của Cường và số bi của An là: 3:1.
+Tổng số phần bằng nhau là: 3+1=4 (phần).
+Số bi của An là: 192:4=48 (viên).^5}96^Một khu vườn hình bình hành có chiều cao 22m, độ dài đáy gấp rưỡi chiều cao. Người ta chia khu vườn thành hai mảnh: mảnh trồng cây ăn quả có diện tích lớn hơn mảnh trồng rau xanh là 42(mét vuông). Tính diện tích mảnh đất trồng rau xanh... mét vuông.^342^Độ dài đáy là: 22 x 1,5 = 33 (m).
+Diện tích hình bình hành là: 22 x 33 = 726 (mét vuông).
+2 lần diện tích mảnh đất trồng rau là: 726 - 42 = 684 (mét vuông).
+Diện tích mảnh đất trồng rau là: 684 : 2 = 342 (mét vuông).^5}97^Tìm số hạng tiếp theo của dãy: 1; 2; 3; 5; 8; 13; ...^21^Quy luật của dãy số là: Số hạng sau bằng tổng 2 số hạng liền kề trước nó
+Số hạng thứ bảy là: 8 + 13 = 21^5}98^Tổng hai số là số lẻ lớn nhất có hai chữ số khác nhau. Hiệu hai số là 63. Tìm số lớn trong hai số đó.^80^Tổng hai số là 97.
+Hiệu hai số là 63.
+Số lớn là: (97 + 63) : 2 = 80.^5}99^15 người làm xong một đoạn đường hết 1 tuần. Hỏi 21 người làm xong đoạn đường đó trong bao nhiêu ngày? (Biết sức làm việc của mỗi người như nhau).^5^Tổng số ngày công 15 người làm trong 1 tuần (7 ngày) là: 15 x 7 = 105 (ngày công)
+Thời gian 21 người làm xong đoạn đường đó là: 105 : 21 = 5 (ngày)^5}100^An hái được 8 quả cam, ít hơn Bình 6 quả. Số cam Cường hái được bằng trung bình cộng hai bạn trên. Hỏi Cường hái được bao nhiêu quả cam? ^11^Số cam Bình hái được là: 8 + 6 = 14 (quả)
+Số cam Cường hái được là: (8 + 14) : 2 = 11 (quả)^5}101^Tìm số a723b biết số đó chia hết cho 9 nhưng chia cho 2 và 5 đều dư 1. ^57231^Vì số đó chia cho 2 và 5 đều dư 1, suy ra: b = 1
+a7231 chia hết cho 9, suy ra: a = 5
+Số phải tìm là: 57231^5}102^Tìm số thứ ba biết số thứ nhất bằng 3/7 số thứ hai và bằng 1/2 số thứ ba. Số thứ nhất kém số thứ hai là 164 đơn vị.^246^Hiệu giữa số thứ hai và số thứ nhất là: 164
+Tỉ số giữa số thứ nhất và số thứ hai là: 3/7
+Hiệu số phần bằng nhau là: 7 - 3 = 4 (phần)
+Số thứ nhất là: 164 : 4 x 3 = 123
+Số thứ ba là: 123 x 2 = 246^5}103^Trung bình cộng của 3 số là 67; trong đó số thứ ba bằng 1/2 số thứ nhất. Nếu gấp số thứ nhất và số thứ ba lên 2 lần thì trung bình cộng ba số lúc này là 118. Tìm số thứ hai.^48^Gọi số thứ nhất là a, số thứ hai là b, số thứ ba là c
+Theo bài ra ta có: a + b + c = 67 x 3 = 201 (1)
+Ta lại có: 2 x (a + c) + b = 118 x 3 = 354. Suy ra: a + c = 354 - 201 = 153 (2)
+Thay (2) vào (1), ta được: b = 201 - 153 = 48^5}104^Tổng của hai số bằng 120. Lấy số thứ nhất chia cho số thứ hai ta được thương bằng 4 dư 5. Tìm số thứ nhất.^97^gta^5}105^Cho các số 1, 3, 5, 7, 9. Có thể lập được bao nhiêu phân số bé hơn 1 mà tử số và mẫu số đều bé hơn 10?^10^gta^5}106^Mẹ cho hai anh em 40 cái kẹo. Số kẹo của anh gấp rưỡi số kẹo của em. Hỏi mẹ cho anh nhiều hơn em bao nhiêu cái kẹo?^8^Tổng số kẹo của hai anh em là 40 cái
+Số kẹo của anh gấp rưỡi số kẹo của em và bằng 3 : 2
+Tổng số phần bằng nhau là: 3 + 2 = 5 (phần)
+Số kẹo em có là: 40 : 5 x 2 = 16 (cái)
+Số kẹo anh có là: 40 - 16 = 24 (cái)
+Số kẹo anh có nhiều hơn em có là: 24 - 16 = 8 (cái)^5}107^Tổng hai số là 63. Nếu gấp số thứ nhất lên hai lần và gấp số thứ hai lên 5 lần thì tổng hai số là 240. Tìm số thứ nhất.^25^Tổng hai số là 63.
+Giả sử gấp cả hai số lên 5 lần thì tổng mới sẽ là: 63 x 5 = 315.
+Số thứ nhất là: (315 - 240) : (5 - 2) = 25.^5}108^Bạn An mua 9 quyển vở hết 81000 đồng. Hỏi bạn Cúc mua 12 quyển vở cùng loại hết bao nhiêu tiền?^108000^Giá tiền 1 quyển vở là: 81000 : 9 = 9000 (đồng)
+Số tiền bạn Cúc phải trả là: 9000 x 12 = 108000 (đồng)^5}109^Để lát nền một sân gạch người ta phải dùng 400 viên gạch hình vuông cạnh 25cm. Vậy diện tích sân gạch là …m2. (Diện tích phần mạch vữa không đáng kể).^25^Đổi 25cm = 0,25m
+Diện tích 1 viên gạch là: 0,25 x 0,25 = 0,0625 (m2)
+Diện tích sân gạch là: 0,0625 x 400 = 25 (m2)^5}110^Tổng số tuổi hiện nay của hai anh em là 48 tuổi. Tuổi em bằng 3/5 tuổi anh. Hỏi anh hơn em bao nhiêu tuổi?^12^Tổng số phần bằng nhau của tuổi hai anh em là: 3 + 5 = 8 (phần)
+Tuổi em là: 48 : 8 x 3 = 18 (tuổi)
+Tuổi anh là: 48 - 18 = 30 (tuổi)
+Tuổi anh hơn tuổi em là: 30 - 18 = 12 (tuổi)^5}111^Tìm một số chia cho 9 dư 2, chia cho 5 có số dư lớn nhất và hai thương hơn kém nhau 26 đơn vị.^299^gta^5}112^Bao thứ nhất có nhiều hơn bao thứ hai 36kg gạo. Sau khi mỗi bao bán đi 10kg gạo thì số gạo còn lại ở bao thứ nhất bằng 5/2 số gạo còn lại ở bao thứ hai. Hỏi lúc đầu bao thứ nhất có bao nhiêu ki-lô-gam gạo? ^70^Hiệu số gạo ở hai bao có là: 36kg. Khi mỗi bao bán đi 10kg gạo thì hiệu trên vẫn không thay đổi.
+Tỉ số giữa số gạo ở bao thứ nhất và bao thứ hai là: 5:2.
+Tổng số phần bằng nhau là: 5-2 = 3 (phần)
+Số gạo có ở bao thứ nhất lúc đầu là: 36 : 3 x 5 + 10 = 70 (kg)^5}113^Tìm y biết: y : 102 + 68 = 272. Đáp án: 20808^20808^Ta có: y : 102 + 68 = 272.
+y : 102 = 272 - 68.
+y = 204 x 102 = 20808.^5}114^Trung bình cộng của ba số là 52. Số thứ ba bằng trung bình cộng của số thứ nhất và số thứ hai. Số thứ nhất hơn số thứ hai là 24. Tìm số thứ nhất.^64^Trung bình cộng của ba số là 52. Số thứ ba bằng trung bình cộng của số thứ nhất và số thứ hai. Suy ra: Số thứ ba bằng 52
+Suy ra: Tổng số thứ nhất và số thứ hai là: 52 x 2 = 104
+Số thứ nhất hơn số thứ hai là 24. Suy ra: Số thứ nhất là: (104 + 24) : 2 = 64^5}115^Tìm x thỏa mãn: (22 + x)/49 = 5/7^13^Ta có: (22 + x)/49 = 5/7
+(22 + x) x 7 = 5 x 49
+22 x 7 + x x 7 = 245
+x x 7 = 245 - 154 = 91
+x = 91/7 = 13^5}116^Bạn Nam có 45 viên bi, như vậy là bằng một nửa số bi của bạn Tuấn. Bạn Tuấn lại có số bi bằng 1/6 tổng số bi của bạn Tuấn và bạn Hùng. Hỏi cả 3 bạn có bao nhiêu viên bi?^585^Số bi của bạn Tuấn là: 45 x 2 = 90 (viên)
+Số phần bi của bạn Hùng là: 1 - 1/6 = 5/6
+Số bi của bạn Hùng là: 90 x 5 = 450 (viên)
+Tổng số bi của cả 3 bạn là: 45 + 90 + 450 = 585 (viên)^6}117^Một cửa hàng bán vải, ngày đầu bán được 514 mét vải, như vậy là bán kém ngày thứ hai là 36m và bán nhiều hơn ngày thứ ba là 216m. Hỏi trung bình mỗi ngày bán được bao nhiêu mét vải?^454^Trung bình mỗi ngày bán được số mét vải là: 514 x 3 + 36 - 216 = 454 (m)^6}118^Một đội công nhân có 8 người làm xong một công việc trong 6 ngày. Nay muốn làm xong công việc đó sớm 2 ngày thì cần thêm bao nhiêu công nhân? (Biết mức làm mỗi người như nhau).^4^Tổng số ngày công 8 người làm trong 6 ngày là: 8 x 6 = 48 (ngày công)
+Số công nhân cần để làm xong công việc đó sớm 2 ngày là: 48 : 4 = 12 (công nhân)
+Số công nhân cần thêm để làm xong công việc đó sớm 2 ngày là: 12 - 8 = 4 (công nhân)^6}119^Một học sinh khi làm phép nhân một số có ba chữ số với số có hai chữ số. Do sơ suất học sinh đó đã viết nhầm chữ số hàng đơn vị của số có hai chữ số là 2 thành 8 nên tích tìm được là 2034. Biết tích đúng là 1356. Tìm số có ba chữ số.^113^Do viết nhầm nên tích mới đã tăng thêm 8 - 2 = 6 lần số có ba chữ số.
+Vậy số có 3 chữ số là: (2034 - 1356) : 6 = 113^6}120^Một người đem thúng trứng ra chợ bán. Buổi sáng bán được 3/5 số trứng, như vậy bán gấp 2 lần buổi chiều bán. Trong thúng còn lại 6 quả. Hỏi người đó đã đem ra chợ bán bao nhiêu quả?^60^Số trứng buổi chiều bán là: 3/5 : 2 = 3/10 (số trứng). Số trứng hai lần bán là: 3/5 + 3/10 = 9/10 (số trứng). Số chỉ 6 quả trứng là: 1 - 9/10 = 1/10 (số trứng). Người đó đã đem số quả trứng ra chợ bán là: 6 : 1/10 = 60 (quả trứng).^6}121^Tìm một số biết nếu lấy số đó trừ đi 7, được bao nhiêu chia 2 rồi nhân 3, cuối cùng cộng với 5 thì được 212.^145^(212 - 5) : 3 x 2 + 7 = 145^6}122^Cho hai số 59 và 19. Hãy tìm một số a sao cho đem mỗi số đã cho cộng thêm a đơn vị thì được hai số mới có thương là 3. ^1^Khi 2 số cùng thêm a thì hiệu vẫn không đổi và bằng: 59 - 19 = 40
+Hiệu số phần bằng nhau: 3 - 1 = 2 (phần)
+Số a là: 40 : 2 - 19 = 1^6}123^Một cửa hàng trong 3 ngày bán được 5 tấn 86kg gạo. Ngày đầu bán được 7 tạ 60kg, như vậy là bán bằng 1/3 ngày thứ hai. Hỏi ngày thứ 3 cửa hàng đó bán được bao nhiêu ki-lô-gam gạo?^2046^Đổi: 5 tấn 86kg = 5086kg; 7 tạ 60kg = 760kg
+Ngày thứ hai của hàng đó bán được số kg sạo là: 760  x 3 = 2280 (kg)
+Ngày thứ 3 cửa hàng đó bán được số kg gạo là: 5086 - 2280 - 760 = 2046 (kg)^6}124^Người ta trồng lúa trên một thửa ruộng hình chữ nhật có chiều dài 150m, chiều rộng bằng 2/3 chiều dài. Cứ 100m2 thu hoạch được 90kg thóc. Hỏi người ta thu được tất cả bao nhiêu tạ thóc?^135^Chiều rộng thửa ruộng là: 150 : 3 x 2 = 100 (m)
+Diện tích thửa ruộng là: 150 x 100 = 15000 (m2)
+Số thóc thu hoạch được là: 15000 : 100 x 9 = 13500 (kg)
+Đổi 13500 kg = 135 tạ^6}125^Thương của hai số bằng 1 và còn dư là 27. Tìm hiệu hai số đó.^27^Vì thương của hai số bằng 1 và còn dư là 27 nên hiệu hai số đó là 27^6}126^Tổng của 4 tấn rưỡi + 50kg = … kg.^4550^gta^6}127^Tìm x biết: x x 7 + x x 9 - x - x x 5 = 790.^79^gta^6}128^Cho 4 chữ số: 0; 1; 2 và 3. Từ bốn chữ số đã cho, viết được bao nhiêu số thập phân có một chữ số ở phần thập phân và nhỏ hơn 200? (Mỗi chữ số đã cho xuất hiện ở mỗi cách viết đúng 1 lần).^6^Ta có: 1 cách chọn chữ số hàng trăm (chữ số 1)
+3 cách chọn chữ số hàng chục (trừ chữ số 1)
+2 cách chọn chữ số hàng đơn vị (trừ chữ số hàng trăm và hàng chục)
+1 cách chọn phần thập phân (chữ số còn lại)
+Theo quy tắc nhân, ta có: 1 x 3 x 2 x 1= 6 (số)^6}129^Một bếp ăn dự trữ đủ cho 60 người ăn trong 15 ngày. Sau đó có 15 người đến thêm nên số gạo đó sẽ hết sớm hơn dự định là bao nhiêu ngày? (Mức ăn mỗi người như nhau).^3^Số suất ăn mà bếp ăn đã chuẩn bị là: 60 x 15 = 900 (suất)
+Thời gian ăn hết số gạo đã chuẩn bị là: 900 : (60 + 15) = 12 (ngày)
+Số gạo đó sẽ hết sớm hơn dự định là: 15 - 12 = 3 (ngày)^6}130^Một mảnh đất hình chữ nhật có diện tích 90 (mét vuông), chiều rộng bằng 30dm. Tính chiều dài mảnh đất đó... (dm). ^300^Đổi 90m2 = 9000dm2
+Chiều dài mảnh đất đó là: 9000 : 30 = 300 (dm)
+^6}131^Năm nay tuổi mẹ hơn tuổi con là 25 tuổi. Hai năm trước đây, tuổi mẹ bằng 7/5 hiệu số tuổi hai mẹ con. Vậy mẹ năm nay … tuổi. ^37^Hiệu số tuổi hai mẹ con là 25 tuổi
+Tuổi mẹ hai năm trước đây là: 25 : 5 x 7 = 35 (tuổi)
+Tuổi mẹ hiện nay là: 35 + 2 = 37 (tuổi)^6}132^Tìm số trung bình cộng của tất cả các số lẻ có hai chữ số chia hết cho 5.^55^Số hạng đầu là: 15
+Số hạng cuối là: 95
+Trung bình cộng của tất cả các số lẻ có hai chữ số chia hết cho 5 là: (15 + 95) : 2 = 55^6}133^Có bao nhiêu số chẵn có ba chữ số chia hết cho 9?^50^Số hạng đầu tiên là: 108
+Số hạng cuối cùng là: 990
+Số số hạng là: (990 - 108) : 18 + 1 = 50^6}134^Cô giáo chia kẹo cho các cháu. Nếu chia mỗi cháu 3 cái thì thừa 5 cái. Nếu chia mỗi cháu 4 cái thì thiếu 12 cái. Hỏi cô giáo có bao nhiêu cái kẹo?^56^Gọi a là số lượng các cháu ta có: 
+3 x a + 5 = 4 x a - 12
+<=> 4 x a - 3 x a = 12 + 5
+<=> a = 17
+Số lượng kẹo cô giáo có là: 3 x 17 + 5 = 56 (cái kẹo)^6}135^Một đoàn xe ô tô vận chuyển 145 tấn hàng vào kho. Lần đầu có 12 xe ô tô chở được 60 tấn hàng. Hỏi cần bao nhiêu xe ô tô như thế để chở hết số hàng còn lại? (Biết các xe chở được số hàng như nhau).^17^Số hàng 1 xe chở được là: 60 : 12 = 5 (tấn)
+Số hàng còn lại là: 145 - 60 = 85 (tấn)
+Số xe cần để chở hết số hàng còn lại là: 85 : 5 = 17 (xe)^6}136^Tìm một số biết nếu lấy số đó chia cho 2 được bao nhiêu nhân với 7, rồi trừ đi 16, tiếp đó chia cho 3 thì được 123.^110^Số phải tìm là: (123 x 3 + 16) : 7 x 2 = 110^6}137^Trước đây mua 5 lít dầu ăn phải trả 120000 đồng. Hiện nay giá mỗi lít dầu ăn đã tăng lên 6000 đồng. Hỏi với 120000 đồng thì hiện nay có thể mua được bao nhiêu lít dầu ăn?^4^Giá 1 lít dầu ăn trước đây là: 120000 : 5 = 24000 (đồng)
+Giá 1 lít dầu ăn hiện nay là: 24000 + 6000 = 30000 (đồng)
+Với 120000 đồng thì hiện nay có thể mua được số lít dầu ăn là: 120000 : 30000 = 4 (lít)^6}138^Cho dãy số …; 492; 495; 498. Tìm số hạng đầu tiên của dãy số sau biết dãy số có 100 số hạng.^201^Quy luật của dãy số là: Số hạng tiếp theo bằng số hạng liền trước cộng thêm 3
+Áp dụng công thức: Số đầu = Số cuối - (Số số hạng - 1) x Đơn vị khoảng cách
+Ta được: 498 - 99 x 3 = 201.^6}139^Mẹ sinh con năm 28 tuổi. Hỏi khi mẹ bao nhiêu tuổi thì 9 lần tuổi con bằng 5 lần tuổi mẹ? ^63^Hiệu số tuổi của hai mẹ con là 28 tuổi
+Khi 9 lần tuổi con bằng 5 lần tuổi mẹ thì tỉ số tuổi của hai mẹ con là: 9/5
+Hiệu số phần bằng nhau là: 9 - 5 = 4 (phần)
+Tuổi anh sau 4 năm nữa là: 28 : 4 x 9 = 63 (tuổi)^6}140^Một đội công nhân có 8 người, trong 6 ngày họ đắp xong 360m đường. Hỏi nếu một đội công nhân có 12 người đắp 1080m đường trong bao nhiêu ngày? (Biết sức lao động của mỗi người như nhau).^12^Số mét đường 1 người làm được trong 1 ngày là: 360 : 8 : 6 = 7,5 (m)
+Thời gian để đội công nhân có 12 người đắp xong 1080m đường là: 1080 : 7,5: 12 = 12 (ngày)^6}141^Tổng của hai số lẻ là 120, biết giữa 2 số lẻ đó có 5 số chẵn. Tìm số lẻ lớn hơn trong hai số lẻ đó.^65^Giữa 2 số lẻ đó có 5 số chẵn. Suy ra: Hiệu hai số là: 5 x 2 = 10
+Số lớn là: (120 + 10) : 2 = 65^6}142^Hai thùng đựng 208 lít dầu, nếu rót 20 lít từ thùng thứ hai sang thùng thứ nhất thì số dầu ở thùng thứ hai sẽ gấp ba lần thùng thứ nhất. Hỏi lúc đầu thùng thứ hai có bao nhiêu lít dầu? ^176^Nếu rót từ thùng thứ hai sang thùng thứ nhất 20 lít thì tổng vẫn không đổi
+Tổng số phần bằng nhau lúc này là: 3 + 1 = 4 (phần)
+Số dầu ở thùng thứ hai lúc này là: 208 : 4 x 3 = 156 (lít)
+Số dầu ở thùng thứ hai lúc đầu là: 156 + 20 = 176 (lít)^6}143^Khi anh Tú 9 tuổi thì mẹ sinh em Na. Năm nay tuổi Na bằng 1/4 tuổi anh Tú. Hỏi năm nay anh Tú bao nhiêu tuổi?^12^Hiệu số tuổi của hai anh em là: 9 (tuổi)
+Tỉ số tuổi của hai anh em là: 1/4
+Hiệu số phần bằng nhau là: 4 - 1 = 3 (phần)
+Tuổi anh Tú là: 9 : 3 x 4 =12 (tuổi)^6}144^Một tổ thợ mộc có 5 người trong 7 ngày đóng được 140 cái ghế. Nếu tổ có 7 người làm trong 9 ngày thì đóng được số ghế là ... (Sức làm của mỗi người như nhau).^252^Một ngày công làm được là: 140 : (5 x 7) = 4 (cái)
+7 người làm trong 9 ngày làm được là: (7 x 9) x 4 = 252 (cái)^6}145^Tìm một số tự nhiên sao cho đem số đó chia cho 9 thì được thương là 7 và số dư là số dư lớn nhất ?^71^Số phải tìm là: 9 x 7 + 8 = 71^6}146^Tìm chữ số A biết 9,6A8 > 9,688. ^9^gta^6}147^Cho hình vuông ABCD. Biết diện tích của hình vuông có cạnh gấp đôi cạnh hình vuông ABCD là 144 (mét vuông). Hỏi hình vuông có cạnh gấp 3 lần cạnh hình vuông ABCD có diện tích là bao nhiêu mét vuông? ^324^Cạnh gấp đôi thì diện tích gấp 4 lần. Do đó diện tích hình vuông ABCD là: 144 : 4 = 36 (m2)
+Cạnh gấp 3 lần thì diện tích gấp 9 lần. Do đó diện tích hình vuông có cạnh gấp 3 lần cạnh hình vuông ABCD có diện tích là: 36 x 9 = 324 (m2)^6}148^Có hai kho gạo A và B, biết khi chuyển từ kho B sang A là 7560kg gạo thì số gạo của hai kho bằng nhau. Vậy lúc đầu kho B nhiều hơn kho A …kg.^15120^Lúc đầu kho B nhiều hơn kho A là: 7560 x 2 = 15120 (kg)^6}149^Một đơn vị vận tải được giao chuyển một số hàng lên vùng cao. Nếu huy động 18 xe thì mỗi xe chở 24 chuyến sẽ hết số hàng đó. Nếu huy động 12 xe cùng loại thì mỗi xe phải chở tăng thêm bao nhiêu chuyến? ^12^Khối lượng hàng cần chuyển là: 18 x 24 = 432 (chuyến)
+Nếu huy động 12 xe cùng loại thì mỗi xe phải chở số chuyến là: 432 : 12 = 36 (chuyến)
+Nếu huy động 12 xe cùng loại thì mỗi xe phải chở tăng thêm số chuyến là: 36 - 24 = 12 (chuyến)^6}150^Một miếng bìa hình bình hành có chu vi bằng 2m. Nếu bớt chiều dài đi 20cm thì ta được miếng bìa hình thoi có diện tích 12dm2. Tìm diện tích miếng bìa hình bình hành đó ..... đề xi mét vuông.^18^Đổi: 2m = 20dm; 20cm = 2dm
+Nửa chu vi hình bình hành: 20 : 2 = 10 (dm)
+Chiều dài hình bình hành: (10 + 2) : 2 = 6 (dm)
+Cạnh hình thoi: 6 - 2 = 4 (dm)
+Chiều cao hình thoi = chiều cao hình bình hành: 12:4=3 (dm)
+Diện tích hình bình hành: 6 x 3 = 18 (dm2)^6}151^Cho dãy số: …; 51; 57; 63. Tìm số hạng đầu tiên của dãy số có 10 số hạng trên.^9^Quy luật của dãy số là: Số hạng tiếp theo bằng số hạng liền kề trước nó cộng 6
+Áp dụng công thức: Số đầu = Số cuối - (Số số hạng - 1) x Đơn vị khoảng cách. Ta được: Số đầu = 63 - 9 x 6 = 9^6}152^Khi nhân một số tự nhiên với 327, do sơ suất, một học sinh đã đổi chỗ chữ số hàng trăm và hàng chục của thừa số thứ 2 nên kết quả phép tính giảm đi 37980 đơn vị.Tìm tích đúng của phép nhân đó.^137667^Khi đổi chỗ chữ số hàng trăm và hàng chục cho nhau thì thừa số thứ 2 là 237 và tích sẽ giảm: 327 - 237 = 90 lần thừa số thứ nhất
+Thừa số thứ nhất là: 37980 : 90 = 421
+Tích đúng là: 421 x 327 = 137667^6}153^Lớp 5A có 4/7 học sinh là học sinh nữ. Hỏi lớp 5A có số học sinh nữ nhiều hơn số học sinh nam là bao nhiêu em. Biết lớp 5A có 15 em nam ?^5^Số học sinh nam là 15 em và bằng: 1 - 4/7 = 3/7 (tổng số học sinh)
+Suy ra: 1/7 tổng số học sinh là: 15 : 3 = 5 (học sinh)
+Suy ra: Số học sinh nữ là: 5 x 4 = 20 (học sinh)
+Số học sinh nữ nhiều hơn số học sinh nam là: 20 - 15 = 5 (học sinh)^6}154^Một hình tam giác có độ dài hai cạnh là 12,35m và 15m65cm. Cạnh thứ ba có độ dài bằng trung bình cộng của độ dài hai cạnh kia. Tính chu vi hình tam giác với đơn vị là mét?^42^Độ dài cạnh thứ ba là: (12,35 + 15,65) : 2 = 14 (m)
+Chu vi hình tam giác là: 12,35 + 15,65 + 14= 42 (m)^6}155^Một mảnh đất hình chữ nhật có hình vẽ trên bản đồ theo tỉ lệ 1 : 1000 với chiều dài là 6cm, chiều rộng là 4 cm. Diện tích mảnh đất trên thực tế là ...mét vuông.^2400^Chiều dài thực tế là: 6 x 1000 = 6000 (cm) = 60 (m)
+Chiều rộng thực tế là: 4 x 1000 = 4000 (cm) = 40 (m)
+Diện tích hình tam giác là: 60 x 40 = 2400 (m2)^6}156^Số tự nhiên bé nhất có 3 chữ số khác nhau biết tổng của các chữ số bằng 22 là số nào?^589^5 + 8 + 9 = 22.
+Đáp số: 589 (các chữ số khác nhau và bé nhất)^6}157^Tìm số chẵn nhỏ nhất có 4 chữ số sao cho khi chia cho 369 thì có số dư lớn nhất.^1106^Số dư lớn nhất là 368
+Số phải tìm là: 369 x 2 + 368 = 1106^6}158^Tìm tổng của các số có hai chữ số chia cho 4 dư 2.^1242^Số hạng đầu tiên là: 10
+Số hạng cuối cùng là: 98
+Số số hạng là: (98 - 10) : 4 + 1 = 23
+Tổng của chúng là: (98 + 10) x 23 : 2 = 1242^6}159^Trên đường đi bộ từ nhà đến trường, An đếm ở hai bên đường có 58 cây. Hỏi đoạn đường từ nhà An đến trường dài bao nhiêu mét, biết trước cửa nhà An và cổng trường (bên này và bên kia đường) đều không có cây và các cây trồng cách đều 40 mét?^1200^Số cây ở một bên đường là: 58 : 2 = 29 (cây)
+Số khoảng cách là: 29 + 1 = 30 (khoảng)
+Đoạn dường từ nhà đến trường dài là: 40 x 30 = 1200 (m)^6}160^Tìm số nhỏ nhất có 5 chữ số khác nhau ab82c khi chia cho 3 và 5 đều dư 2.^15827^gta^6}161^Có bao nhiêu số có 4 chữ số chia hết cho 9?^1000^Số hạng đầu tiên là: 1008
+Số hạng cuối cùng là: 9999
+Số số hạng là: (9999 - 1008) : 9 + 1 = 1000 (số hạng)^7}162^Hiệu hai số là 187. Nếu lấy số lớn chia cho số bé được thương là 5 dư 7. Tìm tổng hai số đó.^277^Giả sử chia không có dư thì hiệu của hai số là: 187 - 7 = 180
+Hiệu số phần bằng nhau là: 5 - 1 = 4 (phần)
+Số bé là: 180 : 4 = 45
+Số lớn là: 187 + 45= 232
+Tổng hai số là: 232 + 45 = 277^7}163^Thửa ruộng thứ nhất hình vuông có cạnh 24m. Thửa ruộng thứ hai hình chữ nhật có chiều rộng bằng 2/3 chiều dài và chiều dài chung với cạnh thửa ruộng hình vuông. Tính hiệu chu vi hai thửa ruộng trên.^16^Chu vi thửa ruộng thứ nhất là: 24 x 4 = 96 (m)
+Chiều rộng của thửa ruộng thứ hai là: 24 : 3 x 2 = 16 (m)
+Chu vi thửa ruộng thứ hai là: (16 + 24) x 2 = 80 (m)
+Hiệu chu vi hai thửa ruộng trên là: 96 - 80 = 16 (m)^7}164^Cho hình vuông ABCD. Chia hình đó thành hai hình chữ nhật AMND và MBCN có tổng chu vi là 240cm. Tính diện tích hình vuông ABCD.... xăng ti mét vuông^1600^Tổng chu vi của hai hình chữ nhật AMND và MBCN bằng 6 lần cạnh hình vuông ABCD. Vậy cạnh hình vuông ABCD là: 240 : 6 = 40 (cm)
+Diện tích hình vuông ABCD là: 40 x 40 = 1600 (cm2)^7}165^Để sửa xong một đoạn đường trong 15 ngày cần 9 công nhân. Hỏi nếu muốn sửa xong đoạn đường đó trong 5 ngày thì cần phải thêm bao nhiêu công nhân? (Sức làm của mỗi công nhân như nhau) ^18^Số ngày công cần để sửa xong đoạn đường là: 15 x 9 = 135 (ngày công)
+Số công nhân cần để sửa xong đoạn đường đó trong 5 ngày là: 135 : 5 = 27 (công nhân)
+Số công nhân cần phải thêm là: 27 - 9 = 18 (công nhân)^7}166^Miếng tôn hình vuông có diện tích 25(mét vuông). Người ta cắt dọc theo một cạnh đi 2m. Hỏi miếng tôn còn lại có diện tích bao nhiêu mét vuông?^15^Cạnh hình vuông là: 5m
+Chiều rộng miếng tôn còn lại là: 5 - 2 = 3 (m)
+Diện tích miếng tôn còn lại là: 5 x 3 = 15 (m2)^7}167^Tìm số 1a23b biết số đó chia hết cho 2, 5 và chia cho 9 dư 4.^17230^Số đó chia hết cho 2 và 5 nên có chữ số tận cùng là 0. Vậy số đó có dạng 1a230
+Ta có: 1+ 2 + 3 + 0 = 6. Để chia cho 9 dư 4 thì tổng các chữ số của số đó phải bằng 13. Ta có: 13 - 6 = 7. Suy ra: b = 7.
+Số phải tìm là: 17230^7}168^Có bao nhiêu số chia hết cho 5, bé hơn 1000?^200^Số hạng đầu tiên là: 0
+Số hạng cuối cùng là: 995
+Số số chia hết cho 5, bé hơn 1000 là: (995 - 0) : 5 + 1 = 200 (số)^7}169^Mẹ sinh con năm mẹ 27 tuổi. Hãy tính năm sinh của con, biết năm nay (năm 2016) tuổi con bằng 2/5 tuổi mẹ.^1998^Hiệu số tuổi của hai mẹ con là: 27 tuổi
+Hiệu số phần bằng nhau là: 5 - 2 = 3 (phần)
+Tuổi của con là: 27 : 3 x 2 = 18 (tuổi)
+Năm sinh của con là: 2016 - 18 = 1998^7}170^Tính tổng của 100 số lẻ đầu tiên ?^10000^Số hạng đầu tiên là: 1
+Số hạng cuối cùng là: 199
+Tổng của chúng là: (1 + 199) x 100 : 2  = 10000^7}171^Hai số có trung bình cộng là 2016 và hiệu hai số cũng là 2016. Tìm số lớn ?^3024^Tổng của hai số là: 2016 x 2 = 4032
+Số lớn là: (4032 + 2016) : 2 = 3024^7}172^Một trại chăn nuôi gia cầm có số vịt nhiều hơn số gà là 120 con. Hỏi có bao nhiêu con vịt, biết rằng 2 lần số vịt bằng 5 lần số gà? ^200^Theo bài ra ta có: 2 lần số vịt bằng 5 lần số gà. Suy ra: Tỉ số giữa gà và vịt là: 2/5
+Hiệu số phần bằng nhau là: 5 - 2 = 3 (phần)
+Số con vịt là: 120 : 3 x 5 = 200 (con)^7}173^Tìm số tự nhiên a nhỏ nhất sao cho  1/4 : a < 1/104 ?^27^a > 104 : 4
+a > 26
+Suy ra: a = 27^7}174^Cho dãy số: …; 92; 96; 100. Tìm số hạng thứ 10 của dãy số biết dãy số có tất cả 25 số hạng ?^40^Áp dụng công thức: Số đầu = Số cuối - (Số số hạng - 1) x Đơn vị khoảng cách
+Ta được: Số đầu = 100 - (25 - 1) x 4 = 4
+Số hạng thứ 10 của dãy số là: 4 x 10 = 40^7}175^Để đánh số trang một cuốn sách, người ta dùng tất cả 300 chữ số. Hỏi cuốn sách đó có bao nhiêu trang?^136^Từ trang 1 đến trang 9 dùng hết 9 chữ số
+Từ trang 10 đến trang 99 dùng hết: (90 - 10 + 1) x 2 = 180 (chữ số)
+Số chữ số còn lại là: 300 - 9 - 180 = 111 (chữ số)
+Số trang sách là: 111 : 3 + 99 = 136 (trang)^7}176^Tìm một số biết nếu lấy 1/3 số đó cộng với 53 thì được một số kém số phải tìm 135 ?^282^Gọi số phải tìm là a
+Theo bài ra ta có: 1/3 x a + 53 = a - 135
+a - 1/3 x a = 135 + 53
+2/3 x a = 188
+a = 188 x 3 : 2 = 282^7}177^Có bao nhiêu số lẻ nhỏ hơn 2016?^1008^Số hạng đầu tiên là: 1
+Số hạng cuối cùng là: 2015
+Số số hạng là: (2015 - 1) : 2 + 1 = 1008^7}178^Tìm một số tự nhiên biết nếu xóa chữ số hàng đơn vị của nó ta được số mới kém số phải tìm là 1815 đơn vị ?^2016^1815 : 9 = 201 (dư 6)
+Số phải tìm là: 2016^7}179^Có bao nhiêu số lẻ trong khoảng từ 10 đến 200?^95^Số hạng đầu tiên là: 11
+Số hạng cuối cùng là: 199
+Số số lẻ trong khoảng từ 10 đến 200 là: (199 - 11) : 2 + 1 = 95 (số)^7}180^Với các chữ số 1, 3, 4, 5 ta lập được bao nhiêu số có bốn chữ số chia hết cho 5?^64^Có 1 cách chọn chữ số hàng đơn vị (chữ số 5)
+Có 4 cách chọn chữ số hàng nghìn
+Có 4 cách chọn chữ số hàng trăm
+Có 4 cách chọn chữ số hàng chục
+Số số có bốn chữ số chia hết cho 5 là: 1 x 4 x 4 x 4 = 64 (số)^7}181^Cho phân số 168/180. Tìm một số tự nhiên sao cho khi ta cùng bớt ở tử số và mẫu số của phân số đã cho với số tự nhiên đó ta được một phân số mới bằng 3/5 ?^150^Khi ta cùng bớt ở tử số và mẫu số của phân số đã cho với số tự nhiên đó thì hiệu vẫn không đổi và bằng: 180 - 168 =12
+Hiệu số phần bằng nhau là: 5 - 3 = 2 (phần)
+Tử số mới là: 12: 2 x 3 = 18
+Số tự nhiên đó là: 168 - 18 = 150^7}182^Hoa có một số hình dán ngộ nghĩnh. Hoa cho Mai 1/4 số hình dán và cho Bình 5 hình dán thì Hoa còn lại 16 hình dán. Hỏi lúc đầu Hoa có bao nhiêu hình dán?^28^3/4 số hình dán của Hoa là: 5 + 16 = 21 (hình dán)
+Lúc đầu Hoa có số hình dán là: 21 : 3 x 4 = 28 (hình dán)^7}183^Người ta cắt ba tấm vải, mỗi tấm dài 30m thành những mảnh vải dài 3m. Hỏi phải cắt mấy lần?^27^Số lần cắt mỗi mỗi tấm dài 30m thành những mảnh vải dài 3m là: 30 : 3 - 1 = 9 (lần)
+Số lần cắt ba tấm vải là: 9 x 3 = 27 (lần)^7}184^Tính diện tích hình vuông với đơn vị là xăng – ti – mét vuông, biết chu vi hình vuông đó là 1m4cm?^676^Đổi 1m 4cm = 104 cm
+Cạnh hình vuông là: 104 : 4 = 26 (cm)
+Diện tích hình vuông là: 26 x 26 = 676 (cm2)^7}185^Trong hộp có 17 viên bi xanh, 28 viên bi đỏ, 35 viên bi vàng. Không nhìn vào hộp, phải lấy ra ít nhất bao nhiêu viên bi để chắc chắn số bi lấy ra có đủ ba màu bi?^64^Không nhìn vào hộp, để chắc chắn số bi lấy ra có đủ ba màu bi phải lấy ra ít nhất số viên bi là: 35 + 28 + 1 = 64 (viên bi)^7}186^Tính tổng sau: 546,78 + 34 x 2 + 567,23 + 45,99 = ...?^1228^gta^7}187^An hỏi Bình: “Bây giờ là mấy giờ”. Bình đáp: “Thời gian từ lúc bắt đầu ngày đến bây giờ bằng 1/5 thời gian từ bây giờ đến hết ngày”. Hỏi bây giờ là mấy giờ? ^4^Thời gian từ lúc bắt đầu ngày đến bây giờ bằng 1/5 thời gian từ bây giờ đến hết ngày có nghĩa là thời gian từ lúc bắt đầu ngày đến bây giờ bằng 1/6 ngày
+Bây giờ là: 24 : 6 = 4 (giờ)^8}188^Tìm số trung bình cộng của các số sau: 10,61; 22,03; 7,38 và 35,98. ^19^(10,61 + 22,03 + 7,38 + 35,98) : 4 = 19^8}189^Tìm số tự nhiên a lớn nhất, sao cho 4 x a < 15.^3^gta^8}190^Tổng ba số là 588. Sau khi chuyển từ số thứ nhất sang số thứ hai 24 đơn vị, sang số thứ ba 36 đơn vị và chuyển từ số thứ hai sang số thứ ba 20 đơn vị thì số thứ nhất bằng 2/5 số thứ hai và bằng 2/7 số thứ ba. Tìm số thứ hai. ^206^Tổng số phần bằng nhau giữa các số là: 2 + 5 + 7 = 14 (phần)
+Số thứ hai là: 588 : 14 x 5 - 24 + 20 = 206^8}191^Có bao nhiêu số có 3 chữ số mà chữ số hàng đơn vị của các số đó là 8?^90^(998 - 108) : 10 + 1 = 90 (số)^8}192^Muốn viết các số tự nhiên từ 1000 đến 2010 thì cần … chữ số 5.^301^Chữ số 5 ở hàng đơn vị là: (2005 - 1005) : 10 + 1 = 101 (số)
+Chữ số 5 ở hàng chục là: 10 x 10 = 100 (số)
+Chữ số 5 ở hàng trăm là: 10 x 10 = 100 (số)
+Tổng các chữ số 5 cần là: 101 + 100 + 100 = 301 (chữ số)^8}193^Viết số tự nhiên nhỏ nhất trong các số chỉ gồm có các chữ số 7 và chia hết cho 9 ?^777777777^9 x 7 = 63 (chia hết cho 9)
+Đáp số: 777777777 (9 số 7) .^8}194^Tính tổng sau: 1 + 4 + 9 + 16 + … + 100.^385^gta^8}195^Tìm chữ số x biết 9,6x5 > 9,685.^9^gta^8}196^An hỏi Bình: Bây giờ là mấy giờ. Bình đáp: Thời gian từ lúc bắt đầu ngày đến bây giờ bằng 1/5 thời gian từ bây giờ đến hết ngày. Hỏi bây giờ là mấy giờ?^4^Thời gian từ lúc bắt đầu ngày đến bây giờ bằng 1/5 thời gian từ bây giờ đến hết ngày có nghĩa là thời gian từ lúc bắt đầu ngày đến bây giờ bằng 1/6 ngày
+Bây giờ là: 24 : 6 = 4 (giờ)^8}197^Có bao nhiêu số có 4 chữ số mà chữ số tận cùng là 8?^900^(9998 - 1008) : 10 + 1 = 900 (số)^8}198^Tích 2 x 12 x 22 x … x 92 có tận cùng là chữ số …^4^gta^8}199^Một con chim sâu cân nặng 60g. Một con đà điểu cân nặng 120kg. Hỏi con đà điểu nặng gấp bao nhiêu lần con chim sâu ?^2000^Đổi: 120 k g = 120 000 g Con đà điểu cân nặng gấp con chim sâu số lần là: 120 000 : 60 = 2000 (lần) Đáp số : 2000 lần.^8}200^Trước đây mua 5 m vải phải trả 60 000 đồng. Hiện nay giá bán mỗi mét vải đã giảm 2000 đồng. Hỏi với 60 000 đổng, hiện nay có thể mua được bao nhiêu mét vải như thế ?^6^Trước đây mỗi mét vải có giá là: 60 000 : 5 = 12 000 (đồng) Hiện nay giá mỗi mét vải là: 12 000 - 2000 = 10 000 (đồng) Với 60 000 đồng, hiện nay có thể mua được số mét vải là : 60 000 : 10 000 = 6 ( m ) Đáp số : 6 m vải.^8}201^Số dân ở một xã hiện nay có 4000 người.  Với mức tăng hằng năm là cứ 1000 người thì tăng thêm 21 người, hãy tính xem một năm sau số dân của xã đó tăng thêm bao nhiêu người?^84^4000 người gấp 1000 người gấp số lần là : 4000 : 1000 = 4 (lần) Sau một năm số dân xã đó tăng thêm số người là : 21 x 4 = 84 (người) Đáp số: 84 người.^8}202^Số dân ở một xã hiện nay có 4000 người.  Nếu hạ mức tăng hằng năm xuống là cứ 1000 người chỉ tăng thêm 15 người, thì sau một năm số dân của xã đó tăng thêm bao nhiêu người ?^60^4000 người gấp 1000 người gấp số lần là : 4000 : 1000 = 4 (lần) Sau một năm số dân xã đó tăng thêm số người là : 15 x 4 = 60 (người) Đáp số: 60 người. ^8}203^Mua 5 m vải hết 80 000 đồng. Hỏi mua 7 m vải loại đó hết bao nhiêu tiền?^112000^Mua 1 m vải hết số tiền là: 80 000 : 5 = 16 000 (đồng) Mua 7 m vải hết số tiền là: 16 000 x 7 = 112 000 (đồng) Đáp số: 112 000 đồng. ^8}204^Tổng hai số là 14,5. Nếu gấp số thứ nhất lên 3 lần, số thứ hai lên 5 lần thì tổng 2 số là 66,5. Tìm số thứ nhất ?^3^Nếu gấp cả số thứ nhất và số thứ hai lên 3 lần thì tổng mới là: 14,5 x 3 = 43,5
+2 lần số thứ hai là: 66,5 - 43,5 = 23
+Số thứ hai là: 23 : 2 = 11,5
+Số thứ nhất là: 14,5 - 11,5 = 3^9}205^Tìm số bị chia nhỏ nhất trong phép chia có thương là 12 và số dư là 19?^259^gta^9}206^Có bao nhiêu số có ba chữ số tận cùng là 4.^90^Có 1 cách chọn chữ số hàng đơn vị (chữ số 4)
+Có 9 cách chọn chữ số hàng trăm (loại chữ số 0)
+Có 10 cách chọn chữ số hàng chục
+Theo quy tắc nhân, ta có: 1 x 9 x 10 = 90 (số)^9}207^Một mảnh bìa hình thoi có độ dài đường chéo lớn là 2dm và hơn độ dài đường chéo nhỏ 8cm. Tính diện tích mảnh bìa đó...cm?^120^Đổi 2dm = 20cm
+Độ dài đường chéo nhỏ là: 20 - 8 = 12 (cm)
+Diện tích mảnh bìa là: 20 x 12 : 2 = 120 (cm)^9}208^Một tờ bìa hình vuông có diện tích 90,25 xăng ti mét vuông. Tìm chu vi tờ bìa đó...cm.^38^Ta có: 90,25 = 9,5 x 9,5. Suy ra: Cạnh tờ bìa là 9,5cm
+Chu vi tờ bìa là: 9,5 x 4 = 38 (cm)^9}209^Một đội trồng rừng trung bình cứ 3 ngày trồng được 1200 cây thông. Hỏi trong 12 ngày đội đó trồng được bao nhiêu cây thông?^4800^12 ngày gấp 3 ngày số lần là: 12 : 3 = 4 (lần) Trong 12 ngày đội đó trồng được số cây thông là: 1200 x 4 = 4800 (cây thông) ?^9}210^Một cửa hàng trong 3 ngày bán được 1 tấn đường. Ngày đầu bán được 300kg. Ngày thứ hai bán được gấp 2 lần ngày đầu. Hỏi ngày thứ ba cửa hàng bán được bao nhiêu ki-lô-gam đường ?^100^Đổi: 1 tấn = 1000 k g . Ngày thứ hai cửa hàng bán được số ki-lô-gam đường là: 300 x 2 = 600 ( k g ) Hai ngày đầu cửa hàng bán được số ki-lô-gam đường là: 300 + 600 = 900 ( k g ) Ngày thứ ba cửa hàng bán được số ki-lô-gam đường là: 1000 - 900 = 100 ( k g ) Đáp số: 100 k g đường. ^9}211^Theo dự định, một xưởng mộc phải làm trong 30 ngày, mỗi ngày đóng được 12 bộ bàn ghế thì mới hoàn thành kế hoạch. Do cải tiến kĩ thuật, mỗi ngày xưởng đó đóng được 18 bộ bàn ghế. Hỏi xưởng mộc làm trong bao nhiêu ngày thì hoàn thành kế hoạch?^20^Số bộ bàn ghế cần phải đóng là: 12 x 30 = 360 (bộ) Thực tế, số ngày để hoàn thành kế hoạch là: 360 : 18 = 20 (ngày) Đáp số: 20 ngày.^9}212^Một ô tô cứ đi 100 km thì tiêu thụ hết 12l xăng. Nếu ô tô đó đã đi quãng đường 50 km thì sẽ tiêu thụ hết bao nhiêu lít xăng?^6^100km gấp 50km số lần là: 100 : 50 = 2 (lần) Ô tô đi 50 km thì tiêu thụ hết số lít xăng là: 12 : 2 = 6 (lít) Đáp số: 6 l xăng. ^9}213^Người ta dùng gỗ để lát sàn một căn phòng hình chữ nhật có chiều dài 6 m , chiều rộng 4 m . Hỏi phải tốn bao nhiêu tiền mua gỗ để lát cả căn phòng đó, biết giá tiền 1 mét vuông gỗ sàn là 280 000 đồng ? ^6720000^Diện tích sàn của căn phòng là : 6 x 4 = 24 ( mét vuông) Số tiền mua gỗ để lát sàn là : 280 000 x 24 = 6 720 000 (đồng) Đáp số: 6 720 000 đồng. ^9}214^Một lớp học sinh có 25 học sinh, trong đó có 13 học sinh nữ. Hỏi số học sinh nữ chiếm bao nhiêu phần trăm số học của lớp đó?^52^Tỉ số phần trăm của số nữ và số học sinh của lớp là: 13 : 25 = 0,52 0,52 = 52% Đáp số: 52%.^9}215^Một người bỏ ra 42 000 đồng tiền vốn mua rau. Sau khi bán hết số rau, người đó thu được 52 500 đồng. Hỏi: Tiền bán rau bằng bao nhiêu phần trăm tiền vốn?^125^So với tiền vốn thì tiền bán rau bằng: 52 500 : 42 000 = 1,25 = 125% ^9}216^Theo kế hoạch, năm vừa qua thôn Hòa An phải trồng 20ha ngô. Đến hết tháng 9 thôn Hòa An trồng được 18ha và hết năm trồng được 23,5ha ngô. Hỏi: Đến hết tháng 9 thôn Hòa An đã thực hiện được bao nhiêu phần trăm kế hoạch cả năm ? ^90^Số phần trăm kế hoạch cả năm thôn Hòa An thực hiện được cho đến hết tháng 9 là: 18 : 20 = 0,90 = 90%. ^9}217^Một vườn cây có 1000 cây, trong đó có 540 cây lấy gỗ và còn lại là cây ăn quả. Hỏi số cây lấy gỗ chiếm bao nhiêu phần trăm số cây trong vườn?^54^Tỉ số phần trăm của số cây lấy gỗ và số cây trong vườn là: 540/1000 = 54/100 = 54 % ^9}218^Kiểm tra sản phẩm của một nhà máy, người ta thấy trung bình cứ 100 sản phẩm thì có 95 sản phẩm đạt chuẩn. Hỏi số sản phẩm đạt chuẩn chiếm bao nhiêu phần trăm tổng số sản phẩm của nhà máy?^95^Số sản phẩm đạt chuẩn chiếm số phần trăm tổng số sản phẩm của nhà máy là: 95/100 = 95 % Đáp số : 95 % ^9}219^Tìm một số biết 30 % của nó là 72 ?^240^Số đó là: 72 : 30 x 100 = 240.^9}220^Tìm số tự nhiên bé nhất có các chữ số khác nhau mà tổng các chữ số của số đó bằng 20 ?^389^Ta có: 20 = 9 + 8 + 3. Suy ra: Số phải tìm là: 389^10}221^Tổng của hai số bằng 8114. Viết thêm chữ số 7 vào trước số bé ta được số lớn. Tìm số lớn ?^7557^Viết thêm chữ số 7 vào trước số bé ta được số lớn. Suy ra: Hiệu hai số là 7000
+Số lớn là: (8114 + 7000) : 2 = 7557^10}222^Trong hộp có 96 viên bi màu đỏ, 45 viên bi màu vàng và 58 viên bi màu xanh. Không nhìn vào hộp, lấy ra bất kì một số bi nào đó. Hỏi phải lấy ra ít nhất bao nhiêu viên bi để chắc chắn rằng trong các viên bi lấy ra có đủ ba màu ?^155^Số bi phải lấy ra ít nhất là: 96 + 58 + 1 = 155 (viên)^10}223^Bà đi chợ về mua một số gạo. Bà đem chia số gạo đó vào 5 thùng bằng nhau thì mỗi thùng được 13,4kg. Hỏi bà đã mua về bao nhiêu ki-lô-gam gạo?^67^Số gạo bà đã mua về là: 13,4 x 5 = 67 (kg)^10}224^Cho 6 điểm phân biệt. Hỏi khi nối chúng lại với nhau ta được bao nhiêu đoạn thẳng?^15^Số đoạn thẳng có được là: 6 x 5 : 2 = 15 (đoạn thẳng)^10}225^Cho: A = 3 x 23 x 43 x 63 x ... x 343 x 363. Chữ số tận cùng của A là … ?^7^Số số hạng của tích là: (363 - 3): 20 + 1 = 19 (số hạng). Tích A có 19 số hạng. Nhóm 4 chữ số tận cùng vào 1 nhóm ta được chữ số tận cùng là 1 vì: 3 x 3 x 3 x 3 = 81
+Ta có: 19 : 4 = 4 dư 3
+Suy ra: A có chữ số tận cùng là 7 vì: 1 x 3 x 3 x 3 = 27^10}226^Cho một số tự nhiên, nếu xóa đi 1 chữ số ở tận cùng bên phải của số đó ta được số mới nhỏ hơn số đã cho là 1815 đơn vị. Tìm số đã cho ?^2016^Khi xóa đi chữ số ở tận cùng bên phải của số đó thì số đó giảm đi 10 lần và đơn vị bằng chữ số đã xóa
+Suy ra: Số đó giảm đi 9 lần các chữ số còn lại của nó và đơn vị bằng chữ số đã xóa. Các chữ số còn lại của số đó là: 1815 : 9 = 201 (dư 6) 
+Số dư chính là số đã xóa. Suy ra: Số phải tìm là: 2016^10}227^Cô giáo chia kẹo cho các cháu. Nếu chia mỗi cháu 3 cái thì thừa 5 cái. Nếu chia mỗi cháu 4 cái thì 3 cháu không được chia. Hỏi cô giáo có bao nhiêu cái kẹo?^56^Gọi a là số các cháu
+Theo bài ra ta có: 
+3a + 5 = 4(a - 3)
+3a + 5 = 4a - 12
+a = 17
+Số kẹo cô giáo có là: 3 x 17 + 5 = 56 (cái)^10}228^Hai người thợ cưa một cây gỗ dài 2,8m thành những đoạn bằng nhau, mỗi đoạn dài 4dm. Hỏi họ làm hết mấy giờ ? Biết thời gian cưa mỗi mạch cưa hết 20 phút ?^2^Đổi 2,8m = 28dm
+Số mạch cưa là: 28 : 4 - 1 = 6 (mạch)
+Thời gian cưa xong cây gỗ là: 20 x 6 = 120 (phút)
+Đổi 120 phút = 2 giờ^10}229^Một hình chữ nhật có chu vi là 110cm. Biết nếu giảm chiều dài đi 2,5cm và tăng chiều rộng thêm 2,5cm thì nó trở thành hình vuông. Tính diện tích hình chữ nhật đó ... xăng ti mét vuông ?^750^Chiều dài hơn chiều rộng là: 2,5 + 2,5 = 5 (cm)
+Tổng chiều dài và chiều rộng là: 110 : 2 = 55 (cm)
+Chiều dài là: (55 + 5) : 2 = 30 (cm)
+Chiều rộng là: 30 - 5 = 25 (cm)
+Diện tích hình chữ nhật là: 30 x 25 = 750 (cm2)^10}230^Bốn người làm xong một công việc trong 8 ngày. Hỏi muốn làm xong công việc đó trong 2 ngày thì cần thêm bao nhiêu người nữa? ^12^Số ngày 1 người làm xong công việc đó là: 8 x 4 = 32 (ngày)
+Số người cần để làm xong công việc đó trong 2 ngày là: 32 x 2 = 16 (người)
+Số người cần thêm là: 16 - 4 = 12 (người)^10}231^Số các số thập phân có 3 chữ số ở phần thập phân mà các số đó lớn hơn 10 và nhỏ hơn 11 là … ^999^Số hạng đầu tiên là: 10,001
+Số hạng cuối cùng là: 10,999
+Đơn vị khoảng cách là: 0,001
+Số các số thập phân có 3 chữ số ở phần thập phân mà các số đó lớn hơn 10 và nhỏ hơn 11 là: (10,999 - 10,001) : 0,001 + 1 = 999^10}232^Trong hộp có 10 viên bi xanh, 8 viên bi trắng, 9 viên bi vàng và 5 viên bi đỏ. Không nhìn vào hộp phải lấy ra ít nhất bao nhiêu viên bi để chắc chắn trong số bi lấy ra có đủ màu bi xanh, trắng, vàng, đỏ?^28^Số viên bi lấy ra ít nhất để chắc chắn trong số bi lấy ra có đủ màu bi xanh, trắng, vàng, đỏ là: 10 + 8 + 9 + 1 = 28 (viên bi)^10}233^Nếu Lan thêm 1 tuổi thì Lan bằng 1/7 tuổi bà và bằng 1/4 tuổi mẹ. Biết bà hơn mẹ 27 tuổi. Tính tuổi của Lan ?
+^8^Theo bài ra ta có: 1/7 tuổi bà = 1/4 tuổi mẹ
+Suy ra: Tỉ số giữa tuổi bà và tuổi mẹ là: 7 : 4
+Hiệu số phần bằng nhau là: 7 - 4 = 3 (phần)
+Tuổi bà là: 27 : 3 x 7 = 63 (tuổi)
+Tuổi Lan hiện nay là: 63 : 7 - 1 = 8 (tuổi)^10}234^Một chiếc hộp nặng 12,8kg đựng những chiếc bút giống nhau. Nếu hộp rỗng nó nặng 800g. Biết khối lượng trung bình của những chiếc bút đó là 160g. Hỏi có bao nhiêu chiếc bút trong hộp?^75^Đổi 12,8kg = 12800g
+Khối lượng của những chiếc bút đó là: 12800 - 800 = 12000 (g)
+Số bút có trong hộp là: 12000 : 16 = 75 (chiếc)^10}235^Có bao nhiêu số có 3 chữ số khác nhau mà các chữ số đều chẵn?^48^Ta có 5 chữ số chẵn gồm: 0, 2, 4, 6, 8
+Có 4 cách chọn chữ số hàng trăm (loại chữ số 0)
+Có 4 cách chọn chữ số hàng chục (loại chữ số hàng trăm)
+Có 3 cách chọn chữ số hàng đơn vị (loại chữ số hàng trăm và hàng chục)
+Theo quy tắc nhân, ta có: 4 x 4 x 3 = 48 (số)^10}236^Một cửa hàng cả hai ngày bán được 934 m vải. Nếu ngày thứ nhất bán thêm 132m vải thì ngày thứ nhất bán ít hơn ngày thứ hai là 60m vải. Hỏi ngày thứ hai cửa hàng đó bán bao nhiêu mét vải? ^563^Nếu ngày thứ nhất bán thêm 132m vải thì tổng mới là: 934 + 132 = 1066 (m)
+Hiệu mét vải hai ngày bán lúc này là: 60m
+Ngày thứ hai cửa hàng đó bán số mét vải là: (1066 + 60) : 2 = 563 (m)^10}237^Tìm hiệu của hai số chẵn mà giữa chúng có 90 số chẵn khác ?^182^Giữa 2 số chẵn có 90 số chẵn khác thì hiệu của nó là: 90 x 2 + 2 = 182^10}238^Tổng các số lẻ có 4 chữ số bé hơn 2016 là bao nhiêu?^766064^Số tự nhiên lẻ nhỏ nhất có 4 chữ số là 1001
+Số tự nhiên lẻ lớn nhất nhỏ hơn 2016 là 2015
+Số số tự nhiên lẻ nhỏ hơn 2016 là: (2015 - 1001) : 2 + 1 = 508 (số)
+Tổng các số tự nhiên lẻ nhỏ hơn 2016 là: (1001 + 2015) x 508 : 2 = 766064^10}239^Tổng của 2 số là 212,4. Tìm số lớn biết số lớn bằng 1,25 lần số bé ?^118^Tỉ số giữa 2 số là: 1,25 = 5 : 4
+Tổng số phần bằng nhau là: 5 + 4 = 9 (phần)
+Số lớn là: 212,4 : 9 x 5 = 118^10}240^Từ 1 đến 2016 có bao nhiêu chữ số 2?^619^gta^10}241^Tăng mỗi cạnh của hình chữ nhật thêm 20% số đo của nó thì diện tích hình chữ nhật tăng thêm bao nhiêu phần trăm? ^44^Gọi chiều dài là d, chiều rộng là r thì diện tích hình chữ nhật là d x r
+Chiều dài mới: d x 120%
+Chiều rộng mới: r x 120%
+Diện tích mới: d x 120% x r x 120% = d x r x 144%
+Đáp số: 144 - 100 = 44(%)^11}242^Theo quy luật của các nhóm số sau:
+2  (5)  11   ;   3 (3) 10   ;   8 (5) 41   ;   20 (?) 101
+Hãy điền số thích hợp thay cho dấu (?)^5^Ta có: 2 x 5 + 1 = 11
+3 x 3 + 1 = 10
+8 x 5 + 1 = 41
+Quy luật của dãy số đó là: Trong 1 nhóm thì số thứ nhất nhân với số thứ hai cộng 1 bằng số thứ ba 1
+Số cần tìm là: 101 - 1 : 20 = 5^11}243^Một người bán một món hàng với giá 407000 đồng thì được lãi 10% so với giá gốc. Hỏi để lãi 15% so với giá gốc thì người ta phải bán món hàng đó với giá bao nhiêu?^425500^1% tương ứng với giá là: 407000 : (100% + 10%) x 1% = 3700 (đồng)
+Để lãi 15% so với giá gốc thì người ta phải bán món hàng đó với giá là: 3700 x (100% + 10%) : 1% = 425500 (đồng)^11}244^Trung bình cộng của ba số là 125,7. Số thứ nhất hơn số thứ hai 5,8 và kém số thứ ba 7,9. Tìm số thứ nhất ?^125^Tổng ba số: 125,7 x 3 = 377,1
+Số bé nhất trong 3 số này là số thứ hai. Số thứ hai là: (377,1 - 5,8 - 5,8 - 7,9) : 3 = 119,2
+Số thứ nhất là: 119,2 + 5,8 = 125^11}245^Cho số thập phân 37,842. Chữ số ở hàng phần mười là …?^8^gta^11}246^Một người bán chiếc quạt với giá 375000 đồng thì được lãi 12% so với giá bán. Hỏi để lãi 15% so với giá gốc thì phải bán chiếc quạt đó giá bao nhiêu?^379500^Số phần trăm của giá gốc chiếc quạt là: 100% - 12% = 88%. Giá gốc của chiếc quạt đó là: 375000 : 100 x 88 = 330000 (đồng). Để lãi 15% so với giá gốc thì số tiền lãi của chiếc quạt đó là: 330000 : 100 x 15 = 49500 (đồng). Khi lãi 15% so với giá gốc thì giá bán của cái quạt đó là: 330000 + 49500 = 379500 (đồng)^11}247^Một cửa hàng đã bán được 420 k g gạo và bằng 10 , 5 % tổng số gạo của cửa hàng trước khi bán. Hỏi trước khi bán cửa hàng đó có bao nhiêu tấn gạo?^4^Số gạo của cửa hàng đó có trước khi bán là: 420 : 10 , 5 x 100 = 4000 ( k g ) 4000 k g = 4 tấn^11}248^Một cửa hàng bỏ ra 6 000 000 đồng tiền vốn. Biết cửa hàng đó đã lãi 15 % , tính số tiền lãi?^900000^Số tiền lãi là: 6 000 000 : 100 x 15 = 900 000 (đồng) ^11}249^Một máy bơm trong 3 ngày hút hết nước ở hồ. Ngày thứ nhất máy bơm đó hút được 35% lượng nước trong hồ, ngày thứ hai hút được 40% lượng nước trong hồ. Hỏi ngày thứ ba máy bơm đó hút được bao nhiêu phần trăm lượng nước trong hồ?^25^Coi lượng nước trong hồ là 100%. Ngày thứ ba máy bơm đó hút được số phần trăm lượng nước trong hồ là: 100% – (35% + 40%) = 25% Đáp số: 25%. ^11}250^Lớp 5A có 40 học sinh, trong đó số học sinh nữ là 30 em còn lại là học sinh nam. Tìm tỉ số phần trăm của học sinh nam và số học sinh lớp 5A.?^25^Lớp 5A có số học sinh nam là: 40 - 30 = 10 (học sinh) Tỉ số phần trăm của học sinh nam và số học sinh lớp 5A là: 10 : 40 = 0,25 = 25% Đáp số: 25%. ^11}251^10 người làm xong một sân trường phải hết một tuần lễ. Nay muốn làm xong sân trường đó trong 5 ngày thì cần bao nhiêu người? (sức làm của mỗi người như nhau)^14^Đổi: 1 tuần lễ = 7 ngày Muốn làm xong sân trường trong 1 ngày thì cần số người là: 10 x 7 = 70 (người) Muốn làm xong sân trường đó trong 5 ngày thì cần số người là: 70 : 5 = 14 (người) Đáp số: 14 người. ^11}252^Hãy tìm hiểu lãi suất gửi ngân hàng ở địa phương em với lãi xuất 0.5% 1 tháng ,và tính xem nếu gửi 20000000 đồng thì sau một tháng cả số tiền gửi ,và tiền lãi là bao nhiêu?^20100000 ^Giả sử lãi suất gửi ngân hàng là 0,5% một tháng. Số tiền lãi sau một tháng là: 20 000 000 : 100 x 0,5 =  100 000 (đồng) Sau một tháng cả số tiền gửi và tiền lãi là: 20 000 000 + 100 000 = 20 100 000 (đồng) Đáp số: 20 100 000 đồng. ^11}253^Lãi suất tiết kiệm là 0,6% một tháng. Một người gửi tiết kiệm 10 000 000 đồng. Sau 1 tháng cả số tiền gửi và số tiền lãi là: ….. đồng.?^10060000^Số tiền lãi sau một tháng là:
+10 000 000 : 100 x 0,6 =  60 000 (đồng)
+Sau một tháng cả số tiền gửi và tiền lãi là:
+10 000 000 + 60 000 = 10 060 000 (đồng)
+Đáp số: 10 060 000 đồng.^11}254^Một trại chăn nuôi có số gà và vịt là 1575 con, trong đó 40% là vịt, còn lại là gà. Hỏi trại chăn nuôi đó có bao nhiêu con gà? ^630^Trại chăn nuôi đó có số con gà là: 1575 : 100 x 40 = 630 (con)^11}255^Lớp học có 25 học sinh, trong đó có 13 nữ. Hỏi số học sinh nữ chiếm bao nhiêu phần trăm của lớp học đó?^52^Số học sinh nữ chiếm số phần trăm của lớp học đó là: 13 : 25 = 0,52 = 52% Đáp số: 52%. ^11}256^Một ô tô đi trong 5 giờ được 225km. Hỏi ô tô đó đi trong 8 giờ được bao nhiêu ki-lô-mét?^360^Trong 1 giờ ô tô đi được số ki-lô-mét là: 225 : 5 = 45 ( k m ) Trong 1 giờ ô tô đi được số ki-lô-mét là: 45 x 8 = 360 ( k m ) Đáp số: 360 k m^11}257^Một tổ công nhân có 4 người làm xong một công việc trong 12 ngày. Nếu chỉ có 3 người thì làm xong công việc đó trong mấy ngày? (năng suất làm của mọi người như nhau và không thay đổi)^16^1 người làm xong công việc đó trong số ngày là: 12 x 4 = 48 (ngày) Nếu chỉ có 3 người thì làm xong công việc đó trong số ngày là: 48 : 3 = 16 (ngày) Đáp số: 16 ngày.^11}258^Khi chia một số có sáu chữ số cho 216 ta được thương là 2325 và còn dư. Vậy giá trị lớn nhất có thể của số bị chia trong phép chia đó là ... ?^502415^Giá trị lớn nhất có thể của số bị chia trong phép chia đó là: 2325 x 216 + 215 = 502415^12}259^Một cửa hàng bán lương thực đã bán được 20% số gạo trong kho. Hỏi phải nhập thêm bao nhiêu phần trăm số gạo còn lại để trong kho vẫn có số gạo như lúc đầu có?^25^Số gạo còn lại hiện có trong kho là: 100 - 20 = 80 (%)
+Số gạo đã bán so với số gạo hiện có là: 20 : 80 = 0,25 = 25%
+Vậy: Số gạo phải nhập thêm là: 25%^12}260^Tìm tổng của tất cả các số chẵn có bốn chữ số khi chia cho 5 dư 2 ?^4947300^Số hạng đầu tiên là: 1002
+Số hạng cuối cùng là: 9992
+Đơn vị khoảng cách là: 10
+Số số hạng là: (9992 - 1002) : 10 + 1 = 900 (số hạng)
+Tổng là: (9992 + 1002) x 900 : 2 = 4947300^12}261^Buổi sáng mẹ An đem thóc ra phơi, chiều thu lại được 117,8kg. Tính ra hao mất 5%. Hỏi buổi sáng mẹ An đã phơi bao nhiêu ki-lô-gam thóc?^124^Ta có: 117,8kg tương ứng với số phần trăm là: 100 - 5 = 95 (%)
+Số thóc mẹ An đã phơi buổi sáng là: 117,8 x 100 : 95 = 124 (kg)^12}262^Có 9 miếng bánh chưng cần rán vàng cả 2 mặt. Thời gian rán mỗi mặt cần 3 phút. Nếu dùng các chảo mỗi lần chỉ rán được 6 miếng thì cần thời gian ít nhất là bao lâu để rán xong 9 miếng bánh chưng đó?^9^Số mặt của 9 miếng bánh chưng là: 9 x 2 = 18 (mặt)
+Mỗi lần chỉ rán được 6 miếng, có nghĩa là 6 mặt. 
+Suy ra: 18 mặt bánh cần số lần rán là: 18 : 6  = 3 (lần)
+Số phút cần cho 3 lần rán là: 3 x 3 = 9 (phút)^12}263^Sau khi giảm giá 25% thì giá một chiếc xe đạp là 757500 đồng. Hỏi ban đầu giá một chiếc xe đạp là bao nhiêu?^1010000^Sau khi giảm giá 25% thì giá một chiếc xe đạp là: 100 - 25 = 75 (%)
+Ban đầu giá một chiếc xe đạp là: 757500 x 100 : 75 = 1010000 (đồng)^12}264^Một cửa hàng sau khi bán đi 450kg gạo thì số gạo còn lại bằng 37,5% số gạo cửa hàng có. Hỏi lúc đầu cửa hàng đó có bao nhiêu ki-lô-gam gạo?^720^Lúc đầu cửa hàng đó có số gạo là: 450 x 100 : (100 - 37,5) = 720 (kg)^12}265^Tìm x, biết: (24 + x) / (50 + x) = 3/5 ?^15^gta^12}266^25% diện tích căn phòng là 5,25(mét vuông). Diện tích căn phòng đó là …(mét vuông) ?^21^gta^12}267^4 người làm xong công việc trong 8 ngày. Muốn làm xong công việc đó trong 2 ngày cần thêm bao nhiêu người nữa? ^12^Số ngày công của 4 người là: 8 x 4 = 32 (ngày công)
+Số người cần để làm xong công việc trong 2 ngày là: 32 : 2 = 16 (người)
+Số người cần thêm là: 16 - 4 = 12 (người)^12}268^Hiệu giữa số lớn nhất có ba chữ số khác nhau chia hết cho 9 và số nhỏ nhất có ba chữ số khác nhau chia hết cho 9 là ...^873^Số lớn nhất có ba chữ số khác nhau chia hết cho 9 là: 981
+Số nhỏ nhất có ba chữ số khác nhau chia hết cho 9 là: 108
+Hiệu hai số là: 981 - 108 = 873^12}269^Mẹ sinh con năm mẹ 28 tuổi. Hiện nay, tuổi con bằng 1/3 tuổi mẹ. Hỏi trước đây 4 năm, con bao nhiêu tuổi ?^10^Hiệu số phần bằng nhau là: 3 - 1 = 2 (phần)
+Tuổi con hiện nay là: 28 : 2 = 14 (tuổi)
+Trước đây 4 năm, tuổi con là: 14 - 4 = 10 (tuổi)^12}270^Cho dãy số: …; …; …; 238; 245; 252 có 35 số hạng. Tìm số hạng đầu tiên của dãy ?^14^Ta có: 252 - 245 = 7
+245 - 238 = 7
+Suy ra: Đơn vị khoảng cách là: 7
+Số hạng đầu tiên là: 252 - (35 - 1) x 7 = 252 - 238 = 14^12}271^Giá trị của biểu thức: 7 : 0,25 – 3,2 : 0,4 + 8 x 1,25 là ?^30^gta^12}272^Giá bán một cái bút chì là 2000 đồng. Nếu giảm 10% giá bán thì mua chiếc bút chì đó phải trả bao nhiêu tiền?^1800^10% giá bán là: 2000 x 10 : 100 = 200 (đồng)
+Như vậy: Nếu giảm 10% giá bán thì mua chiếc bút chì đó phải trả số tiền là: 2000 - 200 = 1800 (đồng)^12}273^Khi nhân một số tự nhiên với 325, do sơ xuất nên một học sinh đã viết nhầm vị trí chữ số hàng đơn vị và chữ số hàng chục của số 325 cho nhau nên kết quả tìm được tăng lên 7506 đơn vị. Tìm tích đúng của phép nhân đó?^90350^Khi đổi chỗ chữ số hàng đơn vị và chữ số hàng chục, thừa số thứ hai tăng thêm là: 352 - 325 = 27
+Thừa số thứ nhất là: 7506 : 27 = 278
+Tích đúng của phép nhân đó là: 278 x 325 = 90350^12}274^Một cửa hàng định giá mua bằng 75% giá bán. Hỏi nếu cửa hàng mua một mặt hàng với giá 4500000 đồng thì sẽ bán mặt hàng đó với giá bao nhiêu?^6000000^Giá bán mặt hàng đó là: 4500000 x 100 : 75 = 6000000 (đồng)^12}275^Cho hai số có tổng là số chẵn lớn nhất có 3 chữ số khác nhau. Số thứ nhất là số lẻ lớn nhất có 2 chữ số khác nhau. Tìm hiệu hai số ?^792^Tổng hai số là: 986
+Số thứ nhất là: 97
+Số thứ hai là: 986 - 97 = 889
+Hiệu hai số là: 889 - 97 = 792^12}276^Trung bình mỗi tháng, một cô công nhân làm được 480 sản phẩm. Do cải tiến kĩ thuật, năng suất tăng lên 25% nên một tháng cô công nhân đó làm được … sản phẩm^600^25% tương ứng với số sản phẩm là: 480 x 25 : 100 = 120 (sản phẩm)
+Số sản phẩm cô công nhân làm được trong một tháng khi năng suất tăng lên 25% là: 480 + 120 = 600 (sản phẩm)^12}277^Số tự nhiên lớn nhất nhỏ hơn 1001,964 là ...^1001^gta^12}278^Cho 4 tấn 8kg = …kg. Số thích hợp điền vào chỗ chấm là … ?^4008^gta^12}279^35,2% chiều dài sợi dây là 4,224m. Sợi dây đó dài bao nhiêu mét?^12^Chiều dài sợi dây đó là: 4,224 x 100 : 35,2 = 12 (m)^13}280^Giá trị của biểu thức: 7 : 0,25 - 3,2 : 0,4 + 0,8 x 12,5 ?^30^Ta có: 7 : 0,25 - 3,2 : 0,4 + 0,8 x 12,5 = 28 - 8 + 10 = 30^13}281^Một hình thang có độ dài hai đáy lần lượt là 1dm; 18cm và chiều cao là 8cm. Tính diện tích hình thang đó là bao nhiêu xăng ti mét vuông ?^112^Đổi 1dm = 10cm
+Diện tích hình thang đó là: (10 + 18) x 8 : 2 = 112 (cm2)^13}282^Lãi suất tiết kiệm là 0,68% một tháng. Bác Tâm gửi tiết kiệm 30000000 đồng thì sau một tháng bác có bao nhiêu tiền cả gốc lẫn lãi? ^30204000^Số tiền lãi sau 1 tháng gửi tiết kiệm là: 30000000 x 0,68 : 100 = 204000 (đồng)
+Tổng số tiền cả gốc lẫn lãi là: 30000000 + 204000 = 30204000 (đồng)^13}283^Tính giá trị biểu thức: (375,4 x 12,5 - 25,7: 2,75) x (21,8 : 0,25 - 43,6 x 2) ?^0^Ta có: (21,8 : 0,25 - 43,6 x 2) = 87,2 - 87,2 = 0
+Vậy: (375,4 x 12,5 - 25,7: 2,75) x (21,8 : 0,25 - 43,6 x 2) = 0^13}284^Viết thêm 2 chữ số vào bên phải 2017 ta được số A chia hết cho 2, 5 và 9. Tìm số A ?^201780^Vì số A chia hết cho cả 2 và 5, suy ra: Số A có chữ số tận cùng là 0
+Ta có: 2 + 0 + 1 + 7 + 0 = 10
+Vì: Số A chia hết cho 9, suy ra: Chữ số phải viết thêm vào thứ hai là chữ số 8
+Số A là: 201780^13}285^Đem số gạo còn lại trong kho đóng vào các bao. Nếu đóng mỗi bao 5kg thì đóng được 9 bao. Nếu đóng mỗi bao 3kg thì đóng được bao nhiêu bao?^15^Số gạo còn lại trong kho là: 5 x 9 = 45 (kg)
+Nếu đóng mỗi bao 3kg thì đóng được số bao là: 45 : 3 = 15 (bao)^13}286^Hiệu hai số là số lớn nhất có ba chữ số và một trong hai số là số lẻ bé nhất có ba chữ số. Tìm số còn lại ?^1100^Số lớn nhất có ba chữ số là: 999
+Số lẻ bé nhất có ba chữ số là: 101
+Số còn lại là: 999 + 101 = 1100^13}287^Tìm số bị chia trong một phép chia hết. Biết số bị chia gấp 11 lần thương và thương bằng 5 lần số chia ?^605^Ta có: Số bị chia gấp 11 lần thương. 
+Suy ra: Số chia là 11
+Thương bằng 5 lần số chia. Suy ra: Thương là: 11 x 5 = 55
+Số bị chia là: 11 x 55 = 605^13}288^Trung bình cộng của 4 số là 88. Trung bình cộng của hai số đầu là 105. Hỏi trung bình cộng của hai số sau là bao nhiêu?^71^Tổng của 4 số là: 88 x 4 = 352
+Tổng của 2 số đầu là: 105 x 2 = 210
+Trung bình cộng của 2 số sau là: (352 - 210) : 2 = 71^13}289^Một người bán hàng bị lỗ 70000 đồng, bằng 10% tiền vốn bỏ ra. Hỏi tiền vốn của người đó là bao nhiêu?^700000^Tiền vốn của người đó là: 70000 x 100 : 10 = 700000 (đồng)^13}290^Trong vườn nhà bác Cường có 500 cây ăn quả gồm hai loại cam và bưởi; trong đó có 49,4% là bười. Hỏi có bao nhiêu cây cam? ^253^Tỉ lệ phần trăm của cây cam là: 100 - 49,4 = 50,6 (%)
+Số cây cam là: 500 x 50,6 : 100 = 253 (cây)^13}291^Một thửa ruộng hình thang có đáy lớn là 75m, đáy bé bằng 2/3 đáy lớn, chiều cao hơn đáy bé 6,2m. Trung bình cứ 100m2 trong một năm cấy lúa thu được 72kg thóc. Hỏi số thóc thu được trong năm trên thửa ruộng đó là bao nhiêu ki-lô-gam?^2529^Độ dài đáy bé là: 75 : 3 x 2 = 50 (m)
+Chiều cao là: 50 + 6,2 = 56,2 (m)
+Diện tích thửa ruộng là: (75 + 50) x 56,2 : 2 = 3512,5 (m2)
+Số thóc thu được trong năm trên thửa ruộng đó là: 3512,5 : 100 x 72 = 2529 (kg)^13}292^Một tổ 15 công nhân dự định lắp xong một cỗ máy trong 20 ngày, mỗi ngày làm 8 giờ. Thực tế, tổ được bổ sung thêm 5 người nữa và mỗi ngày làm tăng thêm 2 giờ. Hỏi tổ đó đã hoàn thành công việc trong bao nhiêu ngày? (Biết năng suất mỗi người là như nhau) ?^12^Thời gian 1 công nhân lắp xong cỗ máy đó là: 8 x 20 x 15 = 2400 (giờ)
+Tổ đó đã hoàn thành công việc trong thời gian là: 2400 : (8 + 2) x (15 + 5) = 12 (ngày)^13}293^Một cửa hàng bán vải ngày thứ nhất bán được 32,7m vải, ít hơn ngày thứ hai 4,6m vải. Số mét vải bán được ngày thứ ba bằng trung bình cộng số mét vải bán được trong hai ngày đầu. Hỏi ngày thứ ba cửa hàng bán được bao nhiêu mét vải?^35^Số mét vải bán được trong hai ngày đầu là: 32,7 x 2 + 4,6 = 70 (m)
+Số mét vải bán được ngày thứ ba là: 70 : 2 = 35 (m)^13}294^30m8cm > …cm. Trong các số sau, số thích hợp điền vào chỗ trống là ...^308^Ta có: 30m8cm = 3008cm
+Vì: 30800 > 3080 > 3008 > 308. Suy ra: Số thích hợp điền vào chỗ trống là: 308^13}295^Số dân ở một xã là 5000 người. Với mức tăng hàng năm là cứ 1000 người thì tăng thêm 21 người thì sau một năm số dân của xã đó tăng thêm bao nhiêu người?^105^Sau một năm số dân của xã đó tăng thêm là: 21 x 5 = 105 (người)^13}296^Số tự nhiên lớn nhất nhỏ hơn 928,74 và lớn hơn 925, 9 là ...^928^Vì: 929 > 928,74 > 928 > 927 > 926 > 925,9. 
+Suy ra: Số thích hợp điền vào chỗ trống là: 928^13}297^Tính diện tích một mảnh đất, biết 33,5% diện tích mảnh đất đó bằng 281,4m2 ?^840^Diện tích mảnh đất đó là: 281,4 x 100 : 33,5 = 840 (m2)^13}298^Tính giá trị biểu thức: A = 3,46 x 0,75 + 96,54 x 0,75 ?^75^gta^13}299^Một bánh xe có đường kính là 650mm. Bánh xe đó lăn trên một đoạn đường dài 2,041km.Vậy bánh xe đó đã lăn được ... vòng ?^1000^Đổi: 650mm = 0,65m
+2,041km = 2041m
+Chu vi bánh xe đó là: 0,65 x 3,14 = 2,041 (m)
+Bánh xe đó đã lăn được số vòng là: 2041: 2,041 = 1000 (vòng)^14}300^Một đội công nhân có 9 người dự định sửa con đường xong trong 16 ngày. Nhưng do được bổ sung thêm người nên đội đã hoàn thành công việc sớm hơn dự định là 4 ngày. Tính số người được bổ sung thêm, biết sức làm của mỗi người như nhau ?^3^Tổng số ngày công để sửa xong con đường là: 16 x 9 = 144 (ngày công)
+Số ngày đội đã làm việc là: 16 - 4 = 12 (ngày)
+Số người tham gia làm con đường là: 144 : 12 = 12 (người)
+Số người bổ sung thêm là: 12 - 9 = 3 (người)^14}301^Một hình thoi có diện tích là 1,375 m2 và chu vi của hình thoi đó là 5,5m. Vậy chiều cao của hình thoi đó là ...cm?^100^Cạnh hình thoi là: 5,5 : 4 = 1,375 (m)
+Chiều cao hình thoi là: 1,375 : 1,375 = 1 (m)
+Đổi: 1m = 100cm^14}302^Trên một sân vận động hình chữ nhật, một người đi dọc theo chiều dài hết 240 bước, đi dọc theo chiều rộng hết 160 bước. Tính chu vi sân vận động biết rằng mỗi bước đi của người ấy dài 5dm ?^400^Chiều dài sân vận động là: 240 x 5 = 1200 (dm)
+Chiều rộng sân vận động là: 160 x 5 = 800 (dm)
+Chu vi sân vận động là: (1200 + 800) x 2 = 4000 (dm)
+Đổi: 4000dm = 400m^14}303^Một con bò nặng bằng 4/7 khối lượng của nó và 9 yến. Vậy con bò đó nặng …kg ?^210^Con bò nặng bằng 4/7 khối lượng của nó và 9 yến có nghĩa là 9 yến tương ứng với 3/7
+Con bò đó cân nặng là: 9 : 3 x 7 = 21 (yến)
+Đổi: 21 yến = 210kg^14}304^Kết quả của phép tính: 15 ngày 6 giờ - 2 ngày 11 giờ =… giờ ?^307^gta^14}305^Kết quả của phép tính: 2 năm 9 tháng + 5 năm 3 tháng =… tháng ?^96^gta^14}306^Mai nghĩ ra một số, nếu Mai thêm chữ số 0 vào bên phải số đó thì được số mới hơn số Mai nghĩ là 1269 đơn vị. Số Mai nghĩ là ?^141^Gọi số Mai nghĩ ra là a (0<a)
+Viết thêm chữ số 0 vào bên phải thành a0, nghĩa là số mới gấp 10 lần số cũ 
+Theo bài ra, ta có tỉ số là 1/10 và hiệu là 1269 
+Vậy số Mai nghĩ ra là: 1269 : (10 - 1) x 1 = 141^14}307^Một bể chứa nước hình lập phương có cạnh là 1,4m. Bể đang chứa 392l nước. Tính chiều cao phần bể còn trống^12^Đổi: 1,4m = 14dm
+Thể tích hình lập phương là: 14 x 14 x 14 = 2744 (dm3)
+Thể tích phần bể còn trống là: 2744 - 392 = 2352 (dm3)
+Chiều cao phần bể còn trống là: 2352 : 14 : 14 = 12 (dm)^14}308^Một thùng kẹo có 60 gói, mỗi gói kẹo nặng 250g. Kẹo có giá là 9000 đồng mỗi ki - lô-gam. Vậy thùng kẹo đó có giá là .....đồng ?^135000^Thùng kẹo cân nặng là: 250 x 60 = 15000 (g)
+Đổi: 15000g = 15kg
+Thùng kẹo có giá là: 9000 x 15 = 135000 (đồng)^14}309^Chuyển kho hàng tivi, nếu dùng xe tải nhỏ mỗi xe xếp được 36 cái tivi thì phải cần đến 8 xe. Người ta điều đến 4 xe tải lớn thì xếp vừa hết số tivi trong kho. Hỏi mỗi xe tải lớn xếp được bao nhiêu cái tivi? (Biết xe tải của 2 loại có sức chở như nhau) ?^72^Tổng số tivi cần chuyển là: 36 x 8 = 288 (cái)
+Mỗi xe tải lớn xếp được số tivi là: 288 : 4 = 72 (cái)^14}310^Lớp 5A có số học sinh nam nhiều hơn số học sinh nữ là 8 em. Tìm số học sinh nam biết số học sinh nữ bằng 5/12 tổng số học sinh cả lớp ?^28^Vì số học sinh nữ bằng 5/12 tổng số học sinh cả lớp. 
+Suy ra: Số học sinh nữ là 5 phần và số học sinh nam là 7 phần
+Hiệu số phần bằng nhau là: 7 - 5 = 2 (phần)
+Số học sinh nam là: 8 : 2 x 7 = 28 (bạn)^14}311^Tính tổng của tất cả các số có hai chữ số mà mỗi số đó chia hết cho 5 ?^3750^gta^14}312^Giá tiền 1kg gạo tẻ là 7200 đồng và bằng 80% giá tiền 1kg gạo nếp. Vậy giá tiền 1kg gạo nếp là ..... đồng ?^9000^Giá tiền 1kg gạo nếp là: 7200 x 100 : 80 = 9000 (đồng)^14}313^Hiện nay con 4 tuổi, mẹ 31 tuổi. Hỏi sau mấy năm nữa tuổi của con bằng 25% tuổi của mẹ?^5^Hiệu số tuổi hai mẹ con là: 31 - 4 = 27 (tuổi)
+Đổi: 25% = 1/4
+Hiệu số phần bằng nhau là: 4 - 1 = 3 (phần). Tuổi con khi tuổi của con bằng 25% tuổi của mẹ là: 27 : 3 = 9 (tuổi)
+Số năm cần để tuổi của con bằng 25% tuổi của mẹ là: 9 - 4 = 5 (tuổi)^14}314^Một mảnh vườn hình chữ nhật có diện tích là 176,4  và chiều rộng là 10,5m. Chu vi mảnh vườn đó là .....cm ?^5460^Chiều dài hình chữ nhật là: 176,4 : 10,5 = 16,8 (m)
+Chu vi mảnh vườn đó là: (10,5 + 16,8) x 2 = 54,6 (m)
+Đổi: 54,6m = 5460cm^14}315^Trong một ngày cửa hàng lương thực của cô Thái thu được 5 500 000 đồng tiền bán hàng. Trong đó, số tiền lãi bằng 10% tiền vốn. Vậy tiền vốn của cửa hàng đó là ..... đồng ?^5000000^Số tiền vốn của cửa hàng đó là: 5500000 : 110 x 100 = 5000000 (đồng)^14}316^Một căn phòng có nền nhà là hình vuông. Người ta đã dùng 256 viên gạch hoa cũng là hình vuông có chu vi là 120cm để lát nền. Nay người ta muốn lát lại nền nhà bằng gỗ ván sàn. Mỗi thanh gỗ ván sàn có chiều dài là 8dm, chiều rộng là 10cm. Cần dùng số thanh gỗ ván sàn là … thanh để lát vừa kín nền nhà căn phòng trên?^288^Đổi: 8dm = 80cm
+Cạnh của viên gạch hoa là: 120 : 4 = 30 (cm)
+Diện tích của viên gạch hoa là: 30 x 30 = 900 (cm2)
+Diện tích căn phòng là: 900 x 256 = 230400 (cm2)
+Số thanh gỗ ván sàn cần dùng là: 230400 : 80 : 10 = 288 (thanh)^14}317^Một hình tròn có chu vi là 376,8cm. Vậy diện tích hình tròn đó là … cm2 ?^11304^Bán kính hình tròn là: 376,8 : 3,14 : 2 = 60 (cm)
+Diện tích hình tròn đó là: 60 x 60 x 3,14 = 11304 (cm2)^14}318^Kết quả của phép tính: 26 ngày 5 giờ - 17 ngày 21 giờ =… giờ ?^200^gta^14}319^Kết quả của phép tính: 1,5 ngày - 28 giờ =… phút ?^480^gta^14}320^Nếu giảm chiều dài của một hình chữ nhật đi 20% thì phải tăng chiều rộng của hình chữ nhật đó lên …% để diện tích hình chữ nhật không thay đổi?^25^Nếu giảm chiều dài của một hình chữ nhật đi 20% thì diện tích hình chữ nhật đó còn lại là: 100 - 20 = 80 (%)
+Để diện tích hình chữ nhật không thay đổi thì độ dài của chiều rộng phải là: 100 : 80 x 100 = 125 (%)
+Chiều rộng phải tăng thêm là: 125 - 100 = 25 (%)^15}321^Có 14 người trong một ngày trồng được 98 cây. Nếu bổ sung thêm 28 người nữa cùng trồng thì trong một ngày trồng được … cây (biết sức làm việc của mỗi người là như nhau) ?^294^Số cây 1 người trồng được trong 1 ngày là: 98 : 14 = 7 (cây)
+Tổng số người trồng cây là: 14 + 28 = 42 (người)
+Số cây trồng được là: 7 x 42 = 294 (cây)^15}322^Người ta ghép 10 viên gạch hình vuông thành 1 hàng thẳng tắp hình chữ nhật. Tính chu vi hàng gạch hình chữ nhật đó biết chu vi của một viên gạch là 120cm ?^660^Cạnh viên gạch hình vuông là: 120 : 4 = 30 (cm)
+Chiều dài hàng gạch hình chữ nhật là: 30 x 10 = 300 (cm)
+Chu vi hàng gạch hình chữ nhật đó là: (300 + 30) x 2 = 660 (cm)^15}323^Viết số tự nhiên nhỏ nhất có tích các chữ số là 135 ?^359^Vì: 135 có chữ số tận cùng là 5.
+Vậy 135 chia hết cho 5
+Ta có: 135 : 5 = 27
+Ta lại có: 27 = 3 x 9
+Suy ra: Số phải tìm là: 359^15}324^Hãy cho biết tích: 1 × 2 × 3 × 4 × 5 × 6 × 7 × 8 × 9 có tận cùng là chữ số mấy? ^0^Ta có: 4 x 5 = 20. Suy ra: Tích trên có tận cùng là chữ số 0^15}325^Một đội công nhân sửa đường. Ngày đầu có 20 công nhân làm việc trong 2 giờ được 16 đường. Hỏi hôm sau có 50 công nhân làm việc trong 3 giờ thì sửa được bao nhiêu mét vuông đường (biết sức làm việc của mỗi công nhân là như nhau)^60^Số m2 1 người làm được trong 1 giờ là: 35 x 10 = 0,4 (m2) 
+Hôm sau làm được là: 0,4 x 50 x 3 = 60 (m2)^15}326^Nước biển chứa 4% muối. Cần đổ thêm bao nhiêu gam nước lã vào 400 gam nước biển đó để tỉ lệ muối trong dung dịch là 2,5%? ^240^Lượng muối trong 400g nước muối là: 400 : 100 x 4 = 16 (g)
+Lượng nước biển sau khi đổ thêm nước lã là: 16 : 2,5 x 100 = 640 (g)
+Lượng nước lã đổ thêm là: 640 - 400 = 240 (g)^15}327^Trung bình cộng của số bé nhất có 4 chữ số và số chẵn lớn nhất có 3 chữ số là ...?^999^Trung bình cộng của số bé nhất có 4 chữ số và số chẵn lớn nhất có 3 chữ số là: (1000 + 998) : 2 = 999^15}328^Viết số tự nhiên nhỏ nhất gồm các chữ số 5 và chia hết cho 3 ^555^gta^15}329^Ba bạn Mai, Hùng và Thắng tham gia trồng cây và trồng được tất cả là 12 cây. Biết tổng số cây mà Mai và Thắng trồng được nhiều hơn số cây Hùng trồng được là 4 cây và số cây Thắng trồng được bằng 5/3 số cây Mai trồng được. Số cây mà Thắng trồng được là… cây ?^5^Số cây Hùng trồng là: (12 - 4) : 2 = 4 (cây)
+Tổng số cây mà Mai và Thắng trồng được là: 12 - 4 = 8 (cây)
+Số cây Thắng trồng được là: 8 : (5 +3) x 5 = 5 (cây)^15}330^Đường từ nhà Mai tới trường dài 2041m. Mai đi học bằng xe đạp và bán kính mỗi bánh xe đạp là 3,25dm. Để tới trường thì mỗi bánh xe đạp của Mai phải quay … vòng ?^1000^Đổi: 3,25dm = 0,325m
+Chu vi mỗi bánh xe đạp là: 0,325 x 2 x 3,14 = 2,041 (m)
+Để tới trường thì mỗi bánh xe đạp của Mai phải quay số vòng là: 2041 : 2,041 = 1000 (vòng)^15}331^Một mảnh đất hình chữ nhật có chu vi là 105m và chiều rộng bằng 3/4 chiều dài. Diện tích mảnh đất đó là …mét vuông ?^675^Nửa chu vi hình chữ nhật là: 105 : 2 = 52,5 (m)
+Chiều rộng mảnh đất là: 52,5 : 7 x 3 = 22,5 (m) 
+Chiều dài mảnh đất là: 52,5 - 22,5 = 30 (m) 
+Diện tích mảnh đất là: 22,5 x 30 = 675 (m2)^15}332^Trung bình cộng của ba số bằng 20. Nếu tăng số thứ nhất lên 2 lần thì trung bình cộng của chúng là 24. Nếu tăng số thứ hai lên 3 lần thì trung bình cộng của chúng là 32. Vậy số thứ ba là …?^30^Tổng của ba số là: 20 x 3 = 60
+Số thứ nhất là: 24 x 3 - 60 = 12
+Số thứ hai là: (32 x 3 - 60) : 2 = 18
+Số thứ ba là: 60 - 12 - 18 = 30^15}333^Một hộp hình lập phương lớn có cạnh là 12cm. Người ta xếp đầy vào hộp một số hình lập phương nhỏ có thể tích mỗi hình là 8cm3. Hộp đó chứa tất cả … hình lập phương nhỏ ?^216^Thể tích hình lập phương lớn là: 12 x 12 x 12 = 1728 (cm3)
+Hộp đó chứa tất cả số hình lập phương nhỏ là: 1728 : 8 = 216 (hình)^15}334^Số tiếp theo trong dãy số 4; 13; 22; 31; 40; 49; … là số … ?^58^Quy luật của dãy số là: Số hạng tiếp theo bằng số hạng trước cộng với 9
+Số tiếp theo trong dãy là: 49 + 9 = 58^15}335^Hiệu của hai số bằng 20 và thương của hai số là 2,25. Tìm số bé ?^16^Ta có: 2,25 = 9/4
+Hiệu số phần bằng nhau là: 9 - 4 = 5 (phần)
+Số bé là: 20 : 5 x 4 = 16^15}336^Tổng kết học kỳ I lớp 5A có 85% học sinh đạt loại giỏi. Như vậy cả lớp còn 6 bạn không đạt loại giỏi. Hỏi lớp 5A có bao nhiêu học sinh?^40^6 bạn không đạt loại giỏi tương ứng với số phần trăm là: 100 - 85 = 15 (%)
+Số học sinh của lớp 5A là: 6 x 100 : 15 = 40 (học sinh)^15}337^Có hai hình hộp chữ nhật, các kích thước của hình hộp thứ nhất đều gấp 4 lần các kích thước của hình hộp thứ hai. Thể tích của hình hộp thứ nhất gấp … lần thể tích hình hộp thứ hai?^64^Thể tích của hình hộp thứ nhất gấp thể tích hình hộp thứ hai số lần là: 4 x 4 x 4 = 64 (lần)^15}338^Một bể nước dạng hình hộp chữ nhật có chiều dài là 1,6m; chiều rộng là 11dm và chiều cao là 130cm. Hỏi bể đó chứa được bao nhiêu lít nước? ^2288^Đổi:1,6m = 16dm
+130cm = 13dm
+Thể tích bể nước là: 16 x 11 x 13 = 2288 (m3) = 2288 (lít)^15}339^Nam đọc một quyển sách trong 3 ngày. Ngày thứ nhất đọc 1/3 số trang, ngày thứ hai đọc 2/5 số trang còn lại và ngày thứ ba đọc nốt 48 trang cuối cùng. Hỏi quyển sách đó có bao nhiêu trang?^120^Phân số chỉ số phần 48 trang chiếm là: 1 - 2/5 = 3/5 (số trang còn lại)
+3/5 số trang còn lại là: 48 : 3/5 = 80 (trang)
+80 trang chiếm số phần trang là: 1 - 1/3 = 2/3 (số trang)
+Số trang của quyển sách là: 80 : 2/3= 120 (trang)^15}340^Cho hai số, biết thương giữa hai số đó bằng 0,0625 và hiệu của hai số đó bằng 7,5. Tìm số lớn ?^8^Ta có: 0,0625 = 1/16. Suy ra: Hiệu số phần bằng nhau là: 16 - 1 = 15 (phần)
+Số lớn là: 7,5 : 15 x 16 = 8^15}341^Hai khối lập phương có kích thước gấp nhau 8 lần. Hỏi thể tích của chúng gấp nhau bao nhiêu lần? ^512^Hai khối lập phương có kích thước gấp nhau 8 lần thì thể tích của chúng gấp nhau số lần là: 8 x 8 x 8 = 512 (lần)^15}342^Một đội công nhân gồm 35 người dự định làm xong quãng đường trong 10 ngày. Hỏi nếu muốn làm xong quãng đường đó trong 7 ngày thì đội cần phải bổ sung thêm bao nhiêu người nữa? (Năng suất lao động của mỗi người là như nhau) ?^15^Tổng số ngày công là: 35 x 10 = 350 (ngày công) 
+Số người cần để làm xong quãng đường đó trong 7 ngày là: 350 : 7 = 50 (người)
+Số người cần bổ sung thêm là: 50 - 35 = 15 (người)^15}343^Số học sinh dự tuyển vào một truờng chuyên có tới 65% là học sinh nam. Nếu bớt đi 75 học sinh nam đồng thời thêm 75 học sinh nữ thì số học sinh nam chỉ chiếm 60% số học sinh dự tuyển. Tính số học sinh dự tuyển ?^1500^Nếu số học sinh nam giảm từ 65% xuống còn 60% thì 75 học sinh sẽ ứng với 5%
+Số học sinh đi dự tuyển là 75 : 5 x 100 = 1500 học sinh^15}344^Số tự nhiên A được viết bởi 2015 chữ số 6. Hỏi nếu lấy số A chia cho 15 thì số dư là bao nhiêu, nếu lấy thương là số tự nhiên? ^6^Ta có: 6 : 15 = 0 (dư 6)
+66: 15 = 4 (dư 6)
+666: 15 = 44 (dư 6)
+6666 : 15 =444 (dư 6)
+Suy ra: A : 15 = 4444… (dư 6)^15}345^Trung bình cộng của hai số là 60. Nếu bớt số lớn đi 15 đơn vị thì ta được số mới gấp 2 lần số bé. Tìm số bé ?^35^Nếu bớt số lớn đi 15 đơn vị thì tổng mới là: 60 x 2 - 15 = 45
+Vì số mới gấp 2 lần số bé. Suy ra: Tổng số phần bằng nhau là: 1 + 2 = 3 (phần)
+Số bé là: 105 : 3 x 1 = 35^15}346^Tuấn và Tú có tất cả 87 viên bi. Nếu Tuấn cho Tú 8 viên bi thì Tú nhiều hơn Tuấn 3 viên. Hỏi lúc đầu số bi của Tú bằng bao nhiêu phần trăm số bi của Tuấn? ^74^Số bi Tuấn nhiều hơn Tú là: 8 x 2 - 3 = 13 (viên)
+Số bi của Tuấn là: (87 + 13) : 2 = 50 (viên)
+Số bi của Tú là: 87 - 50 = 37 (viên)
+Tỉ số % số bi của Tú và Tuấn là: 37 : 50 x 100 = 74 (%)^15}347^Một bể chứa 0,7(mét khối) nước, chiếm 56% thể tích lòng bể. Hỏi muốn bể đầy nước thì cần đổ thêm bao nhiêu lít nước?^550^Đổi: 0,7 m3 = 700 lít
+Số nước cần đổ thêm là: 700 x 100 : 56 - 700 = 550 (lít)^15}348^Một trường mẫu giáo dự trữ gạo cho 260 em bé ăn trong 30 ngày. Nay có thêm một số em mới đến nên số ngày ăn hết số gạo đó đã giảm đi 6 ngày. Vậy số em đến thêm là … em ?^65^1 em ăn hết số gạo đó trong thời gian là: 260 x 30 = 7800 (ngày)
+Tổng số em ăn hết số gạo đó là: 7800 : (30 - 6) = 325 (em)
+Số em đến thêm là: 325 - 260 = 65 (em)^15}349^Một hình lập phương có diện tích xung quanh bằng 144m2. Tính thể tích của hình lập phương đó ?^216^Diện tích một mặt của hình lập phương đó là: 144 : 4 =  36 (m2)
+Ta có: 36 = 6 x 6. Suy ra: Cạnh của hình lập phương đó là: 6 (m)
+Thể tích hình lập phương đó là: 36 x 6 = 216 (m3)^15}350^Một trường tiểu học có 368 học sinh nam. Số học sinh nam chiếm 46% số học sinh toàn trường. Vậy trường ấy có ..... học sinh nữ ?^432^Số phần trăm học sinh nữ là: 100 - 46 = 54 (%)
+Số học sinh nữ là: 368 x 54 : 46 = 432 (học sinh)^15}351^Một bánh xe có đường kính là 650mm. Bánh xe đó lăn trên một đoạn đường dài 2,041km.Vậy bánh xe đó đã lăn được ....vòng?
+^1000^Đổi: 650mm = 0,65m
+2,041km = 2041m
+Chu vi bánh xe đó là: 0,65 x 3,14 = 2,041 (m)
+Bánh xe đó đã lăn được số vòng là: 2041: 2,041 = 1000 (vòng)^16}352^Một thùng kẹo có 60 gói, mỗi gói kẹo nặng 250g. Kẹo có giá là 9000 đồng mỗi ki - lô-gam. Vậy thùng kẹo đó có giá là .... đồng ?^135000^Thùng kẹo cân nặng là: 250 x 60 = 15000 (g)
+Đổi: 15000g = 15kg
+Thùng kẹo có giá là: 9000 x 15 = 135000 (đồng)^16}353^Trong một ngày cửa hàng lương thực của cô Thái thu được 5 500 000 đồng tiền bán hàng. Trong đó, số tiền lãi bằng 10% tiền vốn. Vậy tiền vốn của cửa hàng đó là ......đồng ?^5000000^Số tiền vốn của cửa hàng đó là: 5500000 : 110 x 100 = 5000000 (đồng)^16}354^Một con bò nặng bằng 4/7 khối lượng của nó và 9 yến. Vậy con bò đó nặng …kg ?^210^Con bò nặng bằng 4/7 khối lượng của nó và 9 yến có nghĩa là 9 yến tương ứng với 3/7
+Con bò đó cân nặng là: 9 : 3 x 7 = 21 (yến)
+Đổi: 21 yến = 210kg^16}355^Tính tổng của tất cả các số có hai chữ số mà mỗi số đó chia hết cho 5 ?^3750^gta^16}356^Kết quả của phép tính: 15 ngày 6 giờ - 2 ngày 11 giờ =… giờ ?^307^gta^16}357^Hiện nay con 4 tuổi, mẹ 31 tuổi. Hỏi sau mấy năm nữa tuổi của con bằng 25% tuổi của mẹ?^5^Hiệu số tuổi hai mẹ con là: 31 - 4 = 27 (tuổi). Đổi: 25% = 1/4. Hiệu số phần bằng nhau là: 4 - 1 = 3 (phần). Tuổi con khi tuổi của con bằng 25% tuổi của mẹ là: 27 : 3 = 9 (tuổi). Số năm cần để tuổi của con bằng 25% tuổi của mẹ là: 9 - 4 = 5 (tuổi)^16}358^Một đội công nhân có 9 người dự định sửa con đường xong trong 16 ngày. Nhưng do được bổ sung thêm người nên đội đã hoàn thành công việc sớm hơn dự định là 4 ngày. Tính số người được bổ sung thêm, biết sức làm của mỗi người như nhau ?^3^Tổng số ngày công để sửa xong con đường là: 16 x 9 = 144 (ngày công)
+Số ngày đội đã làm việc là: 16 - 4 = 12 (ngày)
+Số người tham gia làm con đường là: 144 : 12 = 12 (người)
+Số người bổ sung thêm là: 12 - 9 = 3 (người)^16}359^Kết quả của phép tính: 26 ngày 5 giờ - 17 ngày 21 giờ =… giờ ?^200^gta^16}360^Mai nghĩ ra một số, nếu Mai thêm chữ số 0 vào bên phải số đó thì được số mới hơn số Mai nghĩ là 1269 đơn vị. Số Mai nghĩ là...?^141^Gọi số Mai nghĩ ra là a (0<a)
+Viết thêm chữ số 0 vào bên phải thành a0, nghĩa là số mới gấp 10 lần số cũ 
+Theo bài ra, ta có tỉ số là 1/10 và hiệu là 1269 
+Vậy số Mai nghĩ ra là: 1269 : (10 - 1) x 1 = 141^16}361^Một hình thoi có diện tích là 1,375 m2 và chu vi của hình thoi đó là 5,5m. Vậy chiều cao của hình thoi đó là ....cm ?^100^Cạnh hình thoi là: 5,5 : 4 = 1,375 (m)
+Chiều cao hình thoi là: 1,375 : 1,375 = 1 (m)
+Đổi: 1m = 100cm^16}362^Tìm số ki - lô - gam gạo bán được trung bình trong một ngày của một cửa hàng biết ngày thứ nhất bán được 12 yến, như vậy là bán nhiều hơn ngày thứ hai là 10 kg. Ngày thứ ba bán nhiều hơn ngày thứ hai là 8kg ?^116^Đổi: 12 yến = 120kg
+Số gạo ngày thứ hai bán được là: 120 - 10 = 110 (kg)
+Số gạo ngày thứ ba bán được là: 110 + 8 = 118 (kg)
+Tổng số gạo cả 3 ngày bán được là: 120 + 110 + 118 = 348 (kg)
+Số gạo bán trung bình 1 ngày là: 348 : 3 = 116 (kg)^16}363^Chuyển kho hàng tivi, nếu dùng xe tải nhỏ mỗi xe xếp được 36 cái tivi thì phải cần đến 8 xe. Người ta điều đến 4 xe tải lớn thì xếp vừa hết số tivi trong kho. Hỏi mỗi xe tải lớn xếp được bao nhiêu cái tivi? (Biết xe tải của 2 loại có sức chở như nhau)^72^Tổng số tivi cần chuyển là: 36 x 8 = 288 (cái)
+Mỗi xe tải lớn xếp được số tivi là: 288 : 4 = 72 (cái)^16}364^Lớp 5A có số học sinh nam nhiều hơn số học sinh nữ là 8 em. Tìm số học sinh nam biết số học sinh nữ bằng 5/12 tổng số học sinh cả lớp ?^28^Vì số học sinh nữ bằng 5/12 tổng số học sinh cả lớp. Suy ra: Số học sinh nữ là 5 phần và số học sinh nam là 7 phần
+Hiệu số phần bằng nhau là: 7 - 5 = 2 (phần)
+Số học sinh nam là: 8 : 2 x 7 = 28 (bạn^16}365^Một hình tròn có chu vi là 376,8cm. Vậy diện tích hình tròn đó là … cm2 ?^11304^Bán kính hình tròn là: 376,8 : 3,14 : 2 = 60 (cm)
+Diện tích hình tròn đó là: 60 x 60 x 3,14 = 11304 (cm2)^16}366^Kết quả của phép tính: 2 năm 9 tháng + 5 năm 3 tháng =… tháng ?^96^gta^16}367^Giá tiền 1kg gạo tẻ là 7200 đồng và bằng 80% giá tiền 1kg gạo nếp. Vậy giá tiền 1kg gạo nếp là..... đồng ?^9000^Giá tiền 1kg gạo nếp là: 7200 x 100 : 80 = 9000 (đồng)^16}368^Một mảnh vườn hình chữ nhật có diện tích là 176,4  và chiều rộng là 10,5m. Chu vi mảnh vườn đó là .... cm ?^5460^Chiều dài hình chữ nhật là: 176,4 : 10,5 = 16,8 (m)
+Chu vi mảnh vườn đó là: (10,5 + 16,8) x 2 = 54,6 (m)
+Đổi: 54,6m = 5460cm^16}369^Một căn phòng có nền nhà là hình vuông. Người ta đã dùng 256 viên gạch hoa cũng là hình vuông có chu vi là 120cm để lát nền. Nay người ta muốn lát lại nền nhà bằng gỗ ván sàn. Mỗi thanh gỗ ván sàn có chiều dài là 8dm, chiều rộng là 10cm. Cần dùng số thanh gỗ ván sàn là … thanh để lát vừa kín nền nhà căn phòng trên?^288^Đổi: 8dm = 80cm
+Cạnh của viên gạch hoa là: 120 : 4 = 30 (cm)
+Diện tích của viên gạch hoa là: 30 x 30 = 900 (cm2)
+Diện tích căn phòng là: 900 x 256 = 230400 (cm2)
+Số thanh gỗ ván sàn cần dùng là: 230400 : 80 : 10 = 288 (thanh)^16}370^Kết quả của phép tính: 1,5 ngày - 28 giờ =… phút ?^480^gta^16}371^Một cái sân hình chữ nhật có chiều dài hơn chiều rộng là 36m và chiều rộng bằng 60% chiều dài. Diện tích cái sân đó là ….mét vuông ?^4860^Ta có: 60% = 60/100 = 3/5
+Hiệu số phần bằng nhau là: 5 - 3 = 2 (phần)
+Chiều rộng là: 36 : 2 x 3 = 54 (m)
+Chiều dài là: 54 + 36 = 90 (m)
+Diện tích cái sân là: 54 x 90 = 4860 (m2)^17}372^Tổng của số tự nhiên lớn nhất có 5 chữ số khác nhau và số tự nhiên nhỏ nhất có 5 chữ số khác nhau là …?^108999^Tổng của số tự nhiên lớn nhất có 5 chữ số khác nhau và số tự nhiên nhỏ nhất có 5 chữ số khác nhau là: 98765 + 10234 = 108999^17}373^Lúc 7 giờ 30 phút sáng, một người đi xe đạp bắt đầu từ A và đi trong 1 giờ 30 phút thì đến B. Vậy người đó đến B lúc .... giờ ?^9^Ta có: 7 giờ 30 phút + 1 giờ 30 phút = 9 giờ^17}374^Số nhỏ nhất có 6 chữ số chia hết cho cả 2; 3; 5 và 9 là .....?^100080^Số chia hết cho cả 2 và 5 có chữ số tận cùng là 0
+Số chia hết cho 9 thì chia hết cho 3
+Vì là số nhỏ nhất có 6 chữ số nên số đó là: 100080^17}375^Có bao nhiêu số tự nhiên có 5 chữ số mà tổng các chữ số của mỗi số đó bằng 3?^15^gta^17}376^Quãng đường từ tỉnh A tới tỉnh B dài 99km. Một ô tô đi với vận tốc là 45km/giờ từ A và đến B lúc 10 giờ 12 phút. Vậy ô tô đó đã đi từ A lúc …. giờ ?^8^Thời gian ô tô đi từ tỉnh A tới tỉnh B là: 99 : 45 = 2,2 (giờ)
+Đổi: 2,2 giờ = 2 giờ 12 phút
+Ta có: 10 giờ 12 phút - 2 giờ 12 phút = 8 giờ^17}377^Hình tròn thứ nhất có bán kính gấp đôi hình tròn thứ hai. Tỉ số phần trăm của diện tích hình tròn thứ hai so với diện tích hình tròn thứ nhất là …% ?^25^Vì: Hình tròn thứ nhất có bán kính gấp đôi hình tròn thứ hai. Suy ra: Diện tích hình tròn thứ nhất gấp diện tích hình tròn thứ hai số lần là: 2 x 2 = 4 (lần)
+Suy ra: Tỉ số phần trăm của diện tích hình tròn thứ hai so với diện tích hình tròn thứ nhất là: 1 : 4 x 100 = 25 (%)^17}378^Tính tổng 0,1 + 0,2 + 0,3 + 0,4 + … + 1,8 + 1,9 = ... ?^19^Số số hạng của tổng là: (1,9 - 0,1) : 0,1 + 1 = 19 (số hạng)
+Tổng là: (1,9 + 0,1) x 19 : 2 = 1^17}379^Cho biết ngày 20 tháng 3 năm 2015 là thứ sáu. Hỏi ngày chủ nhật cuối cùng trong tháng 3 năm 2016 là ngày bao nhiêu?^27^Năm 2016 là năm nhuận nên từ ngày 20/3/2015 đến ngày 20/3/2016 có 366 ngày
+Ta có: 366 : 7 = 52 (dư 2)
+Suy ra: Ngày 20/3/2016 là ngày Chủ nhật
+Suy ra: Ngày Chủ nhật cuối cùng trong tháng 3 năm 2016 là ngày: 20 + 7 = 27^17}380^Khi giảm chiều dài của một hình chữ nhật đi 20cm thì chu vi hình chữ nhật đó sẽ giảm đi …cm ?^40^Khi giảm chiều dài của một hình chữ nhật đi 20cm thì chu vi hình chữ nhật đó sẽ giảm đi là: 20 x 2 = 40 (cm)^17}381^Hai tỉnh A và B cách nhau 196km. Cùng lúc 7 giờ xe thứ nhất đi từ A đến B và xe thứ hai đi từ B đến A. Hai xe gặp nhau lúc 9 giờ. Tính vận tốc xe thứ nhất....(km/h), biết vận tốc xe thứ nhất lớn hơn vận tốc xe thứ hai là 6km/giờ ?^52^Thời gian từ lúc 2 xe bắt đầu đi đến lúc 2 xe gặp nhau là: 9 - 7 = 2 (giờ)
+Tổng vận tốc của 2 xe là: 196 : 2 =  98 (km/h)
+Vận tốc xe thứ nhất là: (98 + 6) : 2 = 52 (km/h)^17}382^Số 30a5b chia hết cho cả 2; 3; 5 và a là số chẵn. Tổng của a và b là …  ?^4^Số chia hết cho cả 2 và 5 có chữ số tận cùng là: 0
+Suy ra: Số phải tìm có dạng 30a50
+Ta có: 3 + 0 + a + 5 + 0 = 8 + a
+Vì: a là số chẵn, suy ra: a = 4
+Suy ra: a + b = 4 + 0 = 4^17}383^Tìm một số tự nhiên, biết rằng nếu viết thêm chữ số 0 vào tận cùng bên phải số đó thì được số mới mà tổng của số mới và số phải tìm là 1463 ?^133^Nếu viết thêm chữ số 0 vào tận cùng bên phải số đó thì được số mới gấp 10 lần số cũ
+Tổng số phần bằng nhau là: 10 + 1 = 11 (phần)
+Số phải tìm là: 1463 : 11 x 1 = 133^17}384^Hãy cho biết, nếu giảm chiều rộng một hình chữ nhật đi 37,5% thì phải tăng chiều dài hình chữ nhật đó thêm bao nhiêu phần trăm để diện tích không thay đổi?^60^Chiều dài sau khi giảm đi 37,5% là: 100 - 37,5 = 62,5 (%)
+Nếu diện tích không thay đổi thì chiều rộng là: 100 : 62,5 x 100 = 160 (%)
+Chiều rộng cần tăng thêm là: 160 - 100 = 60 (%)^17}385^Một ôtô đi từ tỉnh A lúc 6 giờ 30 phút, dừng nghỉ dọc đường mất 30 phút và đến tỉnh B lúc 11 giờ. Vận tốc của ôtô là 45km/giờ. Quãng đường từ tỉnh A đến tỉnh B là ....km ?^180^Tổng thời gian xe chạy là: 11 giờ 00 phút - 6 giờ 30 phút - 30 phút = 4 giờ
+Quãng đường từ tỉnh A đến tỉnh B là: 45 x 4 = 180 (km)^17}386^Tính trung bình cộng của 22 số lẻ liên tiếp đầu tiên ?^22^Số lẻ thứ 22 là: 1 + (22 - 1) x 2 = 43
+Trung bình cộng của 22 số lẻ liên tiếp đầu tiên là: (43 + 1) : 2 = 22^17}387^Tìm một số biết 12,5% của số đó bằng 40 ?^320^Số đó là: 40 x 100 : 12,5 = 320^17}388^Số sách ở 2 ngăn là 360 quyển. Người ta chuyển 50 quyển ở ngăn trên xuống ngăn dưới thì thấy số sách ở ngăn dưới bằng 4/5 số sách ở ngăn trên. Hỏi lúc đầu ngăn trên có bao nhiêu quyển sách?^250^Khi chuyển 50 quyển ở ngăn trên xuống ngăn dưới thì tổng số sách ở 2 ngăn vẫn là: 360 quyển
+Tổng số phần bằng nhau sau khi chuyển là: 4 + 5 = 9 (phần) 
+Số sách ở ngăn trên lúc sau là: 360 : 9 x 5 = 200 (quyển)
+Số sách ở ngăn trên lúc đầu là: 200 + 50 = 250 (quyển)^17}389^Bạn An khi thực hiện phép chia một số tự nhiên cho 25, vì viết nhầm chữ số 0 hàng trăm của số bị chia thành 5 và chữ số hàng chục 5 thành 0 nên được thương là 980 và số dư là 4. Hãy tìm số bị chia đúng ?^24054^Số bị chia khi viết nhầm là: 980 x 25 + 4 = 24504
+Số bị chia đúng: 24054^17}390^Hiệu hai số tự nhiên là một số chẵn lớn nhất có 4 chữ số giống nhau, biết số lớn gấp 9 lần số bé. Tìm số bé ?^1111^Hiệu hai số là: 8888 
+Hiệu số phần bằng nhau là: 9 - 1 = 8 (phần)
+Số bé là: 8888 : 8 x 1 = 1111^17}391^Một hình lập phương có tổng độ dài các cạnh là 108cm. Diện tích xung quanh của hình lập phương đó là ....cm2 ?^324^Vì hình lập phương có tất cả là 12 cạnh. Suy ra: Độ dài 1 cạnh là: 108 : 12 = 9 (cm)
+Diện tích xung quanh là: 9 x 9 x 4 = 324 (cm2)^18}392^Tích của 5 số tự nhiên liên tiếp có tận cùng là chữ số....?^0^gta^18}393^Tỉ số phần trăm của phần diện tích được tô màu so với diện tích hình tròn ở hình bên là …% ?^40^Tổng của phần diện tích được tô màu so với diện tích hình tròn là: 2 : 5 = 0,4
+Vậy: Tỉ số phần trăm của phần diện tích được tô màu so với diện tích hình tròn là: 0,4 x 100 = 40 (%)^18}394^Biết x là số tự nhiên lẻ và 6,84:5,7 < x <14,72:3,2. Giá trị của x là...?^3^gta^18}395^Một hình được ghép bởi hai hình tam giác và một hình chữ nhật (như hình bên. Diện tích hình đó là …xăng ti mét vuông ?^134^Diện tích của hình là: 6 x 8 : 2 + 10 x 8 + 10 x 6 : 2 = 134 (cm2)^18}396^Người ta sơn toàn bộ mặt bên ngoài chiếc tháp được tạo nên bằng cách xếp các hình lập phương giống nhau theo một quy luật nhất định . Vậy tầng thứ 20 (kể từ đỉnh là tầng thứ nhất) của tháp có bao nhiêu hình lập phương không được sơn mặt nào. (Biết tháp có 30 tầng) ?^324^Tầng thứ 20 có 4 cạnh, mỗi cạnh là: 20 hình lập phương
+Hình bị sơn là những hình ở mặt ngoài. Suy ra: Hình không được sơn mặt nào là: (20 - 2) x (20 - 2) = 324 (hình)^18}397^Một chiếc túi đựng hai loại bi: bi xanh và bi đỏ. Biết rằng 75% số bi trong túi đó là bi xanh và có 6 viên bi đỏ. Số bi xanh là ....viên bi ?^18^Tỉ số phần trăm của bi đỏ là: 100 - 75 = 25 (%) 
+Tổng số bi đựng trong túi là: 6 x 100 : 25 = 24 (viên)
+Số bi xanh là: 24 - 6 = 18 (viên)^18}398^Một hộp bánh cân nặng 600g gồm 20 chiếc bánh cùng loại. Người ta lấy bớt một số bánh trong hộp để trong hộp chỉ còn lại 12 chiếc bánh thì hộp bánh cân nặng 450g.Vậy vỏ hộp bánh cân nặng ....g ?^225^Số bánh đã lấy ra là: 20 - 12 = 8 (chiếc)
+Cân nặng của 8 chiếc bánh là: 600 - 450 = 150 (g)
+Cân nặng của 1 chiếc bánh là: 150 : 8 = 18,75 (g)
+Cân nặng của 2 chiếc bánh là: 18,75 x 20 = 375 (g)
+Vỏ hộp bánh cân nặng là: 600 - 375 = 225 (g)^18}399^Số tự nhiên nhỏ nhất chia hết cho 6 mà chỉ gồm các chữ số 0 và 1 là...?^1110^gta^18}400^Dùng một số tiền để mua gạo tẻ với giá 6000 đồng/1kg thì mua được 30kg. Với số tiền đó mua gạo nếp với giá 900 đồng/1kg thì được bao nhiêu ki-lô-gam?^20^Có tổng số tiền là: 6000 x 30 = 180 000 (đồng) Mua được số ki-lô-gam gạo nếp là: 180 000 : 9000 = 20 ( k g ) Đáp số: 20 k g ^18}401^Mua 5m vải hết 120 000 đồng. Hỏi mua 15m vải như thế hết bao nhiêu tiền?^360000^Mua 1 m vải hết số tiền là: 120 000 : 5 = 24 000 (đồng) Mua 15 m vải hết số tiền là: 24 000 x 15 = 360 000 (đồng) Đáp số: 360 000 đồng. ^18}402^18 người làm xong một đoạn đường mất 5 ngày. Hỏi 30 người làm xong đoạn đường đó trong bao nhiêu ngày? (Biết sức làm việc của mỗi người là như nhau).^3^1 người  làm xong đoạn đường đó trong số ngày là: 5 x 18 = 90 (ngày) 30 người làm xong đoạn đường đó trong số ngày là: 90 : 30 = 3 (ngày) Đáp số: 3 ngày.^18}403^Điền số thích hợp vào chỗ chấm: 50000 k g = ....... Tấn?^50^Ta có: 1 tấn = 1000 k g . Nhẩm: 50000 : 1000 = 50 . Vậy: 50000 k g = 50 tấn. ^18}404^Xe tải thứ nhất trở được 3 tấn 260kg rau xanh. Xe tải thứ hai chở được ít hơn xe tải thứ nhất 120kg nhưng lại nhiều hơn xe tải thứ ba 540kg. Hỏi trung bình mỗi xe chở được mấy tấn rau xanh?^3^Đổi: 3 tấn 260 k g = 3260 k g . Xe tải thứ nhất chở được số ki-lô-gam rau là: 3260 - 120 = 3140 ( k g ) Xe tải thứ hai chở được số ki-lô-gam rau là: 3140 - 540 = 2600 ( k g ) Cả ba xe chở được số ki-lô-gam rau là: 3260 + 3140 + 2600 = 9000 ( k g ) Trung bình mỗi xe chở được số ki-lô-gam rau là: 9000 : 3 = 3000 ( k g ) 3000 k g = 3 tấn ^18}405^Viết số thích hợp vào chỗ chấm: 12 tạ 7 kg = ..... Kg?^1207^Ta có 1 tạ = 100 k g nên 12 tạ = 1200 k g . Do đó: 12 tạ 7 k g = 12 tạ + 7 k g 1200 k g + 7 k g = 1207 k g^18}406^Một xe máy trung bình mỗi phút đi được 600m. Hỏi:  Mỗi giờ xe máy đi được bao nhiêu ki-lô-mét?^36^Đổi: 1 giờ = 60 phút; 21 k m 600 m = 21600 m . Một giờ xe máy đi được số ki-lô-mét là: 600 × 60 = 36000 ( m ) 36000 m = 36 k m ^18}407^Số thích hợp vào chỗ chấm: 2,4 giờ =…phút?^144^Ta có: 2,4 giờ = 144 phút (vì 60 × 2,4 = 144)^18}408^Tỉ số phần trăm của 32 và 50 là?^64^Tỉ số phần trăm của 32 và 50 là : 32 : 50 = 0,64 = 64% ^18}409^Một lớp học có 30 học sinh, trong đó có 12 bạn nữ. Hỏi số bạn nữ chiếm bao nhiêu phần trăm so với số học sinh cả lớp?^40^Số bạn nữ chiếm số phần trăm so với số học sinh cả lớp : 12 : 30 = 0,4 = 40% Đáp số: 40%.^18}410^Một hình lập phương có diện tích xung quanh là 16 (xăng ti mét vuông)  thì cạnh của hình lập phương đó là bao nhiêu xăng ti mét?^2^Diện tích một mặt của hình lập phương đó là: 16 : 4 = 4 (xăng  ti mét vuông) Ta có: 2 x 2 = 4. Do đó, cạnh của hình lập phương đã cho là 2cm.^18}411^Một khối kim loại hình lập phương có cạnh dài 0,4m. Mỗi đề-xi-mét khối kim loại đó nặng 12,5kg. Hỏi khối kim loại đó nặng bao nhiêu ki-lô-gam ? ^800^Thể tích khối kim loại đó là: 0 , 4 x 0 , 4 x 0 , 4 = 0 , 064 ( m 3 ) 0 , 064 m 3 = 64 d m 3 Khối kim loại  đó nặng số ki-lô-gam là: 12 , 5 x 65 = 800 ( k g )^18}412^Một người đi bộ từ A đến B. Người đó bắt đầu đi từ lúc 7 giờ 10 phút và đến B lúc 8 giờ 40 phút. Quãng đường từ A đến B dài 6km. Hỏi trung bình 1km người đó đi hết bao nhiêu phút ? ^15^Người đó đi bộ quãng đường từ A đến B hết số thời gian là: 8 giờ 40 phút - 7 giờ 10 phút = 1 giờ 30 phút Trung bình 1km người đó đi hết số thời gian là: 1 giờ 30 phút : 6 = 15 phút^18}413^Một ô tô đi từ A lúc 6 giờ đến 9 giờ thì tới B. Đường từ A tới B dài 121km. Dọc đường ô tô dừng lại nghỉ 15 phút. Tính vận tốc của ô tô là bao nhiêu km/giờ?^44^hời gian ô tô đi hết quãng đường AB không kể thời gian nghỉ là: 9 giờ - 6 giờ - 15 phút = 2 giờ 45 phút 2 giờ 45 phút = 2,75 giờ Vận tốc của ô tô là: 121 : 2,75 = 44 (km/giờ) Đáp số : 44 km/giờ. ^18}414^Một ô tô đi từ Hà Nội lúc 6 giờ 30 phút, dừng nghỉ dọc đường 30 phút và đến Thanh Hóa lúc 11 giờ. Vận tốc ô tô là 45 km/giờ. Tính quãng đường từ Hà Nội đến Thanh Hóa là bao nhiêu km ?^180^Thời gian ô tô đi hết quãng đường từ Hà Nội đến Thanh Hóa không kể thời gian nghỉ là: 11 giờ - 6 giờ 30 phút - 30 phút = 4 giờ Quãng đường từ Hà Nội đến Thanh Hóa dài số ki-lô-mét là: 45 x 4 = 180 (km) Đáp số : 180km. ^18}415^Lúc 6 giờ, một người đi xe đạp từ A đến B với vận tốc 15 km/giờ. Lúc 9 giờ, một người đi xe máy cũng khởi hành từ A đuổi theo người đi xe đạp. Sau 1 giờ 48 phút, hai người gặp nhau. Tính vận tốc người đi xe máy là bao nhiêu km/giờ?^40^giaithich^18}416^Năm nay chị hơn em 8 tuổi. Hỏi khi tuổi chị là bao nhiêu thì tuổi chị gấp 5 lần tuổi em?^10^Hiệu số tuổi của hai chị em là: 8 tuổi
+Khi tuổi chị gấp 5 lần tuổi em thì tỉ số giữa tuổi chị và tuổi em là: 5 : 1
+Hiệu số phần bằng nhau là: 5 - 1 = 4 (phần)
+Tuổi của chị khi tuổi chị gấp 5 lần tuổi em là: 8 : 4 x 5 = 10 (tuổi)^19}417^Nếu Lan thêm 1 tuổi thì Lan bằng 1/7 tuổi bà và bằng 1/4 tuổi mẹ. Biết bà hơn mẹ 27 tuổi. Tính tuổi của Lan ?^8^Theo bài ra ta có: 1/7 tuổi bà = 1/4 tuổi mẹ
+Suy ra: Tỉ số giữa tuổi bà và tuổi mẹ là: 7 : 4
+Hiệu số phần bằng nhau là: 7 - 4 = 3 (phần)
+Tuổi bà là: 27 : 3 x 7 = 63 (tuổi)
+Tuổi Lan hiện nay là: 63 : 7 - 1 = 8 (tuổi)^19}418^Hiện nay, tổng số tuổi của hai chị em là 20 tuổi. Sau 5 năm nữa, tuổi của em bằng 2/3 tuổi chị. Hỏi năm nay chị bao nhiêu tuổi? ^13^Tổng số tuổi hai chị em sau 5 năm nữa là: 20 + 5 x 2 = 30 (tuổi)
+Tuổi chị sau 5 năm nữa là: 30 : 5 x 3 = 18 (tuổi)
+Tuổi chị hiện nay là: 18 - 5 = 13 (tuổi)^19}419^Mẹ sinh con năm mẹ 25 tuổi. Năm 2017 tuổi con bằng 2/7 tuổi mẹ. hỏi mẹ sinh năm nào?^1982^Hiệu số phần bằng nhau là: 7 - 2 = 5 (phần)
+Tuổi mẹ năm 2017 là: 25 : 5 x 7 = 35 (tuổi)
+Năm sinh của mẹ là: 2017 - 35 = 1982^19}420^Tính giá trị biểu thức: (236,4 x 10,2 - 46,25 : 0,5) x ( 24,1 x 4 - 48,2 : 0,5)^0^gta^19}421^Năm nay bố Hà 38 tuổi. Sau hai năm nữa tuổi của Hà bằng 1/5 tuổi của bố. Hỏi năm nay Hà bao nhiêu tuổi?^6^Tuổi bố Hà sau hai năm nữa là: 38 + 2 = 40 (tuổi)
+Tuổi Hà sau hai năm nữa là: 40 : 5 x 1 = 8 (tuổi)
+Tuổi Hà hiện nay là: 8 - 2 = 6 (tuổi)^19}422^Hiện nay anh 24 tuổi, em 16 tuổi. Hỏi trước đây mấy năm tuổi em bằng 3/5  tuổi anh?^4^Hiệu số tuổi của hai anh em là: 24 - 16 = 8 (tuổi)
+Hiệu số phần bằng nhau là: 5 - 3 = 2 (phần)
+Tuổi em hiện nay là: 8 : 2 x 3 = 12 (tuổi)
+Số năm trước đây khi tuổi em bằng 3/5 tuổi anh là: 16 - 12 = 4 (tuổi)^19}423^Năm nay tuổi mẹ hơn tuổi con là 25 tuổi. Hai năm trước đây, tuổi mẹ bằng 7/5 hiệu số tuổi hai mẹ con. Vậy mẹ năm nay … tuổi ?^37^Hiệu số tuổi hai mẹ con là 25 tuổi
+Tuổi mẹ hai năm trước đây là: 25 : 5 x 7 = 35 (tuổi)
+Tuổi mẹ hiện nay là: 35 + 2 = 37 (tuổi)^19}424^Khi anh Tú 9 tuổi thì mẹ sinh em Na. Năm nay tuổi Na bằng 1/4 tuổi anh Tú. Hỏi năm nay anh Tú bao nhiêu tuổi?^12^Hiệu số tuổi của hai anh em là: 9 (tuổi)
+Tỉ số tuổi của hai anh em là: 1/4
+Hiệu số phần bằng nhau là: 4 - 1 = 3 (phần)
+Tuổi anh Tú là: 9 : 3 x 4 =12 (tuổi)^19}425^Bình hơn Hoa 14 tuổi. Nếu thêm vào tuổi của Hoa 2 tuổi thì tuổi của Bình gấp 4 lần tuổi của Hoa. Hỏi Bình bao nhiêu tuổi?^16^Nếu thêm vào tuổi của Hoa 2 tuổi thì Bình hơn Hoa số tuổi là: 14 - 2 = 12 (tuổi)
+Hiệu số phần bằng nhau là: 4 - 1 = 3 (phần)
+Tuổi của Bình là: 12 : 3 x 4 = 16 (tuổi)^19}426^3 phút 40 giây x 6 + 3,4 phút x 5 - 120 giây = … phút ?^37^gta^19}427^Mẹ sinh con năm 28 tuổi. Khi tuổi mẹ bằng bao nhiêu thì tuổi mẹ gấp 3 lần tuổi con?^42^Hiệu số tuổi của hai mẹ con là: 28 (tuổi)
+Hiệu số phần bằng nhau là: 3 - 1 = 2 (phần)
+Tuổi mẹ gấp 3 lần tuổi con khi: 28 : 2 x 3 = 42 (tuổi)^19}428^Gia đình Tý có 4 người. Bố Tý năm nay 42 tuổi, gấp 7 lần tuổi Tý. Tuổi mẹ Tý hơn 6 lần tuổi Tý là 4 tuổi. Tuổi anh Tý kém tuổi trung bình cộng của cả nhà là 16 tuổi. Hỏi anh Tý năm nay mấy tuổi?^8^Tuổi của Tý là: 42 : 7 = 6 (tuổi)
+Tuổi mẹ Tý là: 6 x 6 + 4 = 40 (tuổi)
+Tuổi trung bình của gia đình Tý: (42 + 6 + 40 - 16) : 3 = 24 (tuổi)
+Tuổi anh Tý là: 24 - 16 = 8 (tuổi)^19}429^Hiện nay con 4 tuổi, mẹ 31 tuổi. Hỏi sau mấy năm nữa tuổi của con bằng 25% tuổi của mẹ?^5^Hiệu số tuổi hai mẹ con là: 31 - 4 = 27 (tuổi)
+Đổi: 25% = 1/4. Hiệu số phần bằng nhau là: 4 - 1 = 3 (phần)
+Tuổi con khi tuổi của con bằng 25% tuổi của mẹ là: 27 : 3 = 9 (tuổi)
+Số năm cần để tuổi của con bằng 25% tuổi của mẹ là: 9 - 4 = 5 (tuổi)^19}430^Mẹ sinh con năm mẹ 32 tuổi. Hỏi khi mẹ bao nhiêu tuổi thì 3 lần tuổi mẹ bằng 7 lần tuổi con? ^56^Mẹ sinh con năm mẹ 32 tuổi có nghĩa là hiệu số tuổi của hai mẹ con là 32
+Nếu 3 lần tuổi mẹ bằng 7 lần tuổi con thì tỉ số tuổi giữa mẹ và con là 7/3. Suy ra số phần bằng nhau là 4
+Vậy tuổi của mẹ khi đó là: 32 : 4 x 7 = 56 (tuổi)^19}431^Mẹ sinh con năm 28 tuổi. Hỏi khi mẹ bao nhiêu tuổi thì 9 lần tuổi con bằng 5 lần tuổi mẹ?^63^Hiệu số tuổi của hai mẹ con là 28 tuổi
+Khi 9 lần tuổi con bằng 5 lần tuổi mẹ thì tỉ số tuổi của hai mẹ con là: 9/5
+Hiệu số phần bằng nhau là: 9 - 5 = 4 (phần)
+Tuổi anh sau 4 năm nữa là: 28 : 4 x 9 = 63 (tuổi)^19}432^Mẹ sinh con năm mẹ 28 tuổi. Hiện nay, tuổi con bằng 1/3 tuổi mẹ. Hỏi trước đây 4 năm, con bao nhiêu tuổi ?^10^Hiệu số phần bằng nhau là: 3 - 1 = 2 (phần)
+Tuổi con hiện nay là: 28 : 2 = 14 (tuổi)
+Trước đây 4 năm, tuổi con là: 14 - 4 = 10 (tuổi)^19}433^Mẹ sinh con lúc mẹ 24 tuổi. 4 năm nữa tuổi con bằng 2/5 tuổi mẹ. Vậy tuổi con hiện nay là ... ?^12^Vì: Mẹ sinh con lúc mẹ 24 tuổi, suy ra: Mẹ hơn con 24 tuổi
+Hiệu số phần bằng nhau là: 5 - 2 = 3 (phần)
+Tuổi con sau 4 năm nữa là: 24 : 3 x 2 = 16 (tuổi)
+Tuổi con hiện nay là: 16 - 4 = 12 (tuổi)^19}434^Có bao nhiêu số chẵn có ba chữ số mà chữ số hàng trăm của mỗi số đều là số lẻ? ^250^gta^19}435^Một người bỏ ra 1 800 000 đồng tiền vốn mua rau. Sau khi bán hết số rau đó thì thu được tiền lãi bằng 30% tiền vốn. Hỏi : Người đó thu được bao nhiêu tiền lãi ?^540000 ^Người đó thu được số tiền lãi là: 1 800 000 : 100 x 30 = 540 000 (đồng)^19}436^Tìm số tự nhiên y  biết : 224,1 < y ⨯ 5 < 225,8 ; y là ?^45^224 , 1 < y × 5 < 225 , 8 => 224 , 1 : 5 < y < 225 , 8 : 5  => 44 , 82 < y < 45 , 16 . Vậy y = 45 ^19}437^Có hai hình lập phương. Các kích thước của hình lập phương thứ nhất gấp 2 lần các kích thước của hình lập phương thứ hai. Hỏi thể tích hình lập phương thứ nhất gấp mấy lần thể tích hình lập phương thứ hai?^8^Gọi a là độ dài cạnh hình lập phương thứ hai. Khi đó độ dài cạnh hình lập phương thứ nhất là 2 a . Thể tích hình lập phương thứ hai là: V 2 = a x a x a Thể tích hình lập phương thứ nhất là: V 1 = 2 a x 2 a x 2 a = ( 2 x 2 x 2 ) x ( a x a x a ) = 8 x V 2 Vậy thể tích hình lập phương thứ nhất gấp 8 lần thể tích hình lập phương thứ hai. ^19}438^Hình tròn thứ nhất có đường kính gấp 3 lần đường kính hình tròn thứ hai. Hỏi diện tích hình tròn thứ nhất gấp mấy lần diện tích hình tròn thứ hai?^9^Gọi r là bán kính của hình tròn thứ hai. Khi đó bán kính của hình tròn thứ nhất là 3 r . Diện tích hình tròn thứ hai là: V 2 = r x r x 3 , 14 Thể tích hình hộp chữ nhật thứ nhất là: V 1 = 3 r x 3 r x 3 , 14 = ( 3 x 3 ) x ( r x r x 3 , 14 ) = 9 x V 2 Vậy diện tích hình tròn thứ nhất gấp 9 lần diện tích hình tròn thứ hai. ^19}439^Một bể chứa nước có dạng hình hộp chữ nhật đo bên trong có chiều dài là 2,1m, chiều rộng là 1,5m, chiều cao là 1,2m. Hỏi bể đó chứa được bao nhiêu lít nước ?^3780^Thể tích bể nước là: 21 x 1,5 x 1,2 = 3,78 (mét khối) 3,78 mét khối = 378 đề xi mét khối = 3780 (lít) Đáp số: 3780 lít. ^19}440^Khi nhân một số tự nhiên với 207, một học sinh sơ suất đã bỏ quên chữ số 0 của thừa số thứ hai nên tích tìm được kém tích đúng là 24120. Tìm số tự nhiên đó ?^134^Số tự nhiên đó là: 24120 : (207 - 27) = 134^20}441^Tìm một số biết nếu thêm chữ số 2 vào bên phải thì số đó tăng 173 đơn vị ?^19^Nếu thêm chữ số 2 vào bên phải thì số đó tăng tăng lên 10 lần và 2 đơn vị. Suy ra: (173 - 2)  ứng với 9 lần số đó
+Số phải tìm là: 171 : 9 = 19^20}442^Số nhỏ nhất có 6 chữ số chia hết cho cả 2; 3; 5 và 9 là ...^100080^gta^20}443^Tính tổng của tất cả các số nhỏ hơn 1000 mà các chữ số của nó đều là chữ số chẵn ?^55500^gta^20}444^Cho dãy số: …; 51; 57; 63. Tìm số hạng đầu tiên của dãy số có 10 số hạng trên^9^Quy luật của dãy số là: Số hạng tiếp theo bằng số hạng liền kề trước nó cộng 6
+Áp dụng công thức: Số đầu = Số cuối - (Số số hạng - 1) x Đơn vị khoảng cách. Ta được:
+Số đầu = 63 - 9 x 6 = 9^20}445^Viết số tự nhiên nhỏ nhất trong các số chỉ gồm có các chữ số 7 và chia hết cho 9 ?^777777777^9 x 7 = 63 (chia hết cho 9)^20}446^Có bao nhiêu số có 3 chữ số khác nhau mà các chữ số đều chẵn?^48^Ta có 5 chữ số chẵn gồm: 0, 2, 4, 6, 8
+Có 4 cách chọn chữ số hàng trăm (loại chữ số 0)
+Có 4 cách chọn chữ số hàng chục (loại chữ số hàng trăm)
+Có 3 cách chọn chữ số hàng đơn vị (loại chữ số hàng trăm và hàng chục)
+Theo quy tắc nhân, ta có: 4 x 4 x 3 = 48 (số)^20}447^Khi nhân một số tự nhiên với 325, do sơ xuất nên một học sinh đã viết nhầm vị trí chữ số hàng đơn vị và chữ số hàng chục của số 325 cho nhau nên kết quả tìm được tăng lên 7506 đơn vị. Tìm tích đúng của phép nhân đó ?^90350^Khi đổi chỗ chữ số hàng đơn vị và chữ số hàng chục, thừa số thứ hai tăng thêm là: 352 - 325 = 27
+Thừa số thứ nhất là: 7506 : 27 = 278
+Tích đúng của phép nhân đó là: 278 x 325 = 90350^20}448^Số tiếp theo trong dãy số 4; 13; 22; 31; 40; 49; … là số …?^58^Qui luật của dãy số là: Số hạng tiếp theo bằng số hạng trước cộng với 9
+Số tiếp theo trong dãy là: 49 + 9 = 58^20}449^Khi nhân một số tự nhiên với 327, do sơ suất, một học sinh đã đổi chỗ chữ số hàng trăm và hàng chục của thừa số thứ 2 nên kết quả phép tính giảm đi 37980 đơn vị.Tìm tích đúng của phép nhân đó ?^137667^Khi đổi chỗ chữ số hàng trăm và hàng chục cho nhau thì thừa số thứ 2 là 237 và tích sẽ giảm: 327 - 237 = 90 lần thừa số thứ nhất
+Thừa số thứ nhất là: 37980 : 90 = 421
+Tích đúng là: 421 x 327 = 137667^20}450^Với các chữ số 1, 3, 4, 5 ta lập được bao nhiêu số có bốn chữ số chia hết cho 5?^64^Có 1 cách chọn chữ số hàng đơn vị (chữ số 5)
+Có 4 cách chọn chữ số hàng nghìn
+Có 4 cách chọn chữ số hàng trăm
+Có 4 cách chọn chữ số hàng chục
+Số số có bốn chữ số chia hết cho 5 là: 1 x 4 x 4 x 4 = 64 (số)^20}451^Có bao nhiêu số có 4 chữ số mà chữ số tận cùng là 8?^900^(9998 - 1008) : 10 + 1 = 900 (số)^20}452^Cho dãy số: …; …; …; 238; 245; 252 có 35 số hạng. Tìm số hạng đầu tiên của dãy ?^14^Ta có: 252 - 245 = 7
+245 - 238 = 7
+Suy ra: Đơn vị khoảng cách là: 7
+Số hạng đầu tiên là: 252 - (35 - 1) x 7 = 252 - 238 = 14^20}453^Tìm tổng của tất cả các số chẵn có bốn chữ số khi chia cho 5 dư 2 ?^4947300^Số hạng đầu tiên là: 1002
+Số hạng cuối cùng là: 9992
+Đơn vị khoảng cách là: 10
+Số số hạng là: (9992 - 1002) : 10 + 1 = 900 (số hạng)
+Tổng là: (9992 + 1002) x 900 : 2 = 4947300^20}454^Có bao nhiêu số tự nhiên lẻ có ba chữ số mà mỗi số đó chia cho 5 dư 2?^90^gta^20}455^Cho dãy số …; 492; 495; 498. Tìm số hạng đầu tiên của dãy số sau biết dãy số có 100 số hạng ?^201^Quy luật của dãy số là: Số hạng tiếp theo bằng số hạng liền trước cộng thêm 3
+Áp dụng công thức: Số đầu = Số cuối - (Số số hạng - 1) x Đơn vị khoảng cách
+Ta được: 498 - 99 x 3 = 201^20}456^Có bao nhiêu số có 3 chữ số mà chữ số hàng đơn vị của các số đó là 8?^90^(998 - 108) : 10 + 1 = 90 (số)^20}457^Khi chia một số có sáu chữ số cho 216 ta được thương là 2325 và còn dư. Vậy giá trị lớn nhất có thể của số bị chia trong phép chia đó là ...?^502415^Giá trị lớn nhất có thể của số bị chia trong phép chia đó là: 2325 x 216 + 215 = 502415^20}458^Từ 1 đến 2017 có tất cả bao nhiêu chữ số 1 ?^1610^gta^20}459^Có 1,6 tấn gạo được đổ đều vào các túi 4kg. Hỏi có bao nhiêu túi gạo như thế ?^400^Đổi 1,6 tấn = 1600kg. Có số túi gạo là: 1600 : 4 = 400 (túi)^20}460^Một tổ sản xuất ngày đầu làm được 42 sản phẩm, ngày thứ hai làm được 45 sản phẩm, ngày thứ ba làm được 48 sản phẩm. Hỏi trung bình mỗi ngày làm được bao nhiêu sản phẩm ? ^45^Trung bình mỗi ngày tổ sản xuất đó làm được số sản phầm là: (42 + 45 + 48) : 3 = 45 (sản phẩm)^20}461^Có 12 người thì làm xong một công trình trong 9 ngày. Hỏi nếu có 18 người làm xong công trình đó trong mấy ngày ? (Biết mức làm của mọi người là như nhau)^6^1 người làm xong công trình đó trong số ngày là: 12 x 9 = 108 (ngày) Nếu có 18 người làm xong công trình đó trong số ngày là: 108 : 18 = 6 (ngày) ^20}462^Một bếp ăn tập thể chuẩn bị gạo đủ ăn cho 60 người trong 12 ngày. Nếu có 90 người thì ăn hết số gạo đó trong bao nhiêu ngày ? (biết rằng mức ăn của mọi người là như nhau).^8^1 người ăn hết số gạo đó trong số ngày là: 60 x 12 = 720 (ngày) Nếu có 90 người thì ăn hết số gạo đó trong số ngày là: 720 : 90 = 8 (ngày) ^20}463^Một thư viện đầu năm có 5000 quyển sách. Cứ sau mỗi  năm thì số sách của thư viện tăng 4% (so với số sách của năm trước). Hỏi sau 2 năm thì số sách của thư viện là bao nhiêu quyển ?^5408 ^giaithich^20}

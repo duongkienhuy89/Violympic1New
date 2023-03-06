@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="level_text_size">13dp</dimen>
+    <dimen name="level_text_width">108dp</dimen>
+    <dimen name="level_text_height">0dp</dimen>
+    <dimen name="level_text_pading_left">12dp</dimen>
+    <dimen name="help_width">57dp</dimen>
+    <dimen name="help_height">50dp</dimen>
+    <dimen name="help_magin_right">20dp</dimen>
+    <dimen name="answer_txt_size">22dp</dimen>
+    <dimen name="answer_txt_padingleft">10dp</dimen>
+    <dimen name="answer_txt_padingright">5dp</dimen>
+    <dimen name="question_txt_padingleft">13dp</dimen>
+    <dimen name="question_txt_padingright">10dp</dimen>
+    <dimen name="everyone_txt_per">17dp</dimen>
+    <dimen name="review_width">33dp</dimen>
+    <dimen name="review_height">60dp</dimen>
+    <dimen name="review_item_width">22dp</dimen>
+    <dimen name="review_item_height">40dp</dimen>
+    <dimen name="rank_title_size">16dp</dimen>
+    <dimen name="width_item_vip">270dp</dimen>
+    <dimen name="size_txt_item_vip">20dp</dimen>
+</resources>

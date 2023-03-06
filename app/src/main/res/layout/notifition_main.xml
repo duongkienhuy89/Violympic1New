@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_fores"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/thomoi"
+        android:layout_width="223dp"
+        android:layout_height="250dp"/>
+    <RelativeLayout
+        android:background="@drawable/bg_question_moutain"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_title_notifi"
+            android:text="@string/member_vip"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_content_notifi"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_centerInParent="true"
+            android:text="@string/buy_pro"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/play"
+                android:onClick="onClickBackGrade"
+                android:textColor="@android:color/black"
+                android:text="@string/home"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

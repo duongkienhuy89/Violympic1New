@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fores"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="63dp"
+        app:lottie_fileName="dan_chim.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+    <ImageView
+        android:id="@+id/iv_backLevel"
+        android:onClick="onClickBackLevel"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gv_level"
+        app:layout_constraintRight_toLeftOf="@+id/tv_grade_level"
+        app:layout_constraintLeft_toRightOf="@+id/iv_backLevel"
+
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:lottie_fileName="6686-sun.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+    <TextView
+        android:id="@+id/tv_grade_level"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gv_level"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <GridView
+        android:id="@+id/gv_level"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/iv_backLevel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:columnWidth="75dp"
+
+        android:gravity="center"
+        android:numColumns="5"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

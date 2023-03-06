@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">hoctructuyen.somee.com</domain>
+        <domain includeSubdomains="true">ailatrieuphugsx.somee.com</domain>
+        <domain includeSubdomains="true">ailatrieuphupd.somee.com</domain>
+        <domain includeSubdomains="true">ailatrieuphubm.somee.com</domain>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Toán Cấp 1</string>
+    <string name="scrore">Điểm</string>
+    <string name="time">Thời gian</string>
+    <string name="inputnotblank">Kết quả không được để trống</string>
+    <string name="status">Nhiệm vụ:</string>
+    <string name="resolve">Lời Giải:</string>
+    <string name="result">Đáp số:</string>
+    <string name="doubleclick">Nhấn Back 2 lần liên tiếp để thoát !</string>
+    <string name="summary_score">Tổng điểm:</string>
+    <string name="find_equal">Tìm Cặp Bằng Nhau</string>
+    <string name="hinhtamgiac">Hình tam giác</string>
+    <string name="hinhtron">Hình tròn</string>
+    <string name="hinhvuong">Hình vuông</string>
+    <string name="hinhchunhat">Hình chữ nhật</string>
+    <string name="hinhsao">Hình ngôi sao</string>
+    <string name="hinhlucgiac">Hình lục giác</string>
+    <string name="hinhngugiac">Hình ngũ giác</string>
+    <string name="thanhcong">Thành công</string>
+    <string name="thatbai">Thất bại</string>
+    <string name="ga">con vịt</string>
+    <string name="flower">bông hoa</string>
+    <string name="start_equal">🍭  Bạn hãy chọn 2 ô liên tiếp, có giá trị bằng nhau.\n\n🍭  Với mỗi cặp chọn đúng được cộng 10 điểm, chọn sai bị trừ 1 điểm.\n\n🍭  Chọn sai 3 lần bài thi sẽ kết thúc.</string>
+    <string name="startmoutain">👉 Bạn hãy đi tới đỉnh núi, bằng cách trả lời tất cả các câu hỏi chương trình đưa ra.\n\n👉 Với mỗi câu trả lời đúng được cộng 10 điểm, nếu trả lời sai trừ 1 điểm.\n\n👉 Trả lời sai 3 lần bài thi sẽ kết thúc.</string>
+    <string name="start_monkey">Bạn hãy dùng ngón tay vuốt sang 2 bên trái hoặc phải để tìm tấm bảng có giá trị bằng với tấm bảng chú khỉ đang cầm.</string>
+    <string name="break_home">Bạn có chắc chắn muốn thoát game?</string>
+    <string name="exit_home">Thoát Game</string>
+    <string name="start">Bắt đầu</string>
+    <string name="grade1">Lớp 1</string>
+    <string name="grade2">Lớp 2</string>
+    <string name="grade3">Lớp 3</string>
+    <string name="grade4">Lớp 4</string>
+    <string name="grade5">Lớp 5</string>
+    <string name="khieulai">Khiếu lại câu này</string>
+    <string name="member_vip">🚀 Thành Viên VIP</string>
+    <string name="buy_pro">👉 Chơi được tất cả các vòng thi.\n\n👉 Học không bị giới hạn các lớp.\n\n👉 Ưu tiên cập nhật các bài tập mới nhất.\n\n👉 Không bị làm phiền bởi quảng cáo.</string>
+    <string name="buy_now">Nâng cấp ngay</string>
+    <string name="buy_affter">Để sau mua</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phepcong">Phép cộng</string>
+    <string name="pheptru">Phép trừ</string>
+    <string name="phepcongvstru">Phép cộng\n và \nPhép trừ</string>
+    <string name="phepcongvstru2">Phép cộng và Phép trừ</string>
+    <string name="share">Chia Sẻ</string>
+    <string name="cmt">Góp Ý</string>
+    <string name="home">Trang chủ</string>
+    <string name="vip_item">Chọn lớp muốn nâng cấp lên PRO ?</string>
+    <string name="title_notifi">Giúp Bé Học Giỏi</string>
+    <string name="content_notifi">🚀Ứng dụng  học toán số 1\n\n🚀Giúp học sinh tiểu học nâng cao kiến thức môn toán\n\n🚀Đa dạng các bài toán giúp kích thích tư duy</string>
+    <string name="share_app">Bạn thấy hay thì chia sẻ ngay ứng dụng này cho bạn bè!</string>
+    <string name="rate">Để lại nhận xét về App Toán Violympic này ?</string>
+    <string name="feedback">Tham gia nhóm Facebook để góp ý ?</string>
+    <string name="yesads1">BẠN ĐÃ NÂNG CẤP THÀNH CÔNG PRO TOÁN 1 ✅ </string>
+    <string name="yesads2">BẠN ĐÃ NÂNG CẤP THÀNH CÔNG PRO TOÁN 2 ✅ </string>
+    <string name="yesads3">BẠN ĐÃ NÂNG CẤP THÀNH CÔNG PRO TOÁN 3 ✅ </string>
+    <string name="yesads4">BẠN ĐÃ NÂNG CẤP THÀNH CÔNG PRO TOÁN 4 ✅ </string>
+    <string name="yesads5">BẠN ĐÃ NÂNG CẤP THÀNH CÔNG PRO TOÁN 5 ✅ </string>
+    <string name="yesadsall">BẠN ĐÃ NÂNG CẤP THÀNH CÔNG PRO TOÀN BỘ✅ </string>
+    <string name="sussespro">Bạn hãy khởi động lại ứng dụng để trải nghiệm phiên bản PRO!</string>
+    <string name="title_dialog_vip">Đã hết lượt chơi thử</string>
+    <string name="content_dialog_vip">Bạn cần nâng cấp lên thành viên VIP để chơi tiếp</string>
+    <string name="default_notification_channel_id">toancap1</string>
+
+    <string name="admob_app_id">ca-app-pub-5148482490300491~9852569762</string>
+    <string name="admob_inapp">ca-app-pub-5148482490300491/2329302968</string>
+
+<!--    //Test-->
+<!--    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+<!--    <string name="admob_inapp">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <string name="notifi_title">Duy trì luyện tập thường xuyên</string>
+    <string name="notifi_content">Giúp bé học giỏi toán ?</string>
+    <string name="of">của</string>
+    <string name="vip1_check">PRO Toán Lớp 1 ✅</string>
+    <string name="vip2_check">PRO Toán Lớp 2 ✅</string>
+    <string name="vip3_check">PRO Toán Lớp 3 ✅</string>
+    <string name="vip4_check">PRO Toán Lớp 4 ✅</string>
+    <string name="vip5_check">PRO Toán Lớp 5 ✅</string>
+    <string name="vip_all_check">PRO Tất Cả Các Lớp ✅</string>
+
+    <string name="vip1_warning"><b>50k</b> - PRO Toán Lớp 1 ⚠</string>
+    <string name="vip2_warning"><b>50k</b> - PRO Toán Lớp 2 ⚠</string>
+    <string name="vip3_warning"><b>50k</b> - PRO Toán Lớp 3 ⚠</string>
+    <string name="vip4_warning"><b>50k</b> - PRO Toán Lớp 4 ⚠</string>
+    <string name="vip5_warning"><b>50k</b> - PRO Toán Lớp 5 ⚠</string>
+    <string name="vip_all_warning"><b>150k</b> - PRO Tất Cả ⚠</string>
+</resources>

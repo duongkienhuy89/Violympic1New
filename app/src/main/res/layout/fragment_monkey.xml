@@ -1,0 +1,566 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.violympic.frame.FrameMonkey">
+
+    <!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginLeft="180dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_monkey_pheptoan_bg"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="188dp"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:id="@+id/iv_monkey_pheptoan_bg"
+                android:background="@drawable/tablemonkey"
+                android:layout_width="188dp"
+                android:layout_height="90dp"/>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_monkey_pheptoan"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_monkey_phantram_ps"
+
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/tv_monkey_phantram_ps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_tuso_phantram"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_mauso_phantram"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/ll_monkey_ps_cua1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_tuso_cua1"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_mauso_cua1"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv_monkey_cua_ps1"
+                            android:layout_toRightOf="@+id/ll_monkey_ps_cua1"
+                            android:textSize="20dp"
+
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:id="@+id/ll_monkey_ps_cua2"
+                            android:layout_toRightOf="@+id/tv_monkey_cua_ps1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_tuso_cua2"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_mauso_cua2"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv_monkey_cua_ps2"
+                            android:layout_toRightOf="@+id/ll_monkey_ps_cua2"
+                            android:textSize="20dp"
+
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:id="@+id/ll_monkey_ps_cua3"
+                            android:layout_toRightOf="@+id/tv_monkey_cua_ps2"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_tuso_cua3"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_mauso_cua3"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_monkey_hs1"
+
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_monkey_ps_hs1"
+                            android:layout_toRightOf="@+id/tv_monkey_hs1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_tuso_hs1"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_mauso_hs1"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv_monkey_pheptoan_hs"
+                            android:layout_toRightOf="@+id/ll_monkey_ps_hs1"
+
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/tv_monkey_hs2"
+                            android:layout_toRightOf="@+id/tv_monkey_pheptoan_hs"
+
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_monkey_ps_hs2"
+                            android:layout_toRightOf="@+id/tv_monkey_hs2"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_tuso_hs2"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_mauso_hs2"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/rl_monkey_bg_tranfom"
+                android:background="@drawable/item_tranfom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_monkey_2_pheptoan_bg"
+            android:layout_below="@+id/rl_monkey_pheptoan_bg"
+android:visibility="gone"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="188dp"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:id="@+id/iv_monkey_2_pheptoan_bg"
+                android:background="@drawable/tablemonkey"
+                android:layout_width="188dp"
+                android:layout_height="90dp"/>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_monkey_2_pheptoan"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_monkey_2_phantram_ps"
+
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/tv_monkey_2_phantram_ps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_tuso_phantram"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_mauso_phantram"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/ll_monkey_2_ps_cua1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_tuso_cua1"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_mauso_cua1"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv_monkey_2_cua_ps1"
+                            android:layout_toRightOf="@+id/ll_monkey_2_ps_cua1"
+                            android:textSize="20dp"
+
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:id="@+id/ll_monkey_2_ps_cua2"
+                            android:layout_toRightOf="@+id/tv_monkey_2_cua_ps1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_tuso_cua2"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_mauso_cua2"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv_monkey_2_cua_ps2"
+                            android:layout_toRightOf="@+id/ll_monkey_2_ps_cua2"
+                            android:textSize="20dp"
+
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:id="@+id/ll_monkey_2_ps_cua3"
+                            android:layout_toRightOf="@+id/tv_monkey_2_cua_ps2"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_tuso_cua3"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_mauso_cua3"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_monkey_2_hs1"
+
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_monkey_2_ps_hs1"
+                            android:layout_toRightOf="@+id/tv_monkey_2_hs1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_tuso_hs1"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_mauso_hs1"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv_monkey_2_pheptoan_hs"
+                            android:layout_toRightOf="@+id/ll_monkey_2_ps_hs1"
+
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/tv_monkey_2_hs2"
+                            android:layout_toRightOf="@+id/tv_monkey_2_pheptoan_hs"
+
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_monkey_2_ps_hs2"
+                            android:layout_toRightOf="@+id/tv_monkey_2_hs2"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_tuso_hs2"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_monkey_2_mauso_hs2"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textSize="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/rl_monkey_2_bg_tranfom"
+                android:background="@drawable/item_tranfom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_monkey_left"
+        android:visibility="gone"
+        android:src="@drawable/bt_left_vn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/iv_monkey_right"
+        android:visibility="gone"
+        android:src="@drawable/bt_right_vn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+</FrameLayout>

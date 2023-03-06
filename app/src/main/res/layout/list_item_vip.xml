@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_fores"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/wrap_buy_boder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="20dp"
+            android:background="@drawable/wrap_buy_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_title_vip_item"
+                android:text="@string/vip_item"
+                android:textColor="@android:color/black"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/ll_item_vip1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+           <LinearLayout
+              android:id="@+id/ll_item_vip1"
+
+              android:orientation="horizontal"
+              app:layout_constraintTop_toBottomOf="@+id/tv_title_vip_item"
+              app:layout_constraintBottom_toTopOf="@id/ll_item_vip3"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toLeftOf="@+id/ll_item_vip2"
+              android:background="@drawable/item_vip"
+              android:layout_width="@dimen/width_item_vip"
+              android:layout_height="55dp">
+
+               <TextView
+                   android:id="@+id/tv_item_vip1"
+                   android:textStyle="italic"
+                   android:textSize="@dimen/size_txt_item_vip"
+                   android:text="@string/vip1_warning"
+                   android:textColor="@color/black"
+                   android:gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"/>
+          </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_vip2"
+
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_vip_item"
+                app:layout_constraintBottom_toTopOf="@id/ll_item_vip4"
+                app:layout_constraintLeft_toRightOf="@+id/ll_item_vip1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@drawable/item_vip"
+                android:layout_width="@dimen/width_item_vip"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/tv_item_vip2"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/size_txt_item_vip"
+                    android:text="@string/vip2_warning"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_vip3"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/ll_item_vip1"
+                app:layout_constraintBottom_toTopOf="@id/ll_item_vip5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/ll_item_vip2"
+                android:background="@drawable/item_vip"
+                android:layout_width="@dimen/width_item_vip"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/tv_item_vip3"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/size_txt_item_vip"
+                    android:text="@string/vip3_warning"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_vip4"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/ll_item_vip2"
+                app:layout_constraintBottom_toBottomOf="@id/ll_item_vip_all"
+                app:layout_constraintLeft_toRightOf="@+id/ll_item_vip1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@drawable/item_vip"
+                android:layout_width="@dimen/width_item_vip"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/tv_item_vip4"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/size_txt_item_vip"
+                    android:text="@string/vip4_warning"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_vip5"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/ll_item_vip3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/ll_item_vip2"
+                android:background="@drawable/item_vip"
+                android:layout_width="@dimen/width_item_vip"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/tv_item_vip5"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/size_txt_item_vip"
+                    android:text="@string/vip5_warning"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_vip_all"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/ll_item_vip4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/ll_item_vip1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@drawable/item_vip"
+                android:layout_width="@dimen/width_item_vip"
+                android:layout_height="55dp">
+                <TextView
+                    android:id="@+id/tv_item_vipall"
+                    android:textStyle="italic|bold"
+                    android:textSize="23dp"
+                    android:text="@string/vip_all_warning"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <ImageView
+        android:onClick="onClick_Cancel_Vip_List"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/close"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/la_buy_vip"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_fileName="17297-fireworks.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+</RelativeLayout>

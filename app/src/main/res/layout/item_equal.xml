@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="133dp"
+    android:layout_height="65dp">
+
+    <ImageView
+        android:id="@+id/rl_item_pheptoan_bg"
+        android:background="@drawable/item_equal"
+        android:layout_width="133dp"
+        android:layout_height="65dp"/>
+
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rl_item_pheptoan_bg"-->
+<!--       android:background="@drawable/item_equal"-->
+<!--        android:layout_width="133dp"-->
+<!--        android:layout_height="65dp">-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rl_item_bg_tranfom"-->
+<!--        android:background="@drawable/item_tranfom"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+        <TextView
+            android:id="@+id/tv_item_pheptoan"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_item_phantram_ps"
+
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_item_phantram_ps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_item_tuso_phantram"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_item_mauso_phantram"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_item_ps_cua1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_item_tuso_cua1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_item_mauso_cua1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_item_cua_ps1"
+                    android:layout_toRightOf="@+id/ll_item_ps_cua1"
+                    android:textSize="20dp"
+
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:id="@+id/ll_item_ps_cua2"
+                    android:layout_toRightOf="@+id/tv_item_cua_ps1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_item_tuso_cua2"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_item_mauso_cua2"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_item_cua_ps2"
+                    android:layout_toRightOf="@+id/ll_item_ps_cua2"
+                    android:textSize="20dp"
+
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:id="@+id/ll_item_ps_cua3"
+                    android:layout_toRightOf="@+id/tv_item_cua_ps2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_item_tuso_cua3"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_item_mauso_cua3"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_item_hs1"
+
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_item_ps_hs1"
+                    android:layout_toRightOf="@+id/tv_item_hs1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_item_tuso_hs1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_item_mauso_hs1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_item_pheptoan_hs"
+                    android:layout_toRightOf="@+id/ll_item_ps_hs1"
+
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_item_hs2"
+                    android:layout_toRightOf="@+id/tv_item_pheptoan_hs"
+
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_item_ps_hs2"
+                    android:layout_toRightOf="@+id/tv_item_hs2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_item_tuso_hs2"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_item_mauso_hs2"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+<!--    </RelativeLayout>-->
+<!--    </RelativeLayout>-->
+
+    <ImageView
+        android:id="@+id/rl_item_bg_tranfom"
+        android:background="@drawable/item_tranfom"
+        android:layout_width="133dp"
+        android:layout_height="65dp"/>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.violympic.toanlop1.MainActivity">
+    <ViewFlipper
+        android:id="@+id/viewFliper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/lnOu0"
+            layout="@layout/main_game" />
+
+        <include
+            android:id="@+id/lnOu1"
+            layout="@layout/grade_game" />
+        <include
+            android:id="@+id/lnOu2"
+            layout="@layout/level_math" />
+        <include
+            android:id="@+id/lnOu3"
+            layout="@layout/start_equal_game" />
+        <include
+            android:id="@+id/lnOu4"
+            layout="@layout/equal_game" />
+        <include
+            android:id="@+id/lnOu5"
+            layout="@layout/game_over_equal" />
+        <include
+            android:id="@+id/lnOu6"
+            layout="@layout/start_monkey_game" />
+        <include
+            android:id="@+id/lnOu7"
+            layout="@layout/monkey_game" />
+        <include
+            android:id="@+id/lnOu8"
+            layout="@layout/game_over_monkey" />
+        <include
+            android:id="@+id/lnOu9"
+            layout="@layout/start_mountain" />
+        <include
+            android:id="@+id/lnOu10"
+            layout="@layout/mountain_game" />
+        <include
+            android:id="@+id/lnOu11"
+            layout="@layout/game_over_moutain" />
+        <include
+            android:id="@+id/lnOu12"
+            layout="@layout/summary_game" />
+        <include
+            android:id="@+id/lnOu13"
+            layout="@layout/equal_game_one" />
+        <include
+            android:id="@+id/lnOu14"
+            layout="@layout/equal_game_one_12" />
+        <include
+            android:id="@+id/lnOu15"
+            layout="@layout/zero_operator" />
+        <include
+            android:id="@+id/lnOu16"
+            layout="@layout/inapp_member_vip" />
+        <include
+            android:id="@+id/lnOu17"
+            layout="@layout/notifition_main" />
+        <include
+            android:id="@+id/lnOu18"
+            layout="@layout/list_item_vip" />
+    </ViewFlipper>
+</RelativeLayout>

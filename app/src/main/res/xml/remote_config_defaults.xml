@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+
+
+    <entry>
+        <key>http_domain_key</key>
+        <value>http://hoctructuyen.somee.com</value>
+    </entry>
+    <entry>
+        <key>inapp_content_vn</key>
+        <value>👉 Chơi được tất cả các vòng thi.\n\n👉 Học không bị giới hạn các lớp.\n\n👉 Ưu tiên cập nhật các bài tập mới nhất.</value>
+    </entry>
+    <entry>
+        <key>inapp_content_en</key>
+        <value>👉 Learn all the rounds.\n\n 👉 All functions can be used.\n\n 👉 Update the latest exercises.</value>
+    </entry>
+    <entry>
+        <key>grade2</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>grade3</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>grade4</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>grade5</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>alow_inapp</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>b_vs_logo_link</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>b_ads_inapp_key</key>
+        <value>3</value>
+    </entry>
+    <entry>
+        <key>b_ads_inapp_zero</key>
+        <value>3</value>
+    </entry>
+    <entry>
+        <key>link_type</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>link_title</key>
+        <value>App Hay</value>
+    </entry>
+    <entry>
+        <key>link_content</key>
+        <value>App Rất Hay</value>
+    </entry>
+    <entry>
+        <key>link_link</key>
+        <value>https://play.google.com/store/apps/details?id=lich.noi.samsung</value>
+    </entry>
+    <entry>
+        <key>altp_open</key>
+        <value>0</value>
+    </entry>
+</defaultsMap>
