@@ -52,7 +52,7 @@ public class ScheduleNotifi extends BroadcastReceiver {
             NotificationCompat.BigTextStyle bigText = new NotificationCompat.BigTextStyle();
             bigText.bigText(context.getString(R.string.notifi_title));
             bigText.setBigContentTitle(context.getString(R.string.notifi_content));
-            bigText.setSummaryText("Hà Nội TV");
+            bigText.setSummaryText("Math KID");
 
             mBuilder.setAutoCancel(true);
             mBuilder.setContentIntent(pendingIntent);

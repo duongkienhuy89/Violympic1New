@@ -7,24 +7,25 @@
     <ImageView
         android:id="@+id/iv_logo_moutain_start"
         android:src="@drawable/moutian_logo_vn"
-        android:layout_marginLeft="117dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="223dp"
+        android:layout_height="100dp"/>
     <TextView
+        android:id="@+id/tv_conten_moutain"
         android:text="@string/startmoutain"
         android:textColor="@android:color/black"
         android:textSize="20dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginLeft="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
         android:layout_below="@+id/iv_logo_moutain_start"
-        android:layout_width="340sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <ImageView
         android:src="@drawable/play"
         android:onClick="onClickPlayMoutain"
-        android:layout_marginLeft="180dp"
+        android:layout_marginLeft="150dp"
       android:layout_alignParentBottom="true"
         android:layout_marginBottom="7dp"
         android:layout_width="95dp"

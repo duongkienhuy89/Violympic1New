@@ -7,7 +7,7 @@
     <string name="resolve">Resolve:</string>
     <string name="result">Result:</string>
     <string name="doubleclick">Please click BACK again to exit !</string>
-    <string name="summary_score">Summary :</string>
+    <string name="summary_score">Summary : </string>
     <string name="find_equal">Find Equal Pair</string>
     <string name="hinhtamgiac">Triangle</string>
     <string name="hinhtron">Circle</string>
@@ -21,7 +21,7 @@
     <string name="ga">duck</string>
     <string name="flower">flower</string>
     <string name="start_equal">🍭 Please select 2 consecutive cells of equal value.\n🍭 Select wrong 3 times, the test will end.\n🍭 Each wrong time minus 1 point</string>
-    <string name="startmoutain">Bạn hãy đi tới đỉnh núi, bằng cách trả lời tất cả các câu hỏi chương trình đưa ra. Trả lời đúng mỗi câu được cộng 10 điểm, nếu trả lời sai trừ 1 điểm. Trả lời sai quá 3 lần bài thi sẽ kết thúc</string>
+    <string name="startmoutain">Bạn hãy đi tới đỉnh núi,\n\nBằng cách trả lời tất cả các câu hỏi chương trình đưa ra.</string>
     <string name="start_monkey">You swipe to 2 sides. To find a board with the same value as the board.</string>
     <string name="break_home">Are you sure you want to quit?</string>
     <string name="exit_home">Quit Game</string>
@@ -65,7 +65,7 @@
         <string name="admob_app_id">ca-app-pub-5148482490300491~9852569762</string>
         <string name="admob_inapp">ca-app-pub-5148482490300491/2329302968</string>
 
-<!--    &lt;!&ndash;    //Test&ndash;&gt;-->
+    <!--    //Test-->
 <!--    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>-->
 <!--    <string name="admob_inapp">ca-app-pub-3940256099942544/1033173712</string>-->
 

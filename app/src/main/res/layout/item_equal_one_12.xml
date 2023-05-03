@@ -26,25 +26,5 @@
 
 
 
-<!--    <RelativeLayout-->
-<!--        android:id="@+id/rl_item_pheptoan_bg_one_12"-->
-<!--        android:background="@drawable/item_equal"-->
-<!--        android:layout_width="155dp"-->
-<!--        android:layout_height="76dp">-->
-<!--        <RelativeLayout-->
-<!--            android:id="@+id/rl_item_bg_tranfom_one_12"-->
-<!--            android:background="@drawable/item_tranfom"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent">-->
-<!--            <TextView-->
-<!--                android:id="@+id/tv_item_pheptoan_one_12"-->
-<!--                android:layout_centerInParent="true"-->
-<!--                android:textSize="23dp"-->
-<!--                android:textColor="@android:color/black"-->
 
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"/>-->
-
-<!--        </RelativeLayout>-->
-<!--    </RelativeLayout>-->
 </RelativeLayout>

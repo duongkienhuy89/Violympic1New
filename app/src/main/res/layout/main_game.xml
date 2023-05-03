@@ -61,14 +61,14 @@
         android:layout_marginRight="5dp"
         android:onClick="onClick_Buy_Vip_Main"
         android:src="@drawable/buy_vip_pro_vn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="200dp"
+        android:layout_height="144dp"/>
 
     <TextView
       android:id="@+id/tv_Share_Main"
         android:onClick="onClick_Share"
         android:textStyle="bold"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textColor="@android:color/white"
         android:layout_marginLeft="5dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -87,7 +87,7 @@
         android:id="@+id/tv_Feed_Back"
         android:onClick="onClick_FeedBack"
         android:textStyle="bold"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textColor="@android:color/white"
         android:layout_marginRight="5dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -111,8 +111,8 @@ android:onClick="onClickExit_Game"
     android:layout_marginLeft="3dp"
     android:layout_marginTop="3dp"
     android:src="@drawable/close"
-    android:layout_width="50dp"
-    android:layout_height="50dp"/>
+    android:layout_width="45dp"
+    android:layout_height="45dp"/>
     <ImageView
         android:id="@+id/iv_notifi_main"
         android:visibility="gone"

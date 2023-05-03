@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="215dp"
-    android:layout_height="106dp">
+    android:layout_width="185dp"
+    android:layout_height="91dp">
     <ImageView
         android:id="@+id/rl_item_pheptoan_bg_one"
         android:background="@drawable/item_equal"
-        android:layout_width="215dp"
-        android:layout_height="106dp"/>
+        android:layout_width="185dp"
+        android:layout_height="91dp"/>
 
     <TextView
         android:id="@+id/tv_item_pheptoan_one"
@@ -20,30 +20,8 @@
     <ImageView
         android:id="@+id/rl_item_bg_tranfom_one"
         android:background="@drawable/item_tranfom"
-        android:layout_width="215dp"
-        android:layout_height="106dp"/>
+        android:layout_width="185dp"
+        android:layout_height="91dp"/>
 
 
-
-<!--    <RelativeLayout-->
-<!--        android:id="@+id/rl_item_pheptoan_bg_one"-->
-<!--        android:background="@drawable/item_equal"-->
-<!--        android:layout_width="215dp"-->
-<!--        android:layout_height="106dp">-->
-<!--        <RelativeLayout-->
-<!--            android:id="@+id/rl_item_bg_tranfom_one"-->
-<!--            android:background="@drawable/item_tranfom"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent">-->
-<!--            <TextView-->
-<!--                android:id="@+id/tv_item_pheptoan_one"-->
-<!--                android:layout_centerInParent="true"-->
-<!--                android:textSize="25dp"-->
-<!--                android:textColor="@android:color/black"-->
-
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"/>-->
-
-<!--        </RelativeLayout>-->
-<!--    </RelativeLayout>-->
 </RelativeLayout>

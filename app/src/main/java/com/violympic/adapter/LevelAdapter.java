@@ -78,7 +78,14 @@ public class LevelAdapter extends BaseAdapter {
                 rlBgItemLevel.setTag(2);
                 rlBgItemLevel.setBackgroundResource(R.drawable.levelopen_focus);
                 ivItemStar.setVisibility(View.GONE);
-            }else {
+            }else if(mGrade==1&&position==4)
+            {
+                rlBgItemLevel.setTag(2);
+                rlBgItemLevel.setBackgroundResource(R.drawable.levellock);
+                ivItemStar.setVisibility(View.GONE);
+                tvItemLevel.setVisibility(View.GONE);
+            }
+            else {
                 rlBgItemLevel.setTag(0);
                 tvItemLevel.setVisibility(View.GONE);
                 ivItemStar.setVisibility(View.GONE);

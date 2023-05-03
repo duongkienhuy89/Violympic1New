@@ -182,7 +182,7 @@ public class MonkeyFrame extends Fragment {
             iv_monkey_left.setVisibility(View.VISIBLE);
             if(!DeviceLang.equals("vi_vn")) {
                 // iv_monkey_left.setImageResource(R.drawable.bt_left_en);
-                Picasso.get().load("file:///android_asset/img/bt_left_en.png")
+                Picasso.get().load(R.drawable.bt_left_en)
                         .placeholder(R.drawable.bt_left_en)
                         .error(R.drawable.bt_left_en)
                         .transform(new RoundedTransformation(0, 0))
@@ -195,7 +195,7 @@ public class MonkeyFrame extends Fragment {
             iv_monkey_right.setVisibility(View.VISIBLE);
             if(!DeviceLang.equals("vi_vn")) {
                 //  iv_monkey_right.setImageResource(R.drawable.bt_right_en);
-                Picasso.get().load("file:///android_asset/img/bt_right_en.png")
+                Picasso.get().load(R.drawable.bt_right_en)
                         .placeholder(R.drawable.bt_right_en)
                         .error(R.drawable.bt_right_en)
                         .transform(new RoundedTransformation(0, 0))
@@ -210,7 +210,7 @@ public class MonkeyFrame extends Fragment {
 
                 // rl_monkey_bg_tranfom.setBackgroundResource(R.drawable.tablemonkey_cloud);
 
-                Picasso.get().load("file:///android_asset/img/tablemonkey_cloud.png")
+                Picasso.get().load(R.drawable.tablemonkey_cloud)
                         .placeholder(R.drawable.tablemonkey_cloud)
                         .error(R.drawable.tablemonkey_cloud)
                         .transform(new RoundedTransformation(0, 0))
@@ -236,7 +236,7 @@ public class MonkeyFrame extends Fragment {
                 }else
                 {
                     //  rl_monkey_bg_tranfom.setBackgroundResource(R.drawable.item_tranfom);
-                    Picasso.get().load("file:///android_asset/img/item_tranfom.png")
+                    Picasso.get().load(R.drawable.item_tranfom)
                             .placeholder(R.drawable.item_tranfom)
                             .error(R.drawable.item_tranfom)
                             .transform(new RoundedTransformation(0, 0))
@@ -254,7 +254,7 @@ public class MonkeyFrame extends Fragment {
             rl_monkey_2_pheptoan_bg.setVisibility(View.VISIBLE);
             setPhepToan2(mMonkeyPhepToan);
             //rl_monkey_bg_tranfom.setBackgroundResource(R.drawable.item_tranfom);
-            Picasso.get().load("file:///android_asset/img/item_tranfom.png")
+            Picasso.get().load(R.drawable.item_tranfom)
                     .placeholder(R.drawable.item_tranfom)
                     .error(R.drawable.item_tranfom)
                     .transform(new RoundedTransformation(0, 0))
@@ -266,7 +266,7 @@ public class MonkeyFrame extends Fragment {
         @Override
         public void run() {
             //  rl_monkey_bg_tranfom.setBackgroundResource(R.drawable.item_tranfom);
-            Picasso.get().load("file:///android_asset/img/item_tranfom.png")
+            Picasso.get().load(R.drawable.item_tranfom)
                     .placeholder(R.drawable.item_tranfom)
                     .error(R.drawable.item_tranfom)
                     .transform(new RoundedTransformation(0, 0))
@@ -308,7 +308,7 @@ public class MonkeyFrame extends Fragment {
                 {
                     // rl_monkey_pheptoan_bg.setBackgroundResource(R.drawable.hinhtron);
                     // iv_monkey_pheptoan_bg.setBackgroundResource(R.drawable.hinhtron);
-                    Picasso.get().load("file:///android_asset/img/hinhtron.png")
+                    Picasso.get().load(R.drawable.hinhtron)
                             .placeholder(R.drawable.hinhtron)
                             .error(R.drawable.hinhtron)
                             .transform(new RoundedTransformation(0, 0))
@@ -323,7 +323,7 @@ public class MonkeyFrame extends Fragment {
                 if(pPhepToan.getCongthuc().equals("vuong"))
                 {
                     //  iv_monkey_pheptoan_bg.setBackgroundResource(R.drawable.hinhvuong);
-                    Picasso.get().load("file:///android_asset/img/hinhvuong.png")
+                    Picasso.get().load(R.drawable.hinhvuong)
                             .placeholder(R.drawable.hinhvuong)
                             .error(R.drawable.hinhvuong)
                             .transform(new RoundedTransformation(0, 0))
@@ -338,7 +338,7 @@ public class MonkeyFrame extends Fragment {
                 if(pPhepToan.getCongthuc().equals("tamgiac"))
                 {
                     //  iv_monkey_pheptoan_bg.setBackgroundResource(R.drawable.hinhtamgiac);
-                    Picasso.get().load("file:///android_asset/img/hinhtamgiac.png")
+                    Picasso.get().load(R.drawable.hinhtamgiac)
                             .placeholder(R.drawable.hinhtamgiac)
                             .error(R.drawable.hinhtamgiac)
                             .transform(new RoundedTransformation(0, 0))
@@ -353,7 +353,7 @@ public class MonkeyFrame extends Fragment {
                 if(pPhepToan.getCongthuc().equals("chunhat"))
                 {
                     //iv_monkey_pheptoan_bg.setBackgroundResource(R.drawable.hinhchunhat);
-                    Picasso.get().load("file:///android_asset/img/hinhchunhat.png")
+                    Picasso.get().load(R.drawable.hinhchunhat)
                             .placeholder(R.drawable.hinhchunhat)
                             .error(R.drawable.hinhchunhat)
                             .transform(new RoundedTransformation(0, 0))
@@ -368,7 +368,7 @@ public class MonkeyFrame extends Fragment {
                 if(pPhepToan.getCongthuc().equals("ngugiac"))
                 {
                     // iv_monkey_pheptoan_bg.setBackgroundResource(R.drawable.hinhngugiac);
-                    Picasso.get().load("file:///android_asset/img/hinhngugiac.png")
+                    Picasso.get().load(R.drawable.hinhngugiac)
                             .placeholder(R.drawable.hinhngugiac)
                             .error(R.drawable.hinhngugiac)
                             .transform(new RoundedTransformation(0, 0))
@@ -383,7 +383,7 @@ public class MonkeyFrame extends Fragment {
                 if(pPhepToan.getCongthuc().equals("lucgiac"))
                 {
                     //iv_monkey_pheptoan_bg.setBackgroundResource(R.drawable.hinhlucgiac);
-                    Picasso.get().load("file:///android_asset/img/hinhlucgiac.png")
+                    Picasso.get().load(R.drawable.hinhlucgiac)
                             .placeholder(R.drawable.hinhlucgiac)
                             .error(R.drawable.hinhlucgiac)
                             .transform(new RoundedTransformation(0, 0))
@@ -682,7 +682,7 @@ public class MonkeyFrame extends Fragment {
                 if(pPhepToan.getCongthuc().equals("tron"))
                 {
                     // iv_monkey_2_pheptoan_bg.setBackgroundResource(R.drawable.hinhtron);
-                    Picasso.get().load("file:///android_asset/img/hinhtron.png")
+                    Picasso.get().load(R.drawable.hinhtron)
                             .placeholder(R.drawable.hinhtron)
                             .error(R.drawable.hinhtron)
                             .transform(new RoundedTransformation(0, 0))
@@ -697,7 +697,7 @@ public class MonkeyFrame extends Fragment {
                 if(pPhepToan.getCongthuc().equals("vuong"))
                 {
                     // iv_monkey_2_pheptoan_bg.setBackgroundResource(R.drawable.hinhvuong);
-                    Picasso.get().load("file:///android_asset/img/hinhvuong.png")
+                    Picasso.get().load(R.drawable.hinhvuong)
                             .placeholder(R.drawable.hinhvuong)
                             .error(R.drawable.hinhvuong)
                             .transform(new RoundedTransformation(0, 0))
@@ -712,7 +712,7 @@ public class MonkeyFrame extends Fragment {
                 if(pPhepToan.getCongthuc().equals("tamgiac"))
                 {
                     //  iv_monkey_2_pheptoan_bg.setBackgroundResource(R.drawable.hinhtamgiac);
-                    Picasso.get().load("file:///android_asset/img/hinhtamgiac.png")
+                    Picasso.get().load(R.drawable.hinhtamgiac)
                             .placeholder(R.drawable.hinhtamgiac)
                             .error(R.drawable.hinhtamgiac)
                             .transform(new RoundedTransformation(0, 0))
@@ -727,7 +727,7 @@ public class MonkeyFrame extends Fragment {
                 if(pPhepToan.getCongthuc().equals("chunhat"))
                 {
                     // iv_monkey_2_pheptoan_bg.setBackgroundResource(R.drawable.hinhchunhat);
-                    Picasso.get().load("file:///android_asset/img/hinhchunhat.png")
+                    Picasso.get().load(R.drawable.hinhchunhat)
                             .placeholder(R.drawable.hinhchunhat)
                             .error(R.drawable.hinhchunhat)
                             .transform(new RoundedTransformation(0, 0))
@@ -742,7 +742,7 @@ public class MonkeyFrame extends Fragment {
                 if(pPhepToan.getCongthuc().equals("ngugiac"))
                 {
                     //iv_monkey_2_pheptoan_bg.setBackgroundResource(R.drawable.hinhngugiac);
-                    Picasso.get().load("file:///android_asset/img/hinhngugiac.png")
+                    Picasso.get().load(R.drawable.hinhngugiac)
                             .placeholder(R.drawable.hinhngugiac)
                             .error(R.drawable.hinhngugiac)
                             .transform(new RoundedTransformation(0, 0))
@@ -757,7 +757,7 @@ public class MonkeyFrame extends Fragment {
                 if(pPhepToan.getCongthuc().equals("lucgiac"))
                 {
                     //  iv_monkey_2_pheptoan_bg.setBackgroundResource(R.drawable.hinhlucgiac);
-                    Picasso.get().load("file:///android_asset/img/hinhlucgiac.png")
+                    Picasso.get().load(R.drawable.hinhlucgiac)
                             .placeholder(R.drawable.hinhlucgiac)
                             .error(R.drawable.hinhlucgiac)
                             .transform(new RoundedTransformation(0, 0))

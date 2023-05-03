@@ -7,7 +7,7 @@
     <string name="resolve">Lời Giải:</string>
     <string name="result">Đáp số:</string>
     <string name="doubleclick">Nhấn Back 2 lần liên tiếp để thoát !</string>
-    <string name="summary_score">Tổng điểm:</string>
+    <string name="summary_score">Tổng điểm: </string>
     <string name="find_equal">Tìm Cặp Bằng Nhau</string>
     <string name="hinhtamgiac">Hình tam giác</string>
     <string name="hinhtron">Hình tròn</string>
@@ -21,7 +21,7 @@
     <string name="ga">con vịt</string>
     <string name="flower">bông hoa</string>
     <string name="start_equal">🍭  Bạn hãy chọn 2 ô liên tiếp, có giá trị bằng nhau.\n\n🍭  Với mỗi cặp chọn đúng được cộng 10 điểm, chọn sai bị trừ 1 điểm.\n\n🍭  Chọn sai 3 lần bài thi sẽ kết thúc.</string>
-    <string name="startmoutain">👉 Bạn hãy đi tới đỉnh núi, bằng cách trả lời tất cả các câu hỏi chương trình đưa ra.\n\n👉 Với mỗi câu trả lời đúng được cộng 10 điểm, nếu trả lời sai trừ 1 điểm.\n\n👉 Trả lời sai 3 lần bài thi sẽ kết thúc.</string>
+    <string name="startmoutain">👉 Bạn hãy đi tới đỉnh núi\n\nBằng cách trả lời tất cả các câu hỏi chương trình đưa ra.</string>
     <string name="start_monkey">Bạn hãy dùng ngón tay vuốt sang 2 bên trái hoặc phải để tìm tấm bảng có giá trị bằng với tấm bảng chú khỉ đang cầm.</string>
     <string name="break_home">Bạn có chắc chắn muốn thoát game?</string>
     <string name="exit_home">Thoát Game</string>

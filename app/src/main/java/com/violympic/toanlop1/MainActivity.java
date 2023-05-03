@@ -24,6 +24,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.text.Html;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.MotionEvent;
@@ -162,7 +163,7 @@ public class MainActivity extends FragmentActivity  {
     ImageView iv_avata_equal_one_12;
     ImageView iv_false_equal_one_12;
 
-    ImageView iv_avata_equal;
+
     ImageView iv_false_equal;
 
     ImageView iv_flase_equal_gameover;
@@ -239,8 +240,8 @@ public class MainActivity extends FragmentActivity  {
 
     ImageView iv_logo_monkey_gameover;
 
-    ImageView iv_title_summary;
-    ImageView iv_continue_summary;
+
+
 
     Animation anim_tbequal;
     Animation anim_blink_max;
@@ -294,7 +295,7 @@ public class MainActivity extends FragmentActivity  {
     LottieAnimationView la_tap_swipe;
     LottieAnimationView la_buy_vip;
 
-    RelativeLayout rl_bg_equal;
+
     public static String mModeUrlQuestion_Math;
 
     ImageView iv_backLevel_opera;
@@ -315,6 +316,9 @@ public class MainActivity extends FragmentActivity  {
     ImageView iv_clou2_2;
     ImageView iv_operator_equal;
     ImageView iv_cloud3;
+    LinearLayout ll_result1;
+    LinearLayout ll_result2;
+    LinearLayout ll_result3;
     TextView tv_level_operator;
     ImageView iv_operator_home;
     RelativeLayout rl_game_over;
@@ -344,6 +348,9 @@ public class MainActivity extends FragmentActivity  {
     ImageView iv_grade_3;
     ImageView iv_grade_4;
     ImageView iv_grade_5;
+
+    ImageView iv_backgrade;
+    ImageView iv_backLevel;
 
     ImageView iv_tap_zero;
     TextView tv_grade_level;
@@ -393,16 +400,23 @@ public class MainActivity extends FragmentActivity  {
     TextView tv_item_vip4;
     TextView tv_item_vip5;
     TextView tv_item_vipall;
+    ImageView iv_logo_moutain_start;
 
     public enum Status{MAIN,EQUAL,EQUAL_CLICK_1,EQUAL_CLICK_2,
         GAME_OVER_EQUAL,MONKEY,MONKEY_CLICK,GAME_OVER_MONKEY,
         MOUTAIN,MOUTAIN_SUMIT,GAME_OVER_MOUTAIN,ZERO_LOCK,ZERO_OPEN,LOAD_TEMP};
     public static Status currentStatus=Status.MAIN;
     public static Handler handler = new Handler();
+    public  float mWidthDesktop;
+    public static   Boolean mISO1;
+    TextView tv_content_start_equal;
+TextView tv_conten_moutain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         setContentView(R.layout.activity_main);
 
         viewFlipperMath = (ViewFlipper) findViewById(R.id.viewFliper);
@@ -415,11 +429,11 @@ public class MainActivity extends FragmentActivity  {
 
         iv_dinhnui_summary = (ImageView) findViewById(R.id.iv_dinhnui_summary);
 
-        rl_bg_equal = (RelativeLayout) findViewById(R.id.rl_bg_equal);
+
 
         gv_equal = (GridView) findViewById(R.id.gv_equal);
         tv_score_equal = (TextView) findViewById(R.id.tv_score_equal);
-        iv_avata_equal = (ImageView) findViewById(R.id.iv_avata_equal);
+
         tv_time_ingame_equal = (TextView) findViewById(R.id.tv_time_ingame_equal);
 
         gv_equal_one = (GridView) findViewById(R.id.gv_equal_one);
@@ -504,8 +518,8 @@ public class MainActivity extends FragmentActivity  {
 
         iv_logo_monkey_gameover = (ImageView) findViewById(R.id.iv_logo_monkey_gameover);
 
-        iv_title_summary = (ImageView) findViewById(R.id.iv_title_summary);
-        iv_continue_summary = (ImageView) findViewById(R.id.iv_continue_summary);
+
+
 
         animation_view_summary = (LottieAnimationView) findViewById(R.id.animation_view_summary);
         la_dog_summary = (LottieAnimationView) findViewById(R.id.la_dog_summary);
@@ -520,6 +534,8 @@ public class MainActivity extends FragmentActivity  {
         iv_grade_3 = (ImageView) findViewById(R.id.iv_grade_3);
         iv_grade_4 = (ImageView) findViewById(R.id.iv_grade_4);
         iv_grade_5 = (ImageView) findViewById(R.id.iv_grade_5);
+        iv_backgrade= (ImageView) findViewById(R.id.iv_backgrade);
+        iv_backLevel= (ImageView) findViewById(R.id.iv_backLevel);
 
         la_tap_swipe = (LottieAnimationView) findViewById(R.id.la_tap_swipe);
         la_buy_vip = (LottieAnimationView) findViewById(R.id.la_buy_vip);
@@ -593,6 +609,13 @@ public class MainActivity extends FragmentActivity  {
         tv_item_vip4=(TextView)findViewById(R.id.tv_item_vip4);
         tv_item_vip5=(TextView)findViewById(R.id.tv_item_vip5);
         tv_item_vipall=(TextView)findViewById(R.id.tv_item_vipall);
+
+        tv_content_start_equal=(TextView) findViewById(R.id.tv_content_start_equal);
+        tv_conten_moutain=(TextView)findViewById(R.id.tv_conten_moutain);
+        iv_logo_moutain_start=(ImageView)findViewById(R.id.iv_logo_moutain_start);
+        ll_result1=(LinearLayout) findViewById(R.id.ll_result1);
+        ll_result2=(LinearLayout) findViewById(R.id.ll_result2);
+        ll_result3=(LinearLayout) findViewById(R.id.ll_result3);
 
         pref = getApplicationContext().getSharedPreferences("lop1", 0);// 0 - là chế độ private
         editor = pref.edit();
@@ -756,7 +779,7 @@ public class MainActivity extends FragmentActivity  {
             @Override
             public void onAnimationEnd(Animation animation) {
                 try {
-                    iv_avata_equal.setImageResource(R.drawable.monkey_question);
+
                     iv_avata_equal_one.setImageResource(R.drawable.monkey_question);
                     iv_avata_equal_one_12.setImageResource(R.drawable.monkey_question);
                     iv_avata_monkey.setImageResource(R.drawable.khihoi);
@@ -1059,9 +1082,164 @@ public class MainActivity extends FragmentActivity  {
         //clsHandleT.Loge("mm:"+((int) mFirebaseRemoteConfig.getValue("altp_open").asDouble()));
 
 
+        mWidthDesktop=getSizeDesktopWith();
+        mISO1=getIOS1();
+        if(mISO1==false)
+        {
+
+            iv_avata_equal_one.setVisibility(View.GONE);
+            iv_avata_equal_one_12.setVisibility(View.GONE);
+            tv_content_start_equal.setWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 310, getResources().getDisplayMetrics()));
+            tv_conten_moutain.setWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 270, getResources().getDisplayMetrics()));
+
+
+            iv_sumit_moutain.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 100, getResources().getDisplayMetrics());
+            iv_sumit_moutain.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 76, getResources().getDisplayMetrics());
+
+            iv_logo_moutain_start.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 180, getResources().getDisplayMetrics());
+            iv_logo_moutain_start.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
+
+            iv_grade_0.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 85, getResources().getDisplayMetrics());
+            iv_grade_0.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 81, getResources().getDisplayMetrics());
+
+            iv_grade_1.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 92, getResources().getDisplayMetrics());
+            iv_grade_1.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
+
+            iv_grade_2.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 92, getResources().getDisplayMetrics());
+            iv_grade_2.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
+
+            iv_grade_3.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 92, getResources().getDisplayMetrics());
+            iv_grade_3.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
+
+            iv_grade_4.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 92, getResources().getDisplayMetrics());
+            iv_grade_4.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
+
+            iv_grade_5.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 92, getResources().getDisplayMetrics());
+            iv_grade_5.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
+
+            iv_backgrade.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 48, getResources().getDisplayMetrics());
+            iv_backgrade.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 47, getResources().getDisplayMetrics());
+
+
+            iv_backLevel_opera.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 48, getResources().getDisplayMetrics());
+            iv_backLevel_opera.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 47, getResources().getDisplayMetrics());
+
+
+            iv_backLevel.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 48, getResources().getDisplayMetrics());
+            iv_backLevel.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 47, getResources().getDisplayMetrics());
+
+
+            iv_main_buyvip.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 150, getResources().getDisplayMetrics());
+            iv_main_buyvip.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 108, getResources().getDisplayMetrics());
+
+
+            iv_operator_home.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, getResources().getDisplayMetrics());
+            iv_operator_home.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, getResources().getDisplayMetrics());
+
+            tv_grade_level.setTextSize((float) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 12, getResources().getDisplayMetrics()));
+
+
+            rl_cloud1.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 120, getResources().getDisplayMetrics());
+            rl_cloud1.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 90, getResources().getDisplayMetrics());
+            iv_clou1_1.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, getResources().getDisplayMetrics());
+            iv_clou1_1.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
+            iv_clou1_2.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, getResources().getDisplayMetrics());
+            iv_clou1_2.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
+
+
+            iv_operator.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 56, getResources().getDisplayMetrics());
+            iv_operator.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 56, getResources().getDisplayMetrics());
+
+            rl_cloud2.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 122, getResources().getDisplayMetrics());
+            rl_cloud2.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 90, getResources().getDisplayMetrics());
+            iv_clou2_1.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, getResources().getDisplayMetrics());
+            iv_clou2_1.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
+            iv_clou2_2.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, getResources().getDisplayMetrics());
+            iv_clou2_2.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
+
+            iv_operator_equal.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 52, getResources().getDisplayMetrics());
+            iv_operator_equal.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 52, getResources().getDisplayMetrics());
+
+            iv_cloud3.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 130, getResources().getDisplayMetrics());
+            iv_cloud3.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 85, getResources().getDisplayMetrics());
+
+
+            ll_result1.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 130, getResources().getDisplayMetrics());
+            ll_result1.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 85, getResources().getDisplayMetrics());
+            iv_D3_1.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, getResources().getDisplayMetrics());
+            iv_D3_1.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
+            iv_D3_2.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, getResources().getDisplayMetrics());
+            iv_D3_2.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
 
 
 
+            ll_result2.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 130, getResources().getDisplayMetrics());
+            ll_result2.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 85, getResources().getDisplayMetrics());
+            iv_D2_1.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, getResources().getDisplayMetrics());
+            iv_D2_1.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
+            iv_D2_2.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, getResources().getDisplayMetrics());
+            iv_D2_2.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
+
+            ll_result3.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 130, getResources().getDisplayMetrics());
+            ll_result3.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 85, getResources().getDisplayMetrics());
+            iv_D1_1.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, getResources().getDisplayMetrics());
+            iv_D1_1.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
+            iv_D1_2.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, getResources().getDisplayMetrics());
+            iv_D1_2.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
+
+        }else
+        {
+            tv_content_start_equal.setWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 360, getResources().getDisplayMetrics()));
+            tv_conten_moutain.setWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 330, getResources().getDisplayMetrics()));
+        }
+
+    }
+    public  Boolean getIOS1()
+    {
+        try {
+            DisplayMetrics displayMetrics = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+//            Log.e("kkkkkkkkk","px w:"+displayMetrics.widthPixels);
+//            Log.e("kkkkkkkkk","densi:"+displayMetrics.density);
+//            Log.e("kkkkkkkkk","wwwa:"+(float)(displayMetrics.widthPixels / displayMetrics.density));
+
+            if((float)(displayMetrics.widthPixels / displayMetrics.density)>=713)
+            {
+               // Log.e("kkkkkkkkk","true");
+                return true;
+            }else
+            {
+                // Log.e("kkkkkkkkk","flase");
+                return false;
+            }
+
+
+
+        }catch (Exception exception)
+        {
+            return false;
+        }
+
+    }
+    public  float getSizeDesktopWith()
+    {
+        try {
+            DisplayMetrics displayMetrics = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+
+//            Log.e("kkkkkkkkk","widthPixels:"+displayMetrics.widthPixels);
+//            Log.e("kkkkkkkkk","widthPixels DP:"+(float)(displayMetrics.widthPixels / displayMetrics.density));
+//
+//            Log.e("kkkkkkkkk","densi:"+displayMetrics.density);
+//
+//            Log.e("kkkkkkkkk","heightPixels:"+displayMetrics.heightPixels);
+//            Log.e("kkkkkkkkk","heightPixels DP:"+(float)(displayMetrics.heightPixels / displayMetrics.density));
+
+            return displayMetrics.widthPixels / displayMetrics.density;
+        }catch (Exception exception)
+        {
+            return 713;
+        }
 
     }
     public void  doCheckTextItemVip()
@@ -1253,8 +1431,8 @@ public class MainActivity extends FragmentActivity  {
 
                     iv_logo_monkey_gameover.setImageResource(R.drawable.monkey);
 
-                    iv_title_summary.setImageResource(R.drawable.board_name_en);
-                    iv_continue_summary.setImageResource(R.drawable.btcontinue_en);
+
+
                 }catch (Exception e)
                 {
 
@@ -2817,13 +2995,18 @@ public class MainActivity extends FragmentActivity  {
         @Override
         public void run() {
             //clsHandleT.doPlaySoundUrlLocal(mModeUrlQuestion + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3",player,MainActivity.this);
-            if(clsHandleT.doCheckExistFile(mModeUrlQuestion_Math + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3"))
-            {
-                clsHandleT.doPlaySoundUrlLocal(mModeUrlQuestion_Math + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3",player,MainActivity.this);
-            } else if(clsHandleT.isAssetExists(MainActivity.this, "sounds/grade"+mGrade+"/" + mLoiVan.getId() + ".mp3"))
-            {
-                clsHandleT.doPlaySoundAssets(mLoiVan.getId() + ".mp3","grade" + mGrade, player, false, MainActivity.this);
-            }
+          try {
+              if(clsHandleT.doCheckExistFile(mModeUrlQuestion_Math + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3"))
+              {
+                  clsHandleT.doPlaySoundUrlLocal(mModeUrlQuestion_Math + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3",player,MainActivity.this);
+              } else if(clsHandleT.isAssetExists(MainActivity.this, "sounds/grade"+mGrade+"/" + mLoiVan.getId() + ".mp3"))
+              {
+                  clsHandleT.doPlaySoundAssets(mLoiVan.getId() + ".mp3","grade" + mGrade, player, false, MainActivity.this);
+              }
+          }catch (Exception e)
+          {
+
+          }
             viewFlipperMath.setDisplayedChild(10);
         }
     };
@@ -3191,7 +3374,7 @@ public class MainActivity extends FragmentActivity  {
                     if(pPhepToan.getCongthuc().equals("tron"))
                     {
                         // rl_monkey_avata_pheptoan_bg.setBackgroundResource(R.drawable.hinhtron);
-                        Picasso.get().load("file:///android_asset/img/hinhtron.png")
+                        Picasso.get().load(R.drawable.hinhtron)
                                 .placeholder(R.drawable.hinhtron)
                                 .error(R.drawable.hinhtron)
                                 .transform(new RoundedTransformation(0, 0))
@@ -3206,7 +3389,7 @@ public class MainActivity extends FragmentActivity  {
                     if(pPhepToan.getCongthuc().equals("vuong"))
                     {
                         // rl_monkey_avata_pheptoan_bg.setBackgroundResource(R.drawable.hinhvuong);
-                        Picasso.get().load("file:///android_asset/img/hinhvuong.png")
+                        Picasso.get().load(R.drawable.hinhvuong)
                                 .placeholder(R.drawable.hinhvuong)
                                 .error(R.drawable.hinhvuong)
                                 .transform(new RoundedTransformation(0, 0))
@@ -3221,7 +3404,7 @@ public class MainActivity extends FragmentActivity  {
                     if(pPhepToan.getCongthuc().equals("tamgiac"))
                     {
                         // rl_monkey_avata_pheptoan_bg.setBackgroundResource(R.drawable.hinhtamgiac);
-                        Picasso.get().load("file:///android_asset/img/hinhtamgiac.png")
+                        Picasso.get().load(R.drawable.hinhtamgiac)
                                 .placeholder(R.drawable.hinhtamgiac)
                                 .error(R.drawable.hinhtamgiac)
                                 .transform(new RoundedTransformation(0, 0))
@@ -3236,7 +3419,7 @@ public class MainActivity extends FragmentActivity  {
                     if(pPhepToan.getCongthuc().equals("chunhat"))
                     {
                         //rl_monkey_avata_pheptoan_bg.setBackgroundResource(R.drawable.hinhchunhat);
-                        Picasso.get().load("file:///android_asset/img/hinhchunhat.png")
+                        Picasso.get().load(R.drawable.hinhchunhat)
                                 .placeholder(R.drawable.hinhchunhat)
                                 .error(R.drawable.hinhchunhat)
                                 .transform(new RoundedTransformation(0, 0))
@@ -3251,7 +3434,7 @@ public class MainActivity extends FragmentActivity  {
                     if(pPhepToan.getCongthuc().equals("ngugiac"))
                     {
                         //  rl_monkey_avata_pheptoan_bg.setBackgroundResource(R.drawable.hinhngugiac);
-                        Picasso.get().load("file:///android_asset/img/hinhngugiac.png")
+                        Picasso.get().load(R.drawable.hinhngugiac)
                                 .placeholder(R.drawable.hinhngugiac)
                                 .error(R.drawable.hinhngugiac)
                                 .transform(new RoundedTransformation(0, 0))
@@ -3266,7 +3449,7 @@ public class MainActivity extends FragmentActivity  {
                     if(pPhepToan.getCongthuc().equals("lucgiac"))
                     {
                         //rl_monkey_avata_pheptoan_bg.setBackgroundResource(R.drawable.hinhlucgiac);
-                        Picasso.get().load("file:///android_asset/img/hinhlucgiac.png")
+                        Picasso.get().load(R.drawable.hinhlucgiac)
                                 .placeholder(R.drawable.hinhlucgiac)
                                 .error(R.drawable.hinhlucgiac)
                                 .transform(new RoundedTransformation(0, 0))
@@ -3596,7 +3779,7 @@ public class MainActivity extends FragmentActivity  {
     void doShowSummary() {
         try {
             if (DeviceLang.equals("vi_vn") && mGrade >= 2) {
-                tv_score_summary.setText(getString(R.string.summary_score) + (mScore_Equal + mScore_Moutain + mScore_MonKey) + "/" + mMaxScore);
+                tv_score_summary.setText(getString(R.string.summary_score)+" " + (mScore_Equal + mScore_Moutain + mScore_MonKey) + "/" + mMaxScore);
                 if ((mScore_Equal + mScore_Moutain + mScore_MonKey) > (mMaxScore / 2)) {
                     clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
                     handler.postDelayed(timerPlayThanhCong, player.getDuration());
@@ -3649,7 +3832,7 @@ public class MainActivity extends FragmentActivity  {
                     la_dog_summary.setVisibility(View.GONE);
                 }
             } else {
-                tv_score_summary.setText(getString(R.string.summary_score) + (mScore_Equal + mScore_MonKey) + "/" + mMaxScore);
+                tv_score_summary.setText(getString(R.string.summary_score)+" "+ + (mScore_Equal + mScore_MonKey) + "/" + mMaxScore);
                 if ((mScore_Equal + mScore_MonKey) > (mMaxScore / 2)) {
                     clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
                     handler.postDelayed(timerPlayThanhCong, player.getDuration());
@@ -3661,7 +3844,7 @@ public class MainActivity extends FragmentActivity  {
                         if ((mScore_Equal + mScore_MonKey) > (mMaxScore - 3)) {
                             iv_star_summary.setImageResource(R.drawable.basao);
                         } else if ((mScore_Equal + mScore_MonKey) > (mMaxScore - 6)) {
-                            iv_star_summary.setImageResource(R.drawable.haimau);
+                            iv_star_summary.setImageResource(R.drawable.haisao);
                         } else {
                             iv_star_summary.setImageResource(R.drawable.motsao);
                         }
@@ -4085,7 +4268,7 @@ public class MainActivity extends FragmentActivity  {
         try {
             iv_false_equal.setImageResource(R.drawable.bamau);
             tv_score_equal.setText(getString(R.string.scrore)+": 00");
-            iv_avata_equal.setImageResource(R.drawable.monkey_question);
+
 
             iv_false_equal_one.setImageResource(R.drawable.bamau);
             tv_score_equal_one.setText(getString(R.string.scrore)+": 00");
@@ -4106,16 +4289,20 @@ public class MainActivity extends FragmentActivity  {
             doResetEqual();
 
             currentStatus=Status.EQUAL;
-            if(rd.nextInt(10)%2==0)
-            {
-                rl_bg_equal.setBackgroundResource(R.drawable.bg_fores);
-            }else
-            {
-                rl_bg_equal.setBackgroundResource(R.drawable.gr1);
-            }
+
             viewFlipperMath.setDisplayedChild(3);
             clsHandleT.doPlaySoundAssets("start_equal.mp3",DeviceLang, player, false, MainActivity.this);
             equalAdapter=new EqualAdapter20(this,lstPhepToanLevel20);
+
+            if(mISO1) {
+//                gv_equal.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, (int) Math.floor(mWidthDesktop)-128, getResources().getDisplayMetrics());
+//                gv_equal.setColumnWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, ((int) Math.floor((mWidthDesktop)- (128+20+12)) / 5), getResources().getDisplayMetrics()));
+            }else
+            {
+                gv_equal.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, (int) Math.floor(mWidthDesktop), getResources().getDisplayMetrics());
+                gv_equal.setColumnWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, ((int) Math.floor((mWidthDesktop)- (20+12)) / 5), getResources().getDisplayMetrics()));
+            }
+
             gv_equal.setAdapter(equalAdapter);
             gv_equal.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -4126,7 +4313,7 @@ public class MainActivity extends FragmentActivity  {
                         currentStatus=Status.EQUAL_CLICK_1;
                         rlEqual_1=(ImageView) view.findViewById(R.id.rl_item_bg_tranfom);
                         // rlEqual_1.setBackgroundResource(R.drawable.item_cloud);
-                        Picasso.get().load("file:///android_asset/img/item_cloud.png")
+                        Picasso.get().load(R.drawable.item_cloud)
                                 .placeholder(R.drawable.item_cloud)
                                 .error(R.drawable.item_cloud)
                                 .transform(new RoundedTransformation(0, 0))
@@ -4135,19 +4322,14 @@ public class MainActivity extends FragmentActivity  {
                         mEqual_1=lstPhepToanLevel20.get(position).getKetqua();
                         mViewEqual_1=view;
                         mPositionTMP=position;
-                        try {
-                            iv_avata_equal.setImageResource(R.drawable.monkey_answer);
-                        }catch (Exception e)
-                        {
 
-                        }
                     }else  if(currentStatus==Status.EQUAL_CLICK_1&&mPositionTMP!=position)
                     {
                         doPlayClick();
                         currentStatus=Status.EQUAL_CLICK_2;
                         rlEqual_2=(ImageView) view.findViewById(R.id.rl_item_bg_tranfom);
                         // rlEqual_2.setBackgroundResource(R.drawable.item_cloud);
-                        Picasso.get().load("file:///android_asset/img/item_cloud.png")
+                        Picasso.get().load(R.drawable.item_cloud)
                                 .placeholder(R.drawable.item_cloud)
                                 .error(R.drawable.item_cloud)
                                 .transform(new RoundedTransformation(0, 0))
@@ -4155,12 +4337,7 @@ public class MainActivity extends FragmentActivity  {
                                 .into(rlEqual_2);
                         mEqual_2=lstPhepToanLevel20.get(position).getKetqua();
                         mViewEqual_2=view;
-                        try {
-                            iv_avata_equal.setImageResource(R.drawable.monkey_answer);
-                        }catch (Exception e)
-                        {
 
-                        }
                         handler.postDelayed(timerProcessEqual, 700);
 
                     }
@@ -4191,8 +4368,7 @@ public class MainActivity extends FragmentActivity  {
                 tv_score_equal_one_12.setText(getString(R.string.scrore)+": "+mScore_Equal);
                 currentStatus=Status.EQUAL;
                 try {
-                    iv_avata_equal.setImageResource(R.drawable.monkey_laugh);
-                    iv_avata_equal.startAnimation(anim_tbequal);
+
 
                     iv_avata_equal_one.setImageResource(R.drawable.monkey_laugh);
                     iv_avata_equal_one.startAnimation(anim_tbequal);
@@ -4234,7 +4410,7 @@ public class MainActivity extends FragmentActivity  {
                 mNext_False_Equal++;
 
                 try {
-                    iv_avata_equal.setImageResource(R.drawable.monkey_cry);
+
                     iv_avata_equal_one.setImageResource(R.drawable.monkey_cry);
                     iv_avata_equal_one_12.setImageResource(R.drawable.monkey_cry);
                     if(mNext_False_Equal==1)
@@ -4268,14 +4444,14 @@ public class MainActivity extends FragmentActivity  {
 //                rlEqual_1.setBackgroundResource(R.drawable.item_tranfom);
 //                rlEqual_2.setBackgroundResource(R.drawable.item_tranfom);
 
-                Picasso.get().load("file:///android_asset/img/item_tranfom.png")
+                Picasso.get().load(R.drawable.item_tranfom)
                         .placeholder(R.drawable.item_tranfom)
                         .error(R.drawable.item_tranfom)
                         .transform(new RoundedTransformation(0, 0))
                         .fit().centerCrop()
                         .into(rlEqual_1);
 
-                Picasso.get().load("file:///android_asset/img/item_tranfom.png")
+                Picasso.get().load(R.drawable.item_tranfom)
                         .placeholder(R.drawable.item_tranfom)
                         .error(R.drawable.item_tranfom)
                         .transform(new RoundedTransformation(0, 0))
@@ -4370,6 +4546,16 @@ public class MainActivity extends FragmentActivity  {
             viewFlipperMath.setDisplayedChild(3);
             clsHandleT.doPlaySoundAssets("start_equal.mp3",DeviceLang, player, false, MainActivity.this);
             equalAdapter1 =new EqualAdapter6(this,lstPhepToanLevel20);
+
+//            if(mISO1) {
+//                gv_equal_one.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 568, getResources().getDisplayMetrics());
+//                gv_equal_one.setColumnWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 180, getResources().getDisplayMetrics()));
+//            }else
+//            {
+//                gv_equal_one.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, (int) Math.floor(mWidthDesktop), getResources().getDisplayMetrics());
+//                gv_equal_one.setColumnWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, (int) Math.floor((mWidthDesktop - (20+8)) / 3), getResources().getDisplayMetrics()));
+//            }
+
             gv_equal_one.setAdapter(equalAdapter1);
             gv_equal_one.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -4381,7 +4567,7 @@ public class MainActivity extends FragmentActivity  {
                         rlEqual_1=(ImageView) view.findViewById(R.id.rl_item_bg_tranfom_one);
                         //rlEqual_1.setBackgroundResource(R.drawable.item_cloud);
 
-                        Picasso.get().load("file:///android_asset/img/item_cloud.png")
+                        Picasso.get().load(R.drawable.item_cloud)
                                 .placeholder(R.drawable.item_cloud)
                                 .error(R.drawable.item_cloud)
                                 .transform(new RoundedTransformation(0, 0))
@@ -4405,7 +4591,7 @@ public class MainActivity extends FragmentActivity  {
                         rlEqual_2=(ImageView) view.findViewById(R.id.rl_item_bg_tranfom_one);
                         // rlEqual_2.setBackgroundResource(R.drawable.item_cloud);
 
-                        Picasso.get().load("file:///android_asset/img/item_cloud.png")
+                        Picasso.get().load(R.drawable.item_cloud)
                                 .placeholder(R.drawable.item_cloud)
                                 .error(R.drawable.item_cloud)
                                 .transform(new RoundedTransformation(0, 0))
@@ -4442,6 +4628,17 @@ public class MainActivity extends FragmentActivity  {
             viewFlipperMath.setDisplayedChild(3);
             clsHandleT.doPlaySoundAssets("start_equal.mp3",DeviceLang, player, false, MainActivity.this);
             equalOneAdapter12=new EqualOneAdapter12(this,lstPhepToanLevel20);
+            if(mISO1) {
+////                gv_equal_one_12.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, (int) Math.floor(mWidthDesktop)-128, getResources().getDisplayMetrics());
+////                gv_equal_one_12.setColumnWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, ((int) Math.floor((mWidthDesktop)) - (128+20+9)) / 4, getResources().getDisplayMetrics()));
+//
+//                gv_equal_one_12.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 629, getResources().getDisplayMetrics());
+//                gv_equal_one_12.setColumnWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 150, getResources().getDisplayMetrics()));
+            }else
+            {
+                gv_equal_one_12.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, (int) Math.floor(mWidthDesktop), getResources().getDisplayMetrics());
+                gv_equal_one_12.setColumnWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, ((int) Math.floor((mWidthDesktop)) - (20+9)) / 4, getResources().getDisplayMetrics()));
+            }
             gv_equal_one_12.setAdapter(equalOneAdapter12);
             gv_equal_one_12.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -4453,7 +4650,7 @@ public class MainActivity extends FragmentActivity  {
                         rlEqual_1=(ImageView) view.findViewById(R.id.rl_item_bg_tranfom_one_12);
                         //rlEqual_1.setBackgroundResource(R.drawable.item_cloud);
 
-                        Picasso.get().load("file:///android_asset/img/item_cloud.png")
+                        Picasso.get().load(R.drawable.item_cloud)
                                 .placeholder(R.drawable.item_cloud)
                                 .error(R.drawable.item_cloud)
                                 .transform(new RoundedTransformation(0, 0))
@@ -4477,7 +4674,7 @@ public class MainActivity extends FragmentActivity  {
                         rlEqual_2=(ImageView) view.findViewById(R.id.rl_item_bg_tranfom_one_12);
                         // rlEqual_2.setBackgroundResource(R.drawable.item_cloud);
 
-                        Picasso.get().load("file:///android_asset/img/item_cloud.png")
+                        Picasso.get().load(R.drawable.item_cloud)
                                 .placeholder(R.drawable.item_cloud)
                                 .error(R.drawable.item_cloud)
                                 .transform(new RoundedTransformation(0, 0))
@@ -6065,8 +6262,7 @@ public class MainActivity extends FragmentActivity  {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
 
-//                String tmp=((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString();
-//                 Db("cc:"+tmp);
+
                     if(!((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("0")) {
 
                         if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>1
@@ -6141,14 +6337,15 @@ public class MainActivity extends FragmentActivity  {
                                     doStartEqual_One12();
                                 }
                             }else {
-                                doStartEqual();
+                              doStartEqual();
+                                // doStartMonkey();
+                                // doStartMoutain();
                             }
 
-                            // doStartMonkey();
-                            // doStartMoutain();
+
                             playerBg.pause();
                             lengthMediaBg=playerBg.getCurrentPosition();
-                        }
+                       }
                     }
                 }
             });

@@ -244,8 +244,8 @@
                 android:onClick="onClickPlayOperator"
                 android:src="@drawable/play"
                 android:layout_centerInParent="true"
-                android:layout_width="100dp"
-                android:layout_height="100dp"/>
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
         </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -289,7 +289,7 @@
                  android:layout_toRightOf="@+id/rl_cloud1"
                  android:layout_above="@+id/v_line"
                  android:layout_marginRight="10dp"
-                 android:layout_marginBottom="25dp"
+                 android:layout_marginBottom="20dp"
 
                  android:layout_width="80dp"
                  android:layout_height="80dp"/>
@@ -347,6 +347,7 @@
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content">
                  <LinearLayout
+                     android:id="@+id/ll_result1"
                      android:orientation="horizontal"
                      android:gravity="center_horizontal"
                      android:background="@drawable/d3"
@@ -382,7 +383,7 @@
                  android:layout_height="wrap_content">
                  <LinearLayout
 
-
+                     android:id="@+id/ll_result2"
                      android:orientation="horizontal"
                      android:gravity="center_horizontal"
                      android:background="@drawable/d2"
@@ -416,6 +417,7 @@
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content">
                  <LinearLayout
+                     android:id="@+id/ll_result3"
                      android:orientation="horizontal"
                      android:gravity="center"
                      android:background="@drawable/d1"
@@ -447,8 +449,8 @@
                  android:layout_below="@+id/rl_cloud2"
                  android:layout_centerHorizontal="true"
                  android:src="@drawable/play"
-                 android:layout_width="120dp"
-                 android:layout_height="120dp"/>
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"/>
              <com.airbnb.lottie.LottieAnimationView
                  android:id="@+id/la_firework_zero"
                  android:layout_alignParentRight="true"
@@ -504,8 +506,8 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintHorizontal_bias="0.38"
             android:layout_marginLeft="10dp"
-            android:textSize="25dp"
-            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textStyle="normal"
             android:textColor="@android:color/white"
 
             android:layout_width="wrap_content"
@@ -514,21 +516,24 @@
             android:id="@+id/iv_operator_home"
             android:onClick="onClick_Back_Home_Zero"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/tv_level_operator"
             android:src="@drawable/home"
             android:layout_marginLeft="5dp"
             android:layout_marginBottom="5dp"
-            android:layout_width="60dp"
-            android:layout_height="60dp"/>
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
         <TextView
             android:id="@+id/tv_level_operator"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="7dp"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:layout_marginLeft="3dp"
             android:textColor="@color/white"
             android:text="15/15"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/iv_operator_home"
+          app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/rl_bg_equal_one"
         android:background="@drawable/bg_fores"
         android:layout_width="match_parent"
@@ -11,13 +11,16 @@
         <GridView
             android:id="@+id/gv_equal_one"
             android:background="@drawable/border_equal"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="15dp"
 
-            android:columnWidth="215dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/iv_false_equal_one"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+
+android:columnWidth="185dp"
             android:gravity="center"
-           android:stretchMode="none"
+           android:stretchMode="columnWidth"
             android:numColumns="3"
             android:verticalSpacing="4dp"
             android:horizontalSpacing="4dp"
@@ -25,54 +28,62 @@
 
             android:padding="10dp"
 
-            android:layout_width="673dp"
+            android:layout_width="583dp"
             android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/tv_score_equal_one"
             android:textColor="@android:color/white"
-            android:textSize="30dp"
-            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textStyle="normal"
             android:text="@string/scrore"
-            android:layout_marginBottom="5dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
             android:id="@+id/iv_false_equal_one"
-            android:layout_toLeftOf="@+id/tv_score_equal_one"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="5dp"
-            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+
+            app:layout_constraintLeft_toRightOf="@+id/iv_avata_equal_one"
+            app:layout_constraintRight_toLeftOf="@+id/tv_score_equal_one"
+            app:layout_constraintBottom_toBottomOf="parent"
+
             android:src="@drawable/bamau"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="100dp"
+            android:layout_height="25dp"/>
 
         <TextView
             android:id="@+id/tv_time_ingame_equal_one"
             android:text="@string/scrore"
             android:textColor="@android:color/white"
-            android:textSize="25dp"
-            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textStyle="normal"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
             android:id="@+id/iv_avata_equal_one"
             android:src="@drawable/monkey_question"
-            android:layout_alignParentBottom="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/la_firework_equal_one"
-            android:layout_alignParentRight="true"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:lottie_fileName="17297-fireworks.json"
-            app:lottie_loop="false"
-            app:lottie_autoPlay="false" />
-    </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/la_firework_equal_one"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_fileName="17297-fireworks.json"
+        app:lottie_loop="false"
+        app:lottie_autoPlay="false" />
 </RelativeLayout>
