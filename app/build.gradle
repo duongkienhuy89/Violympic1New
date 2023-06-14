@@ -11,8 +11,8 @@ android {
         applicationId "com.violympic.toanlop1"
         minSdkVersion 21
         targetSdkVersion 31
-        versionCode 28
-        versionName "2.8"
+        versionCode 30
+        versionName "3.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         compileOptions {

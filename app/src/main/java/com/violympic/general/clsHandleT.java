@@ -15,6 +15,7 @@ import android.net.Uri;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
@@ -72,7 +73,12 @@ public class clsHandleT {
 
             }
         });
+        try {
+            dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+        }catch (Exception e)
+        {
 
+        }
         dialog.show();
     }
     public static void showDialogFeedBack(Activity activity){
@@ -105,7 +111,12 @@ public class clsHandleT {
 
             }
         });
+        try {
+            dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+        }catch (Exception e)
+        {
 
+        }
         dialog.show();
     }
     public static void showDialog(Activity activity, String pTitle, String pContent, String pLink, String pAvata, SharedPreferences.Editor editor){
@@ -155,22 +166,42 @@ public class clsHandleT {
             public void onClick(View v) {
                 Intent i;
                 if(cLink.trim().equals("")) {
-                    i = new Intent(Intent.ACTION_VIEW,
-                            Uri.parse("http://play.google.com/store/apps/details?id=" + mActivity.getPackageName()));
 
-                    mEditor.putInt("rateapp", 1);
-                    mEditor.commit();
+                    try {
+                        i = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://play.google.com/store/apps/details?id=" + mActivity.getPackageName()));
+                        mActivity.startActivity(i);
+
+                        mEditor.putInt("rateapp", 1);
+                        mEditor.commit();
+                    }catch (Exception e)
+                    {
+
+                    }
+
 
                 }else
                 {
-                    i = new Intent(Intent.ACTION_VIEW,
-                            Uri.parse(cLink));
+                    try {
+                        i = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse(cLink));
+                        mActivity.startActivity(i);
+                    }catch (Exception e)
+                    {
+
+                    }
+
                 }
-                mActivity.startActivity(i);
+
                 dialog.cancel();
             }
         });
+        try {
+            dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+        }catch (Exception e)
+        {
 
+        }
         dialog.show();
     }
     public static void showDialogReset(Activity activity){
@@ -201,7 +232,12 @@ public class clsHandleT {
                 dialog.cancel();
             }
         });
+        try {
+            dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+        }catch (Exception e)
+        {
 
+        }
         dialog.show();
     }
     public static void showDialogReport(Activity activity){
@@ -245,7 +281,12 @@ public class clsHandleT {
                 dialog.cancel();
             }
         });
+        try {
+            dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+        }catch (Exception e)
+        {
 
+        }
         dialog.show();
     }
     public static void doClickShare(String pText,String pSend,Activity activity) {
@@ -444,6 +485,6 @@ public class clsHandleT {
 
     public static   void Loge(String pContent)
     {
-        Log.e("altp",""+pContent);
+        //Log.e("altp",""+pContent);
     }
 }

@@ -16,7 +16,7 @@
         android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:networkSecurityConfig="@xml/network_security_config"
-        android:roundIcon="@drawable/avata"
+        android:roundIcon="@drawable/avata_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Toan1">
         <activity
@@ -34,7 +34,7 @@
         -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/avata" />
+            android:resource="@drawable/avata_round" />
         <!--
  Set color used with incoming notification messages. This is used when no color is set for the incoming
              notification message. See README(https://goo.gl/6BKBk7) for more.
