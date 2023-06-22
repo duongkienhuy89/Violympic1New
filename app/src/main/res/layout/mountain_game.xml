@@ -254,6 +254,7 @@ android:visibility="gone"
                     android:layout_height="wrap_content"/>
                 <ImageView
                     android:id="@+id/iv_sumit_moutain"
+                    android:visibility="gone"
                     android:onClick="onClickMoutainSumit"
                     android:src="@drawable/bt_sumit"
                     android:layout_marginBottom="10dp"
@@ -261,21 +262,11 @@ android:visibility="gone"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
-                <ImageView
-                    android:id="@+id/iv_continue_moutain"
-                    android:visibility="gone"
-                    android:onClick="onClickMoutainContinue"
-                    android:src="@drawable/play"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_marginBottom="5dp"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"/>
+
 
                 <LinearLayout
                     android:id="@+id/ll_number_moutain"
-
+                    android:visibility="gone"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -395,6 +386,98 @@ android:visibility="gone"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </LinearLayout>
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <LinearLayout
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp">
+
+                      <TextView
+                          android:id="@+id/tv_A"
+                          android:layout_marginRight="30dp"
+                          android:textColor="@color/black"
+                          android:layout_gravity="center_vertical"
+                          android:gravity="center"
+                          android:onClick="OnClickBtA"
+                          android:background="@drawable/round_bt_item"
+                          android:textSize="18dp"
+                          android:text="@string/app_name"
+                          android:layout_weight="1"
+                          android:layout_width="100dp"
+                          android:layout_height="50dp"/>
+
+                      <TextView
+                          android:id="@+id/tv_B"
+                          android:layout_marginRight="10dp"
+                          android:textColor="@color/black"
+                          android:layout_gravity="center_vertical"
+                          android:gravity="center"
+                          android:onClick="OnClickBtB"
+                          android:background="@drawable/round_bt_item"
+                          android:textSize="18dp"
+                          android:text="@string/app_name"
+                          android:layout_weight="1"
+                          android:layout_width="100dp"
+                          android:layout_height="50dp"/>
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp">
+
+                      <TextView
+                          android:id="@+id/tv_C"
+                          android:layout_marginRight="30dp"
+                          android:textColor="@color/black"
+                          android:layout_gravity="center_vertical"
+                          android:gravity="center"
+                          android:onClick="OnClickBtC"
+                          android:background="@drawable/round_bt_item"
+                          android:textSize="18dp"
+                          android:text="@string/app_name"
+                          android:layout_weight="1"
+                          android:layout_width="100dp"
+                          android:layout_height="50dp"/>
+
+                      <TextView
+                          android:id="@+id/tv_D"
+                          android:layout_marginRight="10dp"
+                          android:textColor="@color/black"
+                          android:layout_gravity="center_vertical"
+                          android:gravity="center"
+                          android:onClick="OnClickBtD"
+                          android:background="@drawable/round_bt_item"
+                          android:textSize="18dp"
+                          android:text="@string/app_name"
+                          android:layout_weight="1"
+                          android:layout_width="100dp"
+                          android:layout_height="50dp"/>
+
+                  </LinearLayout>
+
+              </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_continue_moutain"
+                    android:visibility="gone"
+                    android:onClick="onClickMoutainContinue"
+                    android:src="@drawable/play"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 

@@ -68,5 +68,6 @@
         <include
             android:id="@+id/lnOu18"
             layout="@layout/list_item_vip" />
+
     </ViewFlipper>
 </RelativeLayout>

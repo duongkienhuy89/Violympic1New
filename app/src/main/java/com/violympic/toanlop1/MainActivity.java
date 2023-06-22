@@ -91,6 +91,7 @@ import com.violympic.general.DownloadHtpps;
 import com.violympic.general.RoundedTransformation;
 import com.violympic.general.clsHandleT;
 import com.violympic.modul.LoiVan;
+import com.violympic.modul.Mountain;
 import com.violympic.modul.Notifi;
 import com.violympic.modul.PhepToan;
 import com.violympic.modul.Zero;
@@ -124,7 +125,12 @@ public class MainActivity extends FragmentActivity  {
 
     ArrayList<LoiVan> lstLoiVan;
     ArrayList<LoiVan> lstLoiVanLevel;
+
+
+    ArrayList<Mountain> lstMountain;
+    ArrayList<Mountain> lstMountainLevel;
     LoiVan mLoiVan;
+    Mountain mMountain;
     // ArrayList<LoiVan> lstLoiVanLevel_10;
 
     public static ArrayList<PhepToan> lstPhepToanLevel10_1;
@@ -230,6 +236,11 @@ public class MainActivity extends FragmentActivity  {
     TextView tv_report;
     TextView tv_score_moutain_gameover;
     ImageView iv_flase_moutain_gameover;
+
+    TextView tv_A;
+    TextView tv_B;
+    TextView tv_C;
+    TextView tv_D;
 
     ImageView iv_main_buyvip;
 
@@ -401,10 +412,15 @@ public class MainActivity extends FragmentActivity  {
     TextView tv_item_vip5;
     TextView tv_item_vipall;
     ImageView iv_logo_moutain_start;
+    ImageView iv_logo_moutain_end;
+
+    Animation anim_innext;
+    Animation anim_inback;
+    Animation anim_blink;
 
     public enum Status{MAIN,EQUAL,EQUAL_CLICK_1,EQUAL_CLICK_2,
         GAME_OVER_EQUAL,MONKEY,MONKEY_CLICK,GAME_OVER_MONKEY,
-        MOUTAIN,MOUTAIN_SUMIT,GAME_OVER_MOUTAIN,ZERO_LOCK,ZERO_OPEN,LOAD_TEMP};
+        MOUTAIN,MOUTAIN_SUMIT,GAME_OVER_MOUTAIN,ZERO_LOCK,ZERO_OPEN,MOUTAIN_SELECT,MOUTAIN_SELECT_LOCK,LOAD_TEMP};
     public static Status currentStatus=Status.MAIN;
     public static Handler handler = new Handler();
     public  float mWidthDesktop;
@@ -509,6 +525,10 @@ TextView tv_conten_moutain;
         tv_report = (TextView) findViewById(R.id.tv_report);
         tv_score_moutain_gameover = (TextView) findViewById(R.id.tv_score_moutain_gameover);
         iv_flase_moutain_gameover = (ImageView) findViewById(R.id.iv_flase_moutain_gameover);
+        tv_A=(TextView) findViewById(R.id.tv_A);
+        tv_B=(TextView) findViewById(R.id.tv_B);
+        tv_C=(TextView) findViewById(R.id.tv_C);
+        tv_D=(TextView) findViewById(R.id.tv_D);
 
         iv_main_buyvip = (ImageView) findViewById(R.id.iv_main_buyvip);
         tv_buy_vip = (TextView) findViewById(R.id.tv_buy_vip);
@@ -613,6 +633,7 @@ TextView tv_conten_moutain;
         tv_content_start_equal=(TextView) findViewById(R.id.tv_content_start_equal);
         tv_conten_moutain=(TextView)findViewById(R.id.tv_conten_moutain);
         iv_logo_moutain_start=(ImageView)findViewById(R.id.iv_logo_moutain_start);
+        iv_logo_moutain_end=(ImageView)findViewById(R.id.iv_logo_moutain_end);
         ll_result1=(LinearLayout) findViewById(R.id.ll_result1);
         ll_result2=(LinearLayout) findViewById(R.id.ll_result2);
         ll_result3=(LinearLayout) findViewById(R.id.ll_result3);
@@ -767,6 +788,11 @@ TextView tv_conten_moutain;
             }
         });
 
+
+        anim_innext=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.innext);
+        anim_inback=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.inback);
+
+        anim_blink=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink);
 
         anim_blink_max = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink_max);
         anim_tbequal = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake_equal);
@@ -1002,6 +1028,8 @@ TextView tv_conten_moutain;
                 iv_grade_3.setBackgroundResource(R.drawable.grade3_en);
                 iv_grade_4.setBackgroundResource(R.drawable.grade4_en);
                 iv_grade_5.setBackgroundResource(R.drawable.grade5_en);
+                iv_logo_moutain_start.setImageResource(R.drawable.moutian_logo_en);
+                iv_logo_moutain_end.setImageResource(R.drawable.moutian_logo_en);
             } catch (Exception e) {
 
             }
@@ -1205,11 +1233,11 @@ TextView tv_conten_moutain;
 
             if((float)(displayMetrics.widthPixels / displayMetrics.density)>=713)
             {
-               // Log.e("kkkkkkkkk","true");
+               // clsHandleT.Loge("true");
                 return true;
             }else
             {
-                // Log.e("kkkkkkkkk","flase");
+               // clsHandleT.Loge("flase");
                 return false;
             }
 
@@ -2346,13 +2374,30 @@ TextView tv_conten_moutain;
         currentStatus=Status.ZERO_LOCK;
     }
     //endregion
-    //region Moutain
+
+
+
+
+
+    //region Moutain Input
 
     void doStartMoutain()
     {
+
+        try {
+            Collections.shuffle(lstLoiVanLevel);
+            doResetMoutain();
+//            doRandomMoutain();
+
+//            doRunTimeInGame(mFirtTime*1000,tv_time_ingame_moutain,3);
+        }catch (Exception exception)
+        {
+
+        }
+
         try {
             viewFlipperMath.setDisplayedChild(9);
-            doLoadSugetMoutain();
+
             clsHandleT.doPlaySoundAssets("start_moutain.mp3",DeviceLang, player, false, MainActivity.this);
             if(mGrade>3)
             {
@@ -2377,27 +2422,17 @@ TextView tv_conten_moutain;
         {
 
         }
-    }
-    public void doLoadSugetMoutain()
-    {
-        try {
-            Collections.shuffle(lstLoiVanLevel);
-            doResetMoutain();
-            doRandomMoutain();
 
-            doRunTimeInGame(mFirtTime*1000,tv_time_ingame_moutain,3);
-        }catch (Exception exception)
-        {
-
-        }
 
     }
+
     public void doRandomMoutain()
     {
         try {
             mChonGenary=rd.nextInt(lstLoiVanLevel.size());
             mLoiVan=lstLoiVanLevel.get(mChonGenary);
             rl_question_moutain.setVisibility(View.VISIBLE);
+
             //tv_question_moutain.setText(mLoiVan.getQuestion());
             tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"));
             try {
@@ -2445,6 +2480,11 @@ TextView tv_conten_moutain;
         tv_score_moutain.setText(getString(R.string.scrore)+": 00");
         tv_time_ingame_moutain.setText("⏰ ");
         doNextAvataMotain();
+
+        tv_A.setBackgroundResource(R.drawable.round_bt_item);
+        tv_B.setBackgroundResource(R.drawable.round_bt_item);
+        tv_C.setBackgroundResource(R.drawable.round_bt_item);
+        tv_D.setBackgroundResource(R.drawable.round_bt_item);
     }
     public void onClickMoutainSumit(View view)
     {
@@ -2486,7 +2526,31 @@ TextView tv_conten_moutain;
         @Override
         public void run() {
             clsHandleT.doPlaySoundAssets("guess_true.ogg","", player, false, MainActivity.this);
-            handler.postDelayed(timer_True_MediaPlay,player.getDuration());
+
+            if(currentStatus==Status.MOUTAIN_SELECT_LOCK)
+            {
+              switch (mMountain.getTruecase())
+              {
+                  case 1:
+                      tv_A.setBackgroundResource(R.drawable.round_bt_item_true);
+                      tv_A.setAnimation(anim_blink);
+                      break;
+                  case 2:
+                      tv_B.setBackgroundResource(R.drawable.round_bt_item_true);
+                      tv_B.setAnimation(anim_blink);
+                      break;
+                  case 3:
+                      tv_C.setBackgroundResource(R.drawable.round_bt_item_true);
+                      tv_C.setAnimation(anim_blink);
+                      break;
+                  default:
+                      tv_D.setBackgroundResource(R.drawable.round_bt_item_true);
+                      tv_D.setAnimation(anim_blink);
+                      break;
+              }
+            }
+
+            handler.postDelayed(timer_True_MediaPlay, player.getDuration());
             try {
                 iv_monkey_moutain.setImageResource(R.drawable.monkey_laugh);
             }catch (Exception e)
@@ -2497,8 +2561,21 @@ TextView tv_conten_moutain;
 
             mScore_Moutain=mScore_Moutain+10;
             tv_score_moutain.setText(getString(R.string.scrore)+": "+mScore_Moutain);
-            rl_question_moutain.setVisibility(View.GONE);
-            handler.postDelayed(timerProcessMoutainNextUp, 1100);
+
+            if(currentStatus == Status.MOUTAIN_SUMIT)
+            {
+
+                rl_question_moutain.setVisibility(View.GONE);
+                handler.postDelayed(timerProcessMoutainNextUp, 1200);
+
+            }else
+            {
+                handler.postDelayed(timerDelayMoutainUpSelect, 2200);
+            }
+
+
+
+
         }
     };
     Runnable timerProcessMoutainNextUp= new Runnable() {
@@ -2506,12 +2583,23 @@ TextView tv_conten_moutain;
         public void run() {
 
             doNextAvataMotain();
+//            if(currentStatus==Status.MOUTAIN_SELECT_LOCK) {
+//                clsHandleT.doPlaySoundAssets("sfx_wing.mp3", "", player, false, MainActivity.this);
+//            }
+
             if(mScore_Moutain>91)
             {
                 handler.postDelayed(timer_GameOver_Moutain, 1700);
             }else {
-                lstLoiVanLevel.remove(mChonGenary);
-                handler.postDelayed(timerRadomMotain, player.getDuration());
+                if(currentStatus == Status.MOUTAIN_SUMIT)
+                {
+                    lstLoiVanLevel.remove(mChonGenary);
+                }else
+                {
+                    lstMountain.remove(mChonGenary);
+                }
+
+                handler.postDelayed(timerRadomMotain, player.getDuration()+200);
             }
         }
     };
@@ -2547,7 +2635,14 @@ TextView tv_conten_moutain;
         @Override
         public void run() {
 
-            doRandomMoutain();
+            if(currentStatus == Status.MOUTAIN_SUMIT)
+            {
+                doRandomMoutain();
+            }else
+            {
+                doRandomMoutain_Select();
+            }
+
         }
     };
     Runnable timerProcessMoutainFasle = new Runnable() {
@@ -2555,7 +2650,14 @@ TextView tv_conten_moutain;
         public void run() {
 
             //  handler.postDelayed(timer_False_MediaPlay,20);
-            clsHandleT.doPlaySoundAssets("sai"+(rd.nextInt(5)+1)+".mp3",DeviceLang, player, false, MainActivity.this);
+            if(currentStatus == Status.MOUTAIN_SUMIT)
+            {
+                clsHandleT.doPlaySoundAssets("sai"+(rd.nextInt(5)+1)+".mp3",DeviceLang, player, false, MainActivity.this);
+            }else
+            {
+                clsHandleT.doPlaySoundAssets("over.mp3", "", player, false, MainActivity.this);
+            }
+
             mNext_False_Moutain++;
 //            rl_monkey_avata_pheptoan_bg.setVisibility(View.GONE);
             try {
@@ -2580,6 +2682,67 @@ TextView tv_conten_moutain;
                 mScore_Moutain--;
                 tv_score_moutain.setText(getString(R.string.scrore)+": "+mScore_Moutain);
             }
+
+            if(currentStatus == Status.MOUTAIN_SUMIT)
+            {
+                tv_report.setVisibility(View.VISIBLE);
+                if(mLoiVan.getExplain().equals("gta")||mLoiVan.getExplain().equals("giaithich"))
+                {
+                    tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.result)+" "+mLoiVan.getResult()+"</p>"));
+                    // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.result)+" " + mLoiVan.getResult());
+                }else {
+                    // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.resolve)+" " + mLoiVan.getExplain());
+                    tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.resolve)+" "+mLoiVan.getExplain()+"</p>"));
+                }
+            }else
+            {
+
+                    switch (mMountain.getTruecase())
+                    {
+                        case 1:
+                            tv_A.setBackgroundResource(R.drawable.round_bt_item_true);
+                            tv_A.setAnimation(anim_blink);
+                            break;
+                        case 2:
+                            tv_B.setBackgroundResource(R.drawable.round_bt_item_true);
+                            tv_B.setAnimation(anim_blink);
+                            break;
+                        case 3:
+                            tv_C.setBackgroundResource(R.drawable.round_bt_item_true);
+                            tv_C.setAnimation(anim_blink);
+                            break;
+                        default:
+                            tv_D.setBackgroundResource(R.drawable.round_bt_item_true);
+                            tv_D.setAnimation(anim_blink);
+                            break;
+                    }
+
+                if(mMountain.getGiaithich().equals("gta")||mMountain.getGiaithich().equals("giaithich"))
+                {
+
+                    switch (mMountain.getTruecase())
+                    {
+                        case  1:
+                            tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.result)+" "+mMountain.getCasea()+"</p>"));
+                            break;
+                        case  2:
+                            tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.result)+" "+mMountain.getCaseb()+"</p>"));
+                            break;
+                        case  3:
+                            tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.result)+" "+mMountain.getCasec()+"</p>"));
+                            break;
+                        case  4:
+                            tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.result)+" "+mMountain.getCased()+"</p>"));
+                            break;
+                    }
+                    // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.result)+" " + mLoiVan.getResult());
+                }else {
+                    // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.resolve)+" " + mLoiVan.getExplain());
+                    tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.resolve)+" "+mMountain.getGiaithich()+"</p>"));
+                }
+
+            }
+
             if(mNext_False_Moutain>=3)
             {
                 currentStatus=Status.GAME_OVER_MOUTAIN;
@@ -2588,15 +2751,9 @@ TextView tv_conten_moutain;
 //            else
 //            {
             iv_continue_moutain.setVisibility(View.VISIBLE);
-            tv_report.setVisibility(View.VISIBLE);
-            if(mLoiVan.getExplain().equals("gta")||mLoiVan.getExplain().equals("giaithich"))
-            {
-                tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.result)+" "+mLoiVan.getResult()+"</p>"));
-                // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.result)+" " + mLoiVan.getResult());
-            }else {
-                // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.resolve)+" " + mLoiVan.getExplain());
-                tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.resolve)+" "+mLoiVan.getExplain()+"</p>"));
-            }
+
+
+
             //}
 
         }
@@ -2996,22 +3153,218 @@ TextView tv_conten_moutain;
         public void run() {
             //clsHandleT.doPlaySoundUrlLocal(mModeUrlQuestion + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3",player,MainActivity.this);
           try {
-              if(clsHandleT.doCheckExistFile(mModeUrlQuestion_Math + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3"))
+              if(DeviceLang.equals("vi_vn")) {
+//                  if (clsHandleT.doCheckExistFile(mModeUrlQuestion_Math + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3")) {
+//                      clsHandleT.doPlaySoundUrlLocal(mModeUrlQuestion_Math + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3", player, MainActivity.this);
+//                  } else if (clsHandleT.isAssetExists(MainActivity.this, "sounds/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3")) {
+//                      clsHandleT.doPlaySoundAssets(mLoiVan.getId() + ".mp3", "grade" + mGrade, player, false, MainActivity.this);
+//                  }
+                  viewFlipperMath.setDisplayedChild(10);
+
+                  tv_result_moutain.setVisibility(View.VISIBLE);
+                  iv_sumit_moutain.setVisibility(View.VISIBLE);
+                  ll_number_moutain.setVisibility(View.VISIBLE);
+                  tv_A.setVisibility(View.GONE);
+                  tv_B.setVisibility(View.GONE);
+                  tv_C.setVisibility(View.GONE);
+                  tv_D.setVisibility(View.GONE);
+
+                  doRandomMoutain();
+                  doRunTimeInGame(mFirtTime*1000,tv_time_ingame_moutain,3);
+              }else
               {
-                  clsHandleT.doPlaySoundUrlLocal(mModeUrlQuestion_Math + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3",player,MainActivity.this);
-              } else if(clsHandleT.isAssetExists(MainActivity.this, "sounds/grade"+mGrade+"/" + mLoiVan.getId() + ".mp3"))
-              {
-                  clsHandleT.doPlaySoundAssets(mLoiVan.getId() + ".mp3","grade" + mGrade, player, false, MainActivity.this);
+                  viewFlipperMath.setDisplayedChild(10);
+
+                  tv_result_moutain.setVisibility(View.GONE);
+                  iv_sumit_moutain.setVisibility(View.GONE);
+                  ll_number_moutain.setVisibility(View.GONE);
+                  tv_A.setVisibility(View.VISIBLE);
+                  tv_B.setVisibility(View.VISIBLE);
+                  tv_C.setVisibility(View.VISIBLE);
+                  tv_D.setVisibility(View.VISIBLE);
+                  doRandomMoutain_Select();
+                  doRunTimeInGame(mFirtTime*1000,tv_time_ingame_moutain,4);
+
               }
           }catch (Exception e)
           {
 
           }
-            viewFlipperMath.setDisplayedChild(10);
+
         }
     };
 
     //endregion
+
+
+    //region Moutain_Select
+
+    void doStartMoutain_Select()
+    {
+
+        try {
+            Collections.shuffle(lstMountainLevel);
+            doResetMoutain();
+//            doRandomMoutain();
+//
+//            doRunTimeInGame(mFirtTime*1000,tv_time_ingame_moutain,3);
+        }catch (Exception exception)
+        {
+
+        }
+
+        try {
+            viewFlipperMath.setDisplayedChild(9);
+
+            clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
+            if(mGrade>3)
+            {
+                try {
+                    rl_question_moutain.setBackgroundResource(R.drawable.round_layout_moutain);
+                }catch (Exception ex)
+                {
+
+                }
+
+
+            }else {
+                try {
+                    rl_question_moutain.setBackgroundResource(R.drawable.bg_question_moutain);
+                }catch (Exception ex)
+                {
+
+                }
+
+            }
+        }catch (Exception exception)
+        {
+
+        }
+    }
+
+    public void doRandomMoutain_Select()
+    {
+        try {
+            mChonGenary=rd.nextInt(lstMountainLevel.size());
+
+            mMountain=lstMountainLevel.get(mChonGenary);
+            rl_question_moutain.setVisibility(View.VISIBLE);
+
+            tv_A.setVisibility(View.VISIBLE);
+            tv_B.setVisibility(View.VISIBLE);
+            tv_C.setVisibility(View.VISIBLE);
+            tv_D.setVisibility(View.VISIBLE);
+
+
+            tv_A.setBackgroundResource(R.drawable.round_bt_item);
+            tv_B.setBackgroundResource(R.drawable.round_bt_item);
+            tv_C.setBackgroundResource(R.drawable.round_bt_item);
+            tv_D.setBackgroundResource(R.drawable.round_bt_item);
+            //tv_question_moutain.setText(mLoiVan.getQuestion());
+            tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"));
+            tv_A.setText(mMountain.getCasea());
+            tv_B.setText(mMountain.getCaseb());
+            tv_C.setText(mMountain.getCasec());
+            tv_D.setText(mMountain.getCased());
+            try {
+                iv_monkey_moutain.setImageResource(R.drawable.monkey_question);
+            }catch (Exception e)
+            {
+
+            }
+
+
+            iv_continue_moutain.setVisibility(View.GONE);
+            tv_report.setVisibility(View.GONE);
+
+
+
+            currentStatus=Status.MOUTAIN_SELECT;
+            tv_question_moutain.startAnimation(aniZoomQuestion);
+
+            tv_A.startAnimation(anim_innext);
+            tv_C.startAnimation(anim_innext);
+            tv_B.startAnimation(anim_inback);
+            tv_D.startAnimation(anim_inback);
+
+           // clsHandleT.Loge("ket qua:"+mMountain.getTruecase());
+
+            //rl_question_moutain.startAnimation(aniZoomQuestion);
+        }catch (Exception exception)
+        {
+
+        }
+    }
+    public void doInputNumber(int pSelect) {
+        try {
+            if (currentStatus == Status.MOUTAIN_SELECT) {
+                currentStatus = Status.MOUTAIN_SELECT_LOCK;
+                clsHandleT.doPlaySoundAssets("select_ans.ogg","", player, false, MainActivity.this);
+                iv_monkey_moutain.setImageResource(R.drawable.monkey_answer);
+                switch (pSelect)
+                {
+                    case 1:
+                        tv_A.setBackgroundResource(R.drawable.round_bt_item_select);
+                        break;
+                    case 2:
+                        tv_B.setBackgroundResource(R.drawable.round_bt_item_select);
+                        break;
+                    case 3:
+                        tv_C.setBackgroundResource(R.drawable.round_bt_item_select);
+                        break;
+                    case 4:
+                        tv_D.setBackgroundResource(R.drawable.round_bt_item_select);
+                        break;
+
+                }
+
+                if(pSelect==mMountain.getTruecase())
+                {
+                    handler.postDelayed(timerProcessMouTainTrue, 1000);
+                }else
+                {
+                    handler.postDelayed(timerProcessMoutainFasle, 1000);
+                }
+
+            }
+        } catch (Exception e) {
+
+        }
+
+    }
+
+    Runnable timerDelayMoutainUpSelect= new Runnable() {
+        @Override
+        public void run() {
+
+            rl_question_moutain.setVisibility(View.GONE);
+            tv_A.setVisibility(View.GONE);
+            tv_B.setVisibility(View.GONE);
+            tv_C.setVisibility(View.GONE);
+            tv_D.setVisibility(View.GONE);
+            handler.postDelayed(timerProcessMoutainNextUp, 1100);
+
+        }
+    };
+    public  void OnClickBtA(View view)
+    {
+        doInputNumber(1);
+    }
+    public  void OnClickBtB(View view)
+    {
+        doInputNumber(2);
+    }
+    public  void OnClickBtC(View view)
+    {
+        doInputNumber(3);
+    }
+    public  void OnClickBtD(View view)
+    {
+        doInputNumber(4);
+    }
+
+    //endregion
+
     //region MONKEY
 
     public void onClickPlayMonkey(View view)
@@ -3778,7 +4131,7 @@ TextView tv_conten_moutain;
 
     void doShowSummary() {
         try {
-            if (DeviceLang.equals("vi_vn") && mGrade >= 2) {
+            if ( mGrade >= 2) {
                 tv_score_summary.setText(getString(R.string.summary_score)+" " + (mScore_Equal + mScore_Moutain + mScore_MonKey) + "/" + mMaxScore);
                 if ((mScore_Equal + mScore_Moutain + mScore_MonKey) > (mMaxScore / 2)) {
                     clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
@@ -4527,13 +4880,16 @@ TextView tv_conten_moutain;
                 {
                     doShowSummary();
                 }else {
-                    doStartMonkey();
+                   // doStartMonkey();
+                    doStartMoutain_Select();
                 }
             }
         }
     };
 
     //endregion
+
+
 
     //region Equal_One
 
@@ -4740,6 +5096,9 @@ TextView tv_conten_moutain;
                         handler.postDelayed(timer_GameOver_Monkey, 10);
 
                     }else if(pGame==3)
+                    {
+                        handler.postDelayed(timer_GameOver_Moutain, 10);
+                    }else if(pGame==4)
                     {
                         handler.postDelayed(timer_GameOver_Moutain, 10);
                     }
@@ -6111,6 +6470,55 @@ TextView tv_conten_moutain;
             }
         }).start();
     }
+
+    public void doLoadMoutainSelect()
+    {
+        try {
+            lstMountain=new ArrayList<Mountain>();
+
+            String tmpString=clsHandleT.LoadDataAssets("mountain"+mGrade+".txt",MainActivity.this);
+
+            if(!tmpString.equals(""))
+            {
+
+                if (tmpString.contains("#")) {
+
+                    String[] mang = tmpString.split("\\#");
+                    Mountain loiVan;
+                    for (int i = 0; i < mang.length; i++) {
+                        if (mang[i].contains("*")) {
+                            String[] items = mang[i].split("\\*");
+                            try{
+                                loiVan=new Mountain();
+
+                                loiVan.setId(items[0]);
+                                loiVan.setQuestion(items[1]);
+                                loiVan.setCasea(items[2]);
+                                loiVan.setCaseb(items[3]);
+                                loiVan.setCasec(items[4]);
+                                loiVan.setCased(items[5]);
+                                loiVan.setTruecase(Integer.parseInt(items[6]));
+                                loiVan.setGiaithich(items[7]);
+                                loiVan.setLevel(Integer.parseInt(items[8]));
+                                lstMountain.add(loiVan);
+
+                            }
+                            catch (Exception ex) {
+                                // Log.e("exx:",""+ex);
+
+                                continue;
+                            }
+                        }
+                    }
+                }
+            }
+           // clsHandleT.Loge("lst M:"+lstMountain.size());
+
+        }catch (Exception exception)
+        {
+
+        }
+    }
     public void doLoadMoutain()
     {
         try {
@@ -6233,7 +6641,9 @@ TextView tv_conten_moutain;
                             mMaxScore = 60;
                         }
                     } else {
-                        mMaxScore = 200;
+
+                        doLoadMoutainSelect();
+                        mMaxScore = 300;
                     }
                 }
                 doLoadLevel();
@@ -6324,7 +6734,14 @@ TextView tv_conten_moutain;
                                         mMaxScore = 60;
                                     }
                                 }else {
-                                    mMaxScore = 200;
+                                    lstMountainLevel = new ArrayList<Mountain>();
+                                    for (int i = 0; i < lstMountain.size(); i++) {
+                                        if (lstMountain.get(i).getLevel() == (position + 1)) {
+                                            lstMountainLevel.add(lstMountain.get(i));
+                                        }
+                                    }
+                                   // clsHandleT.Loge("lst Level:"+lstMountainLevel.size());
+                                    mMaxScore = 300;
                                 }
                             }
 

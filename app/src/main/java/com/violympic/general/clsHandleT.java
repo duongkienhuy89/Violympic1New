@@ -485,6 +485,6 @@ public class clsHandleT {
 
     public static   void Loge(String pContent)
     {
-        //Log.e("altp",""+pContent);
+      //  Log.e("cap1",""+pContent);
     }
 }

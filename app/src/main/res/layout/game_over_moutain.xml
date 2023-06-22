@@ -5,6 +5,7 @@
     android:background="@drawable/start_moutain"
     android:layout_height="match_parent">
     <ImageView
+        android:id="@+id/iv_logo_moutain_end"
         android:src="@drawable/moutian_logo_vn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
