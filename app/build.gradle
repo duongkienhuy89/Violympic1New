@@ -5,14 +5,14 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.violympic.toanlop1"
         minSdkVersion 21
-        targetSdkVersion 31
-        versionCode 30
-        versionName "3.0"
+        targetSdkVersion 33
+        versionCode 33
+        versionName "3.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         compileOptions {
@@ -56,8 +56,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-database'
     implementation 'com.google.firebase:firebase-config'
     implementation 'com.google.firebase:firebase-messaging'
-    //implementation 'com.android.billingclient:billing:3.0.3'
-    implementation 'com.android.billingclient:billing:5.1.0'
+
+    //implementation 'com.android.billingclient:billing:5.1.0'
+    implementation 'com.android.billingclient:billing:6.0.1'
     implementation 'com.google.guava:guava:31.1-jre'
     implementation 'com.google.guava:guava:29.0-android'
     implementation 'com.google.firebase:firebase-crashlytics'
