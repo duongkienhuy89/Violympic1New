@@ -255,23 +255,23 @@ public class MainActivity extends FragmentActivity  {
 
 
     Animation anim_tbequal;
-    Animation anim_blink_max;
+   // Animation anim_blink_max;
     Animation anim_tbmonkey;
-    Animation aniZoom;
-    Animation aniZoomQuestion;
+   // Animation aniZoom;
+ //   Animation aniZoomQuestion;
     //Animation aniShake_Summary;
 
-    Animation aniZoom_Plus;
+   // Animation aniZoom_Plus;
     Animation aniZoom_Subs;
-    Animation aniIn_Up;
-    Animation aninGitbox;
+  //  Animation aniIn_Up;
+    //Animation aninGitbox;
     Animation aniOut_Up;
-    Animation aniMoveTapZero;
-    Animation aniMoveCloud;
+   // Animation aniMoveTapZero;
+   // Animation aniMoveCloud;
     Animation aninShake_Main;
     Animation aninOut_Up_Main;
     Animation aninShake_Grade;
-    Animation aninShake;
+   // Animation aninShake;
     ImageView iv_star1;
     ImageView iv_star2;
     ImageView iv_star3;
@@ -414,9 +414,9 @@ public class MainActivity extends FragmentActivity  {
     ImageView iv_logo_moutain_start;
     ImageView iv_logo_moutain_end;
 
-    Animation anim_innext;
-    Animation anim_inback;
-    Animation anim_blink;
+  //  Animation anim_innext;
+   // Animation anim_inback;
+    //Animation anim_blink;
 
     public enum Status{MAIN,EQUAL,EQUAL_CLICK_1,EQUAL_CLICK_2,
         GAME_OVER_EQUAL,MONKEY,MONKEY_CLICK,GAME_OVER_MONKEY,
@@ -427,6 +427,8 @@ public class MainActivity extends FragmentActivity  {
     public static   Boolean mISO1;
     TextView tv_content_start_equal;
 TextView tv_conten_moutain;
+
+TextView tv_Feed_Back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -615,6 +617,7 @@ TextView tv_conten_moutain;
         iv_star3 = (ImageView) findViewById(R.id.iv_star3);
         ll_star_zero = (LinearLayout) findViewById(R.id.ll_star_zero);
         tv_Share_Main = (TextView) findViewById(R.id.tv_Share_Main);
+        tv_Feed_Back=(TextView)findViewById(R.id.tv_Feed_Back);
 
         ll_item_vip1=(LinearLayout) findViewById(R.id.ll_item_vip1);
         ll_item_vip2=(LinearLayout) findViewById(R.id.ll_item_vip2);
@@ -789,12 +792,12 @@ TextView tv_conten_moutain;
         });
 
 
-        anim_innext=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.innext);
-        anim_inback=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.inback);
+       // anim_innext=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.innext);
+       // anim_inback=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.inback);
 
-        anim_blink=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink);
+       // anim_blink=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink);
 
-        anim_blink_max = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink_max);
+       // anim_blink_max = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink_max);
         anim_tbequal = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake_equal);
         anim_tbequal.setAnimationListener(new Animation.AnimationListener() {
             @Override
@@ -845,12 +848,12 @@ TextView tv_conten_moutain;
 
             }
         });
-        aniZoom = AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation);
-        aniZoomQuestion = AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation_question);
+       // aniZoom = AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation);
+       // aniZoomQuestion = AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation_question);
 
-        aniMoveTapZero = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move);
-        aniMoveCloud = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move_cloud);
-        tv_main_start.startAnimation(aniMoveCloud);
+        //aniMoveTapZero = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move);
+       // aniMoveCloud = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move_cloud);
+        tv_main_start.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move_cloud));
         aninOut_Up_Main = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.out_up_main);
         aninOut_Up_Main.setAnimationListener(new Animation.AnimationListener() {
             @Override
@@ -862,7 +865,7 @@ TextView tv_conten_moutain;
             public void onAnimationEnd(Animation animation) {
                 tv_main_start.clearAnimation();
                 viewFlipperMath.setDisplayedChild(1);
-                tv_main_start.startAnimation(aniMoveCloud);
+                tv_main_start.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move_cloud));
             }
 
             @Override
@@ -907,7 +910,7 @@ TextView tv_conten_moutain;
             }
         });
 
-        aninGitbox = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake_gitbox);
+        //aninGitbox = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake_gitbox);
         aniOut_Up = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.out_up);
         aniOut_Up.setAnimationListener(new Animation.AnimationListener() {
             @Override
@@ -934,9 +937,9 @@ TextView tv_conten_moutain;
         });
 
 
-        aniZoom_Plus = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus);
+       // aniZoom_Plus = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus);
         aniZoom_Subs = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomsubs);
-        aniIn_Up = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.in_up);
+      //  aniIn_Up = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.in_up);
         aniZoom_Subs.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
@@ -972,7 +975,7 @@ TextView tv_conten_moutain;
                     iv_continue_zero.setVisibility(View.GONE);
 
                     rl_game_over.setVisibility(View.VISIBLE);
-                    rl_game_over.startAnimation(aniZoom_Plus);
+                    rl_game_over.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
                     tv_score_zero_gameover.setText(getString(R.string.scrore) + ":" + mScore_Zero);
                     try {
                         if (mScore_Zero > 144) {
@@ -1009,7 +1012,7 @@ TextView tv_conten_moutain;
 
             }
         });
-        aninShake = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake);
+      //  aninShake = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake);
         typeUTM = Typeface.createFromAsset(getAssets(), "UTMCooper.ttf");
 
 
@@ -1074,29 +1077,42 @@ TextView tv_conten_moutain;
         if (((int) mFirebaseRemoteConfig.getValue("link_type").asDouble()) > 0 && DeviceLang.equals("vi_vn")) {
             try {
                 rl_link_main.setVisibility(View.VISIBLE);
-
+                tv_Share_Main.setVisibility(View.VISIBLE);
+                tv_Feed_Back.setVisibility(View.VISIBLE);
                 if (!mLinkAvata.equals("")) {
-                    Bitmap myBitmap = BitmapFactory.decodeFile(mLinkAvata);
-                    iv_logo_link_main.setImageBitmap(myBitmap);
+
+
                     clsHandleT.RotateImage(iv_halo_link_main, 15000);
+
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Bitmap myBitmap = BitmapFactory.decodeFile(mLinkAvata);
+                            iv_logo_link_main.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    iv_logo_link_main.setImageBitmap(myBitmap);
+                                }
+                            });
+                        }
+                    }).start();
 
                 } else {
                     iv_logo_link_main.setImageResource(R.drawable.avata2);
                 }
             } catch (Exception exception) {
                 rl_link_main.setVisibility(View.GONE);
+                tv_Share_Main.setVisibility(View.GONE);
+                tv_Feed_Back.setVisibility(View.GONE);
 
             }
         } else {
             rl_link_main.setVisibility(View.GONE);
-
+            tv_Share_Main.setVisibility(View.GONE);
+            tv_Feed_Back.setVisibility(View.GONE);
         }
         setMutilang();
-        Bundle extras = getIntent().getExtras();
-        if (extras != null && checkOpenTemplate == 0 && currentStatus == Status.MAIN && DeviceLang.equals("vi_vn")) {
 
-            doLoadTempNoti();
-        }
         createNotificationChannel("toancap1");
         calendar = Calendar.getInstance();
         if (pref.getInt("notifiday", 0) != calendar.get(Calendar.DAY_OF_MONTH)) {
@@ -1219,6 +1235,12 @@ TextView tv_conten_moutain;
         {
             tv_content_start_equal.setWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 360, getResources().getDisplayMetrics()));
             tv_conten_moutain.setWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 330, getResources().getDisplayMetrics()));
+        }
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null && checkOpenTemplate == 0 && currentStatus == Status.MAIN && DeviceLang.equals("vi_vn")) {
+
+            doLoadTempNoti();
         }
 
     }
@@ -1734,7 +1756,7 @@ TextView tv_conten_moutain;
         public void run() {
 
             rl_cloud1.setVisibility(View.VISIBLE);
-            rl_cloud1.startAnimation(aniZoom_Plus);
+            rl_cloud1.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
             handler.postDelayed(timerShowOpreator,650);
 
         }
@@ -1745,7 +1767,7 @@ TextView tv_conten_moutain;
             clsHandleT.doPlaySoundAssets("c2.wav","", player, false, MainActivity.this);
             rl_cloud1.clearAnimation();
             iv_operator.setVisibility(View.VISIBLE);
-            iv_operator.startAnimation(aniZoom_Plus);
+            iv_operator.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
             handler.postDelayed(timerShowCloud2,650);
 
         }
@@ -1756,7 +1778,7 @@ TextView tv_conten_moutain;
             // clsHandleT.doPlaySoundAssets("c2.wav","", player, false, MainActivity.this);
             iv_operator.clearAnimation();
             rl_cloud2.setVisibility(View.VISIBLE);
-            rl_cloud2.startAnimation(aniZoom_Plus);
+            rl_cloud2.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
             handler.postDelayed(timerShowEqual,650);
 
         }
@@ -1767,7 +1789,7 @@ TextView tv_conten_moutain;
             clsHandleT.doPlaySoundAssets("c2.wav","", player, false, MainActivity.this);
             rl_cloud2.clearAnimation();
             iv_operator_equal.setVisibility(View.VISIBLE);
-            iv_operator_equal.startAnimation(aniZoom_Plus);
+            iv_operator_equal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
             handler.postDelayed(timerShowResult,650);
 
         }
@@ -1778,7 +1800,7 @@ TextView tv_conten_moutain;
             //clsHandleT.doPlaySoundAssets("c2.wav","", player, false, MainActivity.this);
             iv_operator_equal.clearAnimation();
             iv_cloud3.setVisibility(View.VISIBLE);
-            iv_cloud3.startAnimation(aniZoom_Plus);
+            iv_cloud3.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
             handler.postDelayed(timerShowOptionsResult,650);
 
         }
@@ -1793,15 +1815,15 @@ TextView tv_conten_moutain;
             rl_d2.setVisibility(View.VISIBLE);
             rl_d3.setVisibility(View.VISIBLE);
 
-            rl_d1.startAnimation(aniIn_Up);
-            rl_d2.startAnimation(aniIn_Up);
-            rl_d3.startAnimation(aniIn_Up);
+            rl_d1.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.in_up));
+            rl_d2.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.in_up));
+            rl_d3.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.in_up));
             currentStatus=Status.ZERO_OPEN;
 
             if(mScore_Zero<=0) {
                 iv_tap_zero.clearAnimation();
                 iv_tap_zero.setVisibility(View.VISIBLE);
-                iv_tap_zero.startAnimation(aniMoveTapZero);
+                iv_tap_zero.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move));
                 handler.postDelayed(timerShowCloseMoveTap, 6000);
             }
         }
@@ -1913,9 +1935,9 @@ TextView tv_conten_moutain;
             iv_star2.setVisibility(View.VISIBLE);
             iv_star3.setVisibility(View.VISIBLE);
 
-            iv_star1.startAnimation(aninGitbox);
-            iv_star2.startAnimation(aninGitbox);
-            iv_star3.startAnimation(aninGitbox);
+            iv_star1.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake_gitbox));
+            iv_star2.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake_gitbox));
+            iv_star3.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake_gitbox));
 
             ll_star_zero.startAnimation(aniOut_Up);
 
@@ -1927,7 +1949,7 @@ TextView tv_conten_moutain;
         @Override
         public void run() {
             iv_continue_zero.setVisibility(View.VISIBLE);
-            iv_continue_zero.startAnimation(aniZoom_Plus);
+            iv_continue_zero.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
         }
     };
     public void onClickContinueZero(View view) {
@@ -2264,7 +2286,7 @@ TextView tv_conten_moutain;
                     tv_title_operator.setText(getString(R.string.phepcongvstru2));
                     break;
             }
-            cl_min_max.startAnimation(aniZoom_Plus);
+            cl_min_max.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
             // Db("K:"+mZeloOperator);
         }catch (Exception exception)
         {
@@ -2323,7 +2345,7 @@ TextView tv_conten_moutain;
                 la_sun_grade0.clearAnimation();
 
                 la_sun_grade0.setVisibility(View.VISIBLE);
-                la_sun_grade0.setAnimation(aniZoom_Plus);
+                la_sun_grade0.setAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
                 //la_sun_grade0.playAnimation();
                 handler.postDelayed(timerShowOperator, 2300);
                 iv_grade_0.setVisibility(View.GONE);
@@ -2370,7 +2392,7 @@ TextView tv_conten_moutain;
 
         rl_game_over.clearAnimation();
         iv_zero_score.setText("");
-        ll_operator.startAnimation(aniZoom_Plus);
+        ll_operator.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
         currentStatus=Status.ZERO_LOCK;
     }
     //endregion
@@ -2449,7 +2471,7 @@ TextView tv_conten_moutain;
             ll_number_moutain.setVisibility(View.VISIBLE);
 
             currentStatus=Status.MOUTAIN;
-            tv_question_moutain.startAnimation(aniZoomQuestion);
+            tv_question_moutain.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation_question));
             if(clsHandleT.doCheckExistFile(mModeUrlQuestion_Math + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3"))
             {
                 clsHandleT.doPlaySoundUrlLocal(mModeUrlQuestion_Math + "/grade" + mGrade + "/" + mLoiVan.getId() + ".mp3",player,MainActivity.this);
@@ -2511,7 +2533,7 @@ TextView tv_conten_moutain;
                     }
                 }else
                 {
-                    tv_result_moutain.startAnimation(aniZoom);
+                    tv_result_moutain.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
                     clsHandleT.doPlaySoundAssets("noemty.mp3",DeviceLang, player, false, MainActivity.this);
                     Toast.makeText(this,""+getString(R.string.inputnotblank),Toast.LENGTH_LONG).show();
                 }
@@ -2533,19 +2555,19 @@ TextView tv_conten_moutain;
               {
                   case 1:
                       tv_A.setBackgroundResource(R.drawable.round_bt_item_true);
-                      tv_A.setAnimation(anim_blink);
+                      tv_A.setAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink));
                       break;
                   case 2:
                       tv_B.setBackgroundResource(R.drawable.round_bt_item_true);
-                      tv_B.setAnimation(anim_blink);
+                      tv_B.setAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink));
                       break;
                   case 3:
                       tv_C.setBackgroundResource(R.drawable.round_bt_item_true);
-                      tv_C.setAnimation(anim_blink);
+                      tv_C.setAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink));
                       break;
                   default:
                       tv_D.setBackgroundResource(R.drawable.round_bt_item_true);
-                      tv_D.setAnimation(anim_blink);
+                      tv_D.setAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink));
                       break;
               }
             }
@@ -2701,19 +2723,19 @@ TextView tv_conten_moutain;
                     {
                         case 1:
                             tv_A.setBackgroundResource(R.drawable.round_bt_item_true);
-                            tv_A.setAnimation(anim_blink);
+                            tv_A.setAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink));
                             break;
                         case 2:
                             tv_B.setBackgroundResource(R.drawable.round_bt_item_true);
-                            tv_B.setAnimation(anim_blink);
+                            tv_B.setAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink));
                             break;
                         case 3:
                             tv_C.setBackgroundResource(R.drawable.round_bt_item_true);
-                            tv_C.setAnimation(anim_blink);
+                            tv_C.setAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink));
                             break;
                         default:
                             tv_D.setBackgroundResource(R.drawable.round_bt_item_true);
-                            tv_D.setAnimation(anim_blink);
+                            tv_D.setAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink));
                             break;
                     }
 
@@ -3019,62 +3041,62 @@ TextView tv_conten_moutain;
     }
     public void onClickBt0(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("0");
     }
     public void onClickBt1(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("1");
     }
     public void onClickBt2(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("2");
     }
     public void onClickBt3(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("3");
     }
     public void onClickBt4(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("4");
     }
     public void onClickBt5(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("5");
     }
     public void onClickBt6(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("6");
     }
     public void onClickBt7(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("7");
     }
     public void onClickBt8(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("8");
     }
     public void onClickBt9(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("9");
     }
     public void onClickBtB(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("b");
     }
     public void onClickBtD(View view)
     {
-        view.startAnimation(aniZoom);
+        view.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation));
         doInputNumber("d");
     }
     public void doInputNumber(String pNumber)
@@ -3123,7 +3145,7 @@ TextView tv_conten_moutain;
     {
         try {
             doPlayClick();
-            view.startAnimation(aninShake);
+            view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake));
             handler.postDelayed(timer_Game_Over_Moutain,950);
         }catch (Exception exception)
         {
@@ -3141,7 +3163,7 @@ TextView tv_conten_moutain;
     {
         try {
             doPlayClick();
-            view.startAnimation(aninShake);
+            view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake));
             handler.postDelayed(timer_Click_Play_Moutain,950);
         }catch (Exception exception)
         {
@@ -3280,12 +3302,12 @@ TextView tv_conten_moutain;
 
 
             currentStatus=Status.MOUTAIN_SELECT;
-            tv_question_moutain.startAnimation(aniZoomQuestion);
+            tv_question_moutain.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.scala_animation_question));
 
-            tv_A.startAnimation(anim_innext);
-            tv_C.startAnimation(anim_innext);
-            tv_B.startAnimation(anim_inback);
-            tv_D.startAnimation(anim_inback);
+            tv_A.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.innext));
+            tv_C.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.innext));
+            tv_B.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.inback));
+            tv_D.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.inback));
 
            // clsHandleT.Loge("ket qua:"+mMountain.getTruecase());
 
@@ -3371,7 +3393,7 @@ TextView tv_conten_moutain;
     {
         try {
             doPlayClick();
-            view.startAnimation(aninShake);
+            view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake));
             handler.postDelayed(timer_Click_Play_Monkey,950);
         }catch (Exception exception)
         {
@@ -4118,7 +4140,7 @@ TextView tv_conten_moutain;
     }
     public void onClickContinueGameOverMonkey(View view)
     {
-        view.startAnimation(aninShake);
+        view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake));
         handler.postDelayed(timer_Game_Over_Monkey,950);
 
     }
@@ -4860,7 +4882,7 @@ TextView tv_conten_moutain;
     {
         try {
             doPlayClick();
-            view.startAnimation(aninShake);
+            view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake));
             handler.postDelayed(timer_Click_Game_Over_Equal,950);
         }catch (Exception exception)
         {
@@ -5080,7 +5102,7 @@ TextView tv_conten_moutain;
                     if (mTimeLine < 10) {
                         pTextView.setTextColor(Color.RED);
                         if (mTimeLine == 9) {
-                            pTextView.startAnimation(anim_blink_max);
+                            pTextView.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink_max));
                         }
                     } else {
                         pTextView.setTextColor(Color.WHITE);
@@ -5112,7 +5134,7 @@ TextView tv_conten_moutain;
     public void onClickPlayEqual(View view)
     {
         doPlayClick();
-        view.startAnimation(aninShake);
+        view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake));
         handler.postDelayed(timer_Click_Play_Equal,950);
     }
     Runnable timer_Click_Play_Equal= new Runnable() {
@@ -6650,6 +6672,8 @@ TextView tv_conten_moutain;
             } catch (Exception exception) {
 
             }
+
+
         }
         if (((int) mFirebaseRemoteConfig.getValue("b_ads_inapp_key").asDouble()) != 0
                 &&mMemberVip1==0

@@ -21,6 +21,7 @@
   <androidx.baselineprofile.producer/>
   <androidx.benchmark/>
   <androidx.biometric/>
+  <androidx.bluetooth/>
   <androidx.browser/>
   <androidx.camera/>
   <androidx.car/>
@@ -33,6 +34,7 @@
   <androidx.compose.foundation/>
   <androidx.compose.material/>
   <androidx.compose.material3/>
+  <androidx.compose.material3.adaptive/>
   <androidx.compose.runtime/>
   <androidx.compose.ui/>
   <androidx.concurrent/>
@@ -70,6 +72,7 @@
   <androidx.leanback/>
   <androidx.legacy/>
   <androidx.lifecycle/>
+  <androidx.lint/>
   <androidx.loader/>
   <androidx.localbroadcastmanager/>
   <androidx.media/>
@@ -86,6 +89,7 @@
   <androidx.percentlayout/>
   <androidx.preference/>
   <androidx.print/>
+  <androidx.privacysandbox.activity/>
   <androidx.privacysandbox.ads/>
   <androidx.privacysandbox.library/>
   <androidx.privacysandbox.plugins/>
@@ -134,6 +138,7 @@
   <androidx.work/>
   <com.android/>
   <com.android.application/>
+  <com.android.art/>
   <com.android.asset-pack/>
   <com.android.asset-pack-bundle/>
   <com.android.billingclient/>
@@ -186,6 +191,7 @@
   <com.google.ads.afsn/>
   <com.google.ads.interactivemedia.v3/>
   <com.google.ads.mediation/>
+  <com.google.ai.client.generativeai/>
   <com.google.ambient.crossdevice/>
   <com.google.android.ads/>
   <com.google.android.ads.consent/>
@@ -214,6 +220,7 @@
   <com.google.android.libraries.places/>
   <com.google.android.libraries.play.games/>
   <com.google.android.libraries.sdkcoroutines/>
+  <com.google.android.libraries.searchinapps/>
   <com.google.android.livesharing/>
   <com.google.android.material/>
   <com.google.android.mdoc/>
@@ -235,6 +242,7 @@
   <com.google.assistant.suggestion/>
   <com.google.camerax.effects/>
   <com.google.chromeos/>
+  <com.google.cose/>
   <com.google.d2c/>
   <com.google.devtools.ksp/>
   <com.google.fhir/>

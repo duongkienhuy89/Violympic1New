@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Toán Cấp 1</string>
+    <string name="app_name">Violympic</string>
     <string name="scrore">Điểm</string>
     <string name="time">Thời gian</string>
     <string name="inputnotblank">Kết quả không được để trống</string>

@@ -353,7 +353,7 @@
         android:id="@+id/la_firework_monkey"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:lottie_fileName="17297-fireworks.json"
+        app:lottie_fileName="bong-lightning.json"
         app:lottie_loop="false"
         app:lottie_autoPlay="false" />
 

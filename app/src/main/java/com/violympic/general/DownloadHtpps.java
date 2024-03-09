@@ -1,5 +1,7 @@
 package com.violympic.general;
 
+import androidx.annotation.Keep;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -9,6 +11,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
+@Keep
 public class DownloadHtpps {
     private static final int BUFFER_SIZE = 4096;
 

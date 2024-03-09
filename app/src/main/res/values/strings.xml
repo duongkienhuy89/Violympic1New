@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Math Vio</string>
+    <string name="app_name">Math Playground</string>
     <string name="scrore">Score</string>
     <string name="time">Time</string>
     <string name="inputnotblank">Time</string>

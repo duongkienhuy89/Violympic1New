@@ -1,5 +1,8 @@
 package com.violympic.modul;
 
+import androidx.annotation.Keep;
+
+@Keep
 public class PhepToan {
     public String getTamcongthuc() {
         return tamcongthuc;

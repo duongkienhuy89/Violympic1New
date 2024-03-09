@@ -3,6 +3,7 @@ package com.violympic.general;
 import android.app.Activity;
 import android.content.Context;
 
+import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
 
 import com.google.android.gms.ads.AdRequest;
@@ -15,6 +16,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.violympic.toanlop1.R;
 
 
+@Keep
 public class AdmobManager {
 
     public static InterstitialAd mInterstitialAd;

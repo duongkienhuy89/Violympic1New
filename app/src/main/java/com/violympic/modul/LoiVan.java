@@ -1,5 +1,8 @@
 package com.violympic.modul;
 
+import androidx.annotation.Keep;
+
+@Keep
 public class LoiVan {
     public String getId() {
         return id;

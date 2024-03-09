@@ -456,7 +456,7 @@
                  android:layout_alignParentRight="true"
                  android:layout_width="match_parent"
                  android:layout_height="match_parent"
-                 app:lottie_fileName="17297-fireworks.json"
+                 app:lottie_fileName="bong-lightning.json"
                  app:lottie_loop="false"
                  app:lottie_autoPlay="false" />
 
@@ -590,7 +590,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:lottie_fileName="fireworks.json"
+            app:lottie_fileName="bong-lightning.json"
             app:lottie_loop="true"
             app:lottie_autoPlay="true" />
     </RelativeLayout>
