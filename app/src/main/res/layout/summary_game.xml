@@ -87,14 +87,14 @@
         app:lottie_autoPlay="true" />
     <ImageView
         android:id="@+id/iv_dinhnui_summary"
-        android:src="@drawable/khocdi"
+        android:src="@drawable/monkey_cry"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintVertical_bias="0.9"
     android:layout_marginRight="20dp"
-        android:layout_width="103dp"
-        android:layout_height="170dp"/>
+        android:layout_width="137dp"
+        android:layout_height="140dp"/>
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_view_summary"

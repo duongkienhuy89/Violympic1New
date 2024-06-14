@@ -11,8 +11,8 @@ android {
         applicationId "com.violympic.toanlop1"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 36
-        versionName "3.6"
+        versionCode 37
+        versionName "3.7"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         compileOptions {
@@ -44,6 +44,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.violympic.toanlop1'
 }
 
 dependencies {
@@ -77,6 +78,6 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:21.5.0'
     implementation 'com.google.firebase:firebase-firestore'
     implementation 'com.airbnb.android:lottie:3.4.1'
-
+    implementation("com.google.android.ump:user-messaging-platform:2.2.0")
     implementation 'com.squareup.picasso:picasso:2.71828'
 }

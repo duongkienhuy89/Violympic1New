@@ -58,6 +58,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.ump.ConsentForm;
+import com.google.android.ump.ConsentInformation;
+import com.google.android.ump.ConsentRequestParameters;
+import com.google.android.ump.UserMessagingPlatform;
 import com.google.common.collect.ImmutableList;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -354,6 +358,7 @@ public class MainActivity extends FragmentActivity  {
     TextView tv_title_operator;
     LottieAnimationView la_sun_grade0;
     ImageView iv_grade_0;
+    ImageView iv_grade_0_en;
     ImageView iv_grade_1;
     ImageView iv_grade_2;
     ImageView iv_grade_3;
@@ -429,7 +434,7 @@ public class MainActivity extends FragmentActivity  {
 TextView tv_conten_moutain;
 
 TextView tv_Feed_Back;
-
+    private ConsentInformation consentInformation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -551,6 +556,7 @@ TextView tv_Feed_Back;
         la_firework_monkey = (LottieAnimationView) findViewById(R.id.la_firework_monkey);
         la_sun_grade0 = (LottieAnimationView) findViewById(R.id.la_sun_grade0);
         iv_grade_0 = (ImageView) findViewById(R.id.iv_grade_0);
+        iv_grade_0_en= (ImageView) findViewById(R.id.iv_grade_0_en);
         iv_grade_1 = (ImageView) findViewById(R.id.iv_grade_1);
         iv_grade_2 = (ImageView) findViewById(R.id.iv_grade_2);
         iv_grade_3 = (ImageView) findViewById(R.id.iv_grade_3);
@@ -1025,17 +1031,18 @@ TextView tv_Feed_Back;
         if (!DeviceLang.equals("vi_vn")) {
             DeviceLang = "en";
             try {
-                iv_grade_0.setBackgroundResource(R.drawable.mamnon_en);
-                iv_grade_1.setBackgroundResource(R.drawable.grade1_en);
-                iv_grade_2.setBackgroundResource(R.drawable.grade2_en);
-                iv_grade_3.setBackgroundResource(R.drawable.grade3_en);
-                iv_grade_4.setBackgroundResource(R.drawable.grade4_en);
-                iv_grade_5.setBackgroundResource(R.drawable.grade5_en);
+                iv_grade_0.setVisibility(View.GONE);
+                iv_grade_0_en.setVisibility(View.VISIBLE);
+
                 iv_logo_moutain_start.setImageResource(R.drawable.moutian_logo_en);
                 iv_logo_moutain_end.setImageResource(R.drawable.moutian_logo_en);
             } catch (Exception e) {
 
             }
+        }else
+        {
+            iv_grade_0.setVisibility(View.VISIBLE);
+            iv_grade_0_en.setVisibility(View.GONE);
         }
 
         mDatabase = FirebaseDatabase.getInstance("https://vioedu-toan-lop-1-default-rtdb.firebaseio.com").getReference();
@@ -1122,7 +1129,41 @@ TextView tv_Feed_Back;
 
             doNotifiHenGio();
         }
-        AdmobManager.doInitialize(this);
+        // Create a ConsentRequestParameters object.
+        ConsentRequestParameters params = new ConsentRequestParameters
+                .Builder()
+                .build();
+
+        consentInformation = UserMessagingPlatform.getConsentInformation(this);
+        consentInformation.requestConsentInfoUpdate(
+                this,
+                params,
+                (ConsentInformation.OnConsentInfoUpdateSuccessListener) () -> {
+                    // TODO: Load and show the consent form.
+                    UserMessagingPlatform.loadAndShowConsentFormIfRequired(
+                            this,
+                            (ConsentForm.OnConsentFormDismissedListener) loadAndShowError -> {
+                                if (loadAndShowError != null) {
+                                    // Consent gathering failed.
+                                    Log.e("kkkkk", String.format("%s: %s",
+                                            loadAndShowError.getErrorCode(),
+                                            loadAndShowError.getMessage()));
+                                }
+
+                                // Consent has been gathered.
+                                if (consentInformation.canRequestAds()) {
+                                    AdmobManager.doInitialize(MainActivity.this);
+                                }
+                            }
+                    );
+                },
+                (ConsentInformation.OnConsentInfoUpdateFailureListener) requestConsentError -> {
+                    // Consent gathering failed.
+                    Log.e("kkkkk", String.format("%s: %s",
+                            requestConsentError.getErrorCode(),
+                            requestConsentError.getMessage()));
+                });
+
         //clsHandleT.Loge("mm:"+((int) mFirebaseRemoteConfig.getValue("altp_open").asDouble()));
 
 
@@ -1145,6 +1186,9 @@ TextView tv_Feed_Back;
 
             iv_grade_0.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 85, getResources().getDisplayMetrics());
             iv_grade_0.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 81, getResources().getDisplayMetrics());
+
+            iv_grade_0_en.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 85, getResources().getDisplayMetrics());
+            iv_grade_0_en.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 82, getResources().getDisplayMetrics());
 
             iv_grade_1.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 92, getResources().getDisplayMetrics());
             iv_grade_1.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
@@ -2349,6 +2393,7 @@ TextView tv_Feed_Back;
                 //la_sun_grade0.playAnimation();
                 handler.postDelayed(timerShowOperator, 2300);
                 iv_grade_0.setVisibility(View.GONE);
+                iv_grade_0_en.setVisibility(View.GONE);
                 iv_grade_1.setVisibility(View.GONE);
                 iv_grade_2.setVisibility(View.GONE);
                 iv_grade_3.setVisibility(View.GONE);
@@ -6832,7 +6877,14 @@ TextView tv_Feed_Back;
         try {
             la_sun_grade0.clearAnimation();
             la_sun_grade0.setVisibility(View.GONE);
-            iv_grade_0.setVisibility(View.VISIBLE);
+            if (!DeviceLang.equals("vi_vn")) {
+                iv_grade_0.setVisibility(View.GONE);
+                iv_grade_0_en.setVisibility(View.VISIBLE);
+            }else
+            {
+                iv_grade_0_en.setVisibility(View.GONE);
+                iv_grade_0.setVisibility(View.VISIBLE);
+            }
             iv_grade_1.setVisibility(View.VISIBLE);
             iv_grade_2.setVisibility(View.VISIBLE);
             iv_grade_3.setVisibility(View.VISIBLE);
