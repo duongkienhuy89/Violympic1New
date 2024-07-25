@@ -18,6 +18,10 @@
         android:roundIcon="@drawable/avata_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Toan1">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true"/>
         <activity
             android:name=".DuphongActivity"
             android:screenOrientation="landscape"
