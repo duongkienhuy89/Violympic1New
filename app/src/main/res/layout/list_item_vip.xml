@@ -42,7 +42,7 @@
               app:layout_constraintRight_toLeftOf="@+id/ll_item_vip2"
               android:background="@drawable/item_vip"
               android:layout_width="@dimen/width_item_vip"
-              android:layout_height="55dp">
+               android:layout_height="@dimen/height_item_vip">
 
                <TextView
                    android:id="@+id/tv_item_vip1"
@@ -65,7 +65,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 android:background="@drawable/item_vip"
                 android:layout_width="@dimen/width_item_vip"
-                android:layout_height="55dp">
+                android:layout_height="@dimen/height_item_vip">
                 <TextView
                     android:id="@+id/tv_item_vip2"
                     android:textStyle="italic"
@@ -86,7 +86,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/ll_item_vip2"
                 android:background="@drawable/item_vip"
                 android:layout_width="@dimen/width_item_vip"
-                android:layout_height="55dp">
+                android:layout_height="@dimen/height_item_vip">
                 <TextView
                     android:id="@+id/tv_item_vip3"
                     android:textStyle="italic"
@@ -107,7 +107,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 android:background="@drawable/item_vip"
                 android:layout_width="@dimen/width_item_vip"
-                android:layout_height="55dp">
+                android:layout_height="@dimen/height_item_vip">
                 <TextView
                     android:id="@+id/tv_item_vip4"
                     android:textStyle="italic"
@@ -128,7 +128,7 @@
                 app:layout_constraintRight_toLeftOf="@+id/ll_item_vip2"
                 android:background="@drawable/item_vip"
                 android:layout_width="@dimen/width_item_vip"
-                android:layout_height="55dp">
+                android:layout_height="@dimen/height_item_vip">
                 <TextView
                     android:id="@+id/tv_item_vip5"
                     android:textStyle="italic"
@@ -143,13 +143,14 @@
             <LinearLayout
                 android:id="@+id/ll_item_vip_all"
                 android:orientation="horizontal"
+
                 app:layout_constraintTop_toBottomOf="@+id/ll_item_vip4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/ll_item_vip1"
                 app:layout_constraintRight_toRightOf="parent"
                 android:background="@drawable/item_vip"
                 android:layout_width="@dimen/width_item_vip"
-                android:layout_height="55dp">
+                android:layout_height="@dimen/height_item_vip">
                 <TextView
                     android:id="@+id/tv_item_vipall"
                     android:textStyle="italic|bold"
@@ -160,6 +161,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
             </LinearLayout>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
@@ -178,6 +180,7 @@
         android:layout_height="match_parent"
         app:lottie_fileName="17297-fireworks.json"
         app:lottie_loop="true"
-        app:lottie_autoPlay="true" />
+        app:lottie_repeatCount="10"
+        app:lottie_autoPlay="false" />
 
 </RelativeLayout>

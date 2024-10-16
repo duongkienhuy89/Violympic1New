@@ -20,7 +20,7 @@
     <string name="thatbai">Failed</string>
     <string name="ga">duck</string>
     <string name="flower">flower</string>
-    <string name="start_equal">🍭 Please select 2 consecutive cells of equal value.\n🍭 Select wrong 3 times, the test will end.\n🍭 Each wrong time minus 1 point</string>
+    <string name="start_equal">🍭 Please select 2 consecutive cells of equal value.\n\n🍭 Select wrong 3 times, the test will end.</string>
     <string name="startmoutain">You choose one of four answers in the box for matching results.</string>
     <string name="start_monkey">You swipe to 2 sides. To find a board with the same value as the board.</string>
     <string name="break_home">Are you sure you want to quit?</string>

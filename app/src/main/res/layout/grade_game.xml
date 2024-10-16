@@ -102,7 +102,7 @@ android:layout_marginLeft="50dp"
 
     <ImageView
         android:id="@+id/iv_grade_1"
-        android:background="@drawable/lop1"
+        android:src="@drawable/lop1"
 
 
         android:gravity="center"
@@ -113,11 +113,11 @@ android:layout_marginLeft="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/iv_grade_2"
         android:onClick="onClickGrade1"
-        android:layout_width="120dp"
-        android:layout_height="76dp"/>
+        android:layout_width="123dp"
+        android:layout_height="73dp"/>
     <ImageView
         android:id="@+id/iv_grade_2"
-        android:background="@drawable/lop2"
+        android:src="@drawable/lop2"
 
 
         android:gravity="center"
@@ -130,12 +130,12 @@ android:layout_marginLeft="50dp"
 
 
         android:onClick="onClickGrade2"
-        android:layout_width="120dp"
-        android:layout_height="76dp"/>
+        android:layout_width="123dp"
+        android:layout_height="73dp"/>
     <ImageView
         android:id="@+id/iv_grade_3"
-        android:background="@drawable/lop3"
 
+android:src="@drawable/lop3"
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -145,11 +145,11 @@ android:layout_marginLeft="50dp"
 
         android:onClick="onClickGrade3"
 
-        android:layout_width="120dp"
-        android:layout_height="76dp"/>
+        android:layout_width="123dp"
+        android:layout_height="73dp"/>
     <ImageView
         android:id="@+id/iv_grade_4"
-        android:background="@drawable/lop4"
+        android:src="@drawable/lop4"
 
 
         app:layout_constraintTop_toTopOf="parent"
@@ -158,11 +158,11 @@ android:layout_marginLeft="50dp"
         app:layout_constraintLeft_toRightOf="@id/iv_grade_3"
         app:layout_constraintRight_toLeftOf="@+id/iv_grade_5"
         android:onClick="onClickGrade4"
-        android:layout_width="120dp"
-        android:layout_height="76dp"/>
+        android:layout_width="123dp"
+        android:layout_height="73dp"/>
     <ImageView
         android:id="@+id/iv_grade_5"
-        android:background="@drawable/lop5"
+        android:src="@drawable/lop5"
 
 
         app:layout_constraintTop_toTopOf="parent"
@@ -172,8 +172,8 @@ android:layout_marginLeft="50dp"
         app:layout_constraintRight_toRightOf="parent"
 
         android:onClick="onClickGrade5"
-        android:layout_width="120dp"
-        android:layout_height="76dp"/>
+        android:layout_width="123dp"
+        android:layout_height="73dp"/>
     <com.airbnb.lottie.LottieAnimationView
 
         app:layout_constraintBottom_toBottomOf="parent"

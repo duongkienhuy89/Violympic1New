@@ -104,7 +104,7 @@
     </LinearLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_min_max"
-        android:visibility="gone"
+   android:visibility="gone"
         android:background="@drawable/khung_nen"
         android:layout_centerInParent="true"
         android:layout_marginBottom="10dp"
@@ -129,8 +129,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:src="@drawable/close"
-            android:layout_width="48dp"
-            android:layout_height="50dp"/>
+            android:layout_width="42dp"
+            android:layout_height="44dp"/>
         <RelativeLayout
             android:id="@+id/rl_opera10"
             app:layout_constraintRight_toLeftOf="@+id/rl_opera20"
@@ -138,21 +138,21 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_title_operator"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="5dp"
-            android:layout_width="185dp"
-            android:layout_height="125dp">
+            android:layout_width="180dp"
+            android:layout_height="120dp">
             <ImageView
                 android:onClick="onClickMaxMin"
                 android:tag="10"
                 android:src="@drawable/c10"
-                android:layout_width="175dp"
-                android:layout_height="119dp"/>
+                android:layout_width="170dp"
+                android:layout_height="114dp"/>
             <ImageView
                 android:id="@+id/iv_check_10"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:src="@drawable/correcttick"
-                android:layout_width="40dp"
-                android:layout_height="41dp"/>
+                android:layout_width="36dp"
+                android:layout_height="37dp"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -164,22 +164,22 @@
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
 
-            android:layout_width="185dp"
-            android:layout_height="125dp">
+            android:layout_width="180dp"
+            android:layout_height="120dp">
             <ImageView
                 android:onClick="onClickMaxMin"
                 android:tag="20"
                 android:src="@drawable/c20"
-                android:layout_width="175dp"
-                android:layout_height="119dp"/>
+                android:layout_width="170dp"
+                android:layout_height="114dp"/>
             <ImageView
                 android:id="@+id/iv_check_20"
                 android:visibility="gone"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:src="@drawable/correcttick"
-                android:layout_width="40dp"
-                android:layout_height="41dp"/>
+                android:layout_width="36dp"
+                android:layout_height="37dp"/>
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/rl_opera50"
@@ -189,22 +189,22 @@
             app:layout_constraintBottom_toBottomOf="parent"
            android:layout_marginBottom="50dp"
             android:layout_marginLeft="60dp"
-            android:layout_width="185dp"
-            android:layout_height="125dp">
+            android:layout_width="180dp"
+            android:layout_height="120dp">
             <ImageView
                 android:onClick="onClickMaxMin"
                 android:tag="50"
                 android:src="@drawable/c50"
-                android:layout_width="175dp"
-                android:layout_height="119dp"/>
+                android:layout_width="170dp"
+                android:layout_height="114dp"/>
             <ImageView
                 android:id="@+id/iv_check_50"
                 android:visibility="gone"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:src="@drawable/correcttick"
-                android:layout_width="40dp"
-                android:layout_height="41dp"/>
+                android:layout_width="36dp"
+                android:layout_height="37dp"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -216,22 +216,22 @@
             android:layout_marginBottom="50dp"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
-            android:layout_width="185dp"
-            android:layout_height="125dp">
+            android:layout_width="180dp"
+            android:layout_height="120dp">
             <ImageView
                 android:onClick="onClickMaxMin"
                 android:tag="100"
                 android:src="@drawable/c100"
-                android:layout_width="175dp"
-                android:layout_height="119dp"/>
+                android:layout_width="170dp"
+                android:layout_height="114dp"/>
             <ImageView
                 android:id="@+id/iv_check_100"
                 android:visibility="gone"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:src="@drawable/correcttick"
-                android:layout_width="40dp"
-                android:layout_height="41dp"/>
+                android:layout_width="36dp"
+                android:layout_height="37dp"/>
         </RelativeLayout>
         <RelativeLayout
             app:layout_constraintLeft_toLeftOf="parent"
@@ -333,6 +333,8 @@
                  android:layout_width="185dp"
                  android:layout_height="121dp">
              </ImageView>
+
+
              <View
                  android:id="@+id/v_line"
                  android:layout_centerVertical="true"

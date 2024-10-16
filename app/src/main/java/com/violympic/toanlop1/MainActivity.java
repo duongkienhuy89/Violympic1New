@@ -100,6 +100,7 @@ import com.violympic.modul.Notifi;
 import com.violympic.modul.PhepToan;
 import com.violympic.modul.Zero;
 import com.violympic.services.ScheduleNotifi;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class MainActivity extends FragmentActivity  {
 
@@ -435,6 +436,7 @@ TextView tv_conten_moutain;
 
 TextView tv_Feed_Back;
     private ConsentInformation consentInformation;
+    FirebaseAnalytics mFirebaseAnalytics;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -1287,6 +1289,8 @@ TextView tv_Feed_Back;
             doLoadTempNoti();
         }
 
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        mFirebaseAnalytics.setAnalyticsCollectionEnabled(true);
     }
     public  Boolean getIOS1()
     {
@@ -1788,7 +1792,7 @@ TextView tv_Feed_Back;
             rl_d1.clearAnimation();
             rl_d2.clearAnimation();
             rl_d3.clearAnimation();
-            clsHandleT.doPlaySoundAssets("c2.wav", "", player, false, MainActivity.this);
+            clsHandleT.doPlaySoundAssets("c2.mp3", "", player, false, MainActivity.this);
             handler.postDelayed(timerShowCloud1, 300);
         } catch (Exception exception) {
 
@@ -1808,7 +1812,7 @@ TextView tv_Feed_Back;
     Runnable timerShowOpreator= new Runnable() {
         @Override
         public void run() {
-            clsHandleT.doPlaySoundAssets("c2.wav","", player, false, MainActivity.this);
+            clsHandleT.doPlaySoundAssets("c2.mp3","", player, false, MainActivity.this);
             rl_cloud1.clearAnimation();
             iv_operator.setVisibility(View.VISIBLE);
             iv_operator.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
@@ -1819,7 +1823,7 @@ TextView tv_Feed_Back;
     Runnable timerShowCloud2= new Runnable() {
         @Override
         public void run() {
-            // clsHandleT.doPlaySoundAssets("c2.wav","", player, false, MainActivity.this);
+            // clsHandleT.doPlaySoundAssets("c2.mp3","", player, false, MainActivity.this);
             iv_operator.clearAnimation();
             rl_cloud2.setVisibility(View.VISIBLE);
             rl_cloud2.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
@@ -1830,7 +1834,7 @@ TextView tv_Feed_Back;
     Runnable timerShowEqual= new Runnable() {
         @Override
         public void run() {
-            clsHandleT.doPlaySoundAssets("c2.wav","", player, false, MainActivity.this);
+            clsHandleT.doPlaySoundAssets("c2.mp3","", player, false, MainActivity.this);
             rl_cloud2.clearAnimation();
             iv_operator_equal.setVisibility(View.VISIBLE);
             iv_operator_equal.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
@@ -1841,7 +1845,7 @@ TextView tv_Feed_Back;
     Runnable timerShowResult= new Runnable() {
         @Override
         public void run() {
-            //clsHandleT.doPlaySoundAssets("c2.wav","", player, false, MainActivity.this);
+            //clsHandleT.doPlaySoundAssets("c2.mp3","", player, false, MainActivity.this);
             iv_operator_equal.clearAnimation();
             iv_cloud3.setVisibility(View.VISIBLE);
             iv_cloud3.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
@@ -1852,7 +1856,7 @@ TextView tv_Feed_Back;
     Runnable timerShowOptionsResult= new Runnable() {
         @Override
         public void run() {
-            clsHandleT.doPlaySoundAssets("d1.wav","", player, false, MainActivity.this);
+            clsHandleT.doPlaySoundAssets("d1.mp3","", player, false, MainActivity.this);
             iv_cloud3.clearAnimation();
 
             rl_d1.setVisibility(View.VISIBLE);
@@ -5334,6 +5338,12 @@ TextView tv_Feed_Back;
             currentStatus=Status.MAIN;
             clsHandleT.doPlaySoundAssets("pro.mp3",DeviceLang, player, false, MainActivity.this);
 
+//            logRevenue(50000,"VND",sku_grade_1,"PRO_9");
+//
+//            Bundle bundle = new Bundle();
+//            bundle.putString("event_name", "test_event");
+//            mFirebaseAnalytics.logEvent("test_event", bundle);
+
         }catch (Exception exception)
         {
             //Log.e("toan12345","loi j:"+exception);
@@ -6168,7 +6178,7 @@ TextView tv_Feed_Back;
                             {
                                 clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
                             }
-
+                            logRevenue(50000,"VND",sku_grade_1,"PRO_1");
 
                         });
                     }
@@ -6200,7 +6210,7 @@ TextView tv_Feed_Back;
                             {
                                 clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
                             }
-
+                            logRevenue(50000,"VND",sku_grade_2,"PRO_2");
 
                         });
                     }
@@ -6231,7 +6241,7 @@ TextView tv_Feed_Back;
                             {
                                 clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
                             }
-
+                            logRevenue(50000,"VND",sku_grade_3,"PRO_3");
                         });
                     }
                 });
@@ -6261,7 +6271,7 @@ TextView tv_Feed_Back;
                             {
                                 clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
                             }
-
+                            logRevenue(50000,"VND",sku_grade_4,"PRO_4");
                         });
                     }
                 });
@@ -6291,7 +6301,7 @@ TextView tv_Feed_Back;
                             {
                                 clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
                             }
-
+                            logRevenue(50000,"VND",sku_grade_5,"PRO_5");
                         });
                     }
                 });
@@ -6331,12 +6341,27 @@ TextView tv_Feed_Back;
                             {
                                 clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
                             }
-
+                            logRevenue(150000,"VND",sku_grade_all,"PRO_ALL");
                         });
                     }
                 });
             }
         }
+    }
+
+
+    private void logRevenue(double revenue, String currency,String SKU_VIO,String Name_Produc) {
+
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, SKU_VIO);
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, Name_Produc);
+        bundle.putDouble(FirebaseAnalytics.Param.PRICE,revenue);
+       // bundle.putDouble(FirebaseAnalytics.Param.PRICE,(revenue*85)/100);
+        bundle.putString(FirebaseAnalytics.Param.CURRENCY, currency);
+
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.PURCHASE, bundle);
+
+        Db("tracking v");
     }
 
     Runnable ThreadReActivated_Grade1 = new Runnable() {
@@ -6411,6 +6436,9 @@ TextView tv_Feed_Back;
         try {
             doCheckTextItemVip();
             la_buy_vip.setVisibility(View.VISIBLE);
+            la_buy_vip.setRepeatCount(2);
+            la_buy_vip.playAnimation();
+
             tv_title_vip_item.setText(pTmp);
             //Toast.makeText(MainActivity.this, getString(R.string.sussespro), Toast.LENGTH_LONG).show();
             CustomToast.makeText(MainActivity.this,getString(R.string.sussespro),CustomToast.LONG,true).show();
@@ -6867,7 +6895,7 @@ TextView tv_Feed_Back;
 
     void Db(String pLog)
     {
-        //Log.e("trangnguyen:",""+pLog);
+       // Log.e("trangnguyen:",""+pLog);
     }
 
 
