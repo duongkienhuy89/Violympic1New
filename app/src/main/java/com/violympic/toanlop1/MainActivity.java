@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.app.AlarmManager;
@@ -32,10 +34,12 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
@@ -63,6 +67,7 @@ import com.google.android.ump.ConsentInformation;
 import com.google.android.ump.ConsentRequestParameters;
 import com.google.android.ump.UserMessagingPlatform;
 import com.google.common.collect.ImmutableList;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -80,24 +85,33 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
 import com.violympic.adapter.AdapterFrame;
+import com.violympic.adapter.CountryAdapter;
 import com.violympic.adapter.EqualAdapter20;
 import com.violympic.adapter.EqualAdapter6;
 import com.violympic.adapter.EqualOneAdapter12;
+import com.violympic.adapter.HuyenXaAdapter;
 import com.violympic.adapter.LevelAdapter;
+import com.violympic.adapter.TinhAdapter;
+import com.violympic.adapter.UserAdapter;
 import com.violympic.general.AdmobManager;
 import com.violympic.general.CustomToast;
 import com.violympic.general.DownloadHtpps;
 import com.violympic.general.RoundedTransformation;
 import com.violympic.general.clsHandleT;
+import com.violympic.modul.Award_Love;
+import com.violympic.modul.Huyen_Xa;
 import com.violympic.modul.LoiVan;
 import com.violympic.modul.Mountain;
 import com.violympic.modul.Notifi;
 import com.violympic.modul.PhepToan;
+import com.violympic.modul.Tinh;
+import com.violympic.modul.UserFirebase;
 import com.violympic.modul.Zero;
 import com.violympic.services.ScheduleNotifi;
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -179,7 +193,7 @@ public class MainActivity extends FragmentActivity  {
 
     ImageView iv_flase_equal_gameover;
     TextView tv_score_equal_gameover;
-
+TextView tv_title_gameover_equal;
     ImageView iv_avata_monkey;
     RelativeLayout rl_monkey_avata_pheptoan_bg;
     ImageView iv_monkey_avata_pheptoan_bg;
@@ -291,6 +305,10 @@ public class MainActivity extends FragmentActivity  {
     int mFirtTime;
     long mTimeLine=0;
     public static   String DeviceLang;
+    public static   String DeviceLang_Root;
+    String[] spinnerTitlesContry;
+    CountryAdapter countryAdapter;
+    Spinner sp_country;
     String mLevelScore;
     String []mArrayLevel=new String[20];
     private SharedPreferences pref;
@@ -419,6 +437,34 @@ public class MainActivity extends FragmentActivity  {
     TextView tv_item_vipall;
     ImageView iv_logo_moutain_start;
     ImageView iv_logo_moutain_end;
+    TextView tv_zero_add;
+    TextView tv_zero_sub;
+    TextView tv_zero_mix;
+
+
+    ImageView iv_xephang_main;
+
+ConstraintLayout cl_profile_king;
+TextView tv_name_profile_king;
+TextView tv_lop_top;
+TextView tv_top_profile_king;
+TextView tv_rank_tinh;
+TextView tv_rank_huyen;
+TextView tv_rank_xa;
+TextView tv_rank_school;
+TextView tv_score_profile_king;
+RecyclerView recyclerUser_king;
+
+RelativeLayout rl_profile_detail;
+Spinner sp_tinh;
+Spinner sp_huyen;
+Spinner sp_xa;
+Spinner sp_lop;
+EditText et_school;
+EditText et_name;
+
+
+
 
   //  Animation anim_innext;
    // Animation anim_inback;
@@ -432,9 +478,14 @@ public class MainActivity extends FragmentActivity  {
     public  float mWidthDesktop;
     public static   Boolean mISO1;
     TextView tv_content_start_equal;
+    TextView tv_title_start_equal;
 TextView tv_conten_moutain;
 
 TextView tv_Feed_Back;
+
+ImageView iv_vip_love;
+
+TextView tv_lienhe_list_vip;
     private ConsentInformation consentInformation;
     FirebaseAnalytics mFirebaseAnalytics;
     @Override
@@ -476,6 +527,8 @@ TextView tv_Feed_Back;
         iv_false_equal = (ImageView) findViewById(R.id.iv_false_equal);
         tv_score_equal_gameover = (TextView) findViewById(R.id.tv_score_equal_gameover);
         iv_flase_equal_gameover = (ImageView) findViewById(R.id.iv_flase_equal_gameover);
+
+        tv_title_gameover_equal=(TextView)findViewById(R.id.tv_title_gameover_equal);
         rd = new Random();
 
         iv_avata_monkey = (ImageView) findViewById(R.id.iv_avata_monkey);
@@ -547,7 +600,7 @@ TextView tv_Feed_Back;
 
         iv_logo_monkey_gameover = (ImageView) findViewById(R.id.iv_logo_monkey_gameover);
 
-
+        sp_country=(Spinner)findViewById(R.id.sp_country);
 
 
         animation_view_summary = (LottieAnimationView) findViewById(R.id.animation_view_summary);
@@ -613,6 +666,9 @@ TextView tv_Feed_Back;
         tv_title_vip_item = (TextView) findViewById(R.id.tv_title_vip_item);
         tv_content_buy_vip = (TextView) findViewById(R.id.tv_content_buy_vip);
 
+         iv_vip_love= (ImageView) findViewById(R.id.iv_vip_love);
+
+         tv_lienhe_list_vip= (TextView) findViewById(R.id.tv_lienhe_list_vip);
 
         iv_x1 = (ImageView) findViewById(R.id.iv_x1);
         iv_x2 = (ImageView) findViewById(R.id.iv_x2);
@@ -642,12 +698,38 @@ TextView tv_Feed_Back;
         tv_item_vipall=(TextView)findViewById(R.id.tv_item_vipall);
 
         tv_content_start_equal=(TextView) findViewById(R.id.tv_content_start_equal);
+        tv_title_start_equal=(TextView) findViewById(R.id.tv_title_start_equal);
+
         tv_conten_moutain=(TextView)findViewById(R.id.tv_conten_moutain);
         iv_logo_moutain_start=(ImageView)findViewById(R.id.iv_logo_moutain_start);
         iv_logo_moutain_end=(ImageView)findViewById(R.id.iv_logo_moutain_end);
         ll_result1=(LinearLayout) findViewById(R.id.ll_result1);
         ll_result2=(LinearLayout) findViewById(R.id.ll_result2);
         ll_result3=(LinearLayout) findViewById(R.id.ll_result3);
+
+         tv_zero_add=(TextView)findViewById(R.id.tv_zero_add);
+         tv_zero_sub=(TextView)findViewById(R.id.tv_zero_sub);
+         tv_zero_mix=(TextView)findViewById(R.id.tv_zero_mix);
+
+        iv_xephang_main=(ImageView)findViewById(R.id.iv_xephang_main);
+         cl_profile_king=(ConstraintLayout)findViewById(R.id.cl_profile_king);
+         tv_name_profile_king=(TextView)findViewById(R.id.tv_name_profile_king);
+         tv_lop_top=(TextView)findViewById(R.id.tv_lop_top);
+         tv_top_profile_king=(TextView)findViewById(R.id.tv_top_profile_king);
+         tv_rank_tinh=(TextView)findViewById(R.id.tv_rank_tinh);
+         tv_rank_huyen=(TextView)findViewById(R.id.tv_rank_huyen);
+         tv_rank_xa=(TextView)findViewById(R.id.tv_rank_xa);
+         tv_rank_school=(TextView)findViewById(R.id.tv_rank_school);
+         tv_score_profile_king=(TextView)findViewById(R.id.tv_score_profile_king);
+         recyclerUser_king=(RecyclerView)findViewById(R.id.recyclerUser_king);
+
+         rl_profile_detail=(RelativeLayout)findViewById(R.id.rl_profile_detail);
+         sp_tinh=(Spinner)findViewById(R.id.sp_tinh);
+         sp_huyen=(Spinner)findViewById(R.id.sp_huyen);
+         sp_xa=(Spinner)findViewById(R.id.sp_xa);
+         sp_lop=(Spinner)findViewById(R.id.sp_lop);
+         et_school=(EditText)findViewById(R.id.et_school);
+         et_name=(EditText)findViewById(R.id.et_name);
 
         pref = getApplicationContext().getSharedPreferences("lop1", 0);// 0 - là chế độ private
         editor = pref.edit();
@@ -660,6 +742,8 @@ TextView tv_Feed_Back;
         mMemberVip4 = pref.getInt("vips4", 0);
         mMemberVip5 = pref.getInt("vips5", 0);
         mMemberVip_All = pref.getInt("vipsall", 0);
+
+        DeviceLang=pref.getString("device_lang", "");
 
         xCloudD1 = 0;
         yCloudD1 = 0;
@@ -984,7 +1068,15 @@ TextView tv_Feed_Back;
 
                     rl_game_over.setVisibility(View.VISIBLE);
                     rl_game_over.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
-                    tv_score_zero_gameover.setText(getString(R.string.scrore) + ":" + mScore_Zero);
+
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        tv_score_zero_gameover.setText("Điểm:" + mScore_Zero);
+                    }else
+                    {
+                        tv_score_zero_gameover.setText("Score:" + mScore_Zero);
+                    }
+
                     try {
                         if (mScore_Zero > 144) {
                             iv_zero_rate.setImageResource(R.drawable.basao);
@@ -1028,23 +1120,17 @@ TextView tv_Feed_Back;
         playerBg = new MediaPlayer();
 
 
+        DeviceLang_Root=Locale.getDefault().toString().toLowerCase();
+        if(DeviceLang.equals("")) {
+            DeviceLang = Locale.getDefault().toString().toLowerCase();
 
-        DeviceLang = Locale.getDefault().toString().toLowerCase();
-        if (!DeviceLang.equals("vi_vn")) {
-            DeviceLang = "en";
-            try {
-                iv_grade_0.setVisibility(View.GONE);
-                iv_grade_0_en.setVisibility(View.VISIBLE);
-
-                iv_logo_moutain_start.setImageResource(R.drawable.moutian_logo_en);
-                iv_logo_moutain_end.setImageResource(R.drawable.moutian_logo_en);
-            } catch (Exception e) {
-
+            if(DeviceLang.equals("vi_vn")==false)
+            {
+                DeviceLang="en";
             }
-        }else
-        {
-            iv_grade_0.setVisibility(View.VISIBLE);
-            iv_grade_0_en.setVisibility(View.GONE);
+            editor.putString("device_lang", DeviceLang);
+            editor.commit();
+
         }
 
         mDatabase = FirebaseDatabase.getInstance("https://vioedu-toan-lop-1-default-rtdb.firebaseio.com").getReference();
@@ -1120,7 +1206,70 @@ TextView tv_Feed_Back;
             tv_Share_Main.setVisibility(View.GONE);
             tv_Feed_Back.setVisibility(View.GONE);
         }
+
+
+        if(DeviceLang.equals("vi_vn"))
+        {
+            spinnerTitlesContry = new String[]{"Tiếng Việt","English"};
+
+
+        }else
+        {
+            spinnerTitlesContry = new String[]{"English","Tiếng Việt"};
+
+        }
+        countryAdapter=new CountryAdapter(this,spinnerTitlesContry);
+        sp_country.setAdapter(countryAdapter);
+        sp_country.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                if(spinnerTitlesContry[i].equals("Tiếng Việt"))
+                {
+                    DeviceLang="vi_vn";
+
+                }else
+                {
+                    DeviceLang="en";
+                }
+
+                editor.putString("device_lang", DeviceLang);
+                editor.commit();
+
+                setMutilang();
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
         setMutilang();
+
+        if(((int) mFirebaseRemoteConfig.getValue("alow_lienhe_list").asDouble()) == 1&&DeviceLang.equals("vi_vn")) {
+            tv_lienhe_list_vip.setText(mFirebaseRemoteConfig.getString("lien_he_zalo"));
+        }else
+        {
+            tv_lienhe_list_vip.setText("");
+        }
+
+        if(((int) mFirebaseRemoteConfig.getValue("alow_award_love").asDouble()) == 1&&DeviceLang_Root.equals("vi_vn")) {
+            iv_vip_love.setVisibility(View.VISIBLE);
+        }
+
+        if(((int) mFirebaseRemoteConfig.getValue("alow_rank").asDouble()) == 1&&DeviceLang_Root.equals("vi_vn")) {
+            iv_xephang_main.setVisibility(View.VISIBLE);
+        }
+
+
+        try {
+            cl_profile_king.setBackgroundColor(Color.parseColor(mFirebaseRemoteConfig.getString("bg_profile_color")));
+        }catch (Exception e)
+        {
+
+        }
 
         createNotificationChannel("toancap1");
         calendar = Calendar.getInstance();
@@ -1523,23 +1672,54 @@ TextView tv_Feed_Back;
 
                 try {
                     iv_main_buyvip.setImageResource(R.drawable.buy_vip_pro_en);
-
-
                     iv_logo_monkey.setImageResource(R.drawable.monkey);
-
                     iv_logo_monkey_gameover.setImageResource(R.drawable.monkey);
 
+                    iv_grade_0.setVisibility(View.GONE);
+                    iv_grade_0_en.setVisibility(View.VISIBLE);
 
+                    iv_logo_moutain_start.setImageResource(R.drawable.moutian_logo_en);
+                    iv_logo_moutain_end.setImageResource(R.drawable.moutian_logo_en);
+                    tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_en").replace("\\n", "\n"));
+                    tv_main_start.setText("Start");
+                    tv_content_start_equal.setText(mFirebaseRemoteConfig.getString("start_equal_en").replace("\\n", "\n"));
+                    tv_title_start_equal.setText("Find Equal Pair");
+                    tv_title_gameover_equal.setText("Find Equal Pair");
+                    tv_conten_moutain.setText("You choose one of four answers in the box for matching results.");
+
+
+
+                    tv_zero_add.setText("Addition");
+                    tv_zero_sub.setText("Subtraction");
+                    tv_zero_mix.setText("Addition\n vs \nSubtraction");
 
                 }catch (Exception e)
                 {
 
                 }
 
-                tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_en").replace("\\n", "\n"));
             }else
             {
-                tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_vn").replace("\\n", "\n"));
+                try {
+                    iv_grade_0.setVisibility(View.VISIBLE);
+                    iv_grade_0_en.setVisibility(View.GONE);
+                    tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_vn").replace("\\n", "\n"));
+                    tv_main_start.setText("Bắt đầu");
+                    tv_content_start_equal.setText(mFirebaseRemoteConfig.getString("start_equal_vn").replace("\\n", "\n"));
+                    tv_title_start_equal.setText("Tìm Cặp Bằng Nhau");
+                    tv_title_gameover_equal.setText("Tìm Cặp Bằng Nhau");
+                    tv_conten_moutain.setText("\uD83D\uDC49 Bạn hãy đi tới đỉnh núi\n \nBằng cách trả lời tất cả các câu hỏi chương trình đưa ra.");
+
+                    tv_zero_add.setText("Phép cộng");
+                    tv_zero_sub.setText("Phép trừ");
+                    tv_zero_mix.setText("Phép cộng\n và \nPhép trừ");
+
+                }catch (Exception e)
+                {
+
+                }
+
+
             }
             iv_zero_score.setTypeface(typeUTM);
             tv_level_operator.setTypeface(typeUTM);
@@ -2322,18 +2502,39 @@ TextView tv_Feed_Back;
             iv_check_50.setVisibility(View.GONE);
             iv_check_100.setVisibility(View.GONE);
             mZeloMax=10;
-            switch (mZeloOperator)
+
+
+            if(DeviceLang.equals("vi_vn"))
             {
-                case 1:
-                    tv_title_operator.setText(getString(R.string.phepcong));
-                    break;
-                case 2:
-                    tv_title_operator.setText(getString(R.string.pheptru));
-                    break;
-                default:
-                    tv_title_operator.setText(getString(R.string.phepcongvstru2));
-                    break;
+                switch (mZeloOperator)
+                {
+                    case 1:
+                        tv_title_operator.setText("Phép cộng");
+                        break;
+                    case 2:
+                        tv_title_operator.setText("Phép trừ");
+                        break;
+                    default:
+                        tv_title_operator.setText("Phép cộng và Phép trừ");
+                        break;
+                }
+            }else
+            {
+                switch (mZeloOperator)
+                {
+                    case 1:
+                        tv_title_operator.setText("Addition");
+                        break;
+                    case 2:
+                        tv_title_operator.setText("Subtraction");
+                        break;
+                    default:
+                        tv_title_operator.setText("Addition vs Subtraction");
+                        break;
+                }
             }
+
+
             cl_min_max.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomplus));
             // Db("K:"+mZeloOperator);
         }catch (Exception exception)
@@ -2548,7 +2749,15 @@ TextView tv_Feed_Back;
         {
 
         }
-        tv_score_moutain.setText(getString(R.string.scrore)+": 00");
+
+        if(DeviceLang.equals("vi_vn"))
+        {
+            tv_score_moutain.setText("Điểm: 00");
+        }else
+        {
+            tv_score_moutain.setText("Score: 00");
+        }
+
         tv_time_ingame_moutain.setText("⏰ ");
         doNextAvataMotain();
 
@@ -2631,7 +2840,15 @@ TextView tv_Feed_Back;
             iv_monkey_moutain.setAnimation(anim_tbequal);
 
             mScore_Moutain=mScore_Moutain+10;
-            tv_score_moutain.setText(getString(R.string.scrore)+": "+mScore_Moutain);
+
+            if(DeviceLang.equals("vi_vn"))
+            {
+                tv_score_moutain.setText("Điểm: "+mScore_Moutain);
+            }else
+            {
+                tv_score_moutain.setText("Score: "+mScore_Moutain);
+            }
+
 
             if(currentStatus == Status.MOUTAIN_SUMIT)
             {
@@ -2679,7 +2896,15 @@ TextView tv_Feed_Back;
         public void run() {
             handler.removeCallbacksAndMessages(null);
             currentStatus=Status.GAME_OVER_MOUTAIN;
-            tv_score_moutain_gameover.setText(getString(R.string.scrore)+": "+mScore_Moutain);
+
+            if(DeviceLang.equals("vi_vn"))
+            {
+                tv_score_moutain_gameover.setText("Điểm: "+mScore_Moutain);
+            }else
+            {
+                tv_score_moutain_gameover.setText("Score: "+mScore_Moutain);
+            }
+
             try {
                 if(mNext_False_Moutain==1)
                 {
@@ -2751,20 +2976,44 @@ TextView tv_Feed_Back;
             if(mScore_Moutain>5)
             {
                 mScore_Moutain--;
-                tv_score_moutain.setText(getString(R.string.scrore)+": "+mScore_Moutain);
+
+                if(DeviceLang.equals("vi_vn"))
+                {
+                    tv_score_moutain.setText("Điểm: "+mScore_Moutain);
+                }else
+                {
+                    tv_score_moutain.setText("Score: "+mScore_Moutain);
+                }
             }
 
             if(currentStatus == Status.MOUTAIN_SUMIT)
             {
                 tv_report.setVisibility(View.VISIBLE);
-                if(mLoiVan.getExplain().equals("gta")||mLoiVan.getExplain().equals("giaithich"))
+
+
+
+                if(DeviceLang.equals("vi_vn"))
                 {
-                    tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.result)+" "+mLoiVan.getResult()+"</p>"));
-                    // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.result)+" " + mLoiVan.getResult());
-                }else {
-                    // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.resolve)+" " + mLoiVan.getExplain());
-                    tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.resolve)+" "+mLoiVan.getExplain()+"</p>"));
+                    if(mLoiVan.getExplain().equals("gta")||mLoiVan.getExplain().equals("giaithich"))
+                    {
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>Đáp số: "+mLoiVan.getResult()+"</p>"));
+                        // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.result)+" " + mLoiVan.getResult());
+                    }else {
+                        // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.resolve)+" " + mLoiVan.getExplain());
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>Lời Giải: "+mLoiVan.getExplain()+"</p>"));
+                    }
+                }else
+                {
+                    if(mLoiVan.getExplain().equals("gta")||mLoiVan.getExplain().equals("giaithich"))
+                    {
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>Result: "+mLoiVan.getResult()+"</p>"));
+                        // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.result)+" " + mLoiVan.getResult());
+                    }else {
+                        // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.resolve)+" " + mLoiVan.getExplain());
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>Resolve: "+mLoiVan.getExplain().replace("Result:","")+"</p>"));
+                    }
                 }
+
             }else
             {
 
@@ -2791,25 +3040,57 @@ TextView tv_Feed_Back;
                 if(mMountain.getGiaithich().equals("gta")||mMountain.getGiaithich().equals("giaithich"))
                 {
 
-                    switch (mMountain.getTruecase())
+
+
+                    if(DeviceLang.equals("vi_vn"))
                     {
-                        case  1:
-                            tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.result)+" "+mMountain.getCasea()+"</p>"));
-                            break;
-                        case  2:
-                            tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.result)+" "+mMountain.getCaseb()+"</p>"));
-                            break;
-                        case  3:
-                            tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.result)+" "+mMountain.getCasec()+"</p>"));
-                            break;
-                        case  4:
-                            tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.result)+" "+mMountain.getCased()+"</p>"));
-                            break;
+                        switch (mMountain.getTruecase())
+                        {
+                            case  1:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Đáp số: "+mMountain.getCasea()+"</p>"));
+                                break;
+                            case  2:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Đáp số: "+mMountain.getCaseb()+"</p>"));
+                                break;
+                            case  3:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Đáp số: "+mMountain.getCasec()+"</p>"));
+                                break;
+                            case  4:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Đáp số: "+mMountain.getCased()+"</p>"));
+                                break;
+                        }
+                    }else
+                    {
+                        switch (mMountain.getTruecase())
+                        {
+                            case  1:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Result: "+mMountain.getCasea()+"</p>"));
+                                break;
+                            case  2:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Result: "+mMountain.getCaseb()+"</p>"));
+                                break;
+                            case  3:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Result: "+mMountain.getCasec()+"</p>"));
+                                break;
+                            case  4:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Result: "+mMountain.getCased()+"</p>"));
+                                break;
+                        }
                     }
+
+
                     // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.result)+" " + mLoiVan.getResult());
                 }else {
                     // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.resolve)+" " + mLoiVan.getExplain());
-                    tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>"+getString(R.string.resolve)+" "+mMountain.getGiaithich()+"</p>"));
+
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Đáp số: "+mMountain.getGiaithich()+"</p>"));
+                    }else
+                    {
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Resolve: "+mMountain.getGiaithich().replace("Result:","")+"</p>"));
+                    }
+
                 }
 
             }
@@ -3501,7 +3782,15 @@ TextView tv_Feed_Back;
         {
 
         }
-        tv_score_monkey.setText(getString(R.string.scrore)+": 00");
+
+        if(DeviceLang.equals("vi_vn"))
+        {
+            tv_score_monkey.setText("Điểm: 00");
+        }else
+        {
+            tv_score_monkey.setText("Score: 00");
+        }
+
         tv_time_ingame_monkey.setText("⏰ ");
     }
     void doRandomMonkey()
@@ -3566,7 +3855,15 @@ TextView tv_Feed_Back;
             rl_monkey_avata_pheptoan_bg.setVisibility(View.GONE);
             iv_avata_monkey.setAnimation(anim_tbmonkey);
             mScore_MonKey=mScore_MonKey+10;
-            tv_score_monkey.setText(getString(R.string.scrore)+": "+mScore_MonKey);
+
+            if(DeviceLang.equals("vi_vn"))
+            {
+                tv_score_monkey.setText("Điểm: "+mScore_MonKey);
+            }else
+            {
+                tv_score_monkey.setText("Score: "+mScore_MonKey);
+            }
+
             if(mScore_MonKey>91)
             {
                 handler.postDelayed(timer_GameOver_Monkey, 1500);
@@ -3610,7 +3907,14 @@ TextView tv_Feed_Back;
             if(mScore_MonKey>5)
             {
                 mScore_MonKey--;
-                tv_score_monkey.setText(getString(R.string.scrore)+": "+mScore_MonKey);
+
+                if(DeviceLang.equals("vi_vn"))
+                {
+                    tv_score_monkey.setText("Điểm: "+mScore_MonKey);
+                }else
+                {
+                    tv_score_monkey.setText("Score: "+mScore_MonKey);
+                }
             }
             if(mNext_False_Monkey>=3)
             {
@@ -3627,7 +3931,15 @@ TextView tv_Feed_Back;
         public void run() {
             handler.removeCallbacksAndMessages(null);
             currentStatus=Status.GAME_OVER_MONKEY;
-            tv_score_monkey_gameover.setText(getString(R.string.scrore)+": "+mScore_MonKey);
+
+            if(DeviceLang.equals("vi_vn"))
+            {
+                tv_score_monkey_gameover.setText("Điểm: "+mScore_MonKey);
+            }else
+            {
+                tv_score_monkey_gameover.setText("Score: "+mScore_MonKey);
+            }
+
 
             try {
                 if(mNext_False_Monkey==1)
@@ -4203,11 +4515,34 @@ TextView tv_Feed_Back;
     void doShowSummary() {
         try {
             if ( mGrade >= 2) {
-                tv_score_summary.setText(getString(R.string.summary_score)+" " + (mScore_Equal + mScore_Moutain + mScore_MonKey) + "/" + mMaxScore);
+
+                if(DeviceLang.equals("vi_vn"))
+                {
+                    tv_score_summary.setText("Tổng điểm: " + (mScore_Equal + mScore_Moutain + mScore_MonKey) + "/" + mMaxScore);
+                }else
+                {
+                    tv_score_summary.setText("Summary : " + (mScore_Equal + mScore_Moutain + mScore_MonKey) + "/" + mMaxScore);
+                }
+
                 if ((mScore_Equal + mScore_Moutain + mScore_MonKey) > (mMaxScore / 2)) {
+
+
+                    if(pref.getInt("maxgrade" + mGrade, 0)<=mLevel) {
+                        editor.putInt("maxgrade" + mGrade, mLevel+1);
+                        editor.commit();
+                    }
+
                     clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
                     handler.postDelayed(timerPlayThanhCong, player.getDuration());
-                    tv_status_summary.setText(getString(R.string.thanhcong));
+
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        tv_status_summary.setText("Thành công");
+                    }else
+                    {
+                        tv_status_summary.setText("Pass");
+                    }
+
 
                     iv_dinhnui_summary.setVisibility(View.GONE);
                     la_dog_summary.setVisibility(View.VISIBLE);
@@ -4256,11 +4591,32 @@ TextView tv_Feed_Back;
                     la_dog_summary.setVisibility(View.GONE);
                 }
             } else {
-                tv_score_summary.setText(getString(R.string.summary_score)+" "+ + (mScore_Equal + mScore_MonKey) + "/" + mMaxScore);
+
+                if(DeviceLang.equals("vi_vn"))
+                {
+                    tv_score_summary.setText("Tổng điểm: "+ + (mScore_Equal + mScore_MonKey) + "/" + mMaxScore);
+                }else
+                {
+                    tv_score_summary.setText("Summary : "+ + (mScore_Equal + mScore_MonKey) + "/" + mMaxScore);
+                }
+
                 if ((mScore_Equal + mScore_MonKey) > (mMaxScore / 2)) {
+
+                    if(pref.getInt("maxgrade" + mGrade, 0)<=mLevel) {
+                        editor.putInt("maxgrade" + mGrade, mLevel+1);
+                        editor.commit();
+                    }
+
                     clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
                     handler.postDelayed(timerPlayThanhCong, player.getDuration());
-                    tv_status_summary.setText(getString(R.string.thanhcong));
+
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        tv_status_summary.setText("Thành công");
+                    }else
+                    {
+                        tv_status_summary.setText("Pass");
+                    }
 
                     iv_dinhnui_summary.setVisibility(View.GONE);
                     la_dog_summary.setVisibility(View.VISIBLE);
@@ -4295,8 +4651,14 @@ TextView tv_Feed_Back;
                 } else {
                     clsHandleT.doPlaySoundAssets("thatbai.mp3", DeviceLang, player, false, MainActivity.this);
                     handler.postDelayed(timerRePlaySoudsBackGround,player.getDuration());
-                    tv_status_summary.setText(getString(R.string.thatbai));
 
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        tv_status_summary.setText("Thất bại");
+                    }else
+                    {
+                        tv_status_summary.setText("Failed");
+                    }
                     try {
                         iv_star_summary.setImageResource(R.drawable.khongsao);
                     }catch (Exception e)
@@ -4354,7 +4716,14 @@ TextView tv_Feed_Back;
                     lstPhepToanLevel20.add(mTmpPhepToan1);
 
                     mTmpPhepToan2 = new PhepToan();
-                    mTmpPhepToan2.setCongthuc(getString(R.string.hinhvuong));
+
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Hình vuông");
+                    }else
+                    {
+                        mTmpPhepToan2.setCongthuc("Square");
+                    }
                     mTmpPhepToan2.setKetqua(-2);
                     mTmpPhepToan2.setLevel(1);
                     mTmpPhepToan2.setTamcongthuc("Vuong");
@@ -4368,7 +4737,14 @@ TextView tv_Feed_Back;
                     lstPhepToanLevel20.add(mTmpPhepToan1);
 
                     mTmpPhepToan2 = new PhepToan();
-                    mTmpPhepToan2.setCongthuc(getString(R.string.hinhtron));
+                  //  mTmpPhepToan2.setCongthuc(getString(R.string.hinhtron));
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Hình tròn");
+                    }else
+                    {
+                        mTmpPhepToan2.setCongthuc("Circle");
+                    }
                     mTmpPhepToan2.setKetqua(-1);
                     mTmpPhepToan2.setLevel(1);
                     mTmpPhepToan2.setTamcongthuc("Tron");
@@ -4376,7 +4752,14 @@ TextView tv_Feed_Back;
                     //---------------------------------
                     mTmpPhepToan1 = new PhepToan();
                     int tmpT=rd.nextInt(9)+1;
-                    mTmpPhepToan1.setCongthuc(tmpT+" "+getString(R.string.ga));
+                   // mTmpPhepToan1.setCongthuc(tmpT+" "+getString(R.string.ga));
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        mTmpPhepToan1.setCongthuc(tmpT+" con vịt");
+                    }else
+                    {
+                        mTmpPhepToan1.setCongthuc(tmpT+" duck");
+                    }
                     mTmpPhepToan1.setKetqua(tmpT);
                     mTmpPhepToan1.setLevel(2);
                     mTmpPhepToan1.setTamcongthuc("chicken");
@@ -4399,7 +4782,14 @@ TextView tv_Feed_Back;
                     lstPhepToanLevel20.add(mTmpPhepToan1);
 
                     mTmpPhepToan2 = new PhepToan();
-                    mTmpPhepToan2.setCongthuc(getString(R.string.hinhchunhat));
+                  //  mTmpPhepToan2.setCongthuc(getString(R.string.hinhchunhat));
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Hình chữ nhật");
+                    }else
+                    {
+                        mTmpPhepToan2.setCongthuc("Rectangle");
+                    }
                     mTmpPhepToan2.setKetqua(-5);
                     mTmpPhepToan2.setLevel(2);
                     mTmpPhepToan2.setTamcongthuc("ChuNhat");
@@ -4413,7 +4803,14 @@ TextView tv_Feed_Back;
                     lstPhepToanLevel20.add(mTmpPhepToan1);
 
                     mTmpPhepToan2 = new PhepToan();
-                    mTmpPhepToan2.setCongthuc(getString(R.string.hinhsao));
+                  //  mTmpPhepToan2.setCongthuc(getString(R.string.hinhsao));
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Hình ngôi sao");
+                    }else
+                    {
+                        mTmpPhepToan2.setCongthuc("Star");
+                    }
                     mTmpPhepToan2.setKetqua(-4);
                     mTmpPhepToan2.setLevel(2);
                     mTmpPhepToan2.setTamcongthuc("Sao");
@@ -4422,6 +4819,13 @@ TextView tv_Feed_Back;
                     mTmpPhepToan1 = new PhepToan();
                     int tmpT=rd.nextInt(9)+1;
                     mTmpPhepToan1.setCongthuc(tmpT+" "+getString(R.string.flower));
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        mTmpPhepToan1.setCongthuc(tmpT+" bông hoa");
+                    }else
+                    {
+                        mTmpPhepToan1.setCongthuc(tmpT+" flower");
+                    }
                     mTmpPhepToan1.setKetqua(tmpT);
                     mTmpPhepToan1.setLevel(2);
                     mTmpPhepToan1.setTamcongthuc("hoa");
@@ -4447,7 +4851,16 @@ TextView tv_Feed_Back;
                         {
                             mTmpPhepToan1 = new PhepToan();
                             mChon = rd.nextInt(lstResultTMG.size());
-                            mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" "+getString(R.string.flower));
+                           // mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" "+getString(R.string.flower));
+
+                            if(DeviceLang.equals("vi_vn"))
+                            {
+                                mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" bông hoa");
+                            }else
+                            {
+                                mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" flower");
+                            }
+
                             mTmpPhepToan1.setKetqua(lstResultTMG.get(mChon));
                             mTmpPhepToan1.setLevel(3);
                             mTmpPhepToan1.setTamcongthuc("hoa");
@@ -4464,7 +4877,14 @@ TextView tv_Feed_Back;
                         {
                             mTmpPhepToan1 = new PhepToan();
                             mChon = rd.nextInt(lstResultTMG.size());
-                            mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" "+getString(R.string.ga));
+                           // mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" "+getString(R.string.ga));
+                            if(DeviceLang.equals("vi_vn"))
+                            {
+                                mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" con vịt");
+                            }else
+                            {
+                                mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" duck");
+                            }
                             mTmpPhepToan1.setKetqua(lstResultTMG.get(mChon));
                             mTmpPhepToan1.setLevel(3);
                             mTmpPhepToan1.setTamcongthuc("chicken");
@@ -4527,7 +4947,15 @@ TextView tv_Feed_Back;
                         lstPhepToanLevel20.add(mTmpPhepToan1);
 
                         mTmpPhepToan2 = new PhepToan();
-                        mTmpPhepToan2.setCongthuc(getString(R.string.hinhtamgiac));
+                     //   mTmpPhepToan2.setCongthuc(getString(R.string.hinhtamgiac));
+                        if(DeviceLang.equals("vi_vn"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Hình tam giác");
+                        }else
+                        {
+                            mTmpPhepToan2.setCongthuc("Triangle");
+                        }
+
                         mTmpPhepToan2.setKetqua(-3);
                         mTmpPhepToan2.setLevel(lstPhepToanLevelTMP.get(0).getLevel());
                         mTmpPhepToan2.setTamcongthuc("TamGiac");
@@ -4542,7 +4970,17 @@ TextView tv_Feed_Back;
                         lstPhepToanLevel20.add(mTmpPhepToan1);
 
                         mTmpPhepToan2 = new PhepToan();
-                        mTmpPhepToan2.setCongthuc(getString(R.string.hinhvuong));
+                      //  mTmpPhepToan2.setCongthuc(getString(R.string.hinhvuong));
+
+                        if(DeviceLang.equals("vi_vn"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Hình vuông");
+                        }else
+                        {
+                            mTmpPhepToan2.setCongthuc("Square");
+                        }
+
+
                         mTmpPhepToan2.setKetqua(-2);
                         mTmpPhepToan2.setLevel(lstPhepToanLevelTMP.get(0).getLevel());
                         mTmpPhepToan2.setTamcongthuc("Vuong");
@@ -4556,7 +4994,15 @@ TextView tv_Feed_Back;
                         lstPhepToanLevel20.add(mTmpPhepToan1);
 
                         mTmpPhepToan2 = new PhepToan();
-                        mTmpPhepToan2.setCongthuc(getString(R.string.hinhtron));
+                     //   mTmpPhepToan2.setCongthuc(getString(R.string.hinhtron));
+                        if(DeviceLang.equals("vi_vn"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Hình tròn");
+                        }else
+                        {
+                            mTmpPhepToan2.setCongthuc("Circle");
+                        }
+
                         mTmpPhepToan2.setKetqua(-1);
                         mTmpPhepToan2.setLevel(lstPhepToanLevelTMP.get(0).getLevel());
                         mTmpPhepToan2.setTamcongthuc("Tron");
@@ -4570,7 +5016,15 @@ TextView tv_Feed_Back;
                         lstPhepToanLevel20.add(mTmpPhepToan1);
 
                         mTmpPhepToan2 = new PhepToan();
-                        mTmpPhepToan2.setCongthuc(getString(R.string.hinhchunhat));
+                       // mTmpPhepToan2.setCongthuc(getString(R.string.hinhchunhat));
+                        if(DeviceLang.equals("vi_vn"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Hình chữ nhật");
+                        }else
+                        {
+                            mTmpPhepToan2.setCongthuc("Rectangle");
+                        }
+
                         mTmpPhepToan2.setKetqua(-5);
                         mTmpPhepToan2.setLevel(lstPhepToanLevelTMP.get(0).getLevel());
                         mTmpPhepToan2.setTamcongthuc("ChuNhat");
@@ -4586,7 +5040,15 @@ TextView tv_Feed_Back;
                     lstPhepToanLevel20.add(mTmpPhepToan1);
 
                     mTmpPhepToan2 = new PhepToan();
-                    mTmpPhepToan2.setCongthuc(getString(R.string.hinhngugiac));
+                   // mTmpPhepToan2.setCongthuc(getString(R.string.hinhngugiac));
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Hình ngũ giác");
+                    }else
+                    {
+                        mTmpPhepToan2.setCongthuc("Pentagon");
+                    }
+
                     mTmpPhepToan2.setKetqua(-6);
                     mTmpPhepToan2.setLevel(lstPhepToanLevelTMP.get(0).getLevel());
                     mTmpPhepToan2.setTamcongthuc("NguGiac");
@@ -4600,7 +5062,15 @@ TextView tv_Feed_Back;
                     lstPhepToanLevel20.add(mTmpPhepToan1);
 
                     mTmpPhepToan2 = new PhepToan();
-                    mTmpPhepToan2.setCongthuc(getString(R.string.hinhlucgiac));
+                 //   mTmpPhepToan2.setCongthuc(getString(R.string.hinhlucgiac));
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Hình lục giác");
+                    }else
+                    {
+                        mTmpPhepToan2.setCongthuc("Hexagon");
+                    }
+
                     mTmpPhepToan2.setKetqua(-7);
                     mTmpPhepToan2.setLevel(lstPhepToanLevelTMP.get(0).getLevel());
                     mTmpPhepToan2.setTamcongthuc("LucGiac");
@@ -4691,15 +5161,27 @@ TextView tv_Feed_Back;
 
         try {
             iv_false_equal.setImageResource(R.drawable.bamau);
-            tv_score_equal.setText(getString(R.string.scrore)+": 00");
+
+
+            if(DeviceLang.equals("vi_vn"))
+            {
+                tv_score_equal.setText("Điểm: 00");
+                tv_score_equal_one.setText("Điểm: 00");
+                tv_score_equal_one_12.setText("Điểm: 00");
+            }else
+            {
+                tv_score_equal.setText("Score: 00");
+                tv_score_equal_one.setText("Score: 00");
+                tv_score_equal_one_12.setText("Score: 00");
+            }
 
 
             iv_false_equal_one.setImageResource(R.drawable.bamau);
-            tv_score_equal_one.setText(getString(R.string.scrore)+": 00");
+
             iv_avata_equal_one.setImageResource(R.drawable.monkey_question);
 
             iv_false_equal_one_12.setImageResource(R.drawable.bamau);
-            tv_score_equal_one_12.setText(getString(R.string.scrore)+": 00");
+
             iv_avata_equal_one_12.setImageResource(R.drawable.monkey_question);
         }catch (Exception e)
         {
@@ -4787,9 +5269,21 @@ TextView tv_Feed_Back;
                 mViewEqual_1.setVisibility(View.GONE);
                 mViewEqual_2.setVisibility(View.GONE);
                 mScore_Equal=mScore_Equal+10;
-                tv_score_equal.setText(getString(R.string.scrore)+": "+mScore_Equal);
-                tv_score_equal_one.setText(getString(R.string.scrore)+": "+mScore_Equal);
-                tv_score_equal_one_12.setText(getString(R.string.scrore)+": "+mScore_Equal);
+
+
+                if(DeviceLang.equals("vi_vn"))
+                {
+                    tv_score_equal.setText("Điểm: "+mScore_Equal);
+                    tv_score_equal_one.setText("Điểm: "+mScore_Equal);
+                    tv_score_equal_one_12.setText("Điểm: "+mScore_Equal);
+                }else
+                {
+                    tv_score_equal.setText("Score: "+mScore_Equal);
+                    tv_score_equal_one.setText("Score: "+mScore_Equal);
+                    tv_score_equal_one_12.setText("Score: "+mScore_Equal);
+                }
+
+
                 currentStatus=Status.EQUAL;
                 try {
 
@@ -4861,9 +5355,20 @@ TextView tv_Feed_Back;
                 if(mScore_Equal>5)
                 {
                     mScore_Equal--;
-                    tv_score_equal.setText(getString(R.string.scrore)+": "+mScore_Equal);
-                    tv_score_equal_one.setText(getString(R.string.scrore)+": "+mScore_Equal);
-                    tv_score_equal_one_12.setText(getString(R.string.scrore)+": "+mScore_Equal);
+
+
+                    if(DeviceLang.equals("vi_vn"))
+                    {
+                        tv_score_equal.setText("Điểm: "+mScore_Equal);
+                        tv_score_equal_one.setText("Điểm: "+mScore_Equal);
+                        tv_score_equal_one_12.setText("Điểm: "+mScore_Equal);
+                    }else
+                    {
+                        tv_score_equal.setText("Score: "+mScore_Equal);
+                        tv_score_equal_one.setText("Score: "+mScore_Equal);
+                        tv_score_equal_one_12.setText("Score: "+mScore_Equal);
+                    }
+
                 }
 //                rlEqual_1.setBackgroundResource(R.drawable.item_tranfom);
 //                rlEqual_2.setBackgroundResource(R.drawable.item_tranfom);
@@ -4903,7 +5408,15 @@ TextView tv_Feed_Back;
         public void run() {
             handler.removeCallbacksAndMessages(null);
             currentStatus=Status.GAME_OVER_EQUAL;
-            tv_score_equal_gameover.setText(getString(R.string.scrore)+": "+mScore_Equal);
+
+            if(DeviceLang.equals("vi_vn"))
+            {
+                tv_score_equal_gameover.setText("Điểm: "+mScore_Equal);
+            }else
+            {
+                tv_score_equal_gameover.setText("Score: "+mScore_Equal);
+            }
+
 
             try {
                 if(mNext_False_Equal==1)
@@ -5283,6 +5796,17 @@ TextView tv_Feed_Back;
         }
     }
 
+    public void onClick_Rank_Main(View view)
+    {
+        try {
+            doPlayClick();
+            viewFlipperMath.setDisplayedChild(19);
+            doLoadRank();
+        }catch (Exception exception)
+        {
+
+        }
+    }
     public void onClick_Cancel_Vip_List(View view)
     {
         try {
@@ -5311,6 +5835,674 @@ TextView tv_Feed_Back;
 
         }
     }
+
+    String[] spinnerTitlesGrade;
+    CountryAdapter gradeAdapter;
+    TinhAdapter tinhAdapter;
+    HuyenXaAdapter huyenAdapter;
+    HuyenXaAdapter xaAdapter;
+    Boolean mCheckLoadRank=true;
+//    String mRankGrade="";
+//    String mRankTinh="";
+//    String mRankHuyen="";
+//    String mRankXa="";
+
+    ArrayList<Huyen_Xa> arrayHuyen;
+    ArrayList<Huyen_Xa> arrayXa;
+    public void doLoadRank()
+    {
+
+        if(mCheckLoadRank)
+        {
+            rl_profile_detail.setVisibility(View.VISIBLE);
+
+
+            if(pref.getString("namefabook", "").equals("")==false)
+            {
+                et_name.setText(""+pref.getString("namefabook", ""));
+            }
+
+            if(pref.getString("nameschool", "").equals("")==false)
+            {
+                et_school.setText(""+pref.getString("nameschool", ""));
+            }
+
+            mCheckLoadRank=false;
+            spinnerTitlesGrade = new String[]{"Lớp 1","Lớp 2","Lớp 3","Lớp 4","Lớp 5"};
+            gradeAdapter=new CountryAdapter(this,spinnerTitlesGrade);
+            sp_lop.setAdapter(gradeAdapter);
+            if(pref.getInt("vitrilop", 20)!=20)
+            {
+                sp_lop.setSelection(pref.getInt("vitrilop", 0));
+            }
+            sp_lop.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                    editor.putInt("vitrilop",i);
+                    editor.putString("ranklop", ""+spinnerTitlesGrade[i].replace("ớ","o").replace(" ",""));
+                    editor.commit();
+if(spinnerTitlesGrade[i].contains("1"))
+{
+    tv_lop_top.setText("Lớp 1");
+    tv_score_profile_king.setText("LV "+pref.getInt("maxgrade1", 0));
+}else if(spinnerTitlesGrade[i].contains("2"))
+{
+    tv_lop_top.setText("Lớp 2");
+    tv_score_profile_king.setText("LV "+pref.getInt("maxgrade2", 0));
+}else if(spinnerTitlesGrade[i].contains("3"))
+{
+    tv_lop_top.setText("Lớp 3");
+    tv_score_profile_king.setText("LV "+pref.getInt("maxgrade3", 0));
+}else if(spinnerTitlesGrade[i].contains("4"))
+{
+    tv_lop_top.setText("Lớp 4");
+    tv_score_profile_king.setText("LV "+pref.getInt("maxgrade4", 0));
+}else
+{
+    tv_lop_top.setText("Lớp 5");
+    tv_score_profile_king.setText("LV "+pref.getInt("maxgrade5", 0));
+}
+
+                   // clsHandleT.Loge("Grade rank:"+mRankGrade);
+                }
+                @Override
+                public void onNothingSelected(AdapterView<?> adapterView) {
+
+                }
+            });
+            //------------------------------------
+            doLoadTinh();
+            doLoadHuyen();
+            doLoadXa();
+
+            tinhAdapter=new TinhAdapter(this,arrayTinh);
+            sp_tinh.setAdapter(tinhAdapter);
+           // sp_tinh.setSelection(3);
+            if(pref.getInt("vitritinh", 500)!=500)
+            {
+                sp_tinh.setSelection(pref.getInt("vitritinh", 0));
+            }
+            sp_tinh.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                    editor.putInt("vitritinh",i);
+                    editor.putString("ranktinh", ""+arrayTinh.get(i).getName());
+                    editor.commit();
+                    doSpinHuyen(i);
+                }
+                @Override
+                public void onNothingSelected(AdapterView<?> adapterView) {
+
+                }
+            });
+
+
+        }
+    }
+
+    public void doSpinHuyen(int pViTri)
+    {
+        arrayHuyen=new ArrayList<Huyen_Xa>();
+        for (Huyen_Xa item:arrayHuyenFull) {
+            if(item.getId_phu()==arrayTinh.get(pViTri).getId())
+            {
+                arrayHuyen.add(item);
+            }
+        }
+
+        if(arrayHuyen.size()>0) {
+            huyenAdapter = new HuyenXaAdapter(MainActivity.this, arrayHuyen);
+            sp_huyen.setAdapter(huyenAdapter);
+
+            if(pref.getInt("vitrihuyen", 20000)!=20000)
+            {
+                sp_huyen.setSelection(pref.getInt("vitrihuyen", 0));
+            }
+            sp_huyen.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                    editor.putInt("vitrihuyen",position);
+                    editor.putString("rankhuyen", ""+arrayHuyen.get(position).getName());
+                    editor.commit();
+                    doSpinXa(position);
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> parent) {
+
+                }
+            });
+        }
+    }
+
+    public void doSpinXa(int pViTri)
+    {
+        arrayXa=new ArrayList<Huyen_Xa>();
+        for (Huyen_Xa item:arrayXaFull) {
+            if(item.getId_phu()==arrayHuyen.get(pViTri).getId())
+            {
+                arrayXa.add(item);
+            }
+        }
+        if(arrayXa.size()>0)
+        {
+            xaAdapter=new HuyenXaAdapter(MainActivity.this,arrayXa);
+            sp_xa.setAdapter(xaAdapter);
+            if(pref.getInt("vitrixa", 20000)!=20000)
+            {
+                sp_xa.setSelection(pref.getInt("vitrixa", 0));
+            }
+            sp_xa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                    editor.putInt("vitrixa",position);
+                    editor.putString("rankxa", ""+arrayXa.get(position).getName());
+                    editor.commit();
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> parent) {
+
+                }
+            });
+        }
+    }
+    ArrayList<Tinh> arrayTinh;
+    void doLoadTinh()
+    {
+        try {
+            arrayTinh=new ArrayList<Tinh>();
+            tmpString=clsHandleT.LoadDataAssets("tinhthanhpho.txt",MainActivity.this);
+            if(!tmpString.equals(""))
+            {
+                if (tmpString.contains("}")) {
+                    String[] mang = tmpString.split("\\}");
+                    Tinh loiVan;
+                    for (int i = 0; i < mang.length; i++) {
+                        if (mang[i].contains("^")) {
+                            String[] items = mang[i].split("\\^");
+                            try{
+                                loiVan=new Tinh();
+                                loiVan.setId(Integer.parseInt(items[0]));
+                                loiVan.setName(items[1]);
+                                arrayTinh.add(loiVan);
+
+                            }
+                            catch (Exception ex) {
+                                // Log.e("exx:",""+ex);
+
+                                continue;
+                            }
+                        }
+                    }
+                }
+            }
+        }catch (Exception e)
+        {
+
+        }
+    }
+    ArrayList<Huyen_Xa> arrayHuyenFull;
+    void doLoadHuyen()
+    {
+        try {
+            arrayHuyenFull=new ArrayList<Huyen_Xa>();
+            tmpString=clsHandleT.LoadDataAssets("huyenthitran.txt",MainActivity.this);
+            if(!tmpString.equals(""))
+            {
+                if (tmpString.contains("}")) {
+                    String[] mang = tmpString.split("\\}");
+                    Huyen_Xa loiVan;
+                    for (int i = 0; i < mang.length; i++) {
+                        if (mang[i].contains("^")) {
+                            String[] items = mang[i].split("\\^");
+                            try{
+                                loiVan=new Huyen_Xa();
+                                loiVan.setId(Integer.parseInt(items[0]));
+                                loiVan.setName(items[1]);
+                                loiVan.setId_phu(Integer.parseInt(items[2]));
+                                arrayHuyenFull.add(loiVan);
+
+                            }
+                            catch (Exception ex) {
+                                // Log.e("exx:",""+ex);
+
+                                continue;
+                            }
+                        }
+                    }
+                }
+            }
+        }catch (Exception e)
+        {
+
+        }
+    }
+    ArrayList<Huyen_Xa> arrayXaFull;
+    void doLoadXa()
+    {
+        try {
+            arrayXaFull=new ArrayList<Huyen_Xa>();
+            tmpString=clsHandleT.LoadDataAssets("xaphuong.txt",MainActivity.this);
+            if(!tmpString.equals(""))
+            {
+                if (tmpString.contains("}")) {
+                    String[] mang = tmpString.split("\\}");
+                    Huyen_Xa loiVan;
+                    for (int i = 0; i < mang.length; i++) {
+                        if (mang[i].contains("^")) {
+                            String[] items = mang[i].split("\\^");
+                            try{
+                                loiVan=new Huyen_Xa();
+                                loiVan.setId(Integer.parseInt(items[0]));
+                                loiVan.setName(items[1]);
+                                loiVan.setId_phu(Integer.parseInt(items[2]));
+                                arrayXaFull.add(loiVan);
+
+                            }
+                            catch (Exception ex) {
+                                // Log.e("exx:",""+ex);
+
+                                continue;
+                            }
+                        }
+                    }
+                }
+            }
+        }catch (Exception e)
+        {
+
+        }
+    }
+
+    ArrayList<UserFirebase> lstUserMax;
+    ArrayList<UserFirebase> lstUserMax_CheckMyTop;
+    public void onClick_GhiDanh(View view)
+    {
+        if(et_school.length()>3&&et_name.length()>5) {
+            doLoadRankAdd();
+            rl_profile_detail.setVisibility(View.GONE);
+        }else
+        {
+            CustomToast.makeText(MainActivity.this,"Vui lòng nhập đầy đủ tên trường và tên của học sinh !",CustomToast.LONG,true).show();
+        }
+    }
+
+    int mGradeRankAdd=1;
+    private UserAdapter mUserAdapter ;
+    public void doLoadRankAdd()
+    {
+        try {
+         //   mDatabase
+            lstUserMax = new ArrayList<UserFirebase>();
+            tv_rank_school.setText(et_school.getText());
+            tv_name_profile_king.setText(et_name.getText());
+
+
+
+            tv_rank_tinh.setText(pref.getString("ranktinh", ""));
+            tv_rank_huyen.setText(pref.getString("rankhuyen", ""));
+            tv_rank_xa.setText(pref.getString("rankxa", ""));
+            tv_rank_school.setText(pref.getString("nameschool", ""));
+
+            editor.putString("namefabook", ""+et_name.getText());
+            editor.putString("nameschool", ""+et_school.getText());
+            if (pref.getString("keyname", "").equals("")) {
+                editor.putString("keyname", mDatabase.push().getKey());
+            }
+            editor.commit();
+
+            if(pref.getString("ranklop", "").contains("5"))
+            {
+                mGradeRankAdd=5;
+            }else  if(pref.getString("ranklop", "").contains("2"))
+            {
+                mGradeRankAdd=2;
+            }else  if(pref.getString("ranklop", "").contains("3"))
+            {
+                mGradeRankAdd=3;
+            }else  if(pref.getString("ranklop", "").contains("4"))
+            {
+                mGradeRankAdd=4;
+            }else
+            {
+                mGradeRankAdd=1;
+            }
+
+
+
+            UserFirebase userFirebase=new UserFirebase(pref.getString("keyname", ""),clsHandleT.capitalizeWords(pref.getString("namefabook", "")),clsHandleT.capitalizeWords(pref.getString("nameschool", "")),
+                    pref.getString("ranktinh", ""),pref.getString("rankhuyen", ""),pref.getString("rankxa", ""),pref.getString("ranklop", ""),pref.getInt("maxgrade" + mGradeRankAdd, 0));
+            mDatabase.child("users").child("vannien_"+pref.getString("ranklop", "")).child(pref.getString("keyname", "")).setValue(userFirebase);
+            mDatabase.child("users").child("vannien_"+pref.getString("ranklop", "")).addChildEventListener(new ChildEventListener() {
+                @Override
+                public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                    UserFirebase user = snapshot.getValue(UserFirebase.class);
+                    lstUserMax.add(user);
+                    Collections.sort(lstUserMax, new Comparator<UserFirebase>() {
+                        @Override
+                        public int compare(UserFirebase lhs, UserFirebase rhs) {
+                            if (lhs.getLevel() > rhs.getLevel()) {
+                                return -1;
+                            }  else {
+                                return 1;
+                            }
+                        }
+                    });
+
+                    if(lstUserMax.size()>101) {
+                        lstUserMax = new ArrayList<UserFirebase>(lstUserMax.subList(0, 100));
+                    }
+                    mUserAdapter = new UserAdapter(MainActivity.this,lstUserMax);
+                    recyclerUser_king.setAdapter(mUserAdapter);
+                    recyclerUser_king.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+                }
+
+                @Override
+                public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+                }
+
+                @Override
+                public void onChildRemoved(@NonNull DataSnapshot snapshot) {
+
+                }
+
+                @Override
+                public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+
+
+            });
+
+            //------------------
+
+            lstUserMax_CheckMyTop = new ArrayList<UserFirebase>();
+            mDatabase.child("users").child("vannien_"+pref.getString("ranklop", "")).addChildEventListener(new ChildEventListener() {
+                @Override
+                public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                    UserFirebase user = snapshot.getValue(UserFirebase.class);
+                    lstUserMax_CheckMyTop.add(user);
+                    Collections.sort(lstUserMax_CheckMyTop, new Comparator<UserFirebase>() {
+                        @Override
+                        public int compare(UserFirebase lhs, UserFirebase rhs) {
+                            if (lhs.getLevel() > rhs.getLevel()) {
+                                return -1;
+                            }  else {
+                                return 1;
+                            }
+                        }
+                    });
+                    if (pref.getString("keyname", "") != "" && lstUserMax_CheckMyTop.size() > 0) {
+                        for (int i = 0; i < lstUserMax_CheckMyTop.size(); i++) {
+                            if (lstUserMax_CheckMyTop.get(i).getKey().equals(pref.getString("keyname", ""))) {
+
+                                tv_top_profile_king.setText("TOP " + (i + 1));
+                                break;
+                            }
+                        }
+                    }
+
+                }
+
+                @Override
+                public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+                }
+
+                @Override
+                public void onChildRemoved(@NonNull DataSnapshot snapshot) {
+
+                }
+
+                @Override
+                public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+
+
+            });
+
+
+        }catch (Exception exception)
+        {
+           // clsHandleT.Loge("loi:"+exception);
+        }
+    }
+
+    public void onClickRankCancel(View view) {
+        try {
+            lstUserMax = new ArrayList<UserFirebase>();
+            tv_rank_school.setText(pref.getString("nameschool", ""));
+            tv_name_profile_king.setText(pref.getString("namefabook", ""));
+            tv_rank_tinh.setText(pref.getString("ranktinh", ""));
+            tv_rank_huyen.setText(pref.getString("rankhuyen", ""));
+            tv_rank_xa.setText(pref.getString("rankxa", ""));
+            tv_rank_school.setText(pref.getString("nameschool", ""));
+
+            if(pref.getString("ranklop", "").contains("5"))
+            {
+                mGradeRankAdd=5;
+                tv_lop_top.setText("Lớp 5");
+            }else  if(pref.getString("ranklop", "").contains("2"))
+            {
+                mGradeRankAdd=2;
+                tv_lop_top.setText("Lớp 2");
+            }else  if(pref.getString("ranklop", "").contains("3"))
+            {
+                mGradeRankAdd=3;
+                tv_lop_top.setText("Lớp 3");
+            }else  if(pref.getString("ranklop", "").contains("4"))
+            {
+                mGradeRankAdd=4;
+                tv_lop_top.setText("Lớp 4");
+            }else
+            {
+                mGradeRankAdd=1;
+                tv_lop_top.setText("Lớp 1");
+            }
+            tv_score_profile_king.setText("LV "+pref.getInt("maxgrade" + mGradeRankAdd, 0));
+
+            mDatabase.child("users").child("vannien_"+pref.getString("ranklop", "")).addChildEventListener(new ChildEventListener() {
+                @Override
+                public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                    UserFirebase user = snapshot.getValue(UserFirebase.class);
+                    //  Log.e("lol",""+user.getName());
+                    lstUserMax.add(user);
+                    Collections.sort(lstUserMax, new Comparator<UserFirebase>() {
+                        @Override
+                        public int compare(UserFirebase lhs, UserFirebase rhs) {
+                            if (lhs.getLevel() > rhs.getLevel()) {
+                                return -1;
+                            } else {
+
+                                return 1;
+
+                            }
+                        }
+                    });
+                    if (lstUserMax.size() > 101) {
+                        lstUserMax = new ArrayList<UserFirebase>(lstUserMax.subList(0, 100));
+                    }
+
+
+                    mUserAdapter = new UserAdapter(MainActivity.this,lstUserMax);
+                    recyclerUser_king.setAdapter(mUserAdapter);
+                    recyclerUser_king.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+                }
+
+                @Override
+                public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+                }
+
+                @Override
+                public void onChildRemoved(@NonNull DataSnapshot snapshot) {
+
+                }
+
+                @Override
+                public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
+
+            rl_profile_detail.setVisibility(View.GONE);
+        } catch (Exception exception) {
+
+        }
+    }
+
+
+    public void onClick_Vip_Love(View view)
+    {
+        try {
+                clsHandleT.showDialog_Award_Love(MainActivity.this,pref.getString("namefabook", ""),mFirebaseRemoteConfig.getString("lien_he_zalo"));
+        }catch (Exception e)
+        {
+
+        }
+    }
+
+    Award_Love award_love;
+    public void doSend_Award_Love(String pName,String pCode)
+    {
+        try {
+            mDatabase.child("award_vip").addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    try {
+
+                        award_love = dataSnapshot.getValue(Award_Love.class);
+
+                        doUpdate_Award_Love(award_love,pName,pCode.toLowerCase());
+
+                    } catch (Exception ex) {
+
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    // Log.e("loi",""+databaseError);
+
+                }
+            });
+        }catch (Exception e)
+        {
+
+        }
+    }
+    public void doUpdate_Award_Love(Award_Love pAward_Love,String pName,String pCode)
+    {
+        if(pAward_Love.getLop1().contains(pCode.trim()))
+        {
+            mMemberVip1 = 20;
+            editor.putInt("vips", mMemberVip1);
+            editor.commit();
+
+             mDatabase.child("award_vip").child("lop1").setValue("a"+(10000 + rd.nextInt(90000)));
+             mDatabase.child("user_award").child("lop1_"+calendar.get(Calendar.YEAR)+"_"+(calendar.get(Calendar.MONTH)+1)+"_"+calendar.get(Calendar.DAY_OF_MONTH)).setValue(""+pName.trim());
+            CustomToast.makeText(this,"Phản hồi thành công !",CustomToast.LONG,true);
+            clsHandleT.doPlaySoundAssets("phanhoi_done.mp3",DeviceLang, player, false, MainActivity.this);
+        }
+
+        if(pAward_Love.getLop2().contains(pCode.trim()))
+        {
+            mMemberVip2 = 20;
+            editor.putInt("vips2", mMemberVip2);
+            editor.commit();
+
+            mDatabase.child("award_vip").child("lop2").setValue("b"+(10000 + rd.nextInt(90000)));
+            mDatabase.child("user_award").child("lop2_"+calendar.get(Calendar.YEAR)+"_"+(calendar.get(Calendar.MONTH)+1)+"_"+calendar.get(Calendar.DAY_OF_MONTH)).setValue(""+pName.trim());
+            CustomToast.makeText(this,"Phản hồi thành công !",CustomToast.LONG,true);
+            clsHandleT.doPlaySoundAssets("phanhoi_done.mp3",DeviceLang, player, false, MainActivity.this);
+        }
+
+        if(pAward_Love.getLop3().contains(pCode.trim()))
+        {
+            mMemberVip3 = 20;
+            editor.putInt("vips3", mMemberVip3);
+            editor.commit();
+
+            mDatabase.child("award_vip").child("lop3").setValue("c"+(10000 + rd.nextInt(90000)));
+            mDatabase.child("user_award").child("lop3_"+calendar.get(Calendar.YEAR)+"_"+(calendar.get(Calendar.MONTH)+1)+"_"+calendar.get(Calendar.DAY_OF_MONTH)).setValue(""+pName.trim());
+            CustomToast.makeText(this,"Phản hồi thành công !",CustomToast.LONG,true);
+            clsHandleT.doPlaySoundAssets("phanhoi_done.mp3",DeviceLang, player, false, MainActivity.this);
+        }
+
+        if(pAward_Love.getLop4().contains(pCode.trim()))
+        {
+            mMemberVip4 = 20;
+            editor.putInt("vips4", mMemberVip4);
+            editor.commit();
+
+            mDatabase.child("award_vip").child("lop4").setValue("d"+(10000 + rd.nextInt(90000)));
+            mDatabase.child("user_award").child("lop4_"+calendar.get(Calendar.YEAR)+"_"+(calendar.get(Calendar.MONTH)+1)+"_"+calendar.get(Calendar.DAY_OF_MONTH)).setValue(""+pName.trim());
+
+            CustomToast.makeText(this,"Phản hồi thành công !",CustomToast.LONG,true);
+            clsHandleT.doPlaySoundAssets("phanhoi_done.mp3",DeviceLang, player, false, MainActivity.this);
+        }
+
+        if(pAward_Love.getLop5().contains(pCode.trim()))
+        {
+            mMemberVip5 = 20;
+            editor.putInt("vips5", mMemberVip5);
+            editor.commit();
+
+            mDatabase.child("award_vip").child("lop5").setValue("e"+(10000 + rd.nextInt(90000)));
+            mDatabase.child("user_award").child("lop5_"+calendar.get(Calendar.YEAR)+"_"+(calendar.get(Calendar.MONTH)+1)+"_"+calendar.get(Calendar.DAY_OF_MONTH)).setValue(""+pName.trim());
+
+            CustomToast.makeText(this,"Phản hồi thành công !",CustomToast.LONG,true);
+            clsHandleT.doPlaySoundAssets("phanhoi_done.mp3",DeviceLang, player, false, MainActivity.this);
+        }
+
+        if(pAward_Love.getLopall().contains(pCode.trim()))
+        {
+            mMemberVip1 = 20;
+            mMemberVip2 = 20;
+            mMemberVip3 = 20;
+            mMemberVip4 = 20;
+            mMemberVip5 = 20;
+            mMemberVip_All = 20;
+            editor.putInt("vips", mMemberVip1);
+            editor.putInt("vips2", mMemberVip2);
+            editor.putInt("vips3", mMemberVip3);
+            editor.putInt("vips4", mMemberVip4);
+            editor.putInt("vips5", mMemberVip5);
+            editor.putInt("vipsall", mMemberVip_All);
+            editor.commit();
+
+            mDatabase.child("award_vip").child("lopall").setValue("m"+(10000 + rd.nextInt(90000)));
+            mDatabase.child("user_award").child("lopall_"+calendar.get(Calendar.YEAR)+"_"+(calendar.get(Calendar.MONTH)+1)+"_"+calendar.get(Calendar.DAY_OF_MONTH)).setValue(""+pName.trim());
+
+            CustomToast.makeText(this,"Phản hồi thành công !",CustomToast.LONG,true);
+            clsHandleT.doPlaySoundAssets("phanhoi_done.mp3",DeviceLang, player, false, MainActivity.this);
+        }
+
+
+    }
+
 
     //    public void onClick_Buy_Vip_Now(View view)
 //    {
@@ -6690,28 +7882,57 @@ TextView tv_Feed_Back;
             try {
                 mGrade = pGrade;
                 mLinkDataBase = pref.getString("storagedata"+mGrade, "");
-                switch (pGrade) {
-                    case 2:
 
-                        tv_grade_level.setText(R.string.grade2);
-                        break;
-                    case 3:
+                if(DeviceLang.equals("vi_vn"))
+                {
+                    switch (pGrade) {
+                        case 2:
 
-                        tv_grade_level.setText(R.string.grade3);
-                        break;
-                    case 4:
+                            tv_grade_level.setText("Lớp 2");
+                            break;
+                        case 3:
 
-                        tv_grade_level.setText(R.string.grade4);
-                        break;
-                    case 5:
+                            tv_grade_level.setText("Lớp 3");
+                            break;
+                        case 4:
 
-                        tv_grade_level.setText(R.string.grade5);
-                        break;
-                    default:
+                            tv_grade_level.setText("Lớp 4");
+                            break;
+                        case 5:
 
-                        tv_grade_level.setText(R.string.grade1);
-                        break;
+                            tv_grade_level.setText("Lớp 5");
+                            break;
+                        default:
+
+                            tv_grade_level.setText("Lớp 1");
+                            break;
+                    }
+                }else
+                {
+                    switch (pGrade) {
+                        case 2:
+
+                            tv_grade_level.setText("Grade 2");
+                            break;
+                        case 3:
+
+                            tv_grade_level.setText("Grade 3");
+                            break;
+                        case 4:
+
+                            tv_grade_level.setText("Grade 4");
+                            break;
+                        case 5:
+
+                            tv_grade_level.setText("Grade 5");
+                            break;
+                        default:
+
+                            tv_grade_level.setText("Grade 1");
+                            break;
+                    }
                 }
+
                 clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
 
                 mLevelScore = pref.getString("levelscore" + mGrade, "1^2^3^4^5^6^7^8^9^10^11^12^13^14^15^16^17^18^19^20");
@@ -6985,7 +8206,7 @@ TextView tv_Feed_Back;
 
             if (viewFlipperMath.getDisplayedChild() == 2) {
                 viewFlipperMath.setDisplayedChild(1);
-            }else  if (viewFlipperMath.getDisplayedChild() == 1||viewFlipperMath.getDisplayedChild() == 16) {
+            }else  if (viewFlipperMath.getDisplayedChild() == 1||viewFlipperMath.getDisplayedChild() == 16||viewFlipperMath.getDisplayedChild() == 19) {
                 viewFlipperMath.setDisplayedChild(0);
             }else if(viewFlipperMath.getDisplayedChild() == 0)
             {

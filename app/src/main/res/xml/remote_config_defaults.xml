@@ -14,6 +14,18 @@
         <key>inapp_content_en</key>
         <value>👉 Learn all the rounds.\n\n 👉 All functions can be used.\n\n 👉 Update the latest exercises.</value>
     </entry>
+
+    <entry>
+        <key>start_equal_en</key>
+        <value>🍭 Please select 2 consecutive cells of equal value.\n\n🍭 Select wrong 3 times, the test will end.</value>
+    </entry>
+
+
+    <entry>
+        <key>start_equal_vn</key>
+        <value>🍭  Bạn hãy chọn 2 ô liên tiếp, có giá trị bằng nhau.\n\n🍭  Chọn sai 3 lần bài thi sẽ kết thúc.</value>
+    </entry>
+
     <entry>
         <key>grade2</key>
         <value>0</value>
@@ -29,6 +41,26 @@
     <entry>
         <key>grade5</key>
         <value>0</value>
+    </entry>
+    <entry>
+        <key>bg_profile_color</key>
+        <value>#307352</value>
+    </entry>
+    <entry>
+        <key>alow_rank</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>alow_award_love</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>alow_lienhe_list</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>lien_he_zalo</key>
+        <value>Liên hệ Zalo: 0347778420</value>
     </entry>
     <entry>
         <key>alow_inapp</key>

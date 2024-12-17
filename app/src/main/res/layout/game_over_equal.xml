@@ -54,6 +54,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"/>
     <TextView
+        android:id="@+id/tv_title_gameover_equal"
         android:textColor="@color/equal"
         android:textSize="30dp"
         android:textStyle="bold"

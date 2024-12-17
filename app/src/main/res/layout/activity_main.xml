@@ -68,6 +68,9 @@
         <include
             android:id="@+id/lnOu18"
             layout="@layout/list_item_vip" />
+        <include
+            android:id="@+id/lnOu19"
+            layout="@layout/rank_game" />
 
     </ViewFlipper>
 </RelativeLayout>

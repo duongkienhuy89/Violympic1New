@@ -22,6 +22,7 @@ import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -40,6 +41,57 @@ import com.violympic.toanlop1.R;
 
 public class clsHandleT {
     static Activity mActivity;
+
+    public static void showDialog_Award_Love(Activity activity,String pName,String pLienHe){
+        mActivity=activity;
+
+        final Dialog dialog = new Dialog(activity);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.dialog_award_love);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+
+
+        EditText et_name_award=(EditText)dialog.findViewById(R.id.et_name_award);
+        et_name_award.setText(""+pName);
+
+        EditText et_code_award=(EditText)dialog.findViewById(R.id.et_code_award);
+
+        TextView tv_lienhe_award_love=(TextView)dialog.findViewById(R.id.tv_lienhe_award_love);
+        tv_lienhe_award_love.setText(""+pLienHe);
+
+        TextView tv_cancel_award = (TextView) dialog.findViewById(R.id.tv_cancel_award);
+        tv_cancel_award.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                dialog.dismiss();
+            }
+        });
+
+        TextView tv_ok_award = (TextView) dialog.findViewById(R.id.tv_ok_award);
+        tv_ok_award.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(et_name_award.getText().toString().length()<5)
+                {
+                    CustomToast.makeText(mActivity.getApplicationContext(),"Vui lòng nhập đầy đủ Họ và Tên",CustomToast.LONG,true);
+                }else if(et_code_award.getText().toString().length()<5)
+                {
+                    CustomToast.makeText(mActivity.getApplicationContext(),"Phản hồi phải từ 6 ký tự trở lên",CustomToast.LONG,true);
+                }else {
+                    ((MainActivity) mActivity).doSend_Award_Love("" + et_name_award.getText().toString(), "" + et_code_award.getText().toString().toLowerCase());
+                    dialog.cancel();
+                }
+            }
+        });
+
+
+        dialog.show();
+        Window window = dialog.getWindow();
+        window.setLayout(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+    }
     public static void showDialogVip(Activity activity){
         mActivity=activity;
 
@@ -481,10 +533,26 @@ public class clsHandleT {
 
     }
 
+    public static String capitalizeWords(String input) {
+        // Tách chuỗi thành các từ dựa trên khoảng trắng
+        String[] words = input.split("\\s+");
+        StringBuilder result = new StringBuilder();
 
+        for (String word : words) {
+            if (word.length() > 0) {
+                // Viết hoa chữ cái đầu tiên và các ký tự còn lại viết thường
+                result.append(Character.toUpperCase(word.charAt(0)))  // Chữ cái đầu viết hoa
+                        .append(word.substring(1).toLowerCase())         // Các ký tự còn lại viết thường
+                        .append(" ");                                    // Thêm dấu cách giữa các từ
+            }
+        }
+
+        // Loại bỏ khoảng trắng thừa ở cuối chuỗi và trả về kết quả
+        return result.toString().trim();
+    }
 
     public static   void Loge(String pContent)
     {
-      //  Log.e("cap1",""+pContent);
+       // Log.e("toan12345",""+pContent);
     }
 }

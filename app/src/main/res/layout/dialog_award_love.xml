@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/bg_question_moutain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Họ và Tên :"
+            app:layout_constraintRight_toLeftOf="@+id/et_name_award"
+            app:layout_constraintTop_toTopOf="@+id/et_name_award"
+            app:layout_constraintBottom_toBottomOf="@+id/et_name_award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/et_name_award"
+            android:hint="Nguyễn Văn A"
+            android:maxLength="38"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/et_code_award"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="*"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintLeft_toRightOf="@+id/et_name_award"
+            app:layout_constraintTop_toTopOf="@+id/et_name_award"
+            app:layout_constraintBottom_toBottomOf="@+id/et_name_award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Phản Hồi :"
+            app:layout_constraintRight_toLeftOf="@+id/et_code_award"
+            app:layout_constraintTop_toTopOf="@+id/et_code_award"
+            app:layout_constraintBottom_toBottomOf="@+id/et_code_award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/et_code_award"
+            android:hint="Ứng dụng tuyệt vời"
+            android:maxLength="38"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_name_award"
+            app:layout_constraintBottom_toTopOf="@+id/tv_cancel_award"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="*"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintLeft_toRightOf="@+id/et_code_award"
+            app:layout_constraintTop_toTopOf="@+id/et_code_award"
+            app:layout_constraintBottom_toBottomOf="@+id/et_code_award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_lienhe_award_love"
+            app:layout_constraintTop_toBottomOf="@+id/et_code_award"
+            app:layout_constraintBottom_toTopOf="@+id/tv_cancel_award"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Zalo: 0347778420"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_cancel_award"
+            android:onClick="onClickRankCancel"
+            app:layout_constraintTop_toBottomOf="@+id/et_code_award"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_ok_award"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Để sau"
+            android:background="@drawable/bt_gray"
+            android:layout_width="150dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_ok_award"
+            android:onClick="onClick_GhiDanh"
+            app:layout_constraintTop_toTopOf="@+id/tv_cancel_award"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_cancel_award"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/tv_cancel_award"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Gửi"
+            android:background="@drawable/bt_blue"
+            android:layout_width="150dp"
+            android:layout_height="40dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
