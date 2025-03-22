@@ -26,9 +26,24 @@
             android:layout_centerInParent="true"
             android:textSize="20dp"
             android:textColor="@android:color/black"
+            android:gravity="center"
+
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_item_pheptoan_flag"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+
+        android:autoSizeTextType="uniform"
+        android:textSize="47dp"
+        android:autoSizeStepGranularity="2sp"
+        android:ellipsize="none"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">

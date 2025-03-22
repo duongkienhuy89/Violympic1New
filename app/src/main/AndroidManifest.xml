@@ -26,10 +26,7 @@
         <meta-data
             android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
             android:value="true"/>
-        <activity
-            android:name=".DuphongActivity"
-            android:screenOrientation="landscape"
-            android:exported="false" />
+
 
         <receiver
             android:name="com.violympic.services.ScheduleNotifi"
@@ -64,7 +61,12 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/admob_app_id" />
+        <activity
+            android:name=".DuphongActivity"
+            android:screenOrientation="landscape"
+            android:exported="true">
 
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"

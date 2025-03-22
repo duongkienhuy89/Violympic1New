@@ -62,12 +62,12 @@
     <string name="content_dialog_vip">Upgrade to Vip member for unlimited play</string>
     <string name="default_notification_channel_id">toancap1</string>
 
-        <string name="admob_app_id">ca-app-pub-5148482490300491~9852569762</string>
-        <string name="admob_inapp">ca-app-pub-5148482490300491/2329302968</string>
+<!--        <string name="admob_app_id">ca-app-pub-5148482490300491~9852569762</string>-->
+<!--        <string name="admob_inapp">ca-app-pub-5148482490300491/2329302968</string>-->
 
     <!--    //Test-->
-<!--    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>-->
-<!--    <string name="admob_inapp">ca-app-pub-3940256099942544/1033173712</string>-->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_inapp">ca-app-pub-3940256099942544/1033173712</string>
 
     <string name="notifi_title">Regular Learning</string>
     <string name="notifi_content">Help children learn math well</string>

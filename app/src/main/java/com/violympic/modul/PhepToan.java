@@ -43,6 +43,17 @@ public class PhepToan {
 
     int level;
 
+    public int getIs_flag() {
+        return is_flag;
+    }
+
+    public void setIs_flag(int is_flag) {
+        this.is_flag = is_flag;
+    }
+
+    int is_flag=0;
+
+
 
 //    public int getIsFloat() {
 //        return isFloat;

@@ -106,6 +106,7 @@ import com.violympic.general.RoundedTransformation;
 import com.violympic.general.clsHandleT;
 import com.violympic.modul.Award_Love;
 import com.violympic.modul.Huyen_Xa;
+import com.violympic.modul.LevelUser;
 import com.violympic.modul.LoiVan;
 import com.violympic.modul.Mountain;
 import com.violympic.modul.Notifi;
@@ -2647,10 +2648,6 @@ TextView tv_lienhe_list_vip;
     }
     //endregion
 
-
-
-
-
     //region Moutain Input
 
     void doStartMoutain()
@@ -3547,7 +3544,6 @@ TextView tv_lienhe_list_vip;
     };
 
     //endregion
-
 
     //region Moutain_Select
 
@@ -4935,9 +4931,70 @@ TextView tv_lienhe_list_vip;
                     }
                 }
 
-            }else {
+            }else if(mGrade==20)
+            {
+                if(mLevel==0)
+                {
+                    while (lstPhepToanLevel20.size() < 6) {
+                        mTmpPhepToan1 = new PhepToan();
+                        mChon = rd.nextInt(lstPhepToanLevelTMP.size());
+                        mTmpPhepToan1 = lstPhepToanLevelTMP.get(mChon);
 
-                if (mGrade == 2 && lstPhepToanLevelTMP.get(0).getLevel() == 1) {
+                        mTmpPhepToan2 = new PhepToan();
+                        mTmpPhepToan2.setCongthuc("" + clsHandleT.getFlagEmoji(lstPhepToanLevelTMP.get(mChon).getTamcongthuc()));
+                        mTmpPhepToan2.setIs_flag(1);
+                        mTmpPhepToan2.setKetqua(lstPhepToanLevelTMP.get(mChon).getKetqua());
+
+                        lstPhepToanLevelTMP.remove(mChon);
+
+                        lstPhepToanLevel20.add(mTmpPhepToan1);
+                        lstPhepToanLevel20.add(mTmpPhepToan2);
+                    }
+
+
+                }else   if(mLevel==1)
+                {
+                    while (lstPhepToanLevel20.size() < 12) {
+                        mTmpPhepToan1 = new PhepToan();
+                        mChon = rd.nextInt(lstPhepToanLevelTMP.size());
+                        mTmpPhepToan1 = lstPhepToanLevelTMP.get(mChon);
+
+                        mTmpPhepToan2 = new PhepToan();
+                        mTmpPhepToan2.setCongthuc("" + clsHandleT.getFlagEmoji(lstPhepToanLevelTMP.get(mChon).getTamcongthuc()));
+                        mTmpPhepToan2.setIs_flag(1);
+                        mTmpPhepToan2.setKetqua(lstPhepToanLevelTMP.get(mChon).getKetqua());
+
+                        lstPhepToanLevelTMP.remove(mChon);
+
+                        lstPhepToanLevel20.add(mTmpPhepToan1);
+                        lstPhepToanLevel20.add(mTmpPhepToan2);
+                    }
+
+
+                }else
+                {
+                    while (lstPhepToanLevel20.size() < 20) {
+                        mTmpPhepToan1 = new PhepToan();
+                        mChon = rd.nextInt(lstPhepToanLevelTMP.size());
+
+                        mTmpPhepToan1 = lstPhepToanLevelTMP.get(mChon);
+
+
+                        mTmpPhepToan2 = new PhepToan();
+                        //mCheckCongThuc = true;
+
+                        mTmpPhepToan2.setCongthuc("" + clsHandleT.getFlagEmoji(lstPhepToanLevelTMP.get(mChon).getTamcongthuc()));
+                        mTmpPhepToan2.setIs_flag(1);
+                        mTmpPhepToan2.setKetqua(lstPhepToanLevelTMP.get(mChon).getKetqua());
+
+                        lstPhepToanLevelTMP.remove(mChon);
+
+                        lstPhepToanLevel20.add(mTmpPhepToan1);
+                        lstPhepToanLevel20.add(mTmpPhepToan2);
+                    }
+                }
+            }   else {
+                    if (mGrade == 2 && lstPhepToanLevelTMP.get(0).getLevel() == 1) {
                     if (rd.nextInt(5) % 2 == 0) {
                         mTmpPhepToan1 = new PhepToan();
                         mTmpPhepToan1.setCongthuc("tamgiac");
@@ -5310,7 +5367,18 @@ TextView tv_lienhe_list_vip;
                             handler.postDelayed(timer_GameOver_Equal, 1500);
                         }
                     }
-                }else {
+                }else if(mGrade==20&&mLevel==0)
+                {
+                    if (mScore_Equal > 21) {
+                        handler.postDelayed(timer_GameOver_Equal, 1500);
+                    }
+                }else if(mGrade==20&&mLevel==1)
+                {
+                    if (mScore_Equal > 51) {
+                        handler.postDelayed(timer_GameOver_Equal, 1500);
+                    }
+                }
+                else {
                     if (mScore_Equal > 91) {
                         handler.postDelayed(timer_GameOver_Equal, 1500);
                     }
@@ -5455,7 +5523,10 @@ TextView tv_lienhe_list_vip;
     Runnable timer_Click_Game_Over_Equal= new Runnable() {
         @Override
         public void run() {
-            if(DeviceLang.equals("vi_vn")&&mGrade>=2)
+            if(mGrade==20)
+            {
+                doShowSummary();
+            }else if(DeviceLang.equals("vi_vn")&&mGrade>=2)
             {
                 doStartMoutain();
             }else
@@ -5473,8 +5544,6 @@ TextView tv_lienhe_list_vip;
 
     //endregion
 
-
-
     //region Equal_One
 
     void doStartEqual_One()
@@ -5487,6 +5556,7 @@ TextView tv_lienhe_list_vip;
             clsHandleT.doPlaySoundAssets("start_equal.mp3",DeviceLang, player, false, MainActivity.this);
             equalAdapter1 =new EqualAdapter6(this,lstPhepToanLevel20);
 
+          //  Log.e("toan12345","lstkk:"+lstPhepToanLevel20.size());
 //            if(mISO1) {
 //                gv_equal_one.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 568, getResources().getDisplayMetrics());
 //                gv_equal_one.setColumnWidth((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 180, getResources().getDisplayMetrics()));
@@ -5497,6 +5567,8 @@ TextView tv_lienhe_list_vip;
 //            }
 
             gv_equal_one.setAdapter(equalAdapter1);
+
+          //  Log.e("toan12345","lstkk1:"+lstPhepToanLevel20.size());
             gv_equal_one.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -5555,7 +5627,7 @@ TextView tv_lienhe_list_vip;
             // doRunTimeInGame(mFirtTime*1000,tv_time_ingame_equal_one,1);
         }catch (Exception exception)
         {
-
+//            Log.e("toan12345","loi:"+exception);
         }
 
     }
@@ -5714,7 +5786,23 @@ TextView tv_lienhe_list_vip;
                         viewFlipperMath.setDisplayedChild(14);
                         doRunTimeInGame(mFirtTime * 1000, tv_time_ingame_equal_one_12, 1);
                     }
-                }else
+                }else if(mGrade==20)
+                {
+                    if(mLevel==0) {
+                        viewFlipperMath.setDisplayedChild(13);
+                        doRunTimeInGame(mFirtTime * 1000, tv_time_ingame_equal_one, 1);
+                    }else if(mLevel==1)
+                    {
+                        viewFlipperMath.setDisplayedChild(14);
+                        doRunTimeInGame(mFirtTime * 1000, tv_time_ingame_equal_one_12, 1);
+                    }
+                    else
+                    {
+                        viewFlipperMath.setDisplayedChild(4);
+                        doRunTimeInGame(mFirtTime*1000,tv_time_ingame_equal,1);
+                    }
+                }
+                else
                 {
                     viewFlipperMath.setDisplayedChild(4);
                     doRunTimeInGame(mFirtTime*1000,tv_time_ingame_equal,1);
@@ -7670,62 +7758,99 @@ if(spinnerTitlesGrade[i].contains("1"))
     {
         doSetGrade(5,view);
     }
+    public void onClickGrade20(View view)
+    {
+        doSetGrade(20,view);
+    }
+
 
     String tmpString;
     public void doLoadPhepToan()
     {
         try {
             lstPhepToan=new ArrayList<PhepToan>();
-            tmpString=clsHandleT.LoadDataAssets("pheptoan"+mGrade+".txt",MainActivity.this);
-            if(!tmpString.equals(""))
+
+            if(mGrade==20)
             {
-                if (tmpString.contains("}")) {
-                    String[] mang = tmpString.split("\\}");
-                    for (int i = 0; i < mang.length; i++) {
-                        if (mang[i].contains("^")) {
-                            String[] items = mang[i].split("\\^");
-                            try{
+                tmpString = clsHandleT.LoadDataAssets("flag_country.txt", MainActivity.this);
+                if (!tmpString.equals("")) {
+                    if (tmpString.contains("}")) {
+                        String[] mang = tmpString.split("\\}");
+                        for (int i = 0; i < mang.length; i++) {
+                            if (mang[i].contains("^")) {
+                                String[] items = mang[i].split("\\^");
+                                try {
+                                        PhepToan pt = new PhepToan();
+                                        pt.setKetqua(Integer.parseInt(items[0]));
+                                        pt.setTamcongthuc(items[1]);
+                                        pt.setLevel(Integer.parseInt(items[2]));
+                                        if(DeviceLang.equals("vi_vn")) {
+                                            pt.setCongthuc(items[3]);
+                                        }else
+                                        {
+                                            pt.setCongthuc(items[4]);
+                                        }
+                                        lstPhepToan.add(pt);
 
-                                if(items[1].contains(":")||items[1].contains("/"))
-                                {
-                                    PhepToan pt = new PhepToan();
-                                    pt.setCongthuc(items[0]);
-                                    String[]a=items[1].split(":|\\/");
-                                    pt.setKetqua(Double.parseDouble(a[0])/Double.parseDouble(a[1]));
-                                    pt.setLevel(Integer.parseInt(items[2]));
-                                    pt.setTamcongthuc(items[1]);
+                                     //Log.e("damdao","flag:"+lstPhepToan.size());
+                                } catch (Exception ex) {
+                                    // Log.e("exx:",""+ex);
 
-                                    lstPhepToan.add(pt);
-
-
-
-
-                                }else {
-                                    PhepToan pt = new PhepToan();
-                                    pt.setCongthuc(items[0]);
-                                    if(items[1].contains(","))
-                                    {
-                                        pt.setKetqua(Double.parseDouble(items[1].replaceAll(",",".")));
-                                    }else {
-                                        pt.setKetqua(Double.parseDouble(items[1]));
-                                    }
-                                    pt.setTamcongthuc(items[1]);
-                                    pt.setLevel(Integer.parseInt(items[2]));
-
-                                    lstPhepToan.add(pt);
+                                    continue;
                                 }
-
-                                // Log.e("damdao",""+items[4]);
                             }
-                            catch (Exception ex) {
-                                // Log.e("exx:",""+ex);
+                        }
+                    }
+                }
 
-                                continue;
+            }else {
+                tmpString = clsHandleT.LoadDataAssets("pheptoan" + mGrade + ".txt", MainActivity.this);
+                if (!tmpString.equals("")) {
+                    if (tmpString.contains("}")) {
+                        String[] mang = tmpString.split("\\}");
+                        for (int i = 0; i < mang.length; i++) {
+                            if (mang[i].contains("^")) {
+                                String[] items = mang[i].split("\\^");
+                                try {
+
+                                    if (items[1].contains(":") || items[1].contains("/")) {
+                                        PhepToan pt = new PhepToan();
+                                        pt.setCongthuc(items[0]);
+                                        String[] a = items[1].split(":|\\/");
+                                        pt.setKetqua(Double.parseDouble(a[0]) / Double.parseDouble(a[1]));
+                                        pt.setLevel(Integer.parseInt(items[2]));
+                                        pt.setTamcongthuc(items[1]);
+
+                                        lstPhepToan.add(pt);
+
+
+                                    } else {
+                                        PhepToan pt = new PhepToan();
+                                        pt.setCongthuc(items[0]);
+                                        if (items[1].contains(",")) {
+                                            pt.setKetqua(Double.parseDouble(items[1].replaceAll(",", ".")));
+                                        } else {
+                                            pt.setKetqua(Double.parseDouble(items[1]));
+                                        }
+                                        pt.setTamcongthuc(items[1]);
+                                        pt.setLevel(Integer.parseInt(items[2]));
+
+                                        lstPhepToan.add(pt);
+                                    }
+
+                                    // Log.e("damdao",""+items[4]);
+                                } catch (Exception ex) {
+                                    // Log.e("exx:",""+ex);
+
+                                    continue;
+                                }
                             }
                         }
                     }
                 }
             }
+
+
 
         }catch (Exception exception)
         {
@@ -7887,23 +8012,21 @@ if(spinnerTitlesGrade[i].contains("1"))
                 {
                     switch (pGrade) {
                         case 2:
-
                             tv_grade_level.setText("Lớp 2");
                             break;
                         case 3:
-
                             tv_grade_level.setText("Lớp 3");
                             break;
                         case 4:
-
                             tv_grade_level.setText("Lớp 4");
                             break;
                         case 5:
-
                             tv_grade_level.setText("Lớp 5");
                             break;
+                        case 20:
+                            tv_grade_level.setText("Tìm cờ các nước");
+                            break;
                         default:
-
                             tv_grade_level.setText("Lớp 1");
                             break;
                     }
@@ -7911,23 +8034,21 @@ if(spinnerTitlesGrade[i].contains("1"))
                 {
                     switch (pGrade) {
                         case 2:
-
                             tv_grade_level.setText("Grade 2");
                             break;
                         case 3:
-
                             tv_grade_level.setText("Grade 3");
                             break;
                         case 4:
-
                             tv_grade_level.setText("Grade 4");
                             break;
                         case 5:
-
                             tv_grade_level.setText("Grade 5");
                             break;
+                        case 20:
+                            tv_grade_level.setText("Guess the Flag");
+                            break;
                         default:
-
                             tv_grade_level.setText("Grade 1");
                             break;
                     }
@@ -7935,11 +8056,20 @@ if(spinnerTitlesGrade[i].contains("1"))
 
                 clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
 
-                mLevelScore = pref.getString("levelscore" + mGrade, "1^2^3^4^5^6^7^8^9^10^11^12^13^14^15^16^17^18^19^20");
-                mArrayLevel = mLevelScore.split("\\^");
+
 
                 doLoadPhepToan();
-                if (DeviceLang.equals("vi_vn") && mGrade >= 2) {
+                if(mGrade==20)
+                {
+                    if (mLevel == 0) {
+                        mMaxScore = 30;
+                    } else if (mLevel == 1){
+                        mMaxScore = 60;
+                    }else
+                    {
+                        mMaxScore = 100;
+                    }
+                }else if (DeviceLang.equals("vi_vn") && mGrade >= 2) {
 
                     if (((int) mFirebaseRemoteConfig.getValue("grade"+mGrade).asDouble()) != pref.getInt("grade"+mGrade, 0)) {
                         doDownLoadFileDataBlog();
@@ -7980,10 +8110,64 @@ if(spinnerTitlesGrade[i].contains("1"))
         }
         v_grade.startAnimation(aninShake_Grade);
     }
+
+    ArrayList<LevelUser>levelUserArrayList;
+    int mOpen=100;
+    int cMaxTam;
     void doLoadLevel()
     {
         try {
-            levelAdapter = new LevelAdapter(this,mArrayLevel);
+
+            mLevelScore = pref.getString("levelscore" + mGrade, "1^2^3^4^5^6^7^8^9^10^11^12^13^14^15^16^17^18^19^20");
+            mArrayLevel = mLevelScore.split("\\^");
+
+            levelUserArrayList=new ArrayList<LevelUser>();
+            mOpen=100;
+            for (int i=0;i<mArrayLevel.length;i++)
+            {
+               if(i!=100)
+               {
+                   if(mGrade==1)
+                   {
+                       if (i < 4) {
+                           cMaxTam = 30;
+                       } else {
+                           cMaxTam = 60;
+                       }
+                   }else if(mGrade==20)
+                   {
+                       if (i  ==0) {
+                           cMaxTam = 30;
+                       } else if(i ==1) {
+                           cMaxTam = 60;
+                       }else
+                       {
+                           cMaxTam = 100;
+                       }
+//                       Log.e("toan12345","i:"+i+"cMaxTam:"+cMaxTam);
+//                       Log.e("toan12345","cmax/2:"+(cMaxTam/2));
+                   }else
+                   {
+                       cMaxTam = 300;
+                   }
+
+                   if(Integer.parseInt(mArrayLevel[i])<(cMaxTam/2))
+                   {
+
+                       mOpen=i;
+                     //  Log.e("toan12345","mOpen=i="+mOpen);
+                       break;
+                   }
+               }
+
+            }
+
+            for (int i=0;i<mArrayLevel.length;i++)
+            {
+                levelUserArrayList.add(new LevelUser(i,mGrade,Integer.parseInt(mArrayLevel[i]),mOpen));
+            }
+
+            levelAdapter = new LevelAdapter(this,levelUserArrayList);
             gv_level.setAdapter(levelAdapter);
             gv_level.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -7991,97 +8175,260 @@ if(spinnerTitlesGrade[i].contains("1"))
 
 
 
-                    if(!((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("0")) {
-
-                        if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>1
-                                &&mMemberVip1==0&&mGrade==1&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
-                        {
-                            clsHandleT.showDialogVip(MainActivity.this);
-                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
-                        }else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>1
-                                &&mMemberVip2==0&&mGrade==2&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
-                        {
-                            clsHandleT.showDialogVip(MainActivity.this);
-                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
-                        }  else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>1
-                                &&mMemberVip3==0&&mGrade==3&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
-                        {
-                            clsHandleT.showDialogVip(MainActivity.this);
-                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
-                        } else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>1
-                                &&mMemberVip4==0&&mGrade==4&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
-                        {
-                            clsHandleT.showDialogVip(MainActivity.this);
-                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
-                        }  else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>1
-                                &&mMemberVip5==0&&mGrade==5&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
-                        {
-                            clsHandleT.showDialogVip(MainActivity.this);
-                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
-                        }
-                        else
-                        {
+//                    if(!((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("0")) {
+//
+//                        if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>1
+//                                &&mMemberVip1==0&&mGrade==1&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
+//                        {
+//                            clsHandleT.showDialogVip(MainActivity.this);
+//                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
+//                        }else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
+//                                &&mMemberVip2==0&&mGrade==2&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
+//                        {
+//                            clsHandleT.showDialogVip(MainActivity.this);
+//                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
+//                        }  else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
+//                                &&mMemberVip3==0&&mGrade==3&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
+//                        {
+//                            clsHandleT.showDialogVip(MainActivity.this);
+//                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
+//                        } else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
+//                                &&mMemberVip4==0&&mGrade==4&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
+//                        {
+//                            clsHandleT.showDialogVip(MainActivity.this);
+//                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
+//                        }  else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
+//                                &&mMemberVip5==0&&mGrade==5&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
+//                        {
+//                            clsHandleT.showDialogVip(MainActivity.this);
+//                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
+//                        }
+//                        else
+//                        {
                             doPlayClick();
                             mLevel = position;
                             lstPhepToanLevel = new ArrayList<PhepToan>();
-                            for (int i = 0; i < lstPhepToan.size(); i++) {
-                                if (lstPhepToan.get(i).getLevel() == (position + 1)) {
-                                    lstPhepToanLevel.add(lstPhepToan.get(i));
-                                }
-                            }
-                            //Db("::"+DeviceLang);
-                            if (DeviceLang.equals("vi_vn") && mGrade >= 2) {
-                                lstLoiVanLevel = new ArrayList<LoiVan>();
-                                for (int i = 0; i < lstLoiVan.size(); i++) {
-                                    if (lstLoiVan.get(i).getLevel() == (position + 1)) {
-                                        lstLoiVanLevel.add(lstLoiVan.get(i));
-                                    }
-                                }
-                                doDownloadSoundLevel();
-                                // doDownloadQuestion("1");
-                                mMaxScore = 300;
-                            }else
+                            if(mGrade==20)
                             {
-                                if(mGrade==1)
-                                {
-
-                                    if(mLevel<4) {
-                                        mMaxScore = 30;
-                                    }else
-                                    {
-                                        mMaxScore = 60;
-                                    }
-                                }else {
-                                    lstMountainLevel = new ArrayList<Mountain>();
-                                    for (int i = 0; i < lstMountain.size(); i++) {
-                                        if (lstMountain.get(i).getLevel() == (position + 1)) {
-                                            lstMountainLevel.add(lstMountain.get(i));
-                                        }
-                                    }
-                                   // clsHandleT.Loge("lst Level:"+lstMountainLevel.size());
-                                    mMaxScore = 300;
-                                }
-                            }
-
-                            if(mGrade==1)
-                            {
-                                if(mLevel<4) {
-                                    doStartEqual_One();
+                                if (mLevel ==0) {
+                                    mMaxScore = 30;
+                                } else if(mLevel==1) {
+                                    mMaxScore = 60;
                                 }else
                                 {
-                                    doStartEqual_One12();
+                                    mMaxScore = 100;
                                 }
+
+                                if((mLevel+1)==1)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==1) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+
+                                } else if((mLevel+1)==2)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==2) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==3)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==3) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==4)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==4) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==5)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==4||lstPhepToan.get(i).getLevel() ==5) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==6)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==2||lstPhepToan.get(i).getLevel() ==6) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==7)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==3||lstPhepToan.get(i).getLevel() ==6) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==8)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==1||lstPhepToan.get(i).getLevel() ==7) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==9)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==5||lstPhepToan.get(i).getLevel() ==7) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==10)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==8) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==11)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==1||lstPhepToan.get(i).getLevel() ==9) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==12)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==2||lstPhepToan.get(i).getLevel() ==10) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==13)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==3||lstPhepToan.get(i).getLevel() ==11) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==14)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==6||lstPhepToan.get(i).getLevel() ==11) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==15)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==5||lstPhepToan.get(i).getLevel() ==12) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==16)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==7||lstPhepToan.get(i).getLevel() ==13) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==17)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==3||lstPhepToan.get(i).getLevel() ==14) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==18)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==8||lstPhepToan.get(i).getLevel() ==15) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else if((mLevel+1)==19)
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==3||lstPhepToan.get(i).getLevel() ==16) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }else
+                                {
+                                    for (int i = 0; i < lstPhepToan.size(); i++) {
+                                        if (lstPhepToan.get(i).getLevel() ==5||lstPhepToan.get(i).getLevel() ==16) {
+                                            lstPhepToanLevel.add(lstPhepToan.get(i));
+                                        }
+                                    }
+                                }
+
+                               if(mLevel==0)
+                               {
+                                   doStartEqual_One();
+                               }else if(mLevel==1)
+                               {
+                                   doStartEqual_One12();
+                               }else
+                               {
+                                   doStartEqual();
+                               }
+
+
                             }else {
-                              doStartEqual();
-                                // doStartMonkey();
-                                // doStartMoutain();
+                                for (int i = 0; i < lstPhepToan.size(); i++) {
+                                    if (lstPhepToan.get(i).getLevel() == (position + 1)) {
+                                        lstPhepToanLevel.add(lstPhepToan.get(i));
+                                    }
+                                }
+                                //Db("::"+DeviceLang);
+                                if (DeviceLang.equals("vi_vn") && mGrade >= 2) {
+                                    lstLoiVanLevel = new ArrayList<LoiVan>();
+                                    for (int i = 0; i < lstLoiVan.size(); i++) {
+                                        if (lstLoiVan.get(i).getLevel() == (position + 1)) {
+                                            lstLoiVanLevel.add(lstLoiVan.get(i));
+                                        }
+                                    }
+                                    doDownloadSoundLevel();
+                                    // doDownloadQuestion("1");
+                                    mMaxScore = 300;
+                                } else {
+                                    if (mGrade == 1) {
+
+                                        if (mLevel < 4) {
+                                            mMaxScore = 30;
+                                        } else {
+                                            mMaxScore = 60;
+                                        }
+                                    } else {
+                                        lstMountainLevel = new ArrayList<Mountain>();
+                                        for (int i = 0; i < lstMountain.size(); i++) {
+                                            if (lstMountain.get(i).getLevel() == (position + 1)) {
+                                                lstMountainLevel.add(lstMountain.get(i));
+                                            }
+                                        }
+                                        // clsHandleT.Loge("lst Level:"+lstMountainLevel.size());
+                                        mMaxScore = 300;
+                                    }
+                                }
+
+                                if (mGrade == 1) {
+                                    if (mLevel < 4) {
+                                        doStartEqual_One();
+                                    } else {
+                                        doStartEqual_One12();
+                                    }
+                                } else {
+                                    doStartEqual();
+                                    // doStartMonkey();
+                                    // doStartMoutain();
+                                }
                             }
 
 
                             playerBg.pause();
                             lengthMediaBg=playerBg.getCurrentPosition();
-                       }
-                    }
+//                       }
+//                    }
                 }
             });
         }catch (Exception exception)
@@ -8164,7 +8511,9 @@ if(spinnerTitlesGrade[i].contains("1"))
         try {
             doPlayClick();
             currentStatus=Status.MAIN;
+            doLoadLevel();
             viewFlipperMath.setDisplayedChild(2);
+
             animation_view_summary.cancelAnimation();
             animation_view_summary.setVisibility(View.GONE);
             doResetEqual();

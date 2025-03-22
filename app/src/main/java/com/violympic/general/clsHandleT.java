@@ -551,6 +551,18 @@ public class clsHandleT {
         return result.toString().trim();
     }
 
+    public static  String getFlagEmoji(String countryCode) {
+        if (countryCode == null || countryCode.length() != 2) return "";
+
+        // Chuyển thành chữ in hoa (viết hoa ISO Alpha-2)
+        countryCode = countryCode.toUpperCase();
+
+        // Tạo emoji từ hai ký tự chữ cái
+        int firstLetter = Character.codePointAt(countryCode, 0) - 'A' + 0x1F1E6;
+        int secondLetter = Character.codePointAt(countryCode, 1) - 'A' + 0x1F1E6;
+
+        return new String(Character.toChars(firstLetter)) + new String(Character.toChars(secondLetter));
+    }
     public static   void Loge(String pContent)
     {
        // Log.e("toan12345",""+pContent);

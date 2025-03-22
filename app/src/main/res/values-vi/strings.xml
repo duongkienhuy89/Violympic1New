@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Violympic</string>
+    <string name="app_name">Toán Cấp 1</string>
     <string name="scrore">Điểm</string>
     <string name="time">Thời gian</string>
     <string name="inputnotblank">Kết quả không được để trống</string>
@@ -62,12 +62,12 @@
     <string name="content_dialog_vip">Bạn cần nâng cấp lên thành viên VIP để chơi tiếp</string>
     <string name="default_notification_channel_id">toancap1</string>
 
-    <string name="admob_app_id">ca-app-pub-5148482490300491~9852569762</string>
-    <string name="admob_inapp">ca-app-pub-5148482490300491/2329302968</string>
+<!--    <string name="admob_app_id">ca-app-pub-5148482490300491~9852569762</string>-->
+<!--    <string name="admob_inapp">ca-app-pub-5148482490300491/2329302968</string>-->
 
 <!--    //Test-->
-<!--    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>-->
-<!--    <string name="admob_inapp">ca-app-pub-3940256099942544/1033173712</string>-->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_inapp">ca-app-pub-3940256099942544/1033173712</string>
 
     <string name="notifi_title">Duy trì luyện tập thường xuyên</string>
     <string name="notifi_content">Giúp bé học giỏi toán ?</string>
