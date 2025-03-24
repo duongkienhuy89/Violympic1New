@@ -56,6 +56,7 @@
     <string name="yesads3">BẠN ĐÃ NÂNG CẤP THÀNH CÔNG PRO TOÁN 3 ✅ </string>
     <string name="yesads4">BẠN ĐÃ NÂNG CẤP THÀNH CÔNG PRO TOÁN 4 ✅ </string>
     <string name="yesads5">BẠN ĐÃ NÂNG CẤP THÀNH CÔNG PRO TOÁN 5 ✅ </string>
+    <string name="yesads_flag">BẠN ĐÃ NÂNG CẤP THÀNH CÔNG LÁ CỜ ✅ </string>
     <string name="yesadsall">BẠN ĐÃ NÂNG CẤP THÀNH CÔNG PRO TOÀN BỘ✅ </string>
     <string name="sussespro">Bạn hãy khởi động lại ứng dụng để trải nghiệm phiên bản PRO!</string>
     <string name="title_dialog_vip">Đã hết lượt chơi thử</string>
@@ -77,6 +78,7 @@
     <string name="vip3_check">PRO Toán Lớp 3 ✅</string>
     <string name="vip4_check">PRO Toán Lớp 4 ✅</string>
     <string name="vip5_check">PRO Toán Lớp 5 ✅</string>
+    <string name="vip_flag_check">PRO lá cờ 🇻🇳 ✅</string>
     <string name="vip_all_check">PRO Tất Cả Các Lớp ✅</string>
 
     <string name="vip1_warning"><b>50k</b> - PRO Toán Lớp 1 ⚠</string>
@@ -84,5 +86,6 @@
     <string name="vip3_warning"><b>50k</b> - PRO Toán Lớp 3 ⚠</string>
     <string name="vip4_warning"><b>50k</b> - PRO Toán Lớp 4 ⚠</string>
     <string name="vip5_warning"><b>50k</b> - PRO Toán Lớp 5 ⚠</string>
-    <string name="vip_all_warning"><b>150k</b> - PRO Tất Cả ⚠</string>
+    <string name="vip_flag_warning"><b>50k</b> - PRO lá cờ 🇻🇳 ⚠</string>
+    <string name="vip_all_warning"><b>150k</b> - PRO Tất Cả (1 2 3 4 5 🇻🇳) ⚠</string>
 </resources>

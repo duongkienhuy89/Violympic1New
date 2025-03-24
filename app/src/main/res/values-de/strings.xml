@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Mathe-Spielplatz</string>
+    <string name="scrore">Punktzahl</string>
+    <string name="time">Zeit</string>
+    <string name="inputnotblank">Zeit</string>
+    <string name="status">Status:</string>
+    <string name="resolve">Lösen:</string>
+    <string name="result">Ergebnis:</string>
+    <string name="doubleclick">Bitte erneut auf ZURÜCK klicken, um zu beenden !</string>
+    <string name="summary_score">Übersicht : </string>
+    <string name="find_equal">Finde das passende Paar</string>
+    <string name="hinhtamgiac">Dreieck</string>
+    <string name="hinhtron">Kreis</string>
+    <string name="hinhvuong">Quadrat</string>
+    <string name="hinhchunhat">Rechteck</string>
+    <string name="hinhsao">Stern</string>
+    <string name="hinhlucgiac">Sechseck</string>
+    <string name="hinhngugiac">Fünfeck</string>
+    <string name="thanhcong">Bestanden</string>
+    <string name="thatbai">Nicht bestanden</string>
+    <string name="ga">ente</string>
+    <string name="flower">blume</string>
+    <string name="start_equal">🍭 Wähle 2 aufeinanderfolgende Felder mit dem gleichen Wert aus.\n\n🍭 Nach 3 Fehlern endet der Test.</string>
+    <string name="startmoutain">Wähle eine der vier Antworten im Feld aus, die zum Ergebnis passt.</string>
+    <string name="start_monkey">Wische nach beiden Seiten, um ein Feld mit dem gleichen Wert zu finden.</string>
+    <string name="break_home">Bist du sicher, dass du beenden möchtest?</string>
+    <string name="exit_home">Spiel verlassen</string>
+    <string name="start">Starten</string>
+    <string name="grade1">1. Klasse</string>
+    <string name="grade2">2. Klasse</string>
+    <string name="grade3">3. Klasse</string>
+    <string name="grade4">4. Klasse</string>
+    <string name="grade5">5. Klasse</string>
+    <string name="khieulai">Testbericht</string>
+    <string name="vip_item">Wähle die Klasse, die du auf PRO upgraden möchtest?</string>
+    <string name="member_vip">🚀 VIP-Mitglied</string>
+    <string name="buy_pro">👉 Lerne alle Runden.\n\n 👉 Unbegrenzte Klassen.\n\n 👉 Aktualisiere die neuesten Übungen.\n\n 👉 Keine störende Werbung.</string>
+    <string name="buy_now">PRO-Upgrade</string>
+    <string name="buy_affter">Später kaufen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phepcong">Addition</string>
+    <string name="pheptru">Subtraktion</string>
+    <string name="phepcongvstru">Addition\n vs \nSubtraktion</string>
+    <string name="phepcongvstru2">Addition vs Subtraktion</string>
+    <string name="share">Share</string>
+    <string name="cmt">Feedback</string>
+    <string name="home">Home</string>
+    <string name="title_notifi">Giúp Bé Học Giỏi</string>
+    <string name="content_notifi">🚀Ứng dụng  học toán số 1\n🚀Giúp học sinh tiểu học nâng cao kiến thức môn toán\n🚀Đa dạng các bài toán giúp kích thích tư duy</string>
+    <string name="share_app">Bitte teile diese App jetzt mit deinen Freunden !</string>
+    <string name="rate">Schreibe eine Bewertung für diese App ?</string>
+    <string name="feedback">Tritt der Fanseite bei, um zu kommentieren ?</string>
+    <string name="yesads1">DU VERWENDEST DIE PRO-VERSION – KLASSE 1 ✅ </string>
+    <string name="yesads2">DU VERWENDEST DIE PRO-VERSION – KLASSE 2 ✅ </string>
+    <string name="yesads3">DU VERWENDEST DIE PRO-VERSION – KLASSE 3 ✅ </string>
+    <string name="yesads4">DU VERWENDEST DIE PRO-VERSION – KLASSE 4 ✅ </string>
+    <string name="yesads5">DU VERWENDEST DIE PRO-VERSION – KLASSE 5 ✅ </string>
+    <string name="yesads_flag">DU VERWENDEST DIE PRO-VERSION – FLAGGE ✅ </string>
+    <string name="yesadsall">DU VERWENDEST DIE PRO-VERSION – ALLE KLASSEN ✅ </string>
+    <string name="sussespro">Bitte starte die App neu, um die PRO-Version zu nutzen!</string>
+    <string name="title_dialog_vip">Upgrade der VIP-Mitgliedschaft</string>
+    <string name="content_dialog_vip">Werde VIP-Mitglied für unbegrenztes Spielen</string>
+    <string name="default_notification_channel_id">toancap1</string>
+
+<!--        <string name="admob_app_id">ca-app-pub-5148482490300491~9852569762</string>-->
+<!--        <string name="admob_inapp">ca-app-pub-5148482490300491/2329302968</string>-->
+
+    <!--    //Test-->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_inapp">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="notifi_title">Reguläres Lernen</string>
+    <string name="notifi_content">Kindern helfen, Mathe gut zu lernen</string>
+
+
+    <string name="of">von</string>
+
+    <string name="vip1_check">PRO - 1. Klasse ✅</string>
+    <string name="vip2_check">PRO - 2. Klasse ✅</string>
+    <string name="vip3_check">PRO - 3. Klasse ✅</string>
+    <string name="vip4_check">PRO - 4. Klasse ✅</string>
+    <string name="vip5_check">PRO - 5. Klasse ✅</string>
+    <string name="vip_flag_check">PRO - Flagge 🇺🇸 ✅</string>
+    <string name="vip_all_check">PRO – Alle Klassen ✅</string>
+
+    <string name="vip1_warning">PRO - 1. Klasse ⚠</string>
+    <string name="vip2_warning">PRO - 2. Klasse ⚠</string>
+    <string name="vip3_warning">PRO - 3. Klasse ⚠</string>
+    <string name="vip4_warning">PRO - 4. Klasse ⚠</string>
+    <string name="vip5_warning">PRO - 5. Klasse ⚠</string>
+    <string name="vip_flag_warning">PRO - Flagge 🇺🇸 ⚠</string>
+    <string name="vip_all_warning">PRO - Alle Klassen (1 2 3 4 5 🇺🇸) ⚠</string>
+
+</resources>

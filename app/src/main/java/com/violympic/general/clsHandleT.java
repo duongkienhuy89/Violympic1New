@@ -565,6 +565,6 @@ public class clsHandleT {
     }
     public static   void Loge(String pContent)
     {
-       // Log.e("toan12345",""+pContent);
+        Log.e("toan12345",""+pContent);
     }
 }

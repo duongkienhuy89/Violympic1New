@@ -6,32 +6,26 @@
     android:background="@drawable/bg_fores"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_margin="15dp"
         android:orientation="vertical"
         android:background="@drawable/wrap_buy_boder"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_margin="20dp"
+            android:layout_margin="15dp"
             android:background="@drawable/wrap_buy_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/tv_lienhe_list_vip"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:text="Liên hệ Zalo: 0347778420"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+
             <TextView
                 android:id="@+id/tv_title_vip_item"
                 android:text="@string/vip_item"
                 android:textColor="@android:color/black"
                 android:textSize="21dp"
                 android:textStyle="bold"
-                android:layout_marginTop="5dp"
+
         app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -109,7 +103,7 @@
                 android:id="@+id/ll_item_vip4"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/ll_item_vip2"
-                app:layout_constraintBottom_toBottomOf="@id/ll_item_vip_all"
+                app:layout_constraintBottom_toBottomOf="@id/ll_item_vip_flag"
                 app:layout_constraintLeft_toRightOf="@+id/ll_item_vip1"
                 app:layout_constraintRight_toRightOf="parent"
                 android:background="@drawable/item_vip"
@@ -130,7 +124,7 @@
                 android:id="@+id/ll_item_vip5"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/ll_item_vip3"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ll_item_vip_all"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/ll_item_vip2"
                 android:background="@drawable/item_vip"
@@ -148,15 +142,37 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_item_vip_all"
+                android:id="@+id/ll_item_vip_flag"
                 android:orientation="horizontal"
 
                 app:layout_constraintTop_toBottomOf="@+id/ll_item_vip4"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ll_item_vip_all"
                 app:layout_constraintLeft_toRightOf="@+id/ll_item_vip1"
                 app:layout_constraintRight_toRightOf="parent"
                 android:background="@drawable/item_vip"
                 android:layout_width="@dimen/width_item_vip"
+                android:layout_height="@dimen/height_item_vip">
+                <TextView
+                    android:id="@+id/tv_item_flag"
+                    android:textStyle="italic"
+                    android:textSize="23dp"
+                    android:text="@string/vip_flag_warning"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_vip_all"
+                android:orientation="horizontal"
+
+                app:layout_constraintTop_toBottomOf="@+id/ll_item_vip5"
+                app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@drawable/round_item_vipall"
+                android:layout_width="@dimen/width_item_vip_all"
                 android:layout_height="@dimen/height_item_vip">
                 <TextView
                     android:id="@+id/tv_item_vipall"
@@ -171,7 +187,15 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_lienhe_list_vip"
+      android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="25dp"
+            android:text="Liên hệ Zalo: 0347778420"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
     <ImageView
         android:onClick="onClick_Cancel_Vip_List"
         android:layout_marginTop="3dp"

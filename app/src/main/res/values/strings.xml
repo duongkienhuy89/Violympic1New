@@ -56,6 +56,7 @@
     <string name="yesads3">YOU ARE USING PRO Version Grade 3 ✅ </string>
     <string name="yesads4">YOU ARE USING PRO Version Grade 4 ✅ </string>
     <string name="yesads5">YOU ARE USING PRO Version Grade 5 ✅ </string>
+    <string name="yesads_flag">YOU ARE USING PRO Version FLAG ✅ </string>
     <string name="yesadsall">YOU ARE USING PRO Version Grade All ✅ </string>
     <string name="sussespro">Please restart the application to experience the PRO version!</string>
     <string name="title_dialog_vip">VIP membership upgrade</string>
@@ -80,6 +81,7 @@
     <string name="vip3_check">PRO Grade 3 ✅</string>
     <string name="vip4_check">PRO Grade 4 ✅</string>
     <string name="vip5_check">PRO Grade 5 ✅</string>
+    <string name="vip_flag_check">PRO Flag 🇺🇸 ✅</string>
     <string name="vip_all_check">Pro Grade All Grade ✅</string>
 
     <string name="vip1_warning">PRO Grade 1 ⚠</string>
@@ -87,6 +89,7 @@
     <string name="vip3_warning">PRO Grade 3 ⚠</string>
     <string name="vip4_warning">PRO Grade 4 ⚠</string>
     <string name="vip5_warning">PRO Grade 5 ⚠</string>
-    <string name="vip_all_warning">PRO Grade All ⚠</string>
+    <string name="vip_flag_warning">PRO Flag 🇺🇸 ⚠</string>
+    <string name="vip_all_warning">PRO Grade All (1 2 3 4 5 🇺🇸) ⚠</string>
 
 </resources>

@@ -16,8 +16,28 @@
     </entry>
 
     <entry>
+        <key>inapp_content_fr</key>
+        <value>👉 Apprenez toutes les manches.\n\n 👉 Toutes les fonctions peuvent être utilisées.\n\n 👉 Mettez à jour les derniers exercices.</value>
+    </entry>
+
+    <entry>
+        <key>inapp_content_de</key>
+        <value>👉 Lerne alle Runden.\n\n 👉 Alle Funktionen können verwendet werden.\n\n 👉 Aktualisiere die neuesten Übungen.</value>
+    </entry>
+
+    <entry>
         <key>start_equal_en</key>
         <value>🍭 Please select 2 consecutive cells of equal value.\n\n🍭 Select wrong 3 times, the test will end.</value>
+    </entry>
+
+    <entry>
+        <key>start_equal_fr</key>
+        <value>🍭 Veuillez sélectionner 2 cases consécutives de même valeur.\n\n🍭 En cas de 3 erreurs, le test prendra fin.</value>
+    </entry>
+
+    <entry>
+        <key>start_equal_de</key>
+        <value>🍭 Bitte wähle 2 aufeinanderfolgende Zellen mit dem gleichen Wert aus.\n\n🍭 Bei 3 Fehlern endet der Test.</value>
     </entry>
 
 

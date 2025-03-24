@@ -1,0 +1,578 @@
+1*Wie schreibt man diese Zahl mit Ziffern?
+sechshundertfünfunddreißig*630*635*695*690*2*gta*1#2*Wie schreibt man diese Zahl mit Ziffern?
+
+zweihundertzwölf*113*112*212*213*3*gta*1#3*Geben Sie die fehlende Zahl ein.
+
+5 Tausender + 9 Hunderter + 9 Zehner =...?*5099*5909*59900*5990*4*gta*1#4*Wie würde man 30 als römische Zahl schreiben?*XXX*VVV*VIX*XVX*1*giaithich*1#5*Welche Zahl stellt diese römische Zahl dar?
+
+XXXVII*35*36*37*39*3*gta*1#6*Kimberly kaufte einen gebrauchten Lkw mit einer Laufleistung von 77.716 Kilometern. Sie fuhr damit noch 9923 Kilometer, bevor sie es verkaufte. Wie viele Kilometer hatte der Lkw zu diesem Zeitpunkt zurückgelegt?*87636*87637*87638*87639*4*Addiere die Kilometer: 77716 + 9923 =87639.*1#7*Bei einer Tombola werden insgesamt 3643 US-Dollar an Preisgeldern ausgezahlt. Bisher wurden 1697 US-Dollar an Preisgeldern vergeben. Wie viel Preisgeld ist noch zu vergeben?*1946*1947*1948*1949*1*3643-1697=1946*1#8*Kim und Susan beschlossen jeweils, Geld an eine örtliche Schule zu spenden. Kim spendete 5270 $ und Susan 4589 $. Wie viel haben Kim und Susan zusammen gespendet?*9889*9859*9860*9879*2*5270+4589=9859*1#9*Welche Gleichung zeigt die Identitätseigenschaft der Addition?*1 + 0 = 1*7+9=16*3+7=3+7*6+(2+4)=(6+2)+4*1*giaithich*1#10*Ein Bekleidungsunternehmen bestellte Sweatshirts in 9 verschiedenen Farben. Sie bestellten 695 von jeder Farbe. Wie viele Sweatshirts hat das Bekleidungsunternehmen insgesamt bestellt?*6250*6235*6245*6255*4*695 x 9 = 6255*1#11*Damons Spielzeugladen hat 4 Tüten Murmeln gekauft. In jedem Beutel befanden sich 899 Murmeln. Wie viele Murmeln hat Damons Toy Shop gekauft?*3595*3596*3597*3598*2*899 x 4 = 3596*1#12*Welche Eigenschaft der Multiplikation wird gezeigt?
+
+6 x 5 = 5 x 6*Identität*assoziativ*kommutativ*verteilend*3*6 x 5 = 5 x 6
+
+Diese Gleichung zeigt die kommutative Eigenschaft. 
+
+Die Reihenfolge der Faktoren wird geändert.*1#13*Welche Eigenschaft der Multiplikation wird gezeigt?
+
+(6 + 7) x 8 = 6 x 8 + 7 x 8*Identität*kommutativ*verteilend*null*3*(6 + 7) x 8 = 6 x 8 + 7 x 8
+
+Diese Gleichung zeigt die Verteilungseigenschaft. Die Multiplikation verteilt sich über die Addition oder Subtraktion.*1#14*Mei und Collin bestellen Pasta für 8,50 $, Salat für 4,85 $ und 2 Gläser Limonade für jeweils 1,15 $. Die Steuer beträgt 1,25 $. Wie viel Wechselgeld sollten sie ab 20,00 $ bekommen?*3,1*4,1*5,1*6,1*1*Finden Sie die Kosten für das Essen heraus.
+8,50 $ + 4,85 $ + 1,15 $ + 1,15 $ = 15,65 $
+Ermitteln Sie die Gesamtkosten, einschließlich Steuern.
+15,65 $ + 1,25 $ = 16,90 $
+Finden Sie die Veränderung.
+20,00 $ - 16,90 $ = 3,10 $*1#15*In Christophers Schreibtischschublade liegen 6 rote Stifte. Es gibt 5 schwarze Stifte mehr als rote Stifte. Außerdem gibt es 6 blaue Stifte mehr als rote Stifte. Wie viele Stifte gibt es insgesamt?*28*29*30*31*2*Finden Sie die Anzahl der schwarzen Stifte.
+6 + 5 = 11
+Finden Sie die Anzahl der blauen Stifte.
+6 + 6 = 12
+Ermitteln Sie die Gesamtzahl der roten, schwarzen und blauen Stifte.
+6 + 11 + 12 = 29*1#16*Victor kauft eine Schachtel Blaubeer-, Mohn- und Schokoladenstückchen-Muffins. In der Box sind 9 Blaubeer-Muffins, 9 Mohn-Muffins und 8 Schoko-Muffins enthalten. Victor kauft 6 Tage pro Woche genau die gleiche Schachtel Muffins. Wie viele Muffins sind in der Schachtel?*17*26*26*42*2*Sie müssen nicht wissen, an wie vielen Tagen pro Woche Victor die Muffins kauft. Es handelt sich um zusätzliche Informationen. Fügen Sie die Anzahl der Blaubeer-Muffins, die Anzahl der Mohn-Muffins und die Anzahl der Schokoladen-Muffins hinzu. 9 + 9 + 8 = 26*1#17*Lucy geht zum Obststand und kauft Orangen, Zitronen und Limetten. Sie kauft 7 Orangen, 6 Zitronen und 2 Limetten. Wie viele Obststücke kauft Lucy insgesamt?*25*16*15*27*3*Addieren Sie die Anzahl der Orangen, die Anzahl der Zitronen und die Anzahl der Limetten.
+7 + 6 + 2 = 15*1#18*Wie schreibt man diese Zahl mit Ziffern?
+
+dreihundertneunzig*390*309*590*397*1*gta*2#19*Geben Sie die fehlende Zahl ein.
+
+8 Tausender + 7 Hunderter + 8 Zehner + 1 Eins =....?*8780*8781*8782*8783*2*gta*2#20*Wie würden Sie 17 als römische Zahl schreiben?*IIXV*XIVI*XIIV*XVII*4*giaithich*2#21*82997 Zebramuscheln reiten auf dem Boden eines Schiffes in den Michigansee. Sie finden viel Nahrung und keine Raubtiere, sodass ihre Population wächst. Ein Jahr später gibt es 159 weitere Zebramuscheln im See. Wie viele Zebramuscheln gibt es mittlerweile?*83154*83155*83156*83157*3*82997 + 159 = 83156.*2#22*Der reguläre Preis für einen Schreibtisch beträgt 8711 $. Diese Woche ist es für 6364 $ Rabatt im Angebot. Wie hoch ist der Verkaufspreis des Schreibtisches?*2347*2317*2047*2397*1*8711 - 6364 = 2347*2#23*In einem Juweliergeschäft stehen 9 Diamantringe zum Verkauf. Jeder Ring kostet 571 $. Wie viel würde es kosten, alle 9 Diamantringe zu kaufen?*5136*5137*5138*5139*4*571 x 9 = 5139*2#24*Welche Gleichung zeigt die assoziative Eigenschaft der Multiplikation?*0 x 6 = 0*(4x5) x 8 = 4 x (5x8)*6 x 1=1 x 6*8 x 7 - 0 x 7=(8-0) x 7*2*(4 x 5) x 8 = 4 x (5 x 8)
+
+Diese Gleichung zeigt die assoziative Eigenschaft. Die Gruppierung der Faktoren wird geändert.*2#25*In einem Apartmentkomplex gibt es in jeder Wohnung 9 Fenster und auf jeder Etage 10 Wohnungen. Jedes Gebäude hat 6 Etagen. Wie viele Fenster gibt es in 10 Gebäuden?*5100*5200*5300*5400*4*Multiplizieren Sie die Zahlen in der Geschichte, um die Gesamtzahl der Fenster zu ermitteln.
+
+9 x 10 x 6 x 10 = 5400
+
+Es gibt 5400 Fenster.*2#26*Welches Zeichen macht die Aussage wahr?
+
+45....24 x 2*>*<*=*A und C*2*24 x 2 = 48 . 
+
+45 ist kleiner als 48. Das <-Zeichen macht die Aussage wahr.*2#27*Welches Zeichen macht die Aussage wahr?
+
+42 x 3 .....62*>*<*=*A und C*1*42 x 3 =126.
+
+126 ist größer als 62. Das >-Zeichen macht die Aussage wahr.*2#28*Lamont kaufte 15 Rosenbüsche und pflanzte sie gleichmäßig in 5 Reihen. Wie viele Rosensträucher stehen in jeder Reihe?*3*5*10*45*1*Teilen Sie die Anzahl der Rosenbüsche durch die Anzahl der Reihen.
+15 : 5 = 3
+In jeder Reihe stehen 3 Rosenbüsche.*2#29*Es sind 6 Personen, die eine Bootsfahrt machen. Jedes Boot bietet Platz für 3 Personen. Wie viele Boote werden benötigt?*1*2*3*4*2*Teilen Sie die Anzahl der Personen durch die Anzahl der Personen, die jedes Boot aufnehmen kann.
+
+6 : 3 = 2
+
+Es werden 2 Boote benötigt.*2#30*Damons Stadt stimmte über ein neues Gesetz ab. Es gab 35 Stimmen für das Gesetz und 15 Stimmen dagegen. Wie groß ist das Verhältnis zwischen der Anzahl der Stimmen für das Gesetz und der Anzahl der Stimmen gegen das Gesetz?*0,659722222*2,107638889*2,09375*1,46875*4*Ermitteln Sie die Anzahl der Stimmen für das Gesetz und die Anzahl der Stimmen gegen das Gesetz.
+
+Anzahl der Stimmen für das Gesetz = 35
+
+Anzahl der Stimmen gegen das Gesetz = 15*2#31*Finden Sie den Einheitspreis.
+20 Aufkleber auf 4 Seiten = ... Aufkleber pro Seite?*3*4*5*6*3*Teilen:
+
+20 : 4 = 5
+
+5 Aufkleber pro Seite*2#32*Ein Lagerhaus verkauft Kartons mit Kaugummi. Jeder Karton enthält 4 Packungen Kaugummi und jede Packung enthält 3 Kaugummistreifen. Wie viele Kaugummistreifen sind in 4 Kartons enthalten?*48*49*50*51*1*Multiplizieren Sie die Zahlen in der Geschichte, um die Gesamtzahl der Kaugummistreifen zu ermitteln.
+
+4 x 3 x 4 = 48
+
+Es gibt 48 Kaugummistangen.*3#33*Welches Zeichen macht die Aussage wahr?
+
+9 x 9 .... 81*>*=*<*B und C*2*9 x 9 = 81.
+
+81 ist gleich 81. Das =-Zeichen macht die Aussage wahr.*3#34*Gary nahm 121 Holzklötze und ordnete sie in 11 gleichmäßigen Stapeln an. Wie viele Blöcke sind in jedem Stapel?*8*9*10*11*4*Teilen Sie die Anzahl der Blöcke durch die Anzahl der Stapel.
+
+121 : 11 = 11
+
+In jedem Stapel befinden sich 11 Blöcke.*3#35*Zach hatte 94 Plastikbecher. Er arrangierte sie auf Tabletts, die Platz für vier Tassen boten. Wie viele Tassen befanden sich auf dem letzten Tablett?*2*23*15*5*1*giaithich*3#36*Ein Immobilienmakler kann 943 US-Dollar für Zeitungsanzeigen ausgeben. Jede Anzeige kostet 9 $. Wie viel Geld bleibt dem Immobilienmakler übrig, nachdem er so viele Anzeigen gekauft hat, wie er sich leisten kann?*5*6*7*8*3*giaithich*3#37*Schätzen. Welches Zeichen macht die Aussage wahr?
+6216 : 4 .....1420*>*<*=*A und C*1*giaithich*3#38*Schätzen. Welches Zeichen macht die Aussage wahr?
+
+1054 : 9 .... 721*>*<*=*A und C*2*giaithich*3#39*Das State Board of Education verfügt über 8776 US-Dollar für den Kauf neuer Taschenrechner. Wenn jeder Rechner 7 US-Dollar kostet, wie viele Rechner kann der Vorstand dann ungefähr kaufen? Wählen Sie den besseren Kostenvoranschlag.*1500*1400*1700*1200*4*giaithich*3#40*Eine Gruppe von 746 Schülern nimmt an einem Helikopterflug teil. Wenn jeder Hubschrauber sieben Schüler aufnehmen kann, wie viele Hubschrauber sollte die Gruppe ungefähr einsetzen? Wählen Sie den besseren Kostenvoranschlag.*110*60*100*150*1*giaithich*3#41*Eine Reisegruppe hat 37 $, um Bahntickets zu kaufen. Jedes Ticket kostet 17 $. Wie viele Bahntickets kann die Gruppe kaufen?*1*2*3*4*2*Die Antwort ist entweder 2 oder 3.
+
+Multiplizieren: 17 $ x 2 = 34 $ oder 17 $ x 3 = 51 $
+
+2 Bahntickets (34 $) sind korrekt. 3 Bahntickets (51 $) sind zu teuer. Die Gruppe kann 2 Bahntickets kaufen.*3#42*Burlington Furniture muss 95 Sofas im ganzen Land versenden. Wenn in jeden LKW 19 Liegen passen, wie viele LKWs sollte das Unternehmen dann einsetzen?*2*3*4*5*4*giaithich*3#43*Eric kauft 9 Päckchen Gemüsesamen für 8,01 $. Die Pakete haben alle den gleichen Preis. Was kostet jedes Paket?*0,86 $*0,90 $*0,89 $*0,99 $*3*8,01 $ : 9 = 0,89 $*3#44*6 Kameras kosten 1910,04 $. Wenn die Kameras alle den gleichen Betrag kosten, wie viel kostet dann jede Kamera?*310,35 $*318,34 $*319,34 $*317,35 $*2*Jede Kamera kostet 1910,04 $ : 6 = 318,34 $.*3#45*Jeff arbeitet als Büroangestellter. Wenn Jeff vier Tage lang arbeitete und 259,20 $ verdiente, wie viel verdiente er dann pro Tag?*68,81 $*60,80 $*61,80 $*64,80 $*4*Jeff verdiente 259,20 $ : 4 = 64,80 $ pro Tag.*3#46*Was ist der größte gemeinsame Faktor von 6 und 8?*2*3*4*5*1*gta*3#47*Was ist der größte gemeinsame Faktor von 6 und 9?*2*3*4*5*2*gta*3#48*Was ist der größte gemeinsame Faktor von 10 und 6?*5*4*3*2*4*gta*3#49*Eine Bäckerei erhielt eine Lieferung von 85 Pfirsichen. Wenn man 4 Pfirsiche braucht, um einen Pfirsichkuchen zu backen, wie viele Pfirsiche bleiben dann in der Bäckerei übrig?*1*2*3*4*1*giaithich*4#50*Eine Universität verfügt über 160.000 US-Dollar, um Studierende zum Studium ins Ausland zu schicken. Das Auslandsstudienprogramm kostet 20.000 US-Dollar pro Student. Wie viele Studierende kann die Hochschule ins Ausland schicken?*7*8*9*10*2*160.000 $ : 20.000 $ = 8*4#51*Schätzen. Welches Zeichen macht die Aussage wahr?
+
+1953: 4 .... 218*>*<*=*A und C*1*giaithich*4#52*Ein Bauunternehmer benötigt 502 Nägel, um ein Projekt abzuschließen. Wenn die Nägel in 9er-Packungen geliefert werden, wie viele Packungen sollte der Bauunternehmer ungefähr kaufen? Wählen Sie den besseren Kostenvoranschlag.*10*20*40*60*4*giaithich*4#53*Die Cafeteria benötigt 66 Zwiebeln. In jeder Tüte sind 13 Zwiebeln. Wie viele Tüten soll die Cafeteria kaufen?*4*5*6*7*3*Die Antwort ist entweder 5 oder 6.
+
+Multiplizieren: 13 x 5 = 65 und 13 x 6 = 78
+
+5 Beutel (65 Zwiebeln) reichen nicht aus. 6 Beutel (78 Zwiebeln) sind richtig. Die Cafeteria soll 6 Tüten kaufen.*4#54*9 Packungen Hot-Dog-Brötchen kosten 35,01 $. Die Kosten für jedes Paket sind gleich. Was kostet jedes Paket?*2,88 $*3,98 $*3,88 $*3,89 $*4*Der Preis für jede Packung Hot-Dog-Brötchen beträgt 35,01 $ : 9 = 3,89 $.*4#55*Der Kauf von 2 Salzstreuern kostet 20 $. Wenn beide Salzstreuer den gleichen Preis haben, wie viel kostet der Kauf eines Salzstreuers?*9 $*10 $*11 $*12 $*2*Der Kauf eines Salzstreuers kostet 20 $: 2 = 10 $.*4#56*Joeys kleine Schwester spielt mit Bauklötzen. Sie möchte alle 12 ihrer Blöcke in Stapeln anordnen, wobei jeder Stapel die gleiche Anzahl an Blöcken haben sollte. Wie viele Blöcke konnte Joeys Schwester in jeden Stapel legen?*10*9*6*5*3*Eine Zahl ist durch 6 teilbar, wenn sie sowohl durch 2 als auch durch 3 teilbar ist.*4#57*Frau Bryant möchte 72 Zertifikate an die Wand ihres Klassenzimmers hängen. Sie möchte in jede Reihe die gleiche Anzahl an Zertifikaten legen. Wie viele Reihen könnte Frau Bryant machen?*4*10*5*8*1*Eine Zahl ist durch 4 teilbar, wenn die Zahl, die aus ihren letzten beiden Ziffern besteht, durch 4 teilbar ist.*4#58*Shawn hat 9410 Murmeln, die er in riesige Gläser füllen kann. Er möchte in jedes Glas die gleiche Anzahl Murmeln geben, ohne zusätzliche Murmeln. Wie viele Gläser könnte Shawn gebrauchen?*4*10*3*6*2*Eine Zahl ist durch 10 teilbar, wenn ihre Einerstelle 0 ist.*4#59*Was ist der größte gemeinsame Faktor von 4 und 6?*2*3*4*6*1*gta*4#60*Was ist der größte gemeinsame Faktor von 18 und 12?*2*4*6*8*3*gta*4#61*Was ist der größte gemeinsame Faktor von 20 und 12?*2*4*6*8*2*gta*4#62*Finden Sie den Einheitspreis.
+
+18 Scheiben von 3 Kuchen =.... Scheiben pro Kuchen?*5*6*7*8*2*Teilen:
+
+18 : 3 = 6
+
+6 Scheiben pro Kuchen*4#63*Der Kauf von 4 Barbecue-Grills kostet 4.000 US-Dollar. Wenn die Grills alle den gleichen Betrag kosten, wie hoch ist dann der Preis für jeden Grill?*1000 $*2000 $*2500 $*3000 $*1*Der Preis für jeden Barbecue-Grill beträgt 4.000 $: 4 = 1.000 $.*5#64*Yoshi möchte 36 Fotos an die Wand seines Schlafzimmers hängen. Er möchte in jede Reihe die gleiche Anzahl Fotos legen. Wie viele Reihen könnte Yoshi machen?*5*9*10*8*2*Eine Zahl ist durch 9 teilbar, wenn die Summe ihrer Ziffern durch 9 teilbar ist.*5#65*Ein Lager fasst 1130 Flaschen Wasser. In jedem Gang steht die gleiche Anzahl Flaschen. Wie viele Gänge könnte es geben?*5*6*7*8*1*Eine Zahl ist durch 5 teilbar, wenn ihre Einerstelle 0 oder 5 ist.*5#66*Was ist der größte gemeinsame Faktor von 15 und 12?*2*3*4*5*2*gta*5#67*Was ist der größte gemeinsame Faktor von 12 und 16?*2*3*4*5*3*gta*5#68*Was ist der größte gemeinsame Faktor von 7 und 16?*1*2*3*4*1*gta*5#69*Was ist das kleinste gemeinsame Vielfache von 9 und 11?*88*99*100*111*2*gta*5#70*Schreiben Sie siebenhundertzweiunddreißig Tausendstel als Dezimalzahl.*723*7320*732*0,732*4*gta*5#71*Welche Ziffer steht bei 0,5198 an der Einerstelle?*0*5*1*8*1*gta*5#72*An welcher Stelle steht in 4687.9105 die 5?*Zehntel*diejenigen*Tausendstel*Zehntausendstel*4*giaithich*5#73*An welcher Stelle steht in 53.647 die 5?*Hundertstel*diejenigen*Zehner*Tausendstel*3*giaithich*5#74*Finden Sie die Standard-Dezimalform von:
+9 x 1 + 3 x 0,1*1,3*93*39*9,3*4*gta*5#75*Finden Sie die Standard-Dezimalform von:
+
+4 x 1 + 7 x 0,1 + 8 x 0,01*40,78*874*4,78*4078*3*gta*5#76*Ein Geschirrhersteller muss eine Bestellung von 52 Glasschüsseln versenden. Das Unternehmen wird die Schalen in mehrere Kartons verpacken. Jede Kiste muss die gleiche Anzahl Schüsseln enthalten. Wie viele Kartons könnte das Unternehmen für die Bestellung verwenden?*6*3*9*4*4*Eine Zahl ist durch 4 teilbar, wenn die Zahl, die aus ihren letzten beiden Ziffern besteht, durch 4 teilbar ist.*6#77*Was ist der größte gemeinsame Faktor von 8 und 20?*1*2*3*4*4*gta*6#78*Was ist der größte gemeinsame Faktor von 12, 15 und 18?*2*3*5*7*2*gta*6#79*Was ist der größte gemeinsame Faktor von 6, 16 und 14?*2*3*4*5*1*gta*6#80*Was ist das kleinste gemeinsame Vielfache von 12 und 2?*12*2*24*48*1*gta*6#81*Schreiben Sie einhundertsiebenundsechzig Tausendstel als Dezimalzahl.*0,167*1,67*167*176*1*gta*6#82*Welche Ziffer befindet sich in 9.472 an der Hundertstelstelle?*9*4*7*2*3*gta*6#83*Welche Ziffer befindet sich in 3798,25 an der Tausenderstelle?*7*3*9*8*2*gta*6#84*Finden Sie die Standard-Dezimalform von:
+
+8 x 0,1+1 x 0,01*180*0,81*0,801*8,1*2*gta*6#85*Finden Sie die Standard-Dezimalform von:
+
+5 x 1 + 5 x 0,1*50,5*5,5*5,05*55*2*gta*6#86*Welche Dezimalzahl entspricht 0,60?*600*0,01*1000*0,09*1*giaithich*6#87*Was ist 3,3783, gerundet auf das nächste Tausendstel?*3*3,3*3,37*3378*4*giaithich*6#88*Was ist 2,0271, gerundet auf das nächste Hundertstel?*2027*2,02*2*20271*2*giaithich*6#89*1/10 als Dezimalzahl schreiben?*10*0,1*0,01*1*2*gta*6#90*Was ist der größte gemeinsame Faktor von 39, 13 und 26?*2*5*10*13*4*gta*7#91*Was ist der größte gemeinsame Faktor von 15, 10 und 10?*2*5*7*10*2*gta*7#92*Was ist der größte gemeinsame Faktor von 12 und 18?*4*5*6*2*3*gta*7#93*Was ist der größte gemeinsame Faktor von 9, 18 und 15?*2*3*4*5*2*gta*7#94*Was ist das kleinste gemeinsame Vielfache von 8 und 10?*20*40*80*100*2*gta*7#95*Finden Sie die Standard-Dezimalform von:
+
+6 x 1+8 x 0,1+3 x 0,01*6,83*386*6083*6,04*1*gta*7#96*Welche Dezimalzahl entspricht 0,7670?*0,7*0*0*767*4*giaithich*7#97*3/10 als Dezimalzahl schreiben?*0,1*0,2*0,3*0,333*3*gta*7#98*Schreiben Sie 0,25 als Bruch in der einfachsten Form.*45718*45783*45659*45661*4*gta*7#99*Damon kaufte 6,1 Gallonen Orangensaft und verwendete 5,6 Gallonen davon für die Herstellung von Eis am Stiel. Wie viel Orangensaft hat Damon noch übrig?*0,4*0,5*0,6*0,7*2*Damon hat noch 6,1 - 5,6 = 0,5 Gallonen Orangensaft übrig.*7#100*Ein Bauunternehmen kaufte 3,04 Tonnen Kies und 9,52 Tonnen Sand. Wie viele Tonnen Material hat das Unternehmen insgesamt eingekauft?*6,56*10,56*11,56*12,56*4*Das Unternehmen kaufte 3,04 + 9,52 = 12,56 Tonnen Material.*7#101*Ella kaufte ein 4,9 Meter langes Stück Stoff. Dann schnitt sie 1,8 Meter davon ab, um sie für ein Nähprojekt zu verwenden. Wie viel Stoff ist noch übrig?*3,1*4,1*6,7*7,7*1*4,9 - 1,8 = 3,1 Meter Stoff bleiben übrig.*7#102*Welches Zeichen macht die Aussage wahr?
+4,1 - 0,1 ... 3,7*>*<*=*A und C*1*4,1 - 0,1=4,0.
+
+Vergleichen Sie die Zahlen:
+
+4,0 > 3,7
+
+Das >-Zeichen macht die Aussage wahr.*7#103*Welches Zeichen macht die Aussage wahr?
+
+9,7 - 2,5 .... 7,3*>*<*=*A und C*2*9,7 - 2,5 = 7,2.
+
+Vergleichen Sie die Zahlen:
+
+7,2 < 7,3
+
+Das <-Zeichen macht die Aussage wahr.*7#104*Welches Zeichen macht die Aussage wahr?
+
+0,8 .... 0,7 + 0,4*>*<*=*B und C*2*0,7 + 0,4=1,1
+
+Vergleichen Sie die Zahlen:
+
+0,8 < 1,1
+
+Das <-Zeichen macht die Aussage wahr.*7#105*Was ist das kleinste gemeinsame Vielfache von 12 und 9?*30*36*48*108*2*gta*8#106*Was ist das kleinste gemeinsame Vielfache von 10 und 16?*60*80*140*160*2*gta*8#107*0,859 als Bruch in einfachster Form schreiben?*889/1000*999/1000*900/1000*859/1000*4*gta*8#108*Ein Zimmermann kaufte ein 0,9 Meter langes Stück Holz. Dann sägte er 0,2 Meter vom Ende ab. Wie lang ist das Stück Holz jetzt?*0,6*0,7*0,8*0,9*2*Das Stück Holz ist jetzt 0,9 - 0,2 = 0,7 Zentimeter lang.*8#109*Welches Zeichen macht die Aussage wahr?
+
+4,5 - 0,2 .... 3,7*>*<*=*A und C*1*4,5 - 0,2 = 4,3
+
+Vergleichen Sie die Zahlen:
+
+4,3 > 3,7
+
+Das >-Zeichen macht die Aussage wahr.*8#110*Christine hat Plastikrohre gekauft, die jeweils 4,9 Meter lang sind. Wenn Christine eine Reihe aus drei Röhren herstellt, indem sie diese aneinanderreiht, wie lang wird diese sein?*14,1*15,7*14,7*147*3*Die Linie aus Kunststoffrohren wird 4,9 x 3 = 14,7 Meter lang sein.*8#111*Nancy fährt jeden Schultag 0,4 Kilometer mit dem Fahrrad. Wie weit wird Nancy insgesamt sieben Schultage lang mit dem Fahrrad zurücklegen?*28 Kilometer.*3,8 Kilometer.*2,1 Kilometer.*2,8 Kilometer.*4*Nancy wird 0,4 x 8 = 2,8 Kilometer radeln.*8#112*Welches Zeichen macht die Aussage wahr?
+
+6 ... 2,9 x 2*>*<*=*A und C*1*2,9 x 2 = 5,8
+
+Vergleichen Sie die Zahlen.
+
+6 > 5,8
+
+Das >-Zeichen macht die Aussage wahr.*8#113*Welches Zeichen macht die Aussage wahr?
+6 .... 1,7 x 4*>*<*=*A und C*2*1,7 x 4 = 6,8
+
+Vergleichen Sie die Zahlen.
+
+6 < 6,8
+
+Das <-Zeichen macht die Aussage wahr.*8#114*Bryce's Licorice Company hat in zwei Tagen 405 Fuß Lakritze hergestellt. Wie viele Fuß Lakritze hat das Unternehmen durchschnittlich pro Tag hergestellt?*202,5*203,5*204,5*205,5*1*Bryce's Licorice Company produzierte 405 : 2 = 202,5 ​​Fuß Lakritze pro Tag.*8#115*Cora kaufte eine Packung mit 4 Haferkeksen. Das Gesamtgewicht der Kekse betrug 1 Unze. Wie viel wog jeder Keks?*0,15*0,75*0,45*0,25*4*Jeder Keks wog 1:4 = 0,25 Unzen.*8#116*Trevor ging zu einer Geburtstagsfeier. Es waren 8 Gäste da und 2 von ihnen trugen Partyhüte. Welcher Anteil der Gäste trug Partyhüte?*45696*45661*45718*A und B*4*2 von 8 Gästen trugen Partyhüte. 2/8 trugen Partyhüte.
+2/8 und 1/4
+sind äquivalente Brüche.*8#117*Erin ging zu einer Party mit drei Gästen. 2 der Gäste bekamen als Gastgeschenk eine Pfeife. Welcher Anteil der Gäste bekam einen Pfiff?*45718*45691*45660*45720*2*2 von 3 Gästen bekamen einen Pfiff. 2/3 bekamen einen Pfiff.*8#118*Was ist der kleinste gemeinsame Nenner von 1/2 und 5/6?*4*5*6*7*3*gta*8#119*Vincent kaufte eine Packung mit 9 Schokoladenkeksen. Jeder Keks wog 0,1 Unzen. Wie viel wogen die 9 Kekse insgesamt?*0,2*9*0,9*0,09*3*Die 9 Kekse wogen zusammen 0,1 x 9 = 0,9 Unzen.*9#120*Eine Mandarine kostet 0,25 $. Wie viel kosten 3 Mandarinen?*0,55*0,75*1*1,25*2*3 Mandarinen kosten 0,25 $ x 3 = 0,75 $.*9#121*Welches Zeichen macht die Aussage wahr?
+
+1,4 x 5....7*>*<*=*A und C*3*1,4 x 5=7,0
+
+Vergleichen Sie die Zahlen.
+
+7,0 = 7
+
+Das =-Zeichen macht die Aussage wahr.*9#122*4 Personen werden zu gleichen Teilen 318 Hektar Land aufteilen. Wie viel Land bekommt jede Person?*79,5*79,6*80,6*81,6*1*Jede Person erhält 318 : 4 = 79,5 Acres Land.*9#123*9 Studenten machten eine Reise nach New York City. 2 von ihnen besuchten die Freiheitsstatue. Welcher Anteil der Schüler besuchte die Freiheitsstatue?*45912*29.01*45902*45697*4*2 von 9 Schülern besuchten die Freiheitsstatue. 2/9 besuchte die Freiheitsstatue.*9#124*Was ist der kleinste gemeinsame Nenner von 5/8 und 5/6?*6*8*20*24*4*gta*9#125*Was ist der kleinste gemeinsame Nenner von 5/8 und 1/10?*40*20*10*5*1*gta*9#126*Was ist der nächste Bruch in dieser Folge?
+
+8/13; 7/13; 6/13; 5/13; ..... .*45670*45701*45760*45729*3*gta*9#127*Was ist der nächste Bruch in dieser Folge?
+
+2/65; 4/65; 8/65; 16/65; ......*28/65*24/65*17/65*32/65*4*gta*9#128*Cole fügte 1/6 einer Tasse Walnüsse zu einer Portion Studentenfutter hinzu. Später fügte er 1/6 Tasse Mandeln hinzu. Wie viele Tassen Nüsse hat Cole insgesamt in das Studentenfutter gegeben?*45691*45693*45660*45663*3*Cole gab 1/6+1/6=2/6=1/3 einer Tasse Nüsse in die Studentenfuttermischung.*9#129*Ein Meteorologe zeichnete die Niederschläge in Fairview in zwei aufeinanderfolgenden Monaten auf. Im ersten Monat fiel 1/10 Zoll Regen. Im zweiten Monat fielen 4/5 Zoll Regen. Wie hoch war die Gesamtniederschlagsmenge in den beiden Monaten?*45878*45910*45941*45971*2*Die Gesamtniederschlagsmenge während der beiden Monate betrug 9/10 Zoll.*9#130*Riley und ihre Schwester gingen zusammen, um sich die Haare schneiden zu lassen. Riley wurde 1/2 Zoll abgeschnitten und ihrer Schwester wurde 1/8 Zoll abgeschnitten. Wie viel mehr Haare wurden Riley im Vergleich zu ihrer Schwester abgenommen?*45851*45817*45695*45724*4*Riley wurden 3/8 Zoll mehr Haare entfernt.*9#131*Wie schreibt man 10 % als Dezimalzahl?*0,1*0,2*0,3*0,01*1*Teilen Sie die Zahl vor dem Prozentzeichen durch 100. Verschieben Sie die Dezimalstelle um zwei Stellen nach links.
+
+10 : 100 = 0,1*9#132*Um neue Vorstandsmitglieder auszuwählen, führte der französische Club eine Wahl durch. 90 % der 20 Mitglieder des Clubs stimmten ab. Wie viele Mitglieder haben abgestimmt?*16*17*18*19*3*Finden Sie 90 % von 20.
+(90 x 20):100=1800:100=18 Mitglieder haben abgestimmt.*9#133*Was ist der kleinste gemeinsame Nenner von 1/2 und 7/9?*3*9*18*25*3*gta*10#134*Was ist der nächste Bruch in dieser Folge?
+
+1/63; 2/63; 4/63; 8/63; ......*16/63*23346*18/63*20/63*1*gta*10#135*Im Zoo von Seaside gibt es zwei Elefanten. Der männliche Elefant wiegt 3/4 Tonne und der weibliche Elefant wiegt 5/8 Tonne. Wie viel mehr wiegt das Männchen als das Weibchen?*45724*45726*45697*45665*4*Der männliche Elefant wiegt 1/8 Tonne mehr als der weibliche Elefant.*10#136*Abe sprintete eine halbe Runde und machte dann eine Pause, indem er drei Zehntel einer Runde joggte. Wie viel weiter sprintete Abe als joggen?*45694*45662*45695*45721*2*Abe sprintete eine Fünftelrunde weiter als er joggte.*10#137*Hector machte Fruchtpunsch für ein Sommerpicknick. Er verwendete 1/3 Gallone Cranberrysaft, 1/3 Gallone Limonade und 1/3 Gallone Zitronenlimonade. Wie viele Gallonen Punsch hat Hector hergestellt?*45691*45720*1*45750*3*1/3+1/3+1/3=3/3=1.
+
+Hector machte 1 Gallone Punsch.*10#138*Welches Zeichen macht die Aussage wahr?
+
+16/18 .... 2/18 + 14/18*>*<*=*A und C*3*2/18 + 14/18=16/18.*10#139*Am Mittwoch haben die Bauern auf der Monroe Farm drei Fässer Tomaten gepflückt. Am Donnerstag haben die Bauern 1/5 so viele Tomaten gepflückt wie am Mittwoch. Wie viele Fässer Tomaten haben die Bauern am Donnerstag gepflückt?*45723*45663*45693*45721*4*Am Donnerstag pflückten die Bauern 1/5 x 3 = 3/5 eines Fasses Tomaten.*10#140*Adam und Dana machten jeweils eine Schüssel Punsch. Dana hat neunmal so viel Limonade verwendet wie Adam. Wenn Adam 1/3 einer Tasse Limonade verwendet hat, wie viele Tassen Limonade hat Dana verwendet?*3*45933*45905*45904*1*Dana hat 9 x 1/3=9/3= 3 Tassen Limonade verwendet.*10#141*Die Elefanten im Jefferson Zoo werden täglich mit zwei Dritteln eines Fasses Mais gefüttert. Die Büffel bekommen 1/3 so viel Mais wie die Elefanten. Wie viele Fässer Mais werden den Büffeln täglich gefüttert?*45719*1*45666*45697*4*Die Büffel werden täglich mit 2/3 x 1/3 = 2/9 eines Fasses Mais gefüttert.*10#142*Shawna hat diesen Sommer Tomaten angebaut und daraus 1/3 Gallone Tomatensauce hergestellt. Sie teilte es in drei gleiche Portionen auf, um es für die spätere Verwendung einzufrieren. Wie viele Gallonen waren jede Portion?*1*45666*45663*45695*2*Teilen Sie die Gesamtmenge der Tomatensauce durch die Anzahl der Portionen.
+
+1/3:3 = 1/3 x 1/3=1/9
+
+Jede Portion besteht aus 1/9 Gallone Tomatensauce.*10#143*Collin hat noch ein Fünftel Pfund Vogelfutter übrig, das er zu gleichen Teilen auf zwei Vogelkäfige in seiner Tierhandlung verteilen kann. Wie viele Pfund kann er in jeden Vogelkäfig packen?*45726*45698*45697*45667*4*Teilen Sie das Gesamtgewicht des Vogelfutters durch die Anzahl der Vogelkäfige.
+
+1/5:2=1/5 x 1/2=1/10.
+
+Collin kann 1/10 Pfund Vogelfutter in jeden Vogelkäfig geben.*10#144*Suzie machte 3/5 Liter heiße Schokolade. Jeder Becher fasst 1/5 Liter. Wie viele Tassen wird Suzie füllen können?*1*3*45693*45752*2*Teilen Sie die Gesamtmenge heißer Schokolade durch die Menge, die jeder Becher fasst.
+
+3/5:1/5=3/5 x 5/1=15:5=3.
+
+Teilen Sie die Gesamtmenge heißer Schokolade durch die Menge, die jeder Becher fasst.*10#145*Scott möchte einen Pinsel für 6,95 $, ein Farbset für 15,15 $ und eine Staffelei für 12,75 $. Scott hat bereits 6,90 $. Wie viel Geld braucht Scott noch?*27,95*28,95*29,95*30,95*1*Ermitteln Sie die Gesamtkosten für den Pinsel, die Farben und die Staffelei.
+6,95 $ + 15,15 $ + 12,75 $ = 34,85 $.
+Finden Sie heraus, wie viel mehr Geld benötigt wird.
+34,85 $ – 6,90 $ = 27,95 $
+Scott braucht 27,95 $ mehr.*10#146*Für eine Schulspendenaktion muss Denise 69 Schachteln Kekse verkaufen. Bisher hat sie 13 Schachteln Zitronenkekse an ihre Tante, 13 Schachteln Schokoladenkekse an ihre Mutter und 6 Schachteln Haferkekse an eine Nachbarin verkauft. Wie viele Schachteln Kekse muss Denise noch verkaufen?*27*37*47*57*2*Finden Sie die Anzahl der bereits verkauften Kartons.
+13 + 13 + 6 = 32
+Finden Sie heraus, wie viele Kartons noch verkauft werden sollen.
+69 - 32 = 37
+Denise muss noch 37 Schachteln Kekse verkaufen.*10#147*Cora kaufte Cupcakes für die Geburtstagsfeier ihrer Schwester. 30 % der 10 Cupcakes hatten oben Streusel. Wie viele Cupcakes hatten Streusel?*3*30*2*20*1*Finden Sie 30 % von 10.
+
+(30 x 10):100 = 3 Cupcakes waren mit Streuseln versehen.*10#148*Wie viele ganze Zahlen zwischen 200 und 300 gibt es, bei denen die Hunderterstelle der Summe der beiden anderen Ziffern entspricht?*1*2*3*4*3*Sie sind 202, 211 und 220.*11#149*Die Summe zweier Zahlen beträgt 79 und ihre Differenz beträgt 13.
+
+Was ist die kleinere Zahl?*22*33*44*55*2*Die kleinere Zahl ist (79-13):2=33*11#150*Jim hat 20 Äpfel und Orangen. Die Anzahl der Äpfel ist viermal so groß wie die Anzahl der Orangen. Wie viele Äpfel hat Jim?*15*16*17*18*2*giaithich*11#151*Wenn wir von der größten zweistelligen Zahl 19 subtrahieren und dann die Differenz durch 4 dividieren, erhalten wir das Ergebnis …*17*18*19*20*4*giaithich*11#152*Jim ist 12 cm größer als John. John ist 139 cm groß. Bob ist 21 cm größer als Jim. Wie groß ist Bob?*130*120*140*110*1*giaithich*11#153*Der Umfang eines Quadrats beträgt 80 cm. Was ist das Maß jeder Seite?*10*20*30*40*2*gta*11#154*Der Quotient zweier Zahlen ist 1 und ihr Produkt ist 100. Finden Sie die Summe der beiden Zahlen?*10*15*20*21*3*giaithich*11#155*Die Summe zweier Zahlen ist 20 und ihre Differenz ist 0. Was sind die beiden Zahlen?*15 und 10*10 und 15*10 und 20*10 und 10*4*giaithich*11#156*In der Klasse 5A gibt es 38 Schüler. Die Schüler können an den 11 Tischen sitzen, ohne dass Plätze frei sind. Es gibt einen kleinen Tisch für 3 Schüler und einen großen Tisch für 4 Schüler. Wie viele kleine Tische und große Äpfel gibt es in der Klasse?*6 und 5*6 und 6*6 und 7*7 und 5*1*giaithich*11#157*Tom hat noch 1/3 Pizza im Kühlschrank. Er isst 1/4 davon zum Frühstück. Welcher Bruchteil der Originalpizza bleibt ihm zum Mittagessen übrig?*45662*45660*45693*45661*4*giaithich*11#158*Wie groß ist der Umfang eines Rechtecks ​​mit einer Seitenlänge von 5 x 4 cm?*18*19*20*21*1*gta*11#159*Jedes der Autos bietet Platz für 8 Personen. Wie viele Autos brauchte man, um 124 Personen aufzunehmen?*13*14*15*16*4*gta*11#160*Berechnen Sie: (1 + 2/5) x 6/7*45846*45876*45813*45783*3*gta*11#161*Umrechnen: (3 + 1/25)kg = ...g.*3037*3038*3039*3040*4*gta*11#162*Finden Sie die ganze Zahl A und wissen Sie, dass A 18 Einheiten größer ist als der Durchschnitt von A, 29 und 45. Der Wert von A ist…*64*65*66*67*1*Laut Artikel haben wir: A + 29 + 45 = 3 (A - 18)
+
+A + 74 = 3 x A - 54
+
+3 x A - A = 74 + 54
+
+2 x A = 128
+
+A = 128: 2 = 64*11#163*Geben Sie die Zahlenfolge an: 1, 4, 7, 10, 13, … Finden Sie das 15. Glied der Zahlenfolge?*42*43*44*45*2*Der Unterschied zwischen den Begriffen ist leicht zu erkennen: 3 (Einheit)
+
+Der erste Begriff ist: 1
+
+Der 15. Term ist: 1 + 3 x (15 - 1) = 43*11#164*Ein Buch hat 250 Seiten, beginnend mit Nummer 1. Wie viele Ziffern hat die Seitenzahl des Buches?*642*643*644*645*1*giaithich*12#165*Eine Gruppe pflanzt durchschnittlich alle 3 Tage 912 Kiefern. Wie viele Kiefern kann diese Gruppe in 5 Tagen pflanzen?*1517*1518*1519*1520*4*giaithich*12#166*Anna ist 5 Jahre älter als Peter. Peter ist 3 Jahre älter als Melvin. Ihr Gesamtalter beträgt 32. Wie alt ist Peter?*9*10*11*12*2*Anna ist 5 Jahre älter als Peter
+
+Melvin ist 3 Jahre jünger als Peter
+
+Das Gesamtalter der 3-Jährigen beträgt 32 Jahre.
+
+Schlussfolgerung: Das dreifache Alter von Peter entspricht 32 - 5 + 3 = 30 (Alter)
+
+Peters Alter beträgt also: 30: 3 = 10 (Alter)*12#167*Finden Sie A, wenn A 3 kleiner als der Durchschnitt von 48 ist; 55; 29 und A. Der Wert von A ist…*30*40*50*60*2*Laut Artikel haben wir: 48 + 55 + 29 + A = 4 (A + 3)
+132 + A = 4 x A + 12
+4 x A - A = 132 - 12
+3 x A = 120
+A = 120: 3 = 40*12#168*Finden Sie B, wenn B 34 mehr als der Durchschnitt von 35 ist; 40; 56 und B. Der Wert von B ist…*90*80*89*98*3*Laut Artikel haben wir: 35 + 40 + 56 + B = 4 (B - 34)
+131 + B = 4 x B - 136
+4 x B - B = 131 + 136
+3 x B = 267
+B = 267: 3 = 89*12#169*Schauen Sie sich diese Sequenz an: 2; 6; 12; 20; ... Welche Zahl soll als nächstes kommen?*30*40*45*51*1*Wir bemerken: 2 = 1 x 2; 6 = 2 x 3; 12 = 3 x 4; 20 = 4 x 5.
+
+Der nächste Term ergibt sich aus: 5 x 6 = 30*12#170*Der Durchschnitt von 35, 40, 41, m und 50 beträgt 45. Finden Sie den Wert von m?*56*57*58*59*4*Der Durchschnitt der fünf Zahlen beträgt: 45. Insgesamt: Die Summe der fünf Zahlen beträgt: 45 x 5 = 225
+
+Der Wert von m ist: 225 - (35 + 40 + 41 + 50) = 59*12#171*Der Durchschnitt von A, B und C beträgt 48 und A ist 8 kleiner als die Summe von B und C. Der Wert von A beträgt…*67*68*69*70*2*Der Mittelwert aus drei Zahlen ist: 48. Schlussfolgerung: Die Summe der drei Zahlen ist: 48 x 3 = 144
+
+Die Summe aus B und C minus A beträgt: 8
+
+Zahl A ist: (144 - 8): 2 = 68*12#172*Der Durchschnitt zweier Zahlen beträgt 92 und ihre Differenz beträgt 6. Welchen Wert hat die kleinere Zahl?*89*98*99*100*1*Der Mittelwert zweier Zahlen ist: 92. Schlussfolgerung: Die Summe zweier Zahlen ist: 92 x 2 = 184
+Die Wirkung zweier Zahlen ist: 6
+Die Zahl ist: (184 - 6): 2 = 89*12#173*Das Produkt zweier Zahlen ist 2364. Das Produkt aus dem Doppelten der ersten Zahl und dem Dreifachen der zweiten Zahl ist…?*14182*14183*14184*14185*3*Die Summe der ersten beiden Zeiten mit der dreifachen zweiten Zahl beträgt: 2364 x 2 x 3 = 14184*12#174*Das Verhältnis zweier Zahlen ist 2 : 4 und ihre Summe ist 270. Die größere Zahl ist…*170*180*190*200*2*Das Verhältnis zweier Zahlen beträgt: 2:4
+
+Die Summe der beiden Zahlen ist: 270
+
+Groß ist: 270: 6 x 4 = 180*12#175*Die Summe aus Nenner und Zähler eines Bruchs beträgt 121 und der Bruch ist gleich 4/7. Finden Sie den Nenner des Bruchs?*77*88*99*110*1*Die Summe aus Nenner und Zähler beträgt: 121
+
+Das Verhältnis zwischen Zähler und Nenner beträgt 4:7
+
+Nenner ist 121: 11 x 7 = 77*12#176*Die Summe aus der kleinsten 3-stelligen Zahl und 241 ist…*340*341*342*343*2*gta*12#177*Die Summe zweier aufeinanderfolgender ungerader Zahlen ist 248. Die kleinere Zahl ist…*120*121*122*123*4*Die Summe zweier aufeinanderfolgender ungerader Zahlen beträgt: 248
+
+Ihre Wirkung ist: 2
+
+Kleine Zahlen: 248 - 2: 2 = 123*12#178*Die Summe zweier Zahlen ist gleich 77. Wenn die erste Zahl mit 8 und die zweite mit 6 multipliziert wird, sind die beiden Produkte gleich. Die größere dieser Zahlen ist…*44*55*66*77*1*Die Summe der beiden Zahlen ist: 77
+
+Das Verhältnis der beiden Zahlen beträgt 8:6 = 4:3
+
+Die große Zahl ist: 77: 7 x 4 = 44*12#179*Die Summe zweier Zahlen ist die größte 3-stellige Zahl und ihre Differenz ist die größte 2-stellige Zahl. Die größere Zahl ist...*546*547*548*549*4*Die größte dreistellige Zahl ist: 999
+
+Die größte zweistellige Zahl ist: 99
+
+Gemäß der Ausgabe, die wir haben: Die Summe der beiden Zahlen beträgt 999 und ihre Differenz beträgt 99
+
+Große Zahlen sind: (999 + 99): 2 = 549*12#180*Welches ist die größte zweistellige Zahl, die durch 2, 3 und 4 teilbar ist?*95*96*97*98*2*gta*12#181*Wie viele dreistellige gerade Zahlen?*448*449*450*451*3*gta*12#182*Wie viele natürliche Zahlen sind nicht größer als 2016?*2016*2017*2018*2019*2*gta*12#183*Wenn 2a456b durch 2 teilbar ist; 3; 5 und 9 dann a + b = ...?*1*2*3*4*2*Durch 5 teilbar, wobei die letzte Ziffer 0 oder 5 ist
+
+Da die Ziffer mit der letzten Ziffer 5 nicht durch 2 teilbar ist, kann b nur eine Null sein
+
+Wir haben: 2 + 4 + 5 + 6 + 0 = 17
+
+Abgeleitet: a = 1 (weil 17 + 1 = 18 durch 9 teilbar ist)
+
+Daher: a + b = 1 + 0 = 1*12#184*In der Klasse sind 24 Kinder, 10 Kinder haben eine Schwester und 16 Kinder haben einen Bruder. Mai, Lan und Trang haben keinen Bruder und keine Schwester. Wie viele Kinder in dieser Klasse haben sowohl einen Bruder als auch eine Schwester?*5*8*9*11*1*Mit Ausnahme von 3 Mai, Lan und Trang ohne Geschwister sind die übrigen Schüler: 24 - 3 = 21 (Schüler)
+
+Anzahl Studierende ohne Brüder: 21 - 10 = 11 (Student)
+
+Anzahl Schüler ohne Schwestern: 21 - 16 = 5 (Schüler)
+
+Anzahl der Studierenden mit Geschwistern: 21 - 11 - 5 = 5 (Student)*13#185*Miken kaufte 17 Stifte und musste 51 Dollar bezahlen. Wie viel kosten 30 Stifte der gleichen Art?*97 $*87 $*80 $*90 $*4*giaithich*13#186*Maria ist 8 Jahre alt. Ihr Vater ist fünfmal so alt wie Mary. Wie alt ist ihr Vater?*30*40*50*60*2*8 x 5 = 40*13#187*Die größte vierstellige Zahl, die durch 15 teilbar ist, ist...*9995*9998*9990*9999*3*Teilbar durch 15 ist teilbar durch 3 und 5.
+
+Von den vier vorgeschlagenen Programmen sind nur 9990 zufriedenstellend*13#188*Die letzte Ziffer des Produkts 1 x 5 x 7 x 9 x 11 x … x 99 ist…*4*5*6*7*2*Alle oben genannten Begriffe sind alle seltsam. Fügen Sie Nummer 5 hinzu
+
+Alle ungeraden Zahlen haben, wenn sie mit 5 multipliziert werden, eine Ziffer, die auf 5 endet
+
+Die oberste Ziffer mit der letzten Ziffer ist also 5*13#189*Die Länge eines Rechtecks ​​beträgt 400 m. Die Breite beträgt 3/5 der Länge. Wie groß ist die Fläche in Quadratmetern eines Rechtecks?*9375*37500*7638*4350*1*Die Summe aus Breite und Länge beträgt: 400: 2 = 200 (m).
+
+Das Verhältnis zwischen Breite und Länge beträgt: 3:5
+
+Die Breite beträgt: 200: (3 + 5) x 3 = 75 (m)
+
+Die Länge beträgt 200 - 75 = 125 (m)
+
+Die rechteckige Fläche beträgt: 125 x 75 = 9375 (m2)*13#190*Die Summe zweier Brüche beträgt 13/15 und ihre Differenz beträgt 1/5. Welchen Wert hat der größere Bruch?*15/8*19.8*45888*45884*4*Die Summe der beiden Zahlen ist: 13/15
+
+Der Effekt zweier Zahlen ist: 1/5
+
+Groß ist: (13/15 + 1/5): 2 = 16/15: 2 = 8/15*13#191*Die Summe zweier Zahlen ist 359 und dazwischen liegen 54 gerade Zahlen. Die größere Zahl ist…*234*235*236*109*1*Die Summe der beiden Zahlen ist: 359
+
+Die Wirkung der beiden Zahlen ist: 54 x 2 + 1 = 109
+
+Große Zahlen sind: (359 + 109): 2 = 234*13#192*Was ist 3/26 von 494?*55*56*57*58*3*gta*13#193*6 Personen erledigen eine Aufgabe in 3 Tagen. Wie viele Personen werden benötigt, um die gleiche Aufgabe in 2 Tagen zu erledigen?*7*8*9*18*3*Die Anzahl der für die Fertigstellung der Arbeiten erforderlichen Tage beträgt: 6 x 3 = 18 (Arbeitstage)
+
+Die Anzahl der Personen, die zur Erledigung des Auftrags in 2 Tagen erforderlich sind, beträgt: 18: 2 = 9 (Person)*13#194*Ein LKW kann nur 20 Pakete Reis transportieren. Jede Packung enthält 50 kg Reis. Wenn der LKW ein 80-kg-Paket transportiert, wie viele Pakete kann der LKW maximal transportieren?*10*11*12*13*3*Die Anzahl der zu transportierenden LKW beträgt 20 x 50 = 1000 (kg).
+
+Die Anzahl der 80-kg-Säcke, die der LKW transportieren kann, beträgt: 1000: 80 = 12,5 (Sack)
+
+Also: Die Anzahl der 80-kg-Säcke Reis, die LKWs transportieren können, beträgt bis zu 12 (Sack)*13#195*Hoa kaufte zwei Dutzend Tischtennisbälle und musste 48 Dollar bezahlen. Lan kauft 8 gleiche Exemplare. Wie viel muss Lan dann an den Verkäufer zahlen?*23*15*24*16*4*Der Tennisball, den Hoa gekauft hat, war: 12 x 2 = 24 (links)
+
+Die Kosten für einen Tennisball betragen: 48: 24 = 2 ($)
+
+Der Geldbetrag, der beim Kauf von 8 Tennisbällen gezahlt wird, beträgt: 2 x 8 = 16 ($)*13#196*Wie viele Ziffern 1 benötigen Sie, um alle Zahlen von 1 bis 100 aufzuschreiben?*20*21*22*23*2*Die Zahl 1 in der Einheitszeile ist 10-stellig
+
+Die Zahl 1 in der Zehnerzahl ist 10-stellig
+
+Die Zahl 1 in Hundertern ist: 1 Ziffer
+
+Die Summe der Ziffern 1, die zum Schreiben aller Zahlen 1 bis 100 benötigt werden, ist: 10 + 10 + 1 = 21 (Zahl)*13#197*Wie viele verschiedene zweistellige Zahlen gibt es?*81*82*83*84*1*Zweistellige Zahlen sind: (99 - 10) + 1 = 90 (Zahl)
+
+Wir haben: Dieselbe zweistellige Zahl besteht aus 9 Ziffern (11, 22, 33, ..., 99)
+
+Die zweistelligen Zahlen sind: 90 - 9 = 81 (Zahl)*13#198*Wie viele verschiedene zweistellige Zahlen von 10 bis 69?*51*52*53*54*4*Zweistellige Zahlen zwischen 10 und 69 sind: (69 - 10) + 1 = 60 (Zahl)
+
+Wir haben: Die zweistelligen Zahlen von 10 bis 69 sind dasselbe wie 6 Zahlen (11, 22, 33, 44, 55, 66).
+
+Zweistellige Zahlen zwischen 10 und 69 sind unterschiedlich: 60 - 6 = 54 (Zahl)*13#199*Wie viele ungerade Zahlen von 10 bis 60?*24*25*26*27*2*gta*13#200*Schauen Sie sich diese Sequenz an: 2; 11; 36; 85; … Welche Zahl soll als nächstes kommen?*133*144*155*166*4*gta*13#201*Mark hatte zunächst 45 Bücher. Er gab 1/5 seiner Bücher seinem besten Freund. Dann gab er seinem Bruder ein Drittel der restlichen Bücher. Wie viele Bücher hat er jetzt?*9*36*24*12*3*Die Anzahl der Bücher, die Mark dir gegeben hat, beträgt: 45: 5 = 9 (Band)
+
+Die Anzahl der Bücher, die nach der Übergabe noch übrig sind, beträgt: 45 - 9 = 36 (Volumen)
+
+Die Anzahl der Bücher, die Markus seinem Bruder gab, betrug: 36: 3 = 12 (Band)
+
+Die Anzahl der verbleibenden Bücher beträgt: 36 - 12 = 24 (Buch)*13#202*Auf der linken Seite der Vine Street sind alle Häuser mit den ungeraden Zahlen von 23 bis 105 nummeriert. Auf der rechten Seite sind alle Häuser mit den geraden Zahlen von 24 bis 108 nummeriert. Wie viele Häuser gibt es in der Vine Street?*85*86*42*43*1*Anzahl der Häuser mit Hausnummer ist: (105 - 23): 2 + 1 = 42
+
+Anzahl der Häuser mit gerader Anzahl an Häusern ist: (108 - 24): 2 + 1 = 43
+
+Die Gesamtzahl der Häuser beträgt: 42 + 43 = 85*13#203*Der Durchschnitt zweier Zahlen beträgt 234 und ihre Differenz beträgt 106. Welchen Wert hat die kleinere Zahl?*180*181*182*183*2*Die Summe der beiden Zahlen ist: 234 x 2 = 468
+
+Die Wirkung zweier Zahlen ist: 106
+
+Die kleineren Zahlen sind: (468 - 106): 2 = 181*13#204*Der Preis für 2 Kilogramm Orangen beträgt 14 Dollar. Was kosten 12 Kilogramm Orangen?*7*80*84*90*3*Die Kosten für 1 kg Nocken betragen 14:2 = 7 (Dollar)
+
+Der Preis für 12 kg Orange beträgt: 7 x 12 = 84 (Dollar)*13#205*Der Preis für 5 Bleistifte beträgt 9 Dollar. Wie viel muss Frau Emily für 10 Bleistifte bezahlen?*1,8*18*180*19*2*Der Preis für einen Bleistift beträgt 9:5 = 1,8 (Dollar).
+
+Der Preis für 10 Pence-Bleistifte beträgt: 1,8 x 10 = 18 (Dollar)*13#206*Die letzte Ziffer des Produkts: 1 x 2 x 3 x 4 x … x 11 ist …?*0*2*5*9*1*Die obige Nummer ist 5-stellig
+Zahl 5 multipliziert mit einer geraden Zahl ergibt eine nullstellige Zahl
+Also: 1 x 2 x 3 x 4 x x 11 hat die Endziffer 0*14#207*Der kleinste gemeinsame Nenner der beiden Brüche 2/21 und 3/28 ist…*48*82*28*84*4*Wir haben: 21 = 7 x 3
+
+28 = 7 x 4
+
+Also: Der kleinste gemeinsame Nenner ist: 7 x 3 x 4 = 84*14#208*Das Verhältnis zweier Zahlen ist 1:5 und ihre Summe ist 174. Die größere Zahl ist… ?*144*145*146*147*2*Das Verhältnis der beiden Zahlen beträgt 1:5
+
+Ihre Summe beträgt: 174
+
+Die Summe gleicher Teile ist: 1 + 5 + 6 (Teil)
+
+Also: Große Zahlen sind: 174: 6 x 5 = 145*14#209*Die Summe von fünf aufeinanderfolgenden natürlichen Zahlen ist 4215. Die kleinste Zahl ist…?*839*840*841*842*3*gta*14#210*Die Summe aus zwei Nennern und Zählern eines Bruchs beträgt 95 und der Bruch ist gleich 2/3. Finden Sie den Zähler des Bruchs?*28*38*48*58*2*Die Summe aus Nenner und Zähler eines Bruchs ergibt 95
+Das Verhältnis zwischen ihnen beträgt 2/3
+Die Summe der gleichen Teile ist: 2 + 3 = 5 (Teil)
+Der Zähler ist: 95: 5 x 2 = 38*14#211*Die Summe zweier aufeinanderfolgender gerader Zahlen ist 850. Die kleinere Zahl ist…?*424*425*426*427*1*Kleine Zahlen sind: (850 - 2): 2 = 424*14#212*Der Wert der Ziffer 5 in 345261 ist…?*500*5000*7000*5*2*gta*14#213*In einer Schachtel befinden sich 35 blaue, 42 gelbe und 27 schwarze Murmeln. Jack schließt die Augen und holt eine Murmel aus dem Wald. Wie viele Murmeln muss Jack mindestens ziehen, damit es 1 blaue Murmel gibt?*60*70*80*90*2*Die Mindestanzahl an Bällen, die Jack bekommen muss, um sicher einen blauen Ball zu bekommen, ist 42 + 27 + 1 = 70*14#214*Tom ist 9 Jahre alt und seine Mutter ist 35 Jahre alt. In wie vielen Jahren wird seine Mutter dreimal so alt sein wie Tom?*1*2*3*4*4*Alterseffekt der Eltern: 35 - 9 = 26 (Alter)
+Wenn das Alter der Mutter dreimal so groß ist wie das des Nachwuchses, beträgt die Gleichheit des gebärfähigen Alters: 3 - 1 = 2 (Teil)
+Toms Alter betrug damals: 26:2 = 13 (Alter)
+Die Anzahl der Jahre, die benötigt werden, um das Dreifache des Alters der Mutter zu erreichen, beträgt: 13 - 9 = 4 (Jahre)*14#215*Zwei Bücher und drei Stifte kosten 35 $. Zwei Bücher und sechs Stifte kosten 50 Dollar. Wie viel kostet jeder Stift?*2*3*4*5*4*Wir haben: 2 Bücher und 3 Stifte für 35 $; 2 Bücher und 6 Stifte kosten 50 $. Abgeleitet: Preis für 3 Stifte: 50 - 35 = ($) 15
+
+Der Preis beträgt 1:35:3 = ($) 5*14#216*Was ist der Rest, wenn 1 + 11 + 111 + … + 1111111111 durch 9 geteilt wird?*1*2*3*4*1*Die Summe hat 10 Terme und alle diese Terme haben die Endziffer 1
+10 Ziffern 1 plus = 10
+10 dividiere 9 Überschuss 1*14#217*Eine Schachtel enthält einige Bälle, das Verhältnis zwischen roten und blauen Bällen beträgt 2:3 und das Verhältnis zwischen blauen und gelben Bällen beträgt 6:1. Wie ist das Verhältnis zwischen roten und gelben Bällen?*0,044444444*0,167361111*0,04375*0,125694444*2*Wir haben: Das Verhältnis zwischen der roten Kugel und der blauen Kugel beträgt 2:3
+
+Das Verhältnis zwischen der Anzahl der Kugeln und der gelben Kugel beträgt 6:1
+
+Unterlegen: Das Verhältnis zwischen der roten Kugel und der gelben Kugel beträgt: 2 x 6:3 = 4:1*14#218*Finden Sie den Durchschnitt von 82/4 und 146/4?*50/2*59/4*57/2*58/3*3*gta*14#219*Gegeben sind 4 Brüche: 2/3; 5/6; 3030/9090; 59/60. Der größte Anteil ist...*45691*45783*59/60*3030/9090*3*giaithich*14#220*Gegeben sei die Zahlenfolge 4; 7; 10; 13; … Finden Sie die 15. Ziffer der Zahlenfolge?*45*46*47*48*2*Wir haben: 7 - 4 = 3; 10 - 7 = 3. Die Definition des Abstands der Sequenz lautet: 3
+
+Der Wert des 15. Termes ist: (15 - 1) x 3 + 4 = 46*14#221*Wie viele gerade Zahlen von 210 bis 713?*249*250*251*252*4*gta*14#222*Wenn 123m durch 8 teilbar ist, ermitteln Sie den möglichen Wert von m?*0*1*2*3*3*gta*14#223*Welche Zahl der folgenden Zahl ist durch 6 teilbar?*2016*2017*2018*2019*1*Durch 6 teilbar ist eine Zahl, die sowohl durch 2 als auch durch 3 teilbar ist
+
+Nr. 2016 erfüllt die oben genannten Bedingungen*14#224*Schauen Sie sich die folgende Serie an: 3/4; 5/6; 21/20; 8/7; 34/35; 56/49. Wie viele Brüche größer als 1 gibt es in der Reihe?*1*2*3*4*3*Die Anzahl der Brüche mit einem Wert größer als 1 beträgt 3, bestehend aus: 21/20; 8/7 und 56/49*14#225*Mike hat 50 $. Er beabsichtigt, 5 Schulhefte zu kaufen, jedes Buch kostet 5 $ und einige Bleistifte, jeder Bleistift kostet 3 $. Wie viele Bleistifte kann er maximal kaufen?*5*6*7*8*4*Der Betrag, mit dem Mike 5 Bücher gekauft hat, beträgt: 5 x 5 = 25 ($)
+Mikes verbleibender Betrag beträgt: 50 x 25 = 25 ($)
+Der verbleibende Betrag, den Mike mit der Bleistiftanzahl kaufen kann, beträgt: 25 x 3 = 8,33 (Baum)
+Der Bleistift, den Mike kaufen kann, kostet 8 Bäume*14#226*An der Tafel sind mehrere verschiedene Zahlen notiert. Genau zwei davon sind durch 3 teilbar und genau 9 davon sind durch 13 teilbar. Sei M die größte dieser Zahlen. Was ist der kleinstmögliche Wert von M?*130*140*150*160*1*giaithich*14#227*Der Unterschied zwischen Nenner und Zähler des Bruchs 145/941 ist...?*793*794*795*796*4*Die Wirkung von Nennern und Zahlen ist: 941 - 145 = 796*14#228*Die Differenz zweier Zahlen beträgt 189. Ihr Verhältnis beträgt 2/5. Finden Sie diese beiden Zahlen.*126; 310*121; 318*176; 310*126; 315*4*Die Wirkung zweier Zahlen ist: 189
+
+Das Verhältnis zwischen ihnen beträgt: 2/5
+
+Die Gleichung gleicher Teile lautet: 5 - 2 = 3 (Teil)
+
+Kleine Zahlen sind: 189: 3 x 2 = 126
+
+Große Zahlen sind: 189 + 126 = 315*15#229*Das Produkt aus 4/3 und 5/6 ist…?*45939*45910*45911*45878*1*gta*15#230*Die Summe aus zwei Nennern und Zählern des Bruchs 243/167 ist …?*400*410*420*430*2*Die Summe der Nenner und Zähler der Brüche 243/167 beträgt: 167 + 243 = 410*15#231*Die Summe zweier Zahlen ist 156. Die erste Zahl ist 5/7, die zweite Zahl. Welchen Wert hat die kleinere Zahl?*12*60*65*120*3*Die Summe der beiden Zahlen ist: 156
+
+Das Verhältnis zwischen ihnen beträgt: 5/7
+
+Die Summe der gleichen Teile ist: 5 + 7 = 12 (Teil)
+
+Kleine Zahlen: 156: 12 x 5 = 65*15#232*In der Box sind 30 Bälle, 1/3 davon sind rot, 3/15 davon sind blau, der Rest ist gelb. Wie viele gelbe Bälle sind in der Schachtel?*14*15*16*17*1*Anzahl der roten Kugeln: 30: 3 = 10 (links)
+
+Die Kugelnummer ist blau: 30: 15 x 3 = 6 (links).
+
+Die Anzahl der gelben Kugeln beträgt: 30 - 10 - 6 = 14 (links).*15#233*In Kiste A befinden sich 56 Äpfel und in Kiste B 64 Äpfel. Wie viele Äpfel müssen von Kiste B in Kiste A umgefüllt werden, damit die Anzahl der Äpfel in Kiste A dreimal so groß ist wie die Anzahl der Äpfel in Kiste B?*31*32*33*34*4*giaithich*15#234*Welcher der folgenden Brüche ist gleich 36/162?*19998*20059*21885*18568*2*gta*15#235*Schreiben Sie alle 4-stelligen Zahlen vom kleinsten zum größten. Was ist die 241. 4-stellige Zahl?*1240*1241*1242*1243*1*Die 241. Stelle der vierstelligen Zahl ist: 999 + 241 = 1240*15#236*3m 30cm = … dm ?*33*330*3,3*303*1*gta*15#237*13 Säcke Ticky-Reis und 17 Säcke gewöhnlicher Reis wiegen 750 kg. Das Gewicht jedes Sacks ist gleich. Wie viele Kilogramm sind in jedem Sack?*23*24*25*26*3*Die Anzahl der in jedem Beutel enthaltenen Reis beträgt: 750 (13 + 17) = 25 (kg)*15#238*144 m Stoff wurden in Segmente geschnitten, jedes Segment ist 9 m lang. Wie viele Segmente gibt es?*13*14*15*16*4*Die Anzahl der Stoffe beträgt: 144: 9 = 16*15#239*Ein Bauer erntete auf dem ersten Feld eine Tonne Tomaten. Auf dem zweiten Feld erntete er eine Menge Tomaten, die doppelt so schwer war wie auf dem ersten Feld. Wie viele Kilogramm Tomaten hat er auf 2 Feldern geerntet?*1000*1500*2000*3000*4*Der Tomatenbauer hat: 1 + 1 x 2 = 3 (Tonne)
+
+Tauschen Sie 3 Tonnen = 3000 kg*15#240*Berechnen Sie: 1/2 + 1/4 + 1/8 + 1/16 + 1/32 + 1/64 + 1/128 =...*120/121*121/120*127/120*127/128*4*gta*15#241*Berechnen Sie: 40dm x 25 = … hm ?*1*2*3*4*1*gta*15#242*Umrechnen: 8kg 6g = … g ?*86*806*8006*860*3*gta*15#243*Fünf Studierende absolvieren eine Prüfung. Die Noten von vier Schülern liegen bei 41, 44, 46 und 49. Die durchschnittliche Punktzahl von fünf Schülern entspricht der Punktzahl des fünften Schülers. Finden Sie die Punktzahl des fünften Schülers?*44*45*46*47*2*Laut dem Artikel, den wir haben: Die durchschnittliche Punktzahl des Studentenjahres entspricht der durchschnittlichen Punktzahl des fünften Studenten. Minderwertigkeit: Die durchschnittliche Punktzahl des fünften Schülers entspricht dem Durchschnitt der übrigen vier Schüler und beträgt: (41 + 44 + 46 + 49): 4 = 45*15#244*Gegebener Bruch 29/47. Wenn sowohl sein Nenner als auch sein Zähler um X Einheiten verringert werden, beträgt der neue Bruch 9/15. Finden Sie den Wert von X?*1*2*3*4*2*giaithich*15#245*Die Fläche eines Feldes beträgt 1 ha/10. Mit diesem Wissen erhält ein Bauer 50 kg Reis pro 100 m2. Wie viele Kilogramm Reis erhält der Bauer auf diesem Feld?*509*519*500*515*3*Veränderung 1ha / 10 = 1000m2
+
+Die Anzahl der geernteten Reisbauern pro Quadratmeter beträgt: 50: 100 = 0,5 (kg)
+
+Die Anzahl der geernteten Bauern beträgt: 0,5 x 1000 = 500 (kg)*15#246*Der Abstand zwischen A und B beträgt tatsächlich 37 m. Wie groß ist die Entfernung auf einer Karte im Maßstab 1:500?*2/5 mm*2/5cm*74cm*74mm*4*Geändert 37m = 3700cm
+
+Der Abstand von Punkt A zu Punkt B auf der Karte im Maßstab 1:500 beträgt: 3700:500 = 7,4 (cm)
+
+Änderung 7,4 cm = 74 mm*15#247*Die Summe zweier aufeinanderfolgender ungerader Zahlen ist 3712. Finden Sie die größere Zahl?*1854*1855*1856*1857*4*Große Zahlen sind: (3712 + 2): 2 = 1857*15#248*Im Mai gibt es 4 Donnerstage und 5 Mittwoche. An welchem ​​Wochentag war in diesem Jahr der 15. Mai?*Montag*Dienstag*Samstag*Sonntag*1*giaithich*15#249*Vom Anfang bis zum Ende der Straße stehen in regelmäßigen Abständen 61 Bäume. Der Abstand zwischen jeweils zwei aufeinanderfolgenden Bäumen beträgt 3 m. Wie lang ist die Straße?*180 (km)*180 (DM)*180 (cm)*180 (m)*4*Da an beiden Enden der Straße Bäume stehen, beträgt die Anzahl der Entfernungen: 61 - 1 = 60 (ungefähr)
+
+Die Straßenlänge beträgt: 3 x 60 = 180 (m)*15#250*Was ist der Unterschied zwischen der größten und der kleinsten 4-stelligen Zahl, die jeweils aus unterschiedlichen Ziffern besteht?*8851*8852*8853*8854*3*Die größte Zahl mit 4 verschiedenen Ziffern ist: 9876
+
+Die kleinste vierstellige Zahl ist: 1023
+
+Ihre Wirkung ist: 9876 - 1023 = 8853*15#251*Eine 6-stellige Zahl beginnt mit der Ziffer 8. Die Zahl ist durch 9 teilbar und alle Ziffern der Zahl sind unterschiedlich. Was ist der mögliche kleinste Wert dieser Zahl?*801234*801235*801236*801237*1*giaithich*16#252*Ein Auto verbraucht alle 100 km 12 l Benzin. Wie viele Liter Benzin verbraucht das Auto, wenn es eine Strecke von 250 km zurücklegt?*20*30*40*50*2*Um 1 km weit zu kommen, benötigt das Auto einen Liter Benzin: = 12: 100 = 0,12 (Liter)
+
+Um 250 km zurückzulegen, benötigen Autos einen Liter Benzin: = 0,12: 250 = 30 (Liter)*16#253*Ein Tank enthielt 414l Honig, von dieser Menge wurde mitgenommen. Wie viele Liter Honig bleiben übrig?*273*274*275*276*4*Der verbleibende Honig ist: 414: 3 x 2 = 276 (Liter)*16#254*Amandas Durchschnittsnote für die ersten vier Tests betrug 88. Wie viele Punkte erzielte sie für den fünften Test, um ihre Durchschnittsnote auf 90 zu verbessern?*96*97*98*99*3*giaithich*16#255*Ein Elefant wiegt 5 Tonnen, ein Pferd wiegt 250 kg. Wie oft ist der Elefant so schwer wie das Pferd?*10*20*30*31*2*5 Tonnen wechseln = 5000 kg
+
+Der Elefant ist schwerer als das Pferd, die Zahl ist: 5000: 250 = 20 (mal)*16#256*Berechnen Sie: 4m 40cm + 3m 20cm = ....cm ?*780*770*760*790*3*gta*16#257*Berechnen Sie: 8m 27dm - 2m 4cm = .... cm ?*863*864*865*866*4*gta*16#258*Finden Sie den Wert von a, sodass 2/3 < a/9 < 5/6 ist.*7*8*9*10*1*2/3 = 12/18, a / 9 = 2a / 18, 5/6 = 15/18
+
+Abgeleitet: 12 <2a <15
+
+Der Wert von a ist 7*16#259*Finden Sie den Wert von x, sodass 216 m/x = 2400 cm ist.*7*8*9*10*3*Änderung 216m = 21600cm
+
+Der Wert von x ist: 21600: 2400 = 9*16#260*Gegebener Bruchteil 79/184. Wenn sowohl sein Nenner als auch sein Zähler um M Einheiten erhöht werden, beträgt der neue Bruch 112/252. Der Wert von M ist .... ?*3*4*5*6*3*giaithich*16#261*Schauen Sie sich diese Sequenz an: 0; 2; 4; 6; 12; 22; 
+Welche Zahl soll als nächstes kommen?*30*40*54*45*2*Der aktuelle Tag lautet: 6 = 0 + 2 + 4
+Der aktuelle Tageswert lautet: 12 = 2 + 4 + 6
+Vậy quy luật của dãy số là: Mỗi số hạng (kể từ số hạng thứ tư) bằng tổng của ba số hạng đứng liền trước nó
+Der Tageswert beträgt: 6 + 12 + 22 = 40*16#262*Die durchschnittliche Masse einer Gruppe von Kindern beträgt 47 kg. Bei der Anzahl der Kinder handelt es sich um Mädchen, deren durchschnittliches Gewicht 39 kg beträgt. Finden Sie die durchschnittliche Masse der Jungen?*49 kg*50 kg*51 kg*52 kg*4*Das Gewicht von 13 beträgt: 47 x 13 = 611 (kg)
+
+Das Gewicht von 5 Freundinnen beträgt: 39 x 5 = 195 (kg)
+
+Gewicht von 8 männlichen Freunden: 611 - 195 = 416 (kg)
+
+Das Durchschnittsgewicht eines Mannes beträgt: 416: 8 = 52 (kg)*16#263*Die erste Kiste enthält 350 kg Erdbeeren. Die zweite Kiste enthält 50 kg mehr Erdbeeren als die erste. Wie viele Kilogramm Erdbeeren enthalten die beiden Kartons?*750*751*752*753*1*Die Anzahl der Beeren in der zweiten Kiste beträgt: 350 + 50 = 400 (kg)
+
+Die Anzahl der Beeren in den beiden Kisten beträgt: 350 + 400 = 750 (kg)*16#264*Die Summe von A und B beträgt 598. Die Summe von B und C beträgt 374. Die Summe von C und D beträgt 300. Finden Sie die Summe von A und D.*522*523*524*525*3*Die Summe aus A, B, C und D beträgt: 598 + 300 = 898
+
+Die Summe von A und D beträgt: 898 - 374 = 524*16#265*Es gibt 9 Kisten Äpfel. Jede Kiste enthält 35 kg. Wenn wir 172 kg aus diesen Kisten herausnehmen, wie viele Kilogramm Äpfel bleiben dann übrig?*100*143*144*145*2*9 Kisten mit der Anzahl der Äpfel sind: 35 x 9 = 315 (kg)
+
+Die Anzahl der Äpfel, die nach der Ernte von 172 kg übrig bleiben, beträgt: 315 - 172 = 143 (kg)*16#266*Es sind 72 Kilogramm Reis, die zu gleichen Teilen auf drei Säcke verteilt sind. Wie viele Kilogramm Reis enthält jeder Beutel?*20*23*24*26*3*72 : 3 = 24 (kg)*16#267*Eine Lehrerin hat eine Tüte Süßigkeiten für ihre Schüler. Wenn jeder Schüler 4 Süßigkeiten erhält, beträgt die verbleibende Anzahl an Süßigkeiten 4. Wenn jeder Schüler 5 Süßigkeiten erhält, sind es weniger als 20 Süßigkeiten. Wie viele Studierende gibt es?*20*21*22*24*4*Rufen Sie die Studentennummern a an
+
+Dem Artikel zufolge haben wir:
+
+4 x a + 4 = 5 x a - 20
+
+5 x a - 4 x a = 20 + 4
+
+A = 24*16#268*Anna hatte zunächst 15 Äpfel. Sie gab ihrem Bruder ein Fünftel ihrer Äpfel und ihrer jüngeren Schwester ein Drittel ihrer Äpfel. Wie viele Äpfel hat sie jetzt?*7*9*11*12*1*Anna gab ihm ihre Apfelnummer: 15: 5 = 3 (Frucht)
+Anna gibt ihrer Schwester die Apfelzahl: 15: 3 = 5 (Frucht)
+Die Gesamtzahl der Äpfel, die sie gab, war: 3 + 5 = 8 (Früchte)
+Die Anzahl der Äpfel, die sie übrig hat, beträgt: 15 - 8 = 7 (Früchte)*16#269*Berechnen Sie: 19/2 - 15/4 = ...?*5,7*4,79*5,79*5,75*4*gta*16#270*Umrechnen: 2dm 6cm = …m ?*0,26*1,26*2,26*3,26*1*gta*16#271*Finden Sie X, so dass X Tonnen + 35 kg = 935 kg?*91*19*1,9*0,9*4*gta*16#272*Gegeben sei eine Zahlenfolge: 2; 5; 7; 9; 2; 5; 7; 9; 2; 5; … Wie groß ist die Summe der ersten 60 Zahlen?*344*345*346*347*2*Wir sehen, dass die obige Folge die Regel von vier Zahlen hat: 2; 5; 7; 9 wird im nächsten Zyklus wiederholt
+
+Die Summe der vier Zahlen ist: 2 + 5 + 7 + 9 = 23
+
+Die vierstellige Zahl ist: 60: 4 = 15 (Gruppe)
+
+Die Summe der Reihe beträgt: 23 x 15 = 345*16#273*Wie viele dreistellige Zahlen sind durch 35 teilbar?*26*35*48*51*1*Die kleinste durch 35 teilbare 3-Ziffer ist: 105
+
+Die größte durch 35 teilbare dreistellige Zahl ist 980
+
+Die durch 35 teilbare 3-stellige Zahl ist: (980 - 105): 35 + 1 = 26*16#274*Wie viele Zahlen gibt es, wenn man durch 9 dividiert, wobei der Quotient und der Rest gleich sind?*6*7*8*9*4*Teiler für 9 haben den gleichen Quotienten und Saldo wie 0, 10, 20, 30, 40, 50, 60, 70, 80.*16#275*Welche Ziffer befindet sich in 45,357 an der Hundertstelstelle?*4*5*3*7*2*gta*17#276*Welche Ziffer befindet sich in 172,641 an der Tausendstelstelle?*1*7*2*6*1*gta*17#277*Welche Ziffer steht in 172.641 an der Zehntelstelle?*1*7*2*6*4*gta*17#278*Welche Ziffer befindet sich in 941.046 an der Zehnerstelle?*9*1*4*0*3*gta*17#279*Die Summe von sieben aufeinanderfolgenden natürlichen Zahlen ist 4725. Die größte Zahl ist…*675*676*677*678*4*Schlussfolgerung: Der vierte Term entspricht dem Mittelwert plus der oben genannten 7 und ist gleich: 4725: 7 = 675.
+
+Die größte Zahl ist die siebte, also 675 + 3 = 678*17#280*Der Wert der Ziffer 2 in 39201 ist …?*2*20*200*2000*3*gta*17#281*1/5 von Zahl A entspricht 1/7 von Zahl B. Wie hoch ist die mögliche Mindestsumme von Zahl A und B?*10*11*12*13*3*Dem Artikel zufolge gilt: 1/5 von A ist 1/7 von B. Folgerung: A / B = 5/7
+
+Der Mindestwert von A beträgt 5
+
+Der Mindestwert von B beträgt 7
+
+Also: Minimalwert von A + B = 5 + 7 = 12*17#282*Alison ist 30 Jahre jünger als ihr Vater. Das Alter ihres Vaters wird in 5 Jahren dreimal so groß sein wie sie. Wie alt ist Alison jetzt?*9*10*11*12*2*Der Altersunterschied zwischen Alisons Vater und Sohn beträgt: 30 (Alter)
+
+Nach fünf Jahren ist sein Vater dreimal so alt wie er. Dann ist der Gleichheitsunterschied: 3 - 1 = 2 (Teil)
+
+Alisons Alter nach 5 Jahren beträgt: 30: 2 = 15 (Alter)
+
+Alisons Alter beträgt jetzt: 15 - 5 = 10 (Alter)*17#283*Finden Sie B, wenn B 72 mehr als der Durchschnitt 89 ist; 142; 51 und B ?*160*170*180*190*4*Der Durchschnitt der vier Zahlen ist: (89 + 142 + 51 + 72): 3 = 118
+
+B ist 118 + 72 = 190*17#284*Finden Sie den Durchschnitt von 14/5 und 46?*24,4*25,4*26,4*27,4*1*gta*17#285*Patsy hat ein paar Perlen. Sie gibt ihrer Schwester 21 der Perlen. Danach schenkte sie ihrer besten Freundin weitere 13 Perlen. Sie hat noch 9 Perlen übrig. Wie viele Perlen hat sie zuerst?*40*41*42*43*4*21 + 13 + 9 = 43*17#286*Die Summe zweier Zahlen a und b ist 160. Wenn a durch b dividiert wird, ist es der Quotient und der Rest beträgt 9 bzw. 10. Finden Sie die beiden Zahlen a und b?*a = 140 und b = 10*a = 140 und b = 15*a = 145 und b = 15*a = 145 und b = 10*3*Wenn man a durch b dividiert, ist der Wert 9 und der Rest ist 10. Angenommen, die Summe ist Null, dann ist die Summe von zwei 160 - 10 = 150. Die Summe der gleichen Teile der beiden Zahlen ist 9 + 1. = 10 (Teil). Zahl ist: 150: 8 = 15
+
+Große Zahlen: 160 - 15 = 145*17#287*Wenn a und b aufeinanderfolgende gerade Zahlen sind und a > 7,47 > b, dann ist a x b = …*45*46*47*48*4*Dem Artikel zufolge haben wir:
+
+A ist: 8
+
+B ist: 6
+
+Summe a x b = 8 x 6 = 48*17#288*Wenn a und b aufeinanderfolgende ungerade Zahlen sind und a > 59,2 > b, dann ist a + b = …*110*120*130*140*2*Dem Artikel zufolge haben wir:
+
+A ist: 61
+
+B ist: 59
+
+Summe a + b = 61 + 59 = 120*17#289*Die Länge eines rechteckigen Gartens beträgt 60 m, die Breite beträgt 2/3 der Länge. Wie groß ist die Fläche des Gartens in Quadratmetern?*2300*2400*2500*2600*2*Die Breite des Gartens beträgt: 60: 3 x 2 = 40 (m)
+
+Die Gartenfläche beträgt: 60 x 40 = 2400 (m2)*17#290*Das Verhältnis der Anzahl der Murmeln von James zur Anzahl der Murmeln von Tom betrug 4 : 3. Nachdem James Tom 10 Murmeln gegeben hatte, betrug das Verhältnis 3 : 4. Wie viele Murmeln hatte James zuerst?*20*30*40*50*3*Der Randstand ist 4:3. Nachdem James Tom die 10 Murmeln gegeben hatte, stand es 3:4. Tatsächlich: 10 Murmeln entsprachen 1 Teil.
+
+Also: Die Anzahl der Kugeln, die James zunächst hat, beträgt: 10 x 4 = 40 (Murmeln)*17#291*Zu 35 wird eine Zahl addiert. Dann wird die Summe mit 4 multipliziert und das Produkt durch 21 dividiert. Das Ergebnis ist 8. Was ist die Zahl?*7*8*9*10*1*21 x 8 : 4 - 35 = 7*17#292*Ein Rechteck hat eine Breite von 27,45 m. Die Länge ist 3,56 m länger als die Breite. Finden Sie den Umfang dieses Rechtecks?*116,20 m*129,92 m*116,92 m*126,92 m*3*Die Rechtecklänge beträgt: 27,45 + 3,56 = 31,01 (m)
+
+Der Umfang beträgt: (27,45 + 31,01) x 2 = 116,92 (m)*17#293*Den Durchschnitt aller zweistelligen ungeraden Zahlen ermitteln?*50*55*60*61*2*Der erste Begriff ist: 11
+
+Der letzte Term ist: 99
+
+Der Mittelwert aller zweistelligen Zahlen ist: (11 + 99): 2 = 55*17#294*Wie viele zweistellige gerade Zahlen sind kleiner als 68,24?*29*30*31*78*2*Der erste Term ist: 10
+
+Der letzte Begriff ist: 68
+
+Der Abstand zwischen den Begriffen beträgt: 2
+
+Gerade Zahlen mit zwei Ziffern kleiner als 68,24 sind: (68 - 10): 2 + 1 = 30 (Zahl)*17#295*Wie viele gerade Zahlen zwischen 26,92 und 82,19?*26*27*28*29*3*Der erste Begriff ist: 28
+
+Der letzte Term ist: 82
+
+Der Abstand zwischen den Begriffen beträgt: 2
+
+Die zweistellige gerade Zahl zwischen 26,92 und 82,19 ist: (82 - 28): 2 + 1 = 28 (Zahl)*17#296*Wenn 45ab5 durch 9 teilbar ist und a + b kleiner als 10 ist, ermitteln Sie den möglichen Wert von a + b?*2*3*4*5*3*Einige sind durch 9 teilbar, wenn die Summe ihrer Ziffern durch 9 teilbar ist
+
+Laut Artikel gilt: 4 + 5 + a + b + 5 = 14 + a + b
+
+Für a + b <10. Injektion: 14 + a + b = 18
+
+Beschreiben Sie: a + b = 4*17#297*Die Summe dreier aufeinanderfolgender Zahlen ist 1437. Finden Sie die kleinste Zahl?*475*476*477*478*4*1437 : 3 - 1 = 478*17#298*Es gibt drei Ölfässer. Das erste Fass enthält 36,3l, das zweite Fass enthält 32,6l, das dritte Fass enthält 25,8l. Wie viele Liter Öl sind insgesamt vorhanden?*91,71*92,71*93,71*94,71*4*Gesamtöl: 36,3 + 32,6 + 25,8 = 94,71 (Liter)*17#299*Für die Herstellung eines Kleidungsstücks werden 3,2 m Stoff benötigt. Wie viele Kleidungsstücke können aus 329,4 m Stoff hergestellt werden?*98*100*102*103*3*Die Anzahl der Kleidungsstücke beträgt: 329,4: 3,2 = 102,9375
+
+Also: Die Anzahl der Kleidungsstücke beträgt 102 Sets*18#300*Jack kaufte 12 Kisten Äpfel. In jeder Kiste befanden sich 105 Äpfel. Er packte alle Äpfel in 10er-Päckchen um. Wie viele Päckchen Äpfel waren es?*126*135*148*156*1*Die Anzahl der Äpfel beträgt: 105 x 12 = 1260 (Früchte)
+
+Die Apple-Paketnummer lautet: 1260: 10 = 126 (Paket)*18#301*Jeny hat 75 rote und blaue Bälle, davon sind 40 % blaue Bälle. Wie viele blaue Kugeln gibt es?*20*30*40*45*2*Die Anzahl der grünen Kugeln beträgt: 75 x 40: 100 = 30 (Früchte)*18#302*Schreiben Sie 36 % als Bruch. Das Ergebnis ist …?*18/5*45858*13028*25.9*4*gta*18#303*Schreiben Sie 39 % als Bruch. Das Ergebnis ist …?*39/100*26.9*27364*100/39*1*gta*18#304*Schreiben Sie 72 % als Bruch. Das Ergebnis ist …?*55/9*20333*18/25*25.08*3*gta*18#305*Ein rechteckiger Garten ist 25,04 m lang, die Breite beträgt 3/4 der Länge. Finden Sie den Umfang des Gartens?*67,64 m*97,64 m*80,64 m*87,64 m*4*giaithich*18#306*Der halbe Umfang eines rechteckigen Schulhofs beträgt 0,24 km. Die Breite beträgt die Hälfte der Länge. Finden Sie die Fläche des Gartens in Quadratmetern?*12600*12700*12800*12900*3*Konvertieren Sie 0,24 km = 240 m
+
+Die Breite des Rechtecks ​​beträgt 240: 3 = 80 (m).
+
+Die Rechtecklänge beträgt: 80 x 2 = 160 (m)
+
+Die rechteckige Fläche beträgt: 80 x 160 = 12800 (m2)*18#307*Es gibt 9 Pakete Reis mit einem Gewicht von 403,74 kg. Wie viel Kilogramm wiegen 15 solcher Reispakete?*669,9*670,9*671,9*672,9*4*gta*18#308*Ein Bekleidungsgeschäft bietet einen Rabatt von 40 % an. Wie viel müsste Jane für einen 30-Dollar-Pullover mit Rabatt bezahlen?*12*18*20*22*2*Der ermäßigte Betrag beträgt: 30 x 40: 100 = 12 ($)
+
+Der von Jane zu zahlende Betrag beträgt: 30 - 12 = 18 ($)*18#309*Wenn ein Stift 1,75 $ und ein Radiergummi 0,85 $ kostet, wie hoch sind dann die Kosten für 10 Radiergummis und 5 Stifte?*16,30 $*11,25 $*17,50 $*17,25 $*4*Der Preis für 10 Epochen beträgt: 0,85 x 10 = 8,5 ($)
+
+Die Kosten für 5 Stifte betragen: 1,75 x 5 = 8,75 ($)
+
+Die Gesamtkosten für 10 Radiergummis und 5 Stifte betragen: 8,5 + 8,75 = 17,25 ($)*18#310*Der Durchschnitt von fünf aufeinanderfolgenden geraden Zahlen beträgt 40. Der Durchschnitt der kleinsten und größten dieser Zahlen beträgt ...?*20*30*40*50*3*Der Durchschnitt der 5 aufeinanderfolgenden Abende beträgt 40. Schlussfolgerung: Das durchschnittliche Plus des kleinsten und größten der fünf beträgt 40.*18#311*Der Preis für ein Paar Schuhe beträgt nach einem 10-Prozent-Verkauf 22,5 US-Dollar. Der Originalpreis der Schuhe beträgt $...?*15*25*30*45*2*Der Preis für Schuhe ohne Rabatt beträgt: 22,5 x 100: (100 - 10) = 25 ($)*18#312*Es gibt 40 Schüler in der Klasse von Mrs. Brown. 25 % ihrer Schüler erhielten bei der Prüfung die Note 2. Wie viele Schüler haben ein B erhalten?*7*8*9*10*4*Anzahl der mit B bewerteten Studierenden: 40 x 25: 100 = 10 (Student)*18#313*Was ist das Produkt aus 3,05 und 2,8?*7,54*8,54*9,54*10,54*2*Was ist das Produkt aus 3,05 und 2,8?*18#314*Welche Dezimalzahl entspricht 9/16?*0,5625*0,5925*0,9625*0,1625*1*gta*18#315*Schreiben Sie 45 % als Bruch. Das Ergebnis ist…?*15/20*18.10*20/9*45920*4*gta*18#316*Ein Beutel enthält nur grüne und rote Murmeln. Wenn das Verhältnis der Anzahl der grünen Murmeln zur Anzahl der roten Murmeln 1:4 beträgt, dann ..... sind % der Murmeln grün?*20*25*35*40*1*Die Summe der gleichen Teile ist: 1 + 4 = 5 (Teil)
+
+Der Anteil der grünen Kugeln beträgt: 1: 5 x 100 = 20 (%).*18#317*Alice geht in den Laden. Nach einem Drittel des Weges zum Laden bleibt sie stehen, um mit Kelly zu reden. Anschließend fährt sie 6 km weiter und erreicht den Laden. Wie viele Kilometer legt sie zurück?*6*7*8*9*4*Die Anzahl der Alice Walk mit Kelly beträgt: 1 - 1/3 = 2/3 (Distanz)
+
+Denn 2/3 der Strecke sind 6 km. Abgeleitet: Die Entfernung, die Alice zurückgelegt hat, beträgt: 6: 2 x 3 = 9 (km)*18#318*Zu Beginn des Sommers war Bob 140 cm groß. Am Ende des Sommers maß er erneut seine Körpergröße und stellte fest, dass sie um 5 % zugenommen hatte. Wie groß war er am Ende des Sommers, gemessen in cm?*159 (cm)*157 (cm)*147 (cm)*149 (cm)*3*5 % mehr sind 140 x 5: 100 = 7 (cm)
+
+Bobs Größe am Ende des Sommers beträgt: 140 + 7 = 147 (cm)*18#319*Bella punktet auf sechs ihrer acht Bilder. Der Prozentsatz der Bilder, bei denen sie keine Punkte erzielt, beträgt ... % ?*20*25*30*45*2*Anzahl Bilder ohne Punkte: 8 - 6 = 2 (Bild)
+
+Der Prozentsatz der Bilder ohne Punkte beträgt: 2: 8 x 100 = 25 (%)*18#320*Wie viele verschiedene dreistellige ganze Zahlen können aus den Ziffern 4, 5, 0 und 8 gebildet werden, vorausgesetzt, dass in einer Zahl keine Ziffer wiederholt werden kann?*18*19*20*21*1*Es gibt drei Möglichkeiten, Hunderte von Ziffern auszuwählen
+
+Es gibt drei Möglichkeiten, Dutzende Ziffern auszuwählen
+
+Es gibt zwei Möglichkeiten, die Einheitennummer auszuwählen
+
+Nach der Multiplikationsregel haben wir die Anzahl von 3 verschiedenen 3-stelligen Termen, die durch die gegebenen vier Zahlen gegeben sind: 3 x 3 x 2 = 18 (Zahl)*18#321*Wie viele gerade Zahlen zwischen 1 und 100 sind durch 5 teilbar?*8*9*10*11*2*Die erste gerade Zahl größer als 1 und kleiner als 100 dividiert durch 5 ist: 10
+Die letzte gerade Zahl größer als 1 und kleiner als 100 geteilt durch 5 ist: 90
+Die Anzahl der für die Aufgabe erforderlichen Erfüllungen beträgt: (90 - 10): 10 + 1 = 9 (Anzahl)*18#322*Wie viele dreistellige Zahlen sind genau 19 mehr als eine zweistellige Zahl?*16*17*18*19*4*Wir haben: 100 - 19 = 81
+Die ersten beiden Ziffern, die die Anforderung von weniger als drei Ziffern von 19 Einheiten erfüllen, sind: 81. Der letzte zweistellige Begriff, der die Anforderung erfüllt, ist kleiner als die dreistellige Zahl von 19 Einheiten: 99
+Die Zahlen, die die Anforderung erfüllen, sind: (99 - 81): 1 + 1 = 19 (Zahl)*18#323*16 ist wie viel Prozent von 80?*10*20*30*31*2*gta*19#324*1,83 + … = 2. Die fehlende Zahl ist … ?*0,17*0,19*0,1*0,8*1*gta*19#325*26 : 5 = … Die fehlende Dezimalzahl ist ... ?*2,2*3,2*4,2*5,2*4*gta*19#326*Ein rechteckiges Grundstück hat eine Länge von 26 m und eine Breite von 20 m. Sie nutzten 30 % der Fläche, um einen Teich zu graben. Wie groß ist der Teich?*520*154*155*156*4*Die Fläche der rechteckigen Fläche beträgt: 26 x 20 = 520 (m2)
+
+Die Teichfläche beträgt: 520 x 30: 100 = 156 (m2)*19#327*Eine Waschmaschine in Geschäft A kostet 820 $. Der reguläre Preis derselben Waschmaschine in Geschäft B ist 10 % höher als in Geschäft A. Die Waschmaschine ist in Geschäft B für 10 % Rabatt auf den regulären Preis erhältlich. Wie hoch ist der Verkaufspreis der Waschmaschine im Store B?*903*803,3*811,8*902*3*Der Preis der Waschmaschine im Geschäft B ist nicht rabattiert: 820 x (100 + 10): 100 = 902 ($)
+
+Der Preis für eine Waschmaschine bei Shop B mit 10 % Rabatt beträgt: 902 x (100 - 10): 100 = 811,8 (%).*19#328*Eine Frau gibt ein Kapital von 108 $ für den Kauf von Gemüse aus. Nachdem sie das gesamte Gemüse verkauft hatte, erhielt sie 135 Dollar. Wie viel Prozent des Kapitals ist Gewinn?*25*30*50*75*1*Der Zinssatz beträgt: 135 x 100: 108 - 100 = 25 (%)*19#329*Berechnen Sie: 42,1 % + 81,09 % = … % ?*120,19*121,19*122,19*123,19*4*gta*19#330*Emily ist 3 Jahre jünger als ihr Bruder. Ihr Vater ist viermal so alt wie ihr Bruder und 33 Jahre älter als Emily. Wie alt ist ihr Bruder?*10*11*12*13*1*Er ist drei Jahre älter als Emily, 33 Jahre älter als Emily. Minderwertigkeit: Vater mehr als älterer Bruder: 33 - 3 = 30 (Alter). Der Vater ist viermal so alt wie sein Bruder. Schlussfolgerung: Die äquivalente Differenz beträgt: 4 - 1 = 3 (Teil). Unfruchtbarkeit: Alter Bruder: 30: 3 = 10 (Alter)*19#331*Finden Sie 30 % von 462?*137,6*138,6*139,6*140,6*2*gta*19#332*Wie viele verschiedene dreistellige gerade Zahlen können Sie mit 8 bilden? 3; 9; 0 und 6?*10*20*30*40*3*gta*19#333*Wie viele verschiedene dreistellige Zahlen können Sie mit 6 bilden? 7; 1; 0; 2 und 4?*70*80*90*100*4*gta*19#334*Kerry hat 80 Murmeln, 15 % der Murmeln sind blau, 25 % der Murmeln sind rot und der Rest der Murmeln ist gelb. Wie viele gelbe Murmeln hat er?*47*48*49*50*2*Der Prozentsatz der Goldkugeln beträgt: 100 - 15 - 25 = 60 (%).
+Die Anzahl der Kugeln beträgt: 80 x 60: 100 = 48 (Murmeln)*19#335*Mary hatte 136 Dollar. Sie gab 65 % des Geldes für einen Mantel aus. Wie viel Geld hatte sie noch?*47,6*48,6*49,6*50,6*1*Der Prozentsatz von Marys Restguthaben beträgt: 100 - 65 = 35 (%)
+Der verbleibende Mary-Betrag beträgt: 136 x 35: 100 = 47,6 ($).*19#336*Reis reicht für 120 Personen für 24 Tage. Nach 4 Tagen sind es weitere 30 neue Leute. Wie viele Tage dauert es, bis der restliche Reis aufgebraucht ist?*16*17*18*19*1*giaithich*19#337*Der Preis eines Fernsehers sank von 310 $ auf 270 $. Ermitteln Sie den Prozentsatz des Preisrückgangs. (Runden Sie Ihre Antwort auf die nächste ganze Zahl ab) ?*11*12*13*14*3*Der Prozentsatz, der dem Preis von 270 $ entspricht, ist 270 x 100: 310 = 87,09 (%).
+
+Da im Beitrag nach der nächsten Ganzzahl gefragt wird, beträgt das prozentuale Verhältnis 87 (%).
+
+Abgeleitet: Prozentsatz des gesunkenen Preises: 100 – 87 = 13 (%)*19#338*Tom und Fred haben insgesamt 84 Murmeln. Tom hat 25 % weniger Murmeln als Fred. Wie viele Murmeln hat Fred?*46*47*48*49*3*Da Tom einen Randwert von weniger als 25 % hat, folgt daraus: Die Summe der Prozentsätze der beiden Zahlen beträgt: 100 + (100 – 25) = 175 (%).
+
+Anzahl der Kugeln Fred beträgt: 84 x 100: 175 = 48 (Tablette)*19#339*Wendy verlor 34 $, was 8 % des Kapitals entspricht. Finden Sie die Hauptstadt von Wendy*425*435*455*465*1*Wendys Mittel sind: 34 x 100: 8 = 425 ($)*19#340*Was ist das Produkt aus 4,72 und 9,5? (Schreiben Sie Ihre Antwort als Dezimalzahl in der einfachsten Form) ?*41,84*42,84*43,84*44,84*4*4,72 x 9,5 = 44,84*19#341*Welche Dezimalzahl entspricht 21/15?*1,4*1,5*1,6*1,9*1*gta*19#342*4,8 l Öl wiegen 3,648 kg. Wie viele Liter Öl sind es, wenn sie 4,864 kg wiegen?*6,3*6,4*7,3*9,3*2*Das Gewicht von 1 Liter Öl beträgt: 3,648: 4,8 = 0,76 (kg)
+
+Die Anzahl der in 4.864 kg verfügbaren Liter Öl beträgt: 4.864: 0,76 = 6,4 (Liter)*19#343*Finden Sie den Rest bei der Division von 104 durch 3,8, wenn wir mit der Division an der zweiten Dezimalstelle des Quotienten aufhören?*0,029*0,03*0,032*0,033*3*Wir haben: 104: 3,8 = 27,36 (Rest 0,032)
+
+Also: Der Saldo von 104 dividiert durch 3,8 mit bis zu 2 Dezimalstellen beträgt: 0,032*19#344*In einer Klasse mit 30 Schülern fahren 20 % mit dem Fahrrad zur Schule. Ein Drittel der übrigen Schüler fährt mit dem Bus zur Schule. Wie viele Schüler fahren mit dem Bus zur Schule?*8*9*10*11*1*Prozentsatz der Schulbesuche mit dem Bus beträgt: (100 - 20): 3 = 26,66 (%)
+Anzahl der Schüler, die mit dem Bus zur Schule kommen: 30 x 26,66: 100 = 8 (Schüler)*19#345*Bei der Inspektion der Produkte einer Fabrik stellen wir fest, dass durchschnittlich 97 von 100 Produkten qualifiziert sind. Wie viel Prozent der gesamten Produkte sind qualifizierte Produkte?*97*98*99*100*1*97 : 100 x 100 = 97 (%)*19#346*Wie viele dreistellige ungerade Zahlen können Sie aus den Zahlen 3, 2, 5, 4 und 6 bilden?*49*50*51*52*2*gta*19#347*Sarah hatte ein paar Süßigkeiten. Wenn sie jeder Freundin 5 Süßigkeiten geben würde, würde sie weitere 5 Süßigkeiten brauchen. Wenn sie jeder Freundin 9 Süßigkeiten geben würde, bräuchte sie weitere 41 Süßigkeiten. Wie viele Freunde hatten Süßigkeiten von Sarah bekommen?*6*7*8*9*4*giaithich*19#348*Der Preis für ein Paar Schuhe beträgt 36,4 Dollar nach 20 % Rabatt. Finden Sie den Originalpreis für ein Paar Schuhe?*57,5 (Dollar)*45,5 (Dollar)*50,5 (Dollar)*55,5 (Dollar)*2*Der Prozentsatz nach 20 % Rabatt beträgt: 100 – 20 = 80 (%)
+Der Preis für Schuhe ohne Rabatt beträgt: 36,4 x 100: 80 = 45,5 (Dollar)*19#349*Der Wert der Ziffer 1 in 27.01 ist ... ?*0,001*0,01*0,1*1*2*gta*19#350*In 60 kg Meerwasser sind 2,46 kg Salz enthalten. Finden Sie den Salzanteil im Meerwasser?*4,1*5,1*6,1*7,1*1*Das Ergebnis ist: 2,46 : 60 x 100 = 4,1 (%)*19#351*Ein Mann verkaufte 204 kg Reis, 75 % der Reismenge, die er verkaufte, war gewöhnlicher Reis. Wie viele Kilogramm gewöhnlichen Reis hat er verkauft?*150*151*152*153*4*Die von der Person verkaufte Reismenge beträgt: 204 x 75: 100 = 153 (kg)*19#352*Fünf Schüler absolvieren eine Prüfung mit der Höchstpunktzahl von 100. Die Noten von vier Schülern betragen 92, 83, 90 und 87. Der Durchschnitt der Noten von fünf Schülern entspricht dem Punktestand des fünften Schülers. Finden Sie die Punktzahl des fünften Schülers*66*77*88*99*3*Die Gesamtpunktzahl der vier beträgt: 92 + 83 + 90 + 87 = 352 (Punkte)
+
+Die durchschnittliche Punktzahl der vier beträgt: 352: 4 = 88 (Punkte)
+
+Denn Ihre durchschnittliche Punktzahl am Donnerstag entspricht dem Durchschnitt aller 5 Freunde. Abgeleitet: Ihr durchschnittlicher Punktestand am Donnerstag liegt bei 88 Punkten*19#353*Das Gesamtalter von Shaun und Tom beträgt 30.
+Das Gesamtalter von Shaun und John beträgt 27.
+Das Gesamtalter von John und Tom beträgt 31. 
+Wer ist der jüngste der drei Jungen?*Shaun*John*Tom*A und B*1*Das Gesamtalter von John und Tom ist am höchsten. Schlussfolgerung: Shaun ist der Jüngste*20#354*In dieser Reihenfolge: 1, 2, 3, 5, 8, 13, … ist jede Zahl die Summe der beiden vorherigen Zahlen ab der dritten Zahl. Wie viele ungerade Zahlen gibt es in den ersten 100 Zahlen?*33*50*66*67*4*Ab dem zweiten Term gibt es für jede der dreistelligen Zahlen zwei ungerade Zahlen
+
+Wir haben: (100 - 1): 3 = 33
+
+Schlussfolgerung: In den ersten 100 ungeraden Zahlen sind: 33 x 2 + 1 = 67 (Zahl)*20#355*Finden Sie y, so dass y x 4,6 = 361,1 ?*77,5*78,5*79,5*80,5*2*Wir haben: y = 361,1: 4,6 = 78,5*20#356*Ermitteln Sie die Summe unterschiedlicher 3-stelliger Zahlen, indem Sie die Ziffern 1; 4; 7 ?*2662*2663*2664*2665*3*Wir haben: 1 + 4 + 7 = 12
+
+Gesamt: 12 x (100 + 10 + 1) x 2 = 2664
+
+Also: Die Summe aller drei verschiedenen 3-stelligen Zahlen besteht aus drei Zahlen 1; 4; 7 ist 2664*20#357*Finden Sie den 7. Term in der Folge: 1.1; 2,2; 3,4; 4,7; …*6,2*7,2*8,2*9,2*4*gta*20#358*Berechnen Sie: 2,5g + 2,5g x 3 = …kg ?*0,01*1,01*2,01*3,01*1*gta*20#359*Wie groß ist der Quotient aus 0,76 und 19? (Schreiben Sie Ihre Antwort als Dezimalzahl in der einfachsten Form) ?*0,03*0,04*0,05*0,06*2*Das Verhältnis zwischen den beiden Zahlen beträgt: 0,76:19 = 0,04*20#360*Auf einer Party sind 15 Gäste. Jeder Gast schüttelt jedem anderen Gast genau einmal die Hand. Wie oft wurde auf der Party die Hand geschüttelt?*102*103*104*105*4*Die Anzahl der Handschläge in der Gruppe beträgt: 15 x 14: 2 = 105 (eins)*20#361*Wie viele Zahlen lassen sich aus den Ziffern 0; 2; 4 und 5, jede Ziffer darf in jeder Zahl nur einmal verwendet werden?*49*50*51*52*1*giaithich*20#362*Finden Sie die größte dreistellige Zahl, sodass das Produkt ihrer Ziffern 432 ist?*984*985*986*987*3*Wir haben: 432: 9 = 48
+48: 8 = 6
+Also: Die größte dreistellige Zahl, deren Produkt aus ihren Ziffern 432 ist, ist 986*20#363*Berechnen Sie: 77,01 + 37,93 - 36,2 x 2 ?*39,54*40,54*41,54*42,54*4*gta*20#364*Susan möchte 35,5 kg Zucker in kleine Tüten aufteilen. Wenn jeder Beutel 0,5 kg fasst, wie viele Beutel werden benötigt?*70*71*72*73*2*giaithich*20#365*Charlie und Lily machen einen 24-km-Lauf. Beide fahren normalerweise mit 9 km/h. Wenn Charlie mit 2/3 seiner üblichen Laufgeschwindigkeit läuft und Lily mit dem 4/3-fachen ihrer üblichen Geschwindigkeit, wie viele Stunden mehr braucht Charlie, um den Lauf zu absolvieren, als Lily, um den Lauf abzuschließen?*1*2*3*4*2*giaithich*20#366*Eine Schachtel enthält 21 Scheiben in den Farben Rot, Blau und Grün. Es gibt doppelt so viele grüne wie rote Scheiben und halb so viele blaue wie rote. Wie viele Scheiben sind rot?*6*7*8*9*1*giaithich*20#367*Ein Auto fuhr 2 Stunden lang mit 50 km/h und 3 Stunden lang mit 60 km/h. Wie hoch ist die Durchschnittsgeschwindigkeit des Autos?*53 km/h*54 km/h*55 km/h*56 km/h*4*giaithich*20#368*John fuhr in 5 Stunden von Stadt A nach Stadt B. Seine Durchschnittsgeschwindigkeit in den ersten 3,5 Stunden betrug 64 km/h. Seine Durchschnittsgeschwindigkeit in den letzten 1,5 Stunden betrug 60 km/h. Wie groß war die Gesamtstrecke, die er zurückgelegt hat?*310 km*342 km*314 km*356 km*3*Johns Fahrzeit in den ersten 3,5 Stunden beträgt 64 x 3,5 = 224 (km)
+
+Johns Fahrstrecke in den letzten 1,5 Stunden beträgt 60 x 1,5 = 90 (km).
+
+Johns gesamte Fahrstrecke während der Fahrt betrug 224 + 90 = 314 (km).*20#369*Emily fährt mit ihrem Fahrrad mit einer konstanten Geschwindigkeit von 12 km/h. Wie weit kann sie in 3 Stunden reisen?*16 km*26 km*30 km*36 km*4*giaithich*20#370*Bob rollt mit einer konstanten Geschwindigkeit von 14 Meilen pro Stunde. Wie weit kann er in einer halben Stunde reisen?*7 Meilen*9 Meilen*10 Meilen*11 Meilen*1*giaithich*20#371*Lucy hat 20 Spiele gespielt und hat eine Gewinnquote von 95 %. Wie viele Spiele muss er noch gewinnen, ohne weitere Spiele zu verlieren, um genau eine Gewinnquote von 96 % zu erreichen?*4*5*6*7*2*giaithich*20#372*Finden Sie x so, dass x : 4 = 0,625 ?*0,5*1,25*2,5*3,25*3*gta*20#373*Nachdem er 20 % eines Rennens gelaufen war, war Bob 25 m gelaufen. Wie lang war das Rennen in Metern?*100*105*115*125*4*gta*20#

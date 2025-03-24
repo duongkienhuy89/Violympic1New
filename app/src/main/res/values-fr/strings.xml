@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">MathZone</string>
+    <string name="scrore">Score</string>
+    <string name="time">Temps</string>
+    <string name="inputnotblank">Temps</string>
+    <string name="status">Statut:</string>
+    <string name="resolve">Résoudre:</string>
+    <string name="result">Résultat:</string>
+    <string name="doubleclick">Veuillez cliquer de nouveau sur RETOUR pour quitter !</string>
+    <string name="summary_score">Résumé : </string>
+    <string name="find_equal">Trouve La Paire Identique</string>
+    <string name="hinhtamgiac">Triangle</string>
+    <string name="hinhtron">Cercle</string>
+    <string name="hinhvuong">Carré</string>
+    <string name="hinhchunhat">Rectangle</string>
+    <string name="hinhsao">Étoile</string>
+    <string name="hinhlucgiac">Hexagone</string>
+    <string name="hinhngugiac">Pentagone</string>
+    <string name="thanhcong">Réussi</string>
+    <string name="thatbai">Échoué</string>
+    <string name="ga">canard</string>
+    <string name="flower">fleur</string>
+    <string name="start_equal">🍭 Sélectionne 2 cases consécutives avec la même valeur.\n\n🍭 Si tu te trompes 3 fois, le test se termine.</string>
+    <string name="startmoutain">Choisis l\'une des quatre réponses dans la boîte pour trouver la bonne correspondance.</string>
+    <string name="start_monkey">Fais glisser vers les deux côtés pour trouver une grille avec la même valeur.</string>
+    <string name="break_home">Es-tu sûr de vouloir quitter ?</string>
+    <string name="exit_home">Quitter le jeu</string>
+    <string name="start">Commencer</string>
+    <string name="grade1">CP</string>
+    <string name="grade2">CE1</string>
+    <string name="grade3">CE2</string>
+    <string name="grade4">CM1</string>
+    <string name="grade5">CM2</string>
+    <string name="khieulai">Rapport du test</string>
+    <string name="vip_item">Sélectionne la classe que tu veux passer en version PRO?</string>
+    <string name="member_vip">🚀 Membre VIP</string>
+    <string name="buy_pro">👉 Apprends tous les niveaux.\n\n 👉 Cours illimités.\n\n 👉 Mets à jour les derniers exercices.\n\n 👉 Ne sois pas dérangé par les pubs.</string>
+    <string name="buy_now">Mise à niveau PRO</string>
+    <string name="buy_affter">Acheter plus tard</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phepcong">Addition</string>
+    <string name="pheptru">Soustraction</string>
+    <string name="phepcongvstru">Addition\n vs \nSoustraction</string>
+    <string name="phepcongvstru2">Addition vs Soustraction</string>
+    <string name="share">Share</string>
+    <string name="cmt">Feedback</string>
+    <string name="home">Home</string>
+    <string name="title_notifi">Giúp Bé Học Giỏi</string>
+    <string name="content_notifi">🚀Ứng dụng  học toán số 1\n🚀Giúp học sinh tiểu học nâng cao kiến thức môn toán\n🚀Đa dạng các bài toán giúp kích thích tư duy</string>
+    <string name="share_app">Veuillez partager cette application avec vos amis maintenant !</string>
+    <string name="rate">Rédigez un avis sur cette application ?</string>
+    <string name="feedback">Rejoignez la page fan pour commenter ?</string>
+    <string name="yesads1">VOUS UTILISEZ LA VERSION PRO - CP ✅ </string>
+    <string name="yesads2">VOUS UTILISEZ LA VERSION PRO - CE1 ✅ </string>
+    <string name="yesads3">VOUS UTILISEZ LA VERSION PRO - CE2 ✅ </string>
+    <string name="yesads4">VOUS UTILISEZ LA VERSION PRO - CM1 ✅ </string>
+    <string name="yesads5">VOUS UTILISEZ LA VERSION PRO - CM2 ✅ </string>
+    <string name="yesads_flag">VOUS UTILISEZ LA VERSION PRO - DRAPEAU ✅ </string>
+    <string name="yesadsall">VOUS UTILISEZ LA VERSION PRO - TOUS LES NIVEAUX ✅ </string>
+    <string name="sussespro">Veuillez redémarrer l\'application pour profiter de la version PRO!</string>
+    <string name="title_dialog_vip">Mise à niveau de l\'abonnement VIP</string>
+    <string name="content_dialog_vip">Passez à membre VIP pour un jeu illimité</string>
+    <string name="default_notification_channel_id">toancap1</string>
+
+<!--        <string name="admob_app_id">ca-app-pub-5148482490300491~9852569762</string>-->
+<!--        <string name="admob_inapp">ca-app-pub-5148482490300491/2329302968</string>-->
+
+    <!--    //Test-->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_inapp">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="notifi_title">Apprentissage régulier</string>
+    <string name="notifi_content">Aider les enfants à bien apprendre les maths</string>
+
+
+    <string name="of">de</string>
+
+    <string name="vip1_check">PRO - CP✅</string>
+    <string name="vip2_check">PRO - CE1 ✅</string>
+    <string name="vip3_check">PRO - CE2 ✅</string>
+    <string name="vip4_check">PRO - CM1 ✅</string>
+    <string name="vip5_check">PRO - CM2 ✅</string>
+    <string name="vip_flag_check">PRO - Drapeau 🇺🇸 ✅</string>
+    <string name="vip_all_check">PRO - Tous les niveaux ✅</string>
+
+    <string name="vip1_warning">PRO - CP ⚠</string>
+    <string name="vip2_warning">PRO - CE1 ⚠</string>
+    <string name="vip3_warning">PRO - CE2 ⚠</string>
+    <string name="vip4_warning">PRO - CM1 ⚠</string>
+    <string name="vip5_warning">PRO - CM2 ⚠</string>
+    <string name="vip_flag_warning">PRO - Drapeau 🇺🇸 ⚠</string>
+    <string name="vip_all_warning">PRO - Tous les niveaux (CP CE1 CE2 CM1 CM2 🇺🇸) ⚠</string>
+
+</resources>

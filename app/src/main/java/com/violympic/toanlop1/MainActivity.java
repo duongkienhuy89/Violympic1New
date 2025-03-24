@@ -400,6 +400,8 @@ TextView tv_title_gameover_equal;
     public static int mMemberVip3 = 0;
     public static int mMemberVip4 = 0;
     public static int mMemberVip5 = 0;
+
+    public static int mMemberVip_Flag = 0;
     public static int mMemberVip_All = 0;
     TextView tv_title_notifi;
     TextView tv_content_notifi;
@@ -428,6 +430,7 @@ TextView tv_title_gameover_equal;
     LinearLayout ll_item_vip3;
     LinearLayout ll_item_vip4;
     LinearLayout ll_item_vip5;
+    LinearLayout ll_item_vip_flag;
     LinearLayout ll_item_vip_all;
 
     TextView tv_item_vip1;
@@ -435,6 +438,8 @@ TextView tv_title_gameover_equal;
     TextView tv_item_vip3;
     TextView tv_item_vip4;
     TextView tv_item_vip5;
+
+    TextView tv_item_flag;
     TextView tv_item_vipall;
     ImageView iv_logo_moutain_start;
     ImageView iv_logo_moutain_end;
@@ -689,6 +694,7 @@ TextView tv_lienhe_list_vip;
         ll_item_vip3=(LinearLayout) findViewById(R.id.ll_item_vip3);
         ll_item_vip4=(LinearLayout) findViewById(R.id.ll_item_vip4);
         ll_item_vip5=(LinearLayout) findViewById(R.id.ll_item_vip5);
+        ll_item_vip_flag=(LinearLayout)findViewById(R.id.ll_item_vip_flag);
         ll_item_vip_all=(LinearLayout) findViewById(R.id.ll_item_vip_all);
 
          tv_item_vip1=(TextView)findViewById(R.id.tv_item_vip1);
@@ -696,6 +702,7 @@ TextView tv_lienhe_list_vip;
         tv_item_vip3=(TextView)findViewById(R.id.tv_item_vip3);
         tv_item_vip4=(TextView)findViewById(R.id.tv_item_vip4);
         tv_item_vip5=(TextView)findViewById(R.id.tv_item_vip5);
+        tv_item_flag=(TextView)findViewById(R.id.tv_item_flag);
         tv_item_vipall=(TextView)findViewById(R.id.tv_item_vipall);
 
         tv_content_start_equal=(TextView) findViewById(R.id.tv_content_start_equal);
@@ -742,6 +749,7 @@ TextView tv_lienhe_list_vip;
         mMemberVip3 = pref.getInt("vips3", 0);
         mMemberVip4 = pref.getInt("vips4", 0);
         mMemberVip5 = pref.getInt("vips5", 0);
+        mMemberVip_Flag= pref.getInt("vipsflag", 0);
         mMemberVip_All = pref.getInt("vipsall", 0);
 
         DeviceLang=pref.getString("device_lang", "");
@@ -1073,7 +1081,15 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         tv_score_zero_gameover.setText("Điểm:" + mScore_Zero);
-                    }else
+                    }else  if(DeviceLang.equals("fr"))
+                    {
+                        tv_score_zero_gameover.setText("Score:" + mScore_Zero);
+                    }
+                    else  if(DeviceLang.equals("de"))
+                    {
+                        tv_score_zero_gameover.setText("Punktzahl:" + mScore_Zero);
+                    }
+                    else
                     {
                         tv_score_zero_gameover.setText("Score:" + mScore_Zero);
                     }
@@ -1096,6 +1112,7 @@ TextView tv_lienhe_list_vip;
                             &&mMemberVip3==0
                             &&mMemberVip4==0
                             &&mMemberVip5==0
+                            &&mMemberVip_Flag==0
                             &&mMemberVip_All==0) {
                         if (rd.nextInt(((int) mFirebaseRemoteConfig.getValue("b_ads_inapp_zero").asDouble())) == 0) {
                             AdmobManager.doShowInterstitialAd(MainActivity.this);
@@ -1122,10 +1139,20 @@ TextView tv_lienhe_list_vip;
 
 
         DeviceLang_Root=Locale.getDefault().toString().toLowerCase();
+       // clsHandleT.Loge("delang:"+DeviceLang_Root);
         if(DeviceLang.equals("")) {
             DeviceLang = Locale.getDefault().toString().toLowerCase();
+            if(DeviceLang.startsWith("fr_"))
+            {
+                DeviceLang="fr";
+            }
 
-            if(DeviceLang.equals("vi_vn")==false)
+            if(DeviceLang.startsWith("de_"))
+            {
+                DeviceLang="de";
+            }
+
+            if((DeviceLang.equals("vi_vn")==false)&&(DeviceLang.equals("fr")==false)&&(DeviceLang.equals("de")==false))
             {
                 DeviceLang="en";
             }
@@ -1148,10 +1175,22 @@ TextView tv_lienhe_list_vip;
                         if (task.isSuccessful()) {
                             boolean updated = task.getResult();
 
-                            if (!DeviceLang.equals("vi_vn")) {
-                                tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_en").replace("\\n", "\n"));
-                            } else {
+                            if (DeviceLang.equals("vi_vn"))
+                            {
+
                                 tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_vn").replace("\\n", "\n"));
+                            }
+                            else if (DeviceLang.equals("fr"))
+                            {
+                                tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_fr").replace("\\n", "\n"));
+                            }
+                            else if (DeviceLang.equals("de"))
+                            {
+                                tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_de").replace("\\n", "\n"));
+                            }
+                            else
+                            {
+                                tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_en").replace("\\n", "\n"));
                             }
                         } else {
 
@@ -1211,13 +1250,18 @@ TextView tv_lienhe_list_vip;
 
         if(DeviceLang.equals("vi_vn"))
         {
-            spinnerTitlesContry = new String[]{"Tiếng Việt","English"};
-
-
-        }else
+            spinnerTitlesContry = new String[]{"Tiếng Việt","English","France","Deutsch"};
+        }else  if(DeviceLang.equals("de"))
         {
-            spinnerTitlesContry = new String[]{"English","Tiếng Việt"};
-
+            spinnerTitlesContry = new String[]{"Deutsch","English","Tiếng Việt","France"};
+        }
+        else  if(DeviceLang.equals("fr"))
+        {
+            spinnerTitlesContry = new String[]{"France","English","Tiếng Việt","Deutsch"};
+        }
+        else
+        {
+            spinnerTitlesContry = new String[]{"English","Tiếng Việt","France","Deutsch"};
         }
         countryAdapter=new CountryAdapter(this,spinnerTitlesContry);
         sp_country.setAdapter(countryAdapter);
@@ -1229,7 +1273,15 @@ TextView tv_lienhe_list_vip;
                 {
                     DeviceLang="vi_vn";
 
-                }else
+                }else if(spinnerTitlesContry[i].equals("France"))
+                {
+                    DeviceLang="fr";
+                    doSetGrade_FR();
+                }else if(spinnerTitlesContry[i].equals("Deutsch"))
+                {
+                    DeviceLang="de";
+                }
+                else
                 {
                     DeviceLang="en";
                 }
@@ -1439,8 +1491,29 @@ TextView tv_lienhe_list_vip;
             doLoadTempNoti();
         }
 
+
+
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         mFirebaseAnalytics.setAnalyticsCollectionEnabled(true);
+    }
+
+    public void doSetGrade_FR()
+    {
+        if(DeviceLang.equals("fr"))
+        {
+            iv_grade_1.setImageResource(R.drawable.lop1_fr);
+            iv_grade_2.setImageResource(R.drawable.lop2_fr);
+            iv_grade_3.setImageResource(R.drawable.lop3_fr);
+            iv_grade_4.setImageResource(R.drawable.lop4_fr);
+            iv_grade_5.setImageResource(R.drawable.lop5_fr);
+        }else
+        {
+            iv_grade_1.setImageResource(R.drawable.lop1);
+            iv_grade_2.setImageResource(R.drawable.lop2);
+            iv_grade_3.setImageResource(R.drawable.lop3);
+            iv_grade_4.setImageResource(R.drawable.lop4);
+            iv_grade_5.setImageResource(R.drawable.lop5);
+        }
     }
     public  Boolean getIOS1()
     {
@@ -1493,7 +1566,7 @@ TextView tv_lienhe_list_vip;
     public void  doCheckTextItemVip()
     {
         try {
-            if(mMemberVip1==10&&mMemberVip2==10&&mMemberVip3==10&&mMemberVip4==10&&mMemberVip5==10)
+            if(mMemberVip1==10&&mMemberVip2==10&&mMemberVip3==10&&mMemberVip4==10&&mMemberVip5==10&&mMemberVip_Flag==10)
             {
                 mMemberVip_All=10;
             }
@@ -1505,6 +1578,7 @@ TextView tv_lienhe_list_vip;
                 tv_item_vip3.setText(getString(R.string.vip3_check));
                 tv_item_vip4.setText(getString(R.string.vip4_check));
                 tv_item_vip5.setText(getString(R.string.vip5_check));
+                tv_item_flag.setText(getString(R.string.vip_flag_check));
                 tv_item_vipall.setText(getString(R.string.vip_all_check));
             }else
             {
@@ -1546,6 +1620,14 @@ TextView tv_lienhe_list_vip;
                 }else
                 {
                     tv_item_vip5.setText(getString(R.string.vip5_warning));
+                }
+
+                if(mMemberVip_Flag==10)
+                {
+                    tv_item_flag.setText(getString(R.string.vip_flag_check));
+                }else
+                {
+                    tv_item_flag.setText(getString(R.string.vip_flag_warning));
                 }
             }
         }catch (Exception e)
@@ -1669,37 +1751,7 @@ TextView tv_lienhe_list_vip;
     }
     public void  setMutilang() {
         try {
-            if (!DeviceLang.equals("vi_vn")) {
-
-                try {
-                    iv_main_buyvip.setImageResource(R.drawable.buy_vip_pro_en);
-                    iv_logo_monkey.setImageResource(R.drawable.monkey);
-                    iv_logo_monkey_gameover.setImageResource(R.drawable.monkey);
-
-                    iv_grade_0.setVisibility(View.GONE);
-                    iv_grade_0_en.setVisibility(View.VISIBLE);
-
-                    iv_logo_moutain_start.setImageResource(R.drawable.moutian_logo_en);
-                    iv_logo_moutain_end.setImageResource(R.drawable.moutian_logo_en);
-                    tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_en").replace("\\n", "\n"));
-                    tv_main_start.setText("Start");
-                    tv_content_start_equal.setText(mFirebaseRemoteConfig.getString("start_equal_en").replace("\\n", "\n"));
-                    tv_title_start_equal.setText("Find Equal Pair");
-                    tv_title_gameover_equal.setText("Find Equal Pair");
-                    tv_conten_moutain.setText("You choose one of four answers in the box for matching results.");
-
-
-
-                    tv_zero_add.setText("Addition");
-                    tv_zero_sub.setText("Subtraction");
-                    tv_zero_mix.setText("Addition\n vs \nSubtraction");
-
-                }catch (Exception e)
-                {
-
-                }
-
-            }else
+            if (DeviceLang.equals("vi_vn"))
             {
                 try {
                     iv_grade_0.setVisibility(View.VISIBLE);
@@ -1720,6 +1772,61 @@ TextView tv_lienhe_list_vip;
 
                 }
 
+            }else
+            {
+
+                try {
+                    iv_main_buyvip.setImageResource(R.drawable.buy_vip_pro_en);
+                    iv_logo_monkey.setImageResource(R.drawable.monkey);
+                    iv_logo_monkey_gameover.setImageResource(R.drawable.monkey);
+
+                    iv_grade_0.setVisibility(View.GONE);
+                    iv_grade_0_en.setVisibility(View.VISIBLE);
+
+                    iv_logo_moutain_start.setImageResource(R.drawable.moutian_logo_en);
+                    iv_logo_moutain_end.setImageResource(R.drawable.moutian_logo_en);
+
+                    if (DeviceLang.equals("fr"))
+                    {
+                        tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_fr").replace("\\n", "\n"));
+                        tv_main_start.setText("Démarrer");
+                        tv_content_start_equal.setText(mFirebaseRemoteConfig.getString("start_equal_fr").replace("\\n", "\n"));
+                        tv_title_start_equal.setText("Trouver la paire égale");
+                        tv_title_gameover_equal.setText("Trouver la paire égale");
+                        tv_conten_moutain.setText("Vous choisissez l'une des quatre réponses dans la case pour obtenir un résultat correspondant.");
+                        tv_zero_add.setText("Addition");
+                        tv_zero_sub.setText("Soustraction");
+                        tv_zero_mix.setText("Addition\n vs \nSoustraction");
+                    }
+                    else if (DeviceLang.equals("de"))
+                    {
+                        tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_de").replace("\\n", "\n"));
+                        tv_main_start.setText("Starten");
+                        tv_content_start_equal.setText(mFirebaseRemoteConfig.getString("start_equal_de").replace("\\n", "\n"));
+                        tv_title_start_equal.setText("Finde das gleiche Paar");
+                        tv_title_gameover_equal.setText("Finde das gleiche Paar");
+                        tv_conten_moutain.setText("Du wählst eine von vier Antworten im Feld aus, um das passende Ergebnis zu finden.");
+                        tv_zero_add.setText("Addition");
+                        tv_zero_sub.setText("Subtraktion");
+                        tv_zero_mix.setText("Addition\n vs \nSubtraktion");
+                    }else
+                    {
+                        tv_content_buy_vip.setText(mFirebaseRemoteConfig.getString("inapp_content_en").replace("\\n", "\n"));
+                        tv_main_start.setText("Start");
+                        tv_content_start_equal.setText(mFirebaseRemoteConfig.getString("start_equal_en").replace("\\n", "\n"));
+                        tv_title_start_equal.setText("Find Equal Pair");
+                        tv_title_gameover_equal.setText("Find Equal Pair");
+                        tv_conten_moutain.setText("You choose one of four answers in the box for matching results.");
+                        tv_zero_add.setText("Addition");
+                        tv_zero_sub.setText("Subtraction");
+                        tv_zero_mix.setText("Addition\n vs \nSubtraction");
+                    }
+
+
+                }catch (Exception e)
+                {
+
+                }
 
             }
             iv_zero_score.setTypeface(typeUTM);
@@ -1777,6 +1884,7 @@ TextView tv_lienhe_list_vip;
                     &&mMemberVip3==0
                     &&mMemberVip4==0
                     &&mMemberVip5==0
+                    &&mMemberVip_Flag==0
                     &&mMemberVip_All==0) {
                 AdmobManager.doLoadInterstitialAd(this);
             }
@@ -1812,6 +1920,7 @@ TextView tv_lienhe_list_vip;
                     &&mMemberVip3==0
                     &&mMemberVip4==0
                     &&mMemberVip5==0
+                    &&mMemberVip_Flag==0
                     &&mMemberVip_All==0) {
                 AdmobManager.doShowInterstitialAd(this);
             }
@@ -2519,7 +2628,38 @@ TextView tv_lienhe_list_vip;
                         tv_title_operator.setText("Phép cộng và Phép trừ");
                         break;
                 }
-            }else
+            }
+            else  if(DeviceLang.equals("fr"))
+            {
+                switch (mZeloOperator)
+                {
+                    case 1:
+                        tv_title_operator.setText("Addition");
+                        break;
+                    case 2:
+                        tv_title_operator.setText("Soustraction");
+                        break;
+                    default:
+                        tv_title_operator.setText("Addition vs Soustraction");
+                        break;
+                }
+            }
+             else  if(DeviceLang.equals("de"))
+            {
+                switch (mZeloOperator)
+                {
+                    case 1:
+                        tv_title_operator.setText("Addition");
+                        break;
+                    case 2:
+                        tv_title_operator.setText("Subtraktion");
+                        break;
+                    default:
+                        tv_title_operator.setText("Addition vs Subtraktion");
+                        break;
+                }
+            }
+            else
             {
                 switch (mZeloOperator)
                 {
@@ -2750,7 +2890,16 @@ TextView tv_lienhe_list_vip;
         if(DeviceLang.equals("vi_vn"))
         {
             tv_score_moutain.setText("Điểm: 00");
-        }else
+        }
+        else   if(DeviceLang.equals("fr"))
+        {
+            tv_score_moutain.setText("Score: 00");
+        }
+         else   if(DeviceLang.equals("de"))
+        {
+            tv_score_moutain.setText("Punktzahl: 00");
+        }
+        else
         {
             tv_score_moutain.setText("Score: 00");
         }
@@ -2838,10 +2987,21 @@ TextView tv_lienhe_list_vip;
 
             mScore_Moutain=mScore_Moutain+10;
 
+
             if(DeviceLang.equals("vi_vn"))
             {
+
                 tv_score_moutain.setText("Điểm: "+mScore_Moutain);
-            }else
+            }
+            else   if(DeviceLang.equals("fr"))
+            {
+                tv_score_moutain.setText("Score: "+mScore_Moutain);
+            }
+            else   if(DeviceLang.equals("de"))
+            {
+                tv_score_moutain.setText("Punktzahl: "+mScore_Moutain);
+            }
+            else
             {
                 tv_score_moutain.setText("Score: "+mScore_Moutain);
             }
@@ -2894,10 +3054,23 @@ TextView tv_lienhe_list_vip;
             handler.removeCallbacksAndMessages(null);
             currentStatus=Status.GAME_OVER_MOUTAIN;
 
+
+
             if(DeviceLang.equals("vi_vn"))
             {
+
                 tv_score_moutain_gameover.setText("Điểm: "+mScore_Moutain);
-            }else
+
+            }
+            else   if(DeviceLang.equals("fr"))
+            {
+                tv_score_moutain_gameover.setText("Score: "+mScore_Moutain);
+            }
+            else   if(DeviceLang.equals("de"))
+            {
+                tv_score_moutain_gameover.setText("Punktzahl: "+mScore_Moutain);
+            }
+            else
             {
                 tv_score_moutain_gameover.setText("Score: "+mScore_Moutain);
             }
@@ -2974,13 +3147,27 @@ TextView tv_lienhe_list_vip;
             {
                 mScore_Moutain--;
 
+
+
                 if(DeviceLang.equals("vi_vn"))
                 {
+
                     tv_score_moutain.setText("Điểm: "+mScore_Moutain);
-                }else
+
+                }
+                else   if(DeviceLang.equals("fr"))
                 {
                     tv_score_moutain.setText("Score: "+mScore_Moutain);
                 }
+                else   if(DeviceLang.equals("de"))
+                {
+                    tv_score_moutain.setText("Punktzahl: "+mScore_Moutain);
+                }
+                else
+                {
+                    tv_score_moutain.setText("Score: "+mScore_Moutain);
+                }
+
             }
 
             if(currentStatus == Status.MOUTAIN_SUMIT)
@@ -2999,7 +3186,30 @@ TextView tv_lienhe_list_vip;
                         // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.resolve)+" " + mLoiVan.getExplain());
                         tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>Lời Giải: "+mLoiVan.getExplain()+"</p>"));
                     }
-                }else
+                }
+                else  if(DeviceLang.equals("fr"))
+                {
+                    if(mLoiVan.getExplain().equals("gta")||mLoiVan.getExplain().equals("giaithich"))
+                    {
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>Résultat: "+mLoiVan.getResult()+"</p>"));
+                        // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.result)+" " + mLoiVan.getResult());
+                    }else {
+                        // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.resolve)+" " + mLoiVan.getExplain());
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>Résoudre: "+mLoiVan.getExplain().replace("Result:","")+"</p>"));
+                    }
+                }
+                    else  if(DeviceLang.equals("de"))
+                {
+                    if(mLoiVan.getExplain().equals("gta")||mLoiVan.getExplain().equals("giaithich"))
+                    {
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>Ergebnis: "+mLoiVan.getResult()+"</p>"));
+                        // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.result)+" " + mLoiVan.getResult());
+                    }else {
+                        // tv_question_moutain.setText(mLoiVan.getQuestion() + "\n\n" + getString(R.string.resolve)+" " + mLoiVan.getExplain());
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mLoiVan.getQuestion()+"</b>"+"\n\n"+"<p>Lösen: "+mLoiVan.getExplain().replace("Result:","")+"</p>"));
+                    }
+                }
+                else
                 {
                     if(mLoiVan.getExplain().equals("gta")||mLoiVan.getExplain().equals("giaithich"))
                     {
@@ -3056,7 +3266,44 @@ TextView tv_lienhe_list_vip;
                                 tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Đáp số: "+mMountain.getCased()+"</p>"));
                                 break;
                         }
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        switch (mMountain.getTruecase())
+                        {
+                            case  1:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Résultat: "+mMountain.getCasea()+"</p>"));
+                                break;
+                            case  2:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Résultat: "+mMountain.getCaseb()+"</p>"));
+                                break;
+                            case  3:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Résultat: "+mMountain.getCasec()+"</p>"));
+                                break;
+                            case  4:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Résultat: "+mMountain.getCased()+"</p>"));
+                                break;
+                        }
+                    }
+                    else if(DeviceLang.equals("de"))
+                    {
+                        switch (mMountain.getTruecase())
+                        {
+                            case  1:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Ergebnis: "+mMountain.getCasea()+"</p>"));
+                                break;
+                            case  2:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Ergebnis: "+mMountain.getCaseb()+"</p>"));
+                                break;
+                            case  3:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Ergebnis: "+mMountain.getCasec()+"</p>"));
+                                break;
+                            case  4:
+                                tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Ergebnis: "+mMountain.getCased()+"</p>"));
+                                break;
+                        }
+                    }
+                    else
                     {
                         switch (mMountain.getTruecase())
                         {
@@ -3083,7 +3330,16 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Đáp số: "+mMountain.getGiaithich()+"</p>"));
-                    }else
+                    }
+                    else    if(DeviceLang.equals("fr"))
+                    {
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Résoudre: "+mMountain.getGiaithich().replace("Résultat:","")+"</p>"));
+                    }
+                     else    if(DeviceLang.equals("de"))
+                    {
+                        tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Lösen: "+mMountain.getGiaithich().replace("Ergebnis:","")+"</p>"));
+                    }
+                      else
                     {
                         tv_question_moutain.setText(Html.fromHtml("<b>"+mMountain.getQuestion()+"</b>"+"\n\n"+"<p>Resolve: "+mMountain.getGiaithich().replace("Result:","")+"</p>"));
                     }
@@ -3779,10 +4035,23 @@ TextView tv_lienhe_list_vip;
 
         }
 
+
+
         if(DeviceLang.equals("vi_vn"))
         {
+
             tv_score_monkey.setText("Điểm: 00");
-        }else
+
+        }
+        else   if(DeviceLang.equals("fr"))
+        {
+            tv_score_monkey.setText("Score: 00");
+        }
+        else   if(DeviceLang.equals("de"))
+        {
+            tv_score_monkey.setText("Punktzahl: 00");
+        }
+        else
         {
             tv_score_monkey.setText("Score: 00");
         }
@@ -3852,10 +4121,23 @@ TextView tv_lienhe_list_vip;
             iv_avata_monkey.setAnimation(anim_tbmonkey);
             mScore_MonKey=mScore_MonKey+10;
 
+
+
             if(DeviceLang.equals("vi_vn"))
             {
+
                 tv_score_monkey.setText("Điểm: "+mScore_MonKey);
-            }else
+
+            }
+            else   if(DeviceLang.equals("fr"))
+            {
+                tv_score_monkey.setText("Score: "+mScore_MonKey);
+            }
+            else   if(DeviceLang.equals("de"))
+            {
+                tv_score_monkey.setText("Punktzahl: "+mScore_MonKey);
+            }
+            else
             {
                 tv_score_monkey.setText("Score: "+mScore_MonKey);
             }
@@ -3904,10 +4186,22 @@ TextView tv_lienhe_list_vip;
             {
                 mScore_MonKey--;
 
+
                 if(DeviceLang.equals("vi_vn"))
                 {
+
                     tv_score_monkey.setText("Điểm: "+mScore_MonKey);
-                }else
+
+                }
+                else   if(DeviceLang.equals("fr"))
+                {
+                    tv_score_monkey.setText("Score: "+mScore_MonKey);
+                }
+                else   if(DeviceLang.equals("de"))
+                {
+                    tv_score_monkey.setText("Punktzahl: "+mScore_MonKey);
+                }
+                else
                 {
                     tv_score_monkey.setText("Score: "+mScore_MonKey);
                 }
@@ -3928,10 +4222,23 @@ TextView tv_lienhe_list_vip;
             handler.removeCallbacksAndMessages(null);
             currentStatus=Status.GAME_OVER_MONKEY;
 
+
+
             if(DeviceLang.equals("vi_vn"))
             {
+
                 tv_score_monkey_gameover.setText("Điểm: "+mScore_MonKey);
-            }else
+
+            }
+            else   if(DeviceLang.equals("fr"))
+            {
+                tv_score_monkey_gameover.setText("Score: "+mScore_MonKey);
+            }
+            else   if(DeviceLang.equals("de"))
+            {
+                tv_score_monkey_gameover.setText("Punktzahl: "+mScore_MonKey);
+            }
+            else
             {
                 tv_score_monkey_gameover.setText("Score: "+mScore_MonKey);
             }
@@ -4515,7 +4822,16 @@ TextView tv_lienhe_list_vip;
                 if(DeviceLang.equals("vi_vn"))
                 {
                     tv_score_summary.setText("Tổng điểm: " + (mScore_Equal + mScore_Moutain + mScore_MonKey) + "/" + mMaxScore);
-                }else
+                }
+                else if(DeviceLang.equals("fr"))
+                {
+                    tv_score_summary.setText("Résumé : " + (mScore_Equal + mScore_Moutain + mScore_MonKey) + "/" + mMaxScore);
+                }
+                  else  if(DeviceLang.equals("de"))
+                {
+                    tv_score_summary.setText("Zusammenfassung : " + (mScore_Equal + mScore_Moutain + mScore_MonKey) + "/" + mMaxScore);
+                }
+                    else
                 {
                     tv_score_summary.setText("Summary : " + (mScore_Equal + mScore_Moutain + mScore_MonKey) + "/" + mMaxScore);
                 }
@@ -4534,7 +4850,16 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         tv_status_summary.setText("Thành công");
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        tv_status_summary.setText("Réussir");
+                    }
+                     else if(DeviceLang.equals("de"))
+                    {
+                        tv_status_summary.setText("Bestehen");
+                    }
+                    else
                     {
                         tv_status_summary.setText("Pass");
                     }
@@ -4591,7 +4916,16 @@ TextView tv_lienhe_list_vip;
                 if(DeviceLang.equals("vi_vn"))
                 {
                     tv_score_summary.setText("Tổng điểm: "+ + (mScore_Equal + mScore_MonKey) + "/" + mMaxScore);
-                }else
+                }
+                else if(DeviceLang.equals("fr"))
+                {
+                    tv_score_summary.setText("Résumé : "+ + (mScore_Equal + mScore_MonKey) + "/" + mMaxScore);
+                }
+                else if(DeviceLang.equals("de"))
+                {
+                    tv_score_summary.setText("Zusammenfassung : "+ + (mScore_Equal + mScore_MonKey) + "/" + mMaxScore);
+                }
+                else
                 {
                     tv_score_summary.setText("Summary : "+ + (mScore_Equal + mScore_MonKey) + "/" + mMaxScore);
                 }
@@ -4609,7 +4943,16 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         tv_status_summary.setText("Thành công");
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        tv_status_summary.setText("Réussir");
+                    }
+                     else if(DeviceLang.equals("de"))
+                    {
+                        tv_status_summary.setText("Bestehen");
+                    }
+                    else
                     {
                         tv_status_summary.setText("Pass");
                     }
@@ -4651,10 +4994,21 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         tv_status_summary.setText("Thất bại");
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        tv_status_summary.setText("Échoué");
+                    }
+                    else if(DeviceLang.equals("de"))
+                    {
+                        tv_status_summary.setText("Durchgefallen");
+                    }
+                    else
                     {
                         tv_status_summary.setText("Failed");
                     }
+
+
                     try {
                         iv_star_summary.setImageResource(R.drawable.khongsao);
                     }catch (Exception e)
@@ -4716,7 +5070,16 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         mTmpPhepToan2.setCongthuc("Hình vuông");
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Carré");
+                    }
+                    else if(DeviceLang.equals("de"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Quadrat");
+                    }
+                    else
                     {
                         mTmpPhepToan2.setCongthuc("Square");
                     }
@@ -4737,7 +5100,16 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         mTmpPhepToan2.setCongthuc("Hình tròn");
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Cercle");
+                    }
+                    else if(DeviceLang.equals("de"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Kreis");
+                    }
+                    else
                     {
                         mTmpPhepToan2.setCongthuc("Circle");
                     }
@@ -4752,7 +5124,16 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         mTmpPhepToan1.setCongthuc(tmpT+" con vịt");
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        mTmpPhepToan1.setCongthuc(tmpT+" canard");
+                    }
+                    else if(DeviceLang.equals("de"))
+                    {
+                        mTmpPhepToan1.setCongthuc(tmpT+" ente");
+                    }
+                    else
                     {
                         mTmpPhepToan1.setCongthuc(tmpT+" duck");
                     }
@@ -4782,7 +5163,16 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         mTmpPhepToan2.setCongthuc("Hình chữ nhật");
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Rectangle");
+                    }
+                     else if(DeviceLang.equals("de"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Rechteck");
+                    }
+                    else
                     {
                         mTmpPhepToan2.setCongthuc("Rectangle");
                     }
@@ -4803,7 +5193,16 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         mTmpPhepToan2.setCongthuc("Hình ngôi sao");
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Étoile");
+                    }
+                    else if(DeviceLang.equals("de"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Stern");
+                    }
+                    else
                     {
                         mTmpPhepToan2.setCongthuc("Star");
                     }
@@ -4818,7 +5217,16 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         mTmpPhepToan1.setCongthuc(tmpT+" bông hoa");
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        mTmpPhepToan1.setCongthuc(tmpT+" fleur");
+                    }
+                     else if(DeviceLang.equals("de"))
+                    {
+                        mTmpPhepToan1.setCongthuc(tmpT+" blume");
+                    }
+                    else
                     {
                         mTmpPhepToan1.setCongthuc(tmpT+" flower");
                     }
@@ -4852,7 +5260,16 @@ TextView tv_lienhe_list_vip;
                             if(DeviceLang.equals("vi_vn"))
                             {
                                 mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" bông hoa");
-                            }else
+                            }
+                            else if(DeviceLang.equals("fr"))
+                            {
+                                mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" fleur");
+                            }
+                              else if(DeviceLang.equals("de"))
+                            {
+                                mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" blume");
+                            }
+                            else
                             {
                                 mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" flower");
                             }
@@ -4877,7 +5294,16 @@ TextView tv_lienhe_list_vip;
                             if(DeviceLang.equals("vi_vn"))
                             {
                                 mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" con vịt");
-                            }else
+                            }
+                            else if(DeviceLang.equals("fr"))
+                            {
+                                mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" canard");
+                            }
+                            else if(DeviceLang.equals("de"))
+                            {
+                                mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" ente");
+                            }
+                            else
                             {
                                 mTmpPhepToan1.setCongthuc(lstResultTMG.get(mChon)+" duck");
                             }
@@ -5008,7 +5434,16 @@ TextView tv_lienhe_list_vip;
                         if(DeviceLang.equals("vi_vn"))
                         {
                             mTmpPhepToan2.setCongthuc("Hình tam giác");
-                        }else
+                        }
+                        else if(DeviceLang.equals("fr"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Triangle");
+                        }
+                        else if(DeviceLang.equals("de"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Dreieck");
+                        }
+                        else
                         {
                             mTmpPhepToan2.setCongthuc("Triangle");
                         }
@@ -5032,7 +5467,16 @@ TextView tv_lienhe_list_vip;
                         if(DeviceLang.equals("vi_vn"))
                         {
                             mTmpPhepToan2.setCongthuc("Hình vuông");
-                        }else
+                        }
+                        else if(DeviceLang.equals("fr"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Carré");
+                        }
+                         else if(DeviceLang.equals("de"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Quadrat");
+                        }
+                        else
                         {
                             mTmpPhepToan2.setCongthuc("Square");
                         }
@@ -5055,7 +5499,16 @@ TextView tv_lienhe_list_vip;
                         if(DeviceLang.equals("vi_vn"))
                         {
                             mTmpPhepToan2.setCongthuc("Hình tròn");
-                        }else
+                        }
+                        else  if(DeviceLang.equals("fr"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Cercle");
+                        }
+                        else  if(DeviceLang.equals("de"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Kreis");
+                        }
+                        else
                         {
                             mTmpPhepToan2.setCongthuc("Circle");
                         }
@@ -5077,7 +5530,16 @@ TextView tv_lienhe_list_vip;
                         if(DeviceLang.equals("vi_vn"))
                         {
                             mTmpPhepToan2.setCongthuc("Hình chữ nhật");
-                        }else
+                        }
+                        else if(DeviceLang.equals("fr"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Rectangle");
+                        }
+                          else if(DeviceLang.equals("de"))
+                        {
+                            mTmpPhepToan2.setCongthuc("Rechteck");
+                        }
+                        else
                         {
                             mTmpPhepToan2.setCongthuc("Rectangle");
                         }
@@ -5101,7 +5563,16 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         mTmpPhepToan2.setCongthuc("Hình ngũ giác");
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Pentagone");
+                    }
+                     else if(DeviceLang.equals("de"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Fünfeck");
+                    }
+                    else
                     {
                         mTmpPhepToan2.setCongthuc("Pentagon");
                     }
@@ -5123,7 +5594,16 @@ TextView tv_lienhe_list_vip;
                     if(DeviceLang.equals("vi_vn"))
                     {
                         mTmpPhepToan2.setCongthuc("Hình lục giác");
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Hexagone");
+                    }
+                     else if(DeviceLang.equals("de"))
+                    {
+                        mTmpPhepToan2.setCongthuc("Sechseck");
+                    }
+                    else
                     {
                         mTmpPhepToan2.setCongthuc("Hexagon");
                     }
@@ -5225,7 +5705,20 @@ TextView tv_lienhe_list_vip;
                 tv_score_equal.setText("Điểm: 00");
                 tv_score_equal_one.setText("Điểm: 00");
                 tv_score_equal_one_12.setText("Điểm: 00");
-            }else
+            }
+            else  if(DeviceLang.equals("fr"))
+            {
+                tv_score_equal.setText("Score: 00");
+                tv_score_equal_one.setText("Score: 00");
+                tv_score_equal_one_12.setText("Score: 00");
+            }
+             else  if(DeviceLang.equals("de"))
+            {
+                tv_score_equal.setText("Punktzahl: 00");
+                tv_score_equal_one.setText("Punktzahl: 00");
+                tv_score_equal_one_12.setText("Punktzahl: 00");
+            }
+            else
             {
                 tv_score_equal.setText("Score: 00");
                 tv_score_equal_one.setText("Score: 00");
@@ -5333,7 +5826,20 @@ TextView tv_lienhe_list_vip;
                     tv_score_equal.setText("Điểm: "+mScore_Equal);
                     tv_score_equal_one.setText("Điểm: "+mScore_Equal);
                     tv_score_equal_one_12.setText("Điểm: "+mScore_Equal);
-                }else
+                }
+                else if(DeviceLang.equals("fr"))
+                {
+                    tv_score_equal.setText("Score: "+mScore_Equal);
+                    tv_score_equal_one.setText("Score: "+mScore_Equal);
+                    tv_score_equal_one_12.setText("Score: "+mScore_Equal);
+                }
+                  else if(DeviceLang.equals("de"))
+                {
+                    tv_score_equal.setText("Punktzahl: "+mScore_Equal);
+                    tv_score_equal_one.setText("Punktzahl: "+mScore_Equal);
+                    tv_score_equal_one_12.setText("Punktzahl: "+mScore_Equal);
+                }
+                    else
                 {
                     tv_score_equal.setText("Score: "+mScore_Equal);
                     tv_score_equal_one.setText("Score: "+mScore_Equal);
@@ -5430,7 +5936,20 @@ TextView tv_lienhe_list_vip;
                         tv_score_equal.setText("Điểm: "+mScore_Equal);
                         tv_score_equal_one.setText("Điểm: "+mScore_Equal);
                         tv_score_equal_one_12.setText("Điểm: "+mScore_Equal);
-                    }else
+                    }
+                    else if(DeviceLang.equals("fr"))
+                    {
+                        tv_score_equal.setText("Score: "+mScore_Equal);
+                        tv_score_equal_one.setText("Score: "+mScore_Equal);
+                        tv_score_equal_one_12.setText("Score: "+mScore_Equal);
+                    }
+                     else if(DeviceLang.equals("de"))
+                    {
+                        tv_score_equal.setText("Punktzahl: "+mScore_Equal);
+                        tv_score_equal_one.setText("Punktzahl: "+mScore_Equal);
+                        tv_score_equal_one_12.setText("Punktzahl: "+mScore_Equal);
+                    }
+                    else
                     {
                         tv_score_equal.setText("Score: "+mScore_Equal);
                         tv_score_equal_one.setText("Score: "+mScore_Equal);
@@ -5480,7 +5999,16 @@ TextView tv_lienhe_list_vip;
             if(DeviceLang.equals("vi_vn"))
             {
                 tv_score_equal_gameover.setText("Điểm: "+mScore_Equal);
-            }else
+            }
+            else if(DeviceLang.equals("fr"))
+            {
+                tv_score_equal_gameover.setText("Score: "+mScore_Equal);
+            }
+            else if(DeviceLang.equals("de"))
+            {
+                tv_score_equal_gameover.setText("Punktzahl: "+mScore_Equal);
+            }
+            else
             {
                 tv_score_equal_gameover.setText("Score: "+mScore_Equal);
             }
@@ -6565,6 +7093,19 @@ if(spinnerTitlesGrade[i].contains("1"))
             clsHandleT.doPlaySoundAssets("phanhoi_done.mp3",DeviceLang, player, false, MainActivity.this);
         }
 
+        if(pAward_Love.getFlag().contains(pCode.trim()))
+        {
+            mMemberVip_Flag = 20;
+            editor.putInt("vipsflag", mMemberVip_Flag);
+            editor.commit();
+
+            mDatabase.child("award_vip").child("flag").setValue("f"+(10000 + rd.nextInt(90000)));
+            mDatabase.child("user_award").child("flag_"+calendar.get(Calendar.YEAR)+"_"+(calendar.get(Calendar.MONTH)+1)+"_"+calendar.get(Calendar.DAY_OF_MONTH)).setValue(""+pName.trim());
+
+            CustomToast.makeText(this,"Phản hồi thành công !",CustomToast.LONG,true);
+            clsHandleT.doPlaySoundAssets("phanhoi_done.mp3",DeviceLang, player, false, MainActivity.this);
+        }
+
         if(pAward_Love.getLopall().contains(pCode.trim()))
         {
             mMemberVip1 = 20;
@@ -6572,12 +7113,14 @@ if(spinnerTitlesGrade[i].contains("1"))
             mMemberVip3 = 20;
             mMemberVip4 = 20;
             mMemberVip5 = 20;
+            mMemberVip_Flag = 20;
             mMemberVip_All = 20;
             editor.putInt("vips", mMemberVip1);
             editor.putInt("vips2", mMemberVip2);
             editor.putInt("vips3", mMemberVip3);
             editor.putInt("vips4", mMemberVip4);
             editor.putInt("vips5", mMemberVip5);
+            editor.putInt("vipsflag", mMemberVip_Flag);
             editor.putInt("vipsall", mMemberVip_All);
             editor.commit();
 
@@ -6635,6 +7178,8 @@ if(spinnerTitlesGrade[i].contains("1"))
     String sku_grade_3 = "com.violympic.toanlop1.viplevel3";
     String sku_grade_4 = "com.violympic.toanlop1.viplevel4";
     String sku_grade_5 = "com.violympic.toanlop1.viplevel5";
+
+    String sku_grade_flag = "com.violympic.toanlop1.vipflag";
     String sku_grade_all = "com.violympic.toanlop1.viplevelall";
     // List skuList = new ArrayList();
 
@@ -6657,6 +7202,7 @@ if(spinnerTitlesGrade[i].contains("1"))
                     loadAllSKUs_Grade3();
                     loadAllSKUs_Grade4();
                     loadAllSKUs_Grade5();
+                    loadAllSKUs_Grade_Flag();
                     loadAllSKUs_Grade_All();
                 }
             }
@@ -7277,6 +7823,128 @@ if(spinnerTitlesGrade[i].contains("1"))
         }
 
     }
+
+    public void loadAllSKUs_Grade_Flag() {
+
+        if (billingClient.isReady()) {
+
+            try {
+
+                billingClient.queryPurchasesAsync(
+                        QueryPurchasesParams.newBuilder()
+                                .setProductType(BillingClient.ProductType.INAPP)
+                                .build(),
+                        new PurchasesResponseListener() {
+                            public void onQueryPurchasesResponse(BillingResult billingResult, List purchases) {
+                                // check billingResult
+                                // process returned purchase list, e.g. display the plans user owns
+                                if (purchases == null) {
+                                    //Không có sản phẩm đã mua nào
+                                    // Log.e("queryPurchasesAsync","khong co san pham nao da mua");
+                                } else {
+                                    //xử lý khi có sản phẩm đã mua
+                                    // Log.e("queryPurchases",""+purchases.get(0).toString());
+                                    if(purchases.get(0).toString().contains(sku_grade_flag)&&purchases.get(0).toString().contains("\"acknowledged\":true"))
+                                    {
+                                        try {
+                                            handler.postDelayed(ThreadReActivated_Grade_Flag,2500);
+                                        }catch (Exception exception)
+                                        {
+
+                                        }
+
+
+                                    }
+                                }
+                            }
+                        }
+                );
+            }catch (Exception ex)
+            {
+
+            }
+
+
+
+
+            QueryProductDetailsParams queryProductDetailsParams =
+                    QueryProductDetailsParams.newBuilder()
+                            .setProductList(
+                                    ImmutableList.of(
+                                            QueryProductDetailsParams.Product.newBuilder()
+                                                    .setProductId(sku_grade_flag)
+                                                    .setProductType(BillingClient.ProductType.INAPP)
+                                                    .build()))
+                            .build();
+
+            billingClient.queryProductDetailsAsync(
+                    queryProductDetailsParams,
+                    new ProductDetailsResponseListener() {
+                        public void onProductDetailsResponse(BillingResult billingResult,
+                                                             List<ProductDetails> productDetailsList) {
+                            // check billingResult
+                            // process returned productDetailsList
+                            if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.OK) {
+                                if (!productDetailsList.isEmpty()) {
+                                    final ProductDetails productDetails = (ProductDetails) productDetailsList.get(0);
+
+
+                                    MainActivity.this.runOnUiThread(() -> {
+
+                                        // Log.e("toan12345","loi j:789");
+                                        ll_item_vip_flag.setVisibility(View.VISIBLE);
+                                        // Log.e("toan12345","loi j:123");
+                                        ll_item_vip_flag.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+
+                                                if(mMemberVip_Flag==10)
+                                                {
+                                                    tv_item_flag.setText(getString(R.string.vip_flag_check));
+                                                    if(DeviceLang.equals("vi_vn"))
+                                                    {
+                                                        clsHandleT.doPlaySoundAssets("vip_done_flag.mp3",DeviceLang, player, false, MainActivity.this);
+                                                    }else
+                                                    {
+                                                        clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
+                                                    }
+                                                }else
+                                                {
+                                                    tv_item_flag.setText(getString(R.string.vip_flag_warning));
+
+                                                    BillingFlowParams billingFlowParams =
+                                                            BillingFlowParams.newBuilder()
+                                                                    .setProductDetailsParamsList(
+                                                                            ImmutableList.of(
+                                                                                    BillingFlowParams.ProductDetailsParams.newBuilder()
+                                                                                            .setProductDetails(productDetails)
+                                                                                            .build()
+                                                                            )
+                                                                    )
+                                                                    .build();
+
+                                                    billingClient.launchBillingFlow(MainActivity.this, billingFlowParams);
+
+                                                }
+
+
+                                            }
+                                        });
+
+                                    });
+
+                                }
+
+                            }
+
+                        }
+                    }
+            );
+
+
+        }
+
+    }
     public void loadAllSKUs_Grade_All() {
 
         if (billingClient.isReady()) {
@@ -7358,6 +8026,7 @@ if(spinnerTitlesGrade[i].contains("1"))
                                                     tv_item_vip3.setText(getString(R.string.vip3_check));
                                                     tv_item_vip4.setText(getString(R.string.vip4_check));
                                                     tv_item_vip5.setText(getString(R.string.vip5_check));
+                                                    tv_item_flag.setText(getString(R.string.vip_flag_check));
                                                     tv_item_vipall.setText(getString(R.string.vip_all_check));
 
                                                     if(DeviceLang.equals("vi_vn"))
@@ -7588,6 +8257,36 @@ if(spinnerTitlesGrade[i].contains("1"))
             }
         }
 
+        if (purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED&&purchase.getProducts().contains(sku_grade_flag)) {
+            if (!purchase.isAcknowledged()) {
+                AcknowledgePurchaseParams acknowledgePurchaseParams =
+                        AcknowledgePurchaseParams.newBuilder()
+                                .setPurchaseToken(purchase.getPurchaseToken())
+                                .build();
+                billingClient.acknowledgePurchase(acknowledgePurchaseParams, new AcknowledgePurchaseResponseListener() {
+                    @Override
+                    public void onAcknowledgePurchaseResponse(@NonNull BillingResult billingResult) {
+                        MainActivity.this.runOnUiThread(() -> {
+
+                            mMemberVip_Flag = 10;
+                            editor.putInt("vipsflag", mMemberVip_Flag);
+                            editor.commit();
+                            doResetVip(getString(R.string.yesads_flag));
+
+                            if(DeviceLang.equals("vi_vn"))
+                            {
+                                clsHandleT.doPlaySoundAssets("vip_done_flag.mp3",DeviceLang, player, false, MainActivity.this);
+                            }else
+                            {
+                                clsHandleT.doPlaySoundAssets("win.mp3", "", player, false, MainActivity.this);
+                            }
+                            logRevenue(50000,"VND",sku_grade_flag,"PRO_FLAG");
+                        });
+                    }
+                });
+            }
+        }
+
         if (purchase.getPurchaseState() == Purchase.PurchaseState.PURCHASED&&purchase.getProducts().contains(sku_grade_all)) {
             if (!purchase.isAcknowledged()) {
                 AcknowledgePurchaseParams acknowledgePurchaseParams =
@@ -7605,12 +8304,14 @@ if(spinnerTitlesGrade[i].contains("1"))
                             mMemberVip3 = 10;
                             mMemberVip4 = 10;
                             mMemberVip5 = 10;
+                            mMemberVip_Flag=10;
                             mMemberVip_All = 10;
                             editor.putInt("vips", mMemberVip1);
                             editor.putInt("vips2", mMemberVip2);
                             editor.putInt("vips3", mMemberVip3);
                             editor.putInt("vips4", mMemberVip4);
                             editor.putInt("vips5", mMemberVip5);
+                            editor.putInt("vipsflag", mMemberVip_Flag);
                             editor.putInt("vipsall", mMemberVip_All);
                             editor.commit();
                             doResetVip(getString(R.string.yesadsall));
@@ -7689,6 +8390,16 @@ if(spinnerTitlesGrade[i].contains("1"))
             doResetVip(getString(R.string.yesads5));
         }
     };
+
+    Runnable ThreadReActivated_Grade_Flag = new Runnable() {
+        @Override
+        public void run() {
+            mMemberVip_Flag = 10;
+            editor.putInt("vipsflag", mMemberVip_Flag);
+            editor.commit();
+            doResetVip(getString(R.string.yesads_flag));
+        }
+    };
     Runnable ThreadReActivated_GradeAll = new Runnable() {
         @Override
         public void run() {
@@ -7699,12 +8410,14 @@ if(spinnerTitlesGrade[i].contains("1"))
             mMemberVip3 = 10;
             mMemberVip4 = 10;
             mMemberVip5 = 10;
+            mMemberVip_Flag=10;
             mMemberVip_All = 10;
             editor.putInt("vips", mMemberVip1);
             editor.putInt("vips2", mMemberVip2);
             editor.putInt("vips3", mMemberVip3);
             editor.putInt("vips4", mMemberVip4);
             editor.putInt("vips5", mMemberVip5);
+            editor.putInt("vipsflag", mMemberVip_Flag);
             editor.putInt("vipsall", mMemberVip_All);
             editor.commit();
 
@@ -7784,9 +8497,19 @@ if(spinnerTitlesGrade[i].contains("1"))
                                         pt.setKetqua(Integer.parseInt(items[0]));
                                         pt.setTamcongthuc(items[1]);
                                         pt.setLevel(Integer.parseInt(items[2]));
-                                        if(DeviceLang.equals("vi_vn")) {
+                                        if(DeviceLang.equals("vi_vn"))
+                                        {
                                             pt.setCongthuc(items[3]);
-                                        }else
+                                        }
+                                        else  if(DeviceLang.equals("fr"))
+                                        {
+                                            pt.setCongthuc(items[5]);
+                                        }
+                                        else  if(DeviceLang.equals("de"))
+                                        {
+                                            pt.setCongthuc(items[6]);
+                                         }
+                                        else
                                         {
                                             pt.setCongthuc(items[4]);
                                         }
@@ -7888,7 +8611,18 @@ if(spinnerTitlesGrade[i].contains("1"))
         try {
             lstMountain=new ArrayList<Mountain>();
 
-            String tmpString=clsHandleT.LoadDataAssets("mountain"+mGrade+".txt",MainActivity.this);
+            String tmpString;
+            if(DeviceLang.equals("fr"))
+            {
+                tmpString = clsHandleT.LoadDataAssets("mountain" + mGrade + "_fr.txt", MainActivity.this);
+            }else if(DeviceLang.equals("de"))
+            {
+                tmpString = clsHandleT.LoadDataAssets("mountain" + mGrade + "_de.txt", MainActivity.this);
+            }else {
+                tmpString = clsHandleT.LoadDataAssets("mountain" + mGrade + ".txt", MainActivity.this);
+            }
+
+
 
             if(!tmpString.equals(""))
             {
@@ -7924,7 +8658,7 @@ if(spinnerTitlesGrade[i].contains("1"))
                     }
                 }
             }
-           // clsHandleT.Loge("lst M:"+lstMountain.size());
+            clsHandleT.Loge("lst M:"+lstMountain.size());
 
         }catch (Exception exception)
         {
@@ -8030,7 +8764,54 @@ if(spinnerTitlesGrade[i].contains("1"))
                             tv_grade_level.setText("Lớp 1");
                             break;
                     }
-                }else
+                }
+                else if(DeviceLang.equals("fr"))
+                {
+                    switch (pGrade) {
+                        case 2:
+                            tv_grade_level.setText("CE1");
+                            break;
+                        case 3:
+                            tv_grade_level.setText("CE2");
+                            break;
+                        case 4:
+                            tv_grade_level.setText("CM1");
+                            break;
+                        case 5:
+                            tv_grade_level.setText("CM2");
+                            break;
+                        case 20:
+                            tv_grade_level.setText("Devine le drapeau");
+                            break;
+                        default:
+                            tv_grade_level.setText("CP");
+                            break;
+                    }
+                }
+                 else if(DeviceLang.equals("de"))
+                {
+                    switch (pGrade) {
+                        case 2:
+                            tv_grade_level.setText("2. Klasse");
+                            break;
+                        case 3:
+                            tv_grade_level.setText("3. Klasse");
+                            break;
+                        case 4:
+                            tv_grade_level.setText("4. Klasse");
+                            break;
+                        case 5:
+                            tv_grade_level.setText("5. Klasse");
+                            break;
+                        case 20:
+                            tv_grade_level.setText("Errate die Flagge");
+                            break;
+                        default:
+                            tv_grade_level.setText("1. Klasse");
+                            break;
+                    }
+                }
+                else
                 {
                     switch (pGrade) {
                         case 2:
@@ -8105,6 +8886,7 @@ if(spinnerTitlesGrade[i].contains("1"))
                 &&mMemberVip3==0
                 &&mMemberVip4==0
                 &&mMemberVip5==0
+                &&mMemberVip_Flag==0
                 &&mMemberVip_All==0) {
             AdmobManager.doLoadInterstitialAd(this);
         }
@@ -8175,36 +8957,41 @@ if(spinnerTitlesGrade[i].contains("1"))
 
 
 
-//                    if(!((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("0")) {
-//
-//                        if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>1
-//                                &&mMemberVip1==0&&mGrade==1&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
-//                        {
-//                            clsHandleT.showDialogVip(MainActivity.this);
-//                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
-//                        }else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
-//                                &&mMemberVip2==0&&mGrade==2&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
-//                        {
-//                            clsHandleT.showDialogVip(MainActivity.this);
-//                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
-//                        }  else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
-//                                &&mMemberVip3==0&&mGrade==3&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
-//                        {
-//                            clsHandleT.showDialogVip(MainActivity.this);
-//                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
-//                        } else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
-//                                &&mMemberVip4==0&&mGrade==4&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
-//                        {
-//                            clsHandleT.showDialogVip(MainActivity.this);
-//                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
-//                        }  else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
-//                                &&mMemberVip5==0&&mGrade==5&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
-//                        {
-//                            clsHandleT.showDialogVip(MainActivity.this);
-//                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
-//                        }
-//                        else
-//                        {
+                    if(!((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("0")) {
+
+                        if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>1
+                                &&mMemberVip1==0&&mGrade==1&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
+                        {
+                            clsHandleT.showDialogVip(MainActivity.this);
+                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
+                        }else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
+                                &&mMemberVip2==0&&mGrade==2&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
+                        {
+                            clsHandleT.showDialogVip(MainActivity.this);
+                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
+                        }  else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
+                                &&mMemberVip3==0&&mGrade==3&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
+                        {
+                            clsHandleT.showDialogVip(MainActivity.this);
+                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
+                        } else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
+                                &&mMemberVip4==0&&mGrade==4&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
+                        {
+                            clsHandleT.showDialogVip(MainActivity.this);
+                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
+                        }  else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>0
+                                &&mMemberVip5==0&&mGrade==5&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
+                        {
+                            clsHandleT.showDialogVip(MainActivity.this);
+                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
+                        } else if(((RelativeLayout) view.findViewById(R.id.rlBgItemLevel)).getTag().toString().equals("2")&&position>1
+                                &&mMemberVip_Flag==0&&mGrade==20&&((int) mFirebaseRemoteConfig.getValue("alow_inapp").asDouble()) == 0)
+                        {
+                            clsHandleT.showDialogVip(MainActivity.this);
+                            clsHandleT.doPlaySoundAssets("buyvip.mp3",DeviceLang, player, false, MainActivity.this);
+                        }
+                        else
+                        {
                             doPlayClick();
                             mLevel = position;
                             lstPhepToanLevel = new ArrayList<PhepToan>();
@@ -8427,8 +9214,8 @@ if(spinnerTitlesGrade[i].contains("1"))
 
                             playerBg.pause();
                             lengthMediaBg=playerBg.getCurrentPosition();
-//                       }
-//                    }
+                       }
+                    }
                 }
             });
         }catch (Exception exception)
@@ -8531,6 +9318,7 @@ if(spinnerTitlesGrade[i].contains("1"))
                         &&mMemberVip3==0
                         &&mMemberVip4==0
                         &&mMemberVip5==0
+                        &&mMemberVip_Flag==0
                         &&mMemberVip_All==0) {
                     if(rd.nextInt(((int) mFirebaseRemoteConfig.getValue("b_ads_inapp_key").asDouble()))==0) {
                         AdmobManager.doShowInterstitialAd(this);

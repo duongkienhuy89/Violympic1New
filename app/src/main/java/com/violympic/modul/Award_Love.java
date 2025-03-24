@@ -56,6 +56,16 @@ public class Award_Love {
 
     public String lop5;
 
+    public String getFlag() {
+        return flag;
+    }
+
+    public void setFlag(String flag) {
+        this.flag = flag;
+    }
+
+    public String flag;
+
 
     public String getLopall() {
         return lopall;
