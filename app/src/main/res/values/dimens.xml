@@ -18,7 +18,7 @@
     <dimen name="review_item_width">22dp</dimen>
     <dimen name="review_item_height">40dp</dimen>
     <dimen name="rank_title_size">16dp</dimen>
-    <dimen name="width_item_vip_all">510dp</dimen>
+    <dimen name="width_item_vip_all">530dp</dimen>
     <dimen name="width_item_vip">250dp</dimen>
     <dimen name="height_item_vip">45dp</dimen>
     <dimen name="size_txt_item_vip">20dp</dimen>

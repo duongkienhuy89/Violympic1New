@@ -385,6 +385,8 @@ TextView tv_title_gameover_equal;
     ImageView iv_grade_4;
     ImageView iv_grade_5;
 
+    ImageView iv_grade_20;
+
     ImageView iv_backgrade;
     ImageView iv_backLevel;
 
@@ -623,6 +625,7 @@ TextView tv_lienhe_list_vip;
         iv_grade_3 = (ImageView) findViewById(R.id.iv_grade_3);
         iv_grade_4 = (ImageView) findViewById(R.id.iv_grade_4);
         iv_grade_5 = (ImageView) findViewById(R.id.iv_grade_5);
+        iv_grade_20=(ImageView) findViewById(R.id.iv_grade_20);
         iv_backgrade= (ImageView) findViewById(R.id.iv_backgrade);
         iv_backLevel= (ImageView) findViewById(R.id.iv_backLevel);
 
@@ -2745,6 +2748,7 @@ TextView tv_lienhe_list_vip;
                 iv_grade_3.setVisibility(View.GONE);
                 iv_grade_4.setVisibility(View.GONE);
                 iv_grade_5.setVisibility(View.GONE);
+                iv_grade_20.setVisibility(View.GONE);
             }
         }catch (Exception exception)
         {
@@ -9273,6 +9277,7 @@ if(spinnerTitlesGrade[i].contains("1"))
             iv_grade_3.setVisibility(View.VISIBLE);
             iv_grade_4.setVisibility(View.VISIBLE);
             iv_grade_5.setVisibility(View.VISIBLE);
+            iv_grade_20.setVisibility(View.VISIBLE);
             doPlayClick();
             viewFlipperMath.setDisplayedChild(1);
             currentStatus=Status.MAIN;

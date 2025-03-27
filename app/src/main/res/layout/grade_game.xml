@@ -187,15 +187,15 @@ android:src="@drawable/lop3"
         app:layout_constraintRight_toRightOf="parent"
 
         android:onClick="onClickGrade20"
-        android:layout_width="80dp"
-        android:layout_height="80dp"/>
+        android:layout_width="75dp"
+        android:layout_height="75dp"/>
 
     <com.airbnb.lottie.LottieAnimationView
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/iv_grade_20"
 
-        android:layout_marginRight="100dp"
         android:layout_width="230dp"
         android:layout_height="130dp"
         app:lottie_fileName="elephant_jumping.json"

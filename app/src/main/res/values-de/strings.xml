@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mathe-Spielplatz</string>
+    <string name="app_name">Mathe 12345</string>
     <string name="scrore">Punktzahl</string>
     <string name="time">Zeit</string>
     <string name="inputnotblank">Zeit</string>
@@ -81,7 +81,7 @@
     <string name="vip3_check">PRO - 3. Klasse ✅</string>
     <string name="vip4_check">PRO - 4. Klasse ✅</string>
     <string name="vip5_check">PRO - 5. Klasse ✅</string>
-    <string name="vip_flag_check">PRO - Flagge 🇺🇸 ✅</string>
+    <string name="vip_flag_check">PRO - Flagge 🇩🇪 ✅</string>
     <string name="vip_all_check">PRO – Alle Klassen ✅</string>
 
     <string name="vip1_warning">PRO - 1. Klasse ⚠</string>
@@ -89,7 +89,7 @@
     <string name="vip3_warning">PRO - 3. Klasse ⚠</string>
     <string name="vip4_warning">PRO - 4. Klasse ⚠</string>
     <string name="vip5_warning">PRO - 5. Klasse ⚠</string>
-    <string name="vip_flag_warning">PRO - Flagge 🇺🇸 ⚠</string>
-    <string name="vip_all_warning">PRO - Alle Klassen (1 2 3 4 5 🇺🇸) ⚠</string>
+    <string name="vip_flag_warning">PRO - Flagge 🇩🇪 ⚠</string>
+    <string name="vip_all_warning">PRO - Alle Klassen (1 2 3 4 5 🇩🇪) ⚠</string>
 
 </resources>
